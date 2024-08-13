@@ -6,8 +6,10 @@ editor: visual
 
 [Pos-Graduação](https://ppgambientometria.furg.br/)
 
-![Maceio](https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/01304270_3c4a1c1f3d-1.jpeg?quality=70&strip=info&w=1024&crop=1)
+![Maceio](https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/01304270_3c4a1c1f3d-1.jpeg?quality=70&strip=info&w=1024&crop=1){.absolute width="40%"}
 
 [minha pg 3](pagina3.html)
+
+[![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](index.html)
 
 [volte para pg 1](index.html)
