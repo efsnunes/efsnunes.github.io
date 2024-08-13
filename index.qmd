@@ -11,3 +11,5 @@ veja minha página de internet das aulas de reprodutibilidade:
 [olha o github!](https://chatgpt.com/)
 
 [minha pg 2](pagina2.html)
+
+[minha pg 3](pagina3.html)
