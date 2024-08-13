@@ -1,9 +1,12 @@
 ---
 title: "Videos"
+author: "Edison Fernando"
 format: html
 editor: visual
 ---
 
 [vídeos](https://www.youtube.com/watch?v=NAZwZO-3klM&list=RDNAZwZO-3klM&start_radio=1)
 
-[![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width=10%}](index.html)
+[![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](index.html)
+
+[volte para pg 2](pagina2.html)
