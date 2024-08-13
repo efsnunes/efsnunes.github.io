@@ -8,7 +8,7 @@ editor: visual
 
 veja minha página de internet das aulas de reprodutibilidade:
 
-[link furg!](https://furg.br/)
+![Descanso](https://img.freepik.com/fotos-premium/uma-praia-com-palmeiras-e-um-corpo-de-agua-com-uma-praia-ao-fundo_847607-1883.jpg?w=740)
 
 [link Ambientometria](pagina2.html)
 

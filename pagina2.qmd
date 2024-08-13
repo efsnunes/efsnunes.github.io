@@ -1,5 +1,6 @@
 ---
 title: "Mestrado Ambientometria"
+author: "Edison Fernando"
 format: html
 editor: visual
 ---
@@ -12,4 +13,10 @@ editor: visual
 
 [![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](index.html)
 
-[volte para pg 1](index.html)
+<a href="index.html" style="position: relative; display: inline-block;">
+    <img src="https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg" style="width: 10%;">
+    <span style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white;">volta pag 1</span>
+</a>
+
+
+
