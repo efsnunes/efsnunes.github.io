@@ -8,8 +8,8 @@ editor: visual
 
 veja minha página de internet das aulas de reprodutibilidade:
 
-[olha o github!](https://chatgpt.com/)
+[link furg!](https://furg.br/)
 
-[minha pg 2](pagina2.html)
+[link Ambientometria](pagina2.html)
 
-[minha pg 3](pagina3.html)
+[link videos](pagina3.html)
