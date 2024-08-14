@@ -43,6 +43,39 @@ veja minha página de ambientometria e música:
         }
     </style>
 ```
+\<!DOCTYPE html\>
+
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Minha Página</title>
+
+```{=html}
+<style>
+        /* Cria uma animação de movimento horizontal */
+        @keyframes moverTexto {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(100px); /* Mover 100 pixels à direita */
+            }
+            100% {
+                transform: translateX(0); /* Voltar à posição original */
+            }
+        }
+
+        .mover {
+            display: inline-block;
+            animation: moverTexto 3s infinite; /* 3 segundos para completar o movimento, repetindo infinitamente */
+        }
+    </style>
+```
 </head>
 
 <body>
@@ -50,9 +83,25 @@ veja minha página de ambientometria e música:
 <div class="content">
 
 ```         
-    <h1>Bem-vindo à Minha Página</h1>
-    <p>Aqui você encontrará informações sobre meu mestrado em Ambientometria e outros recursos úteis.</p>
+    <span class="mover">Bem-vindo à Minha Página</span>
+    <br>
+    <span class="mover">Aqui você encontrará informações sobre meu mestrado em Ambientometria e outros recursos úteis.</span>
 </div>
+```
+
+</body>
+
+</html>
+
+</head>
+
+<body>
+
+<div class="content">
+
+```         
+    Bem-vindo à Minha Página
+    Aqui você encontrará informações sobre meu mestrado em Ambientometria e outros recursos úteis.
 ```
 
 </body>
