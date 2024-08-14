@@ -9,7 +9,45 @@ editor: visual
 
 veja minha página de ambientometria e música:
 
-![Descanso](https://img.freepik.com/fotos-premium/uma-praia-com-palmeiras-e-um-corpo-de-agua-com-uma-praia-ao-fundo_847607-1883.jpg?w=740){.absolute width="25%"}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sua Página no GitHub</title>
+    <style>
+        body {
+            background-image: url('https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/01304270_3c4a1c1f3d-1.jpeg?quality=70&strip=info&w=1024&crop=1');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .content {
+            position: relative;
+            width: 60%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fundo semitransparente */
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Bem-vindo à Minha Página</h1>
+        <p>Aqui você encontrará informações sobre meu mestrado em Ambientometria e outros recursos úteis.</p>
+    </div>
+</body>
+</html>
+
+
 
 [Ambientometria](pagina2.html)
 
