@@ -11,7 +11,6 @@ editor: visual
 
 [![](https://i.pinimg.com/564x/3c/f7/94/3cf794fe42cd0b2c6d781e0e0dd6b4bb.jpg){.absolute width="10%"}](pagina3.html)
 
-[minha pg 3](pagina3.html)
 
 [![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](index.html)
 
