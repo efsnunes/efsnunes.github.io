@@ -1,14 +1,15 @@
 ---
 title: "efsnunes"
+author: "Edison Fernando"
 format: html
 editor: visual
 ---
 
 # Edison Nunes - Ambientometria
 
-veja minha página de internet das aulas de reprodutibilidade:
+veja minha página com links essenciais para sua consulta acadêmica:
 
-![Descanso](https://img.freepik.com/fotos-premium/uma-praia-com-palmeiras-e-um-corpo-de-agua-com-uma-praia-ao-fundo_847607-1883.jpg?w=740)
+![Descanso](https://img.freepik.com/fotos-premium/uma-praia-com-palmeiras-e-um-corpo-de-agua-com-uma-praia-ao-fundo_847607-1883.jpg?w=740){.absolute width="40%"}
 
 [link Ambientometria](pagina2.html)
 
