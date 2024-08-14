@@ -9,14 +9,18 @@ editor: visual
 
 veja minha página de ambientometria e música:
 
-
-<!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sua Página no GitHub</title>
-    <style>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Sua Página no GitHub</title>
+
+```{=html}
+<style>
         body {
             background-image: url('https://viagemeturismo.abril.com.br/wp-content/uploads/2016/10/01304270_3c4a1c1f3d-1.jpeg?quality=70&strip=info&w=1024&crop=1');
             background-size: cover;
@@ -38,16 +42,22 @@ veja minha página de ambientometria e música:
             border-radius: 10px;
         }
     </style>
+```
 </head>
+
 <body>
-    <div class="content">
-        <h1>Bem-vindo à Minha Página</h1>
-        <p>Aqui você encontrará informações sobre meu mestrado em Ambientometria e outros recursos úteis.</p>
-    </div>
+
+<div class="content">
+
+```         
+    <h1>Bem-vindo à Minha Página</h1>
+    <p>Aqui você encontrará informações sobre meu mestrado em Ambientometria e outros recursos úteis.</p>
+</div>
+```
+
 </body>
+
 </html>
-
-
 
 [Ambientometria](pagina2.html)
 
