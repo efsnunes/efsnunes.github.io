@@ -7,14 +7,14 @@ editor: visual
 
 # Edison Nunes - Ambientometria
 
-veja minha página com links essenciais para sua consulta acadêmica:
+veja minha página de ambientometria e música:
 
-![Descanso](https://img.freepik.com/fotos-premium/uma-praia-com-palmeiras-e-um-corpo-de-agua-com-uma-praia-ao-fundo_847607-1883.jpg?w=740){.absolute width="40%"}
+![Descanso](https://img.freepik.com/fotos-premium/uma-praia-com-palmeiras-e-um-corpo-de-agua-com-uma-praia-ao-fundo_847607-1883.jpg?w=740){.absolute width="25%"}
 
-[link Ambientometria](pagina2.html)
+[Ambientometria](pagina2.html)
 
-[link videos](pagina3.html)
+[Música](pagina3.html)
 
-[link prevtemp](previsãodotempo.html)
+[Previsão do Tempo](previsãodotempo.html)
 
 [FURG](pagina4.html)
