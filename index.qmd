@@ -56,10 +56,11 @@ veja minha página de ambientometria e música:
 ```{=html}
      
 ```
+### Bem-vindo à Minha Página
 
-###     Bem-vindo à Minha Página
-    
-    Aqui você encontrará informações sobre meu mestrado em Ambientometria e outros recursos úteis.
+Aqui você encontrará informações
+sobre o mestrado em Ambientometria
+e outros recursos úteis.
 
 [Ambientometria](pagina2.html)
 
