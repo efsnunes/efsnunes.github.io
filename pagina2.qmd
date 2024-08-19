@@ -14,7 +14,10 @@ editor: visual
 
 [![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](index.html)
 
-![Gráfico](https://github.com/efsnunes/MinhaPagina/blob/main/ima_estac.png)
+![Gráfico](https://github.com/efsnunes/MinhaPagina/blob/main/ima_estac.png)(https://github.com/efsnunes/MinhaPagina/blob/main/Captura%20de%20tela%202024-07-18%20212434.png)
+```{r}
+
+```
 
 ```{r}
 tabela <- read.csv("https://github.com/efsnunes/MinhaPagina/blob/main/mostardas.csv")
