@@ -114,144 +114,753 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>tabela <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"https://raw.githubusercontent.com/efsnunes/efsnunes.github.io/main/mostardas.csv"</span>)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>tabela</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>          Data tempMed Dia Mes  Ano    PrecMed PrecMed_jittered
-1   2014-08-31      15  31   8 2014  3.2000000        3.2011283
-2   2014-09-30    17.4  30   9 2014  3.4133333        3.4139939
-3   2014-10-31    19.2  31  10 2014  4.7677419        4.7685789
-4   2014-11-30    21.7  30  11 2014  1.8200000        1.8190138
-5   2014-12-31    23.5  31  12 2014  3.6258065        3.6252083
-6   2015-01-31      25  31   1 2015  5.1935484        5.1917691
-7   2015-02-28    24.4  28   2 2015  1.8285714        1.8279839
-8   2015-03-31    23.9  31   3 2015  1.4193548        1.4201480
-9   2015-04-30    21.5  30   4 2015  1.0266667        1.0248772
-10  2015-05-31      19  31   5 2015  7.4387097        7.4391254
-11  2015-06-30    15.8  30   6 2015  4.7466667        4.7482306
-12  2015-07-31    15.6  31   7 2015 10.1225806       10.1209497
-13  2015-08-31    18.5  31   8 2015  2.3290323        2.3282945
-14  2015-09-30    16.4  30   9 2015  6.4733333        6.4725348
-15  2015-10-31      17  31  10 2015  9.4387097        9.4383588
-16  2015-11-30    19.9  30  11 2015  3.0733333        3.0721769
-17  2015-12-31    22.5  31  12 2015  4.1419355        4.1431447
-18  2016-01-31    23.8  31   1 2016  1.3032258        1.3019261
-19  2016-02-29    24.2  29   2 2016         NA               NA
-20  2016-03-31      23  31   3 2016  8.0580645        8.0572709
-21  2016-04-30      22  30   4 2016  5.4733333        5.4720034
-22  2016-05-31    15.5  31   5 2016  2.0645161        2.0627947
-23  2016-06-30    11.5  30   6 2016  0.2533333        0.2523881
-24  2016-07-31    13.3  31   7 2016  2.4838710        2.4824847
-25  2016-08-31    14.3  31   8 2016  2.8258065        2.8245059
-26  2016-09-30    14.3  30   9 2016  2.7666667        2.7673687
-27  2016-10-31    17.5  31  10 2016  3.4322581        3.4331520
-28  2016-11-30    19.5  30  11 2016  3.2800000        3.2785596
-29  2016-12-31    22.4  31  12 2016  5.0322581        5.0324333
-30  2017-01-31    24.3  31   1 2017  1.2322581        1.2314781
-31  2017-02-28    25.6  28   2 2017  2.5000000        2.4996043
-32  2017-03-31    23.6  31   3 2017  5.3290323        5.3272539
-33  2017-04-30    20.3  30   4 2017  2.1400000        2.1396619
-34  2017-05-31      19  31   5 2017  7.6258065        7.6239368
-35  2017-06-30    15.9  30   6 2017  2.1600000        2.1612225
-36  2017-07-31    16.2  31   7 2017  0.4000000        0.4006584
-37  2017-08-31      17  31   8 2017  2.8967742        2.8957494
-38  2017-09-30    18.8  30   9 2017  4.2333333        4.2348296
-39  2017-10-31    19.1  31  10 2017  9.2064516        9.2060530
-40  2017-11-30    20.1  30  11 2017  3.3866667        3.3861512
-41  2017-12-31    22.4  31  12 2017  1.0967742        1.0955330
-42  2018-01-31    24.3  31   1 2018  1.8322581        1.8313129
-43  2018-02-28    23.8  28   2 2018  1.9714286        1.9717327
-44  2018-03-31    23.1  31   3 2018  4.9161290        4.9147801
-45  2018-04-30    23.1  30   4 2018  5.0933333        5.0927225
-46  2018-05-31    18.6  31   5 2018  2.9612903        2.9612431
-47  2018-06-30    13.3  30   6 2018  3.6466667        3.6447070
-48  2018-07-31    13.9  31   7 2018  6.4516129        6.4532897
-49  2018-08-31    13.6  31   8 2018  3.1225806        3.1223251
-50  2018-09-30    17.5  30   9 2018  4.4000000        4.4015977
-51  2018-10-31      19  31  10 2018  2.8258065        2.8260840
-52  2018-11-30    21.3  30  11 2018  3.9400000        3.9392104
-53  2018-12-31    22.3  31  12 2018  1.1161290        1.1141747
-54  2019-01-31    null  31   1 2019         NA               NA
-55  2019-02-28    null  28   2 2019         NA               NA
-56  2019-03-31    null  31   3 2019         NA               NA
-57  2019-04-30    null  30   4 2019         NA               NA
-58  2019-05-31    null  31   5 2019         NA               NA
-59  2019-06-30    null  30   6 2019         NA               NA
-60  2019-07-31    13.2  31   7 2019  4.6967742        4.6959205
-61  2019-08-31      14  31   8 2019         NA               NA
-62  2019-09-30    15.4  30   9 2019  3.4600000        3.4618134
-63  2019-10-31    18.4  31  10 2019         NA               NA
-64  2019-11-30    null  30  11 2019         NA               NA
-65  2019-12-31    22.7  31  12 2019         NA               NA
-66  2020-01-31    24.8  31   1 2020         NA               NA
-67  2020-02-29    23.5  29   2 2020  1.6000000        1.5990516
-68  2020-03-31    23.8  31   3 2020  0.8774194        0.8754300
-69  2020-04-30    20.4  30   4 2020  0.9600000        0.9590175
-70  2020-05-31    16.9  31   5 2020         NA               NA
-71  2020-06-30    15.5  30   6 2020         NA               NA
-72  2020-07-31    null  31   7 2020         NA               NA
-73  2020-08-31    null  31   8 2020         NA               NA
-74  2020-09-30    null  30   9 2020         NA               NA
-75  2020-10-31    null  31  10 2020         NA               NA
-76  2020-11-30    null  30  11 2020         NA               NA
-77  2020-12-31    null  31  12 2020         NA               NA
-78  2021-01-31    null  31   1 2021         NA               NA
-79  2021-02-28    null  28   2 2021         NA               NA
-80  2021-03-31    null  31   3 2021         NA               NA
-81  2021-04-30    null  30   4 2021         NA               NA
-82  2021-05-31    null  31   5 2021         NA               NA
-83  2021-06-30    null  30   6 2021         NA               NA
-84  2021-07-31    null  31   7 2021         NA               NA
-85  2021-08-31    null  31   8 2021         NA               NA
-86  2021-09-30    null  30   9 2021         NA               NA
-87  2021-10-31    null  31  10 2021         NA               NA
-88  2021-11-30    null  30  11 2021         NA               NA
-89  2021-12-31    null  31  12 2021         NA               NA
-90  2022-01-31    null  31   1 2022         NA               NA
-91  2022-02-28    null  28   2 2022         NA               NA
-92  2022-03-31    null  31   3 2022         NA               NA
-93  2022-04-30    null  30   4 2022         NA               NA
-94  2022-05-31    null  31   5 2022         NA               NA
-95  2022-06-30    null  30   6 2022         NA               NA
-96  2022-07-31    14.9  31   7 2022  4.4064516        4.4084016
-97  2022-08-31    14.5  31   8 2022  3.8387097        3.8372324
-98  2022-09-30    15.4  30   9 2022  2.7333333        2.7326942
-99  2022-10-31      18  31  10 2022  2.5935484        2.5924107
-100 2022-11-30    20.2  30  11 2022  1.7666667        1.7646828
-101 2022-12-31    22.3  31  12 2022  2.7419355        2.7433980
-102 2023-01-31    24.4  31   1 2023  1.1677419        1.1678486
-103 2023-02-28    24.4  28   2 2023  3.2214286        3.2197219
-104 2023-03-31    24.8  31   3 2023  1.5806452        1.5805409
-105 2023-04-30      21  30   4 2023  1.2866667        1.2883125
-106 2023-05-31      19  31   5 2023  5.6129032        5.6111597
-107 2023-06-30    16.4  30   6 2023  5.2133333        5.2124970
-108 2023-07-31    15.2  31   7 2023  6.1612903        6.1631494
-109 2023-08-31    15.4  31   8 2023  2.2580645        2.2587311
-110 2023-09-30      16  30   9 2023 12.3000000       12.2996997
-111 2023-10-31    17.5  31  10 2023  1.1612903        1.1630938
-112 2023-11-30    19.7  30  11 2023  4.9000000        4.9009927
-113 2023-12-31    21.6  31  12 2023  4.7354839        4.7347735
-114 2024-01-31    23.7  31   1 2024  1.0967742        1.0979024
-115 2024-02-29    24.3  29   2 2024  2.1517241        2.1505443
-116 2024-03-31    24.1  31   3 2024  0.8000000        0.7983542
-117 2024-04-30    null  30   4 2024         NA               NA
-118 2024-05-31    null  31   5 2024         NA               NA
-119 2024-06-30    null  30   6 2024         NA               NA
-120 2024-07-31    null  31   7 2024         NA               NA
-121 2024-08-31    null  31   8 2024         NA               NA</code></pre>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(knitr)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">kable</span>(tabela[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<thead>
+<tr class="header">
+<th style="text-align: left;">Data</th>
+<th style="text-align: left;">tempMed</th>
+<th style="text-align: right;">PrecMed</th>
+<th style="text-align: right;">PrecMed_jittered</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">2014-08-31</td>
+<td style="text-align: left;">15</td>
+<td style="text-align: right;">3.2000000</td>
+<td style="text-align: right;">3.2011283</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2014-09-30</td>
+<td style="text-align: left;">17.4</td>
+<td style="text-align: right;">3.4133333</td>
+<td style="text-align: right;">3.4139939</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2014-10-31</td>
+<td style="text-align: left;">19.2</td>
+<td style="text-align: right;">4.7677419</td>
+<td style="text-align: right;">4.7685789</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2014-11-30</td>
+<td style="text-align: left;">21.7</td>
+<td style="text-align: right;">1.8200000</td>
+<td style="text-align: right;">1.8190138</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2014-12-31</td>
+<td style="text-align: left;">23.5</td>
+<td style="text-align: right;">3.6258065</td>
+<td style="text-align: right;">3.6252083</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015-01-31</td>
+<td style="text-align: left;">25</td>
+<td style="text-align: right;">5.1935484</td>
+<td style="text-align: right;">5.1917691</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2015-02-28</td>
+<td style="text-align: left;">24.4</td>
+<td style="text-align: right;">1.8285714</td>
+<td style="text-align: right;">1.8279839</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015-03-31</td>
+<td style="text-align: left;">23.9</td>
+<td style="text-align: right;">1.4193548</td>
+<td style="text-align: right;">1.4201480</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2015-04-30</td>
+<td style="text-align: left;">21.5</td>
+<td style="text-align: right;">1.0266667</td>
+<td style="text-align: right;">1.0248772</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015-05-31</td>
+<td style="text-align: left;">19</td>
+<td style="text-align: right;">7.4387097</td>
+<td style="text-align: right;">7.4391254</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2015-06-30</td>
+<td style="text-align: left;">15.8</td>
+<td style="text-align: right;">4.7466667</td>
+<td style="text-align: right;">4.7482306</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015-07-31</td>
+<td style="text-align: left;">15.6</td>
+<td style="text-align: right;">10.1225806</td>
+<td style="text-align: right;">10.1209497</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2015-08-31</td>
+<td style="text-align: left;">18.5</td>
+<td style="text-align: right;">2.3290323</td>
+<td style="text-align: right;">2.3282945</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015-09-30</td>
+<td style="text-align: left;">16.4</td>
+<td style="text-align: right;">6.4733333</td>
+<td style="text-align: right;">6.4725348</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2015-10-31</td>
+<td style="text-align: left;">17</td>
+<td style="text-align: right;">9.4387097</td>
+<td style="text-align: right;">9.4383588</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2015-11-30</td>
+<td style="text-align: left;">19.9</td>
+<td style="text-align: right;">3.0733333</td>
+<td style="text-align: right;">3.0721769</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2015-12-31</td>
+<td style="text-align: left;">22.5</td>
+<td style="text-align: right;">4.1419355</td>
+<td style="text-align: right;">4.1431447</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2016-01-31</td>
+<td style="text-align: left;">23.8</td>
+<td style="text-align: right;">1.3032258</td>
+<td style="text-align: right;">1.3019261</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2016-02-29</td>
+<td style="text-align: left;">24.2</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2016-03-31</td>
+<td style="text-align: left;">23</td>
+<td style="text-align: right;">8.0580645</td>
+<td style="text-align: right;">8.0572709</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2016-04-30</td>
+<td style="text-align: left;">22</td>
+<td style="text-align: right;">5.4733333</td>
+<td style="text-align: right;">5.4720034</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2016-05-31</td>
+<td style="text-align: left;">15.5</td>
+<td style="text-align: right;">2.0645161</td>
+<td style="text-align: right;">2.0627947</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2016-06-30</td>
+<td style="text-align: left;">11.5</td>
+<td style="text-align: right;">0.2533333</td>
+<td style="text-align: right;">0.2523881</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2016-07-31</td>
+<td style="text-align: left;">13.3</td>
+<td style="text-align: right;">2.4838710</td>
+<td style="text-align: right;">2.4824847</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2016-08-31</td>
+<td style="text-align: left;">14.3</td>
+<td style="text-align: right;">2.8258065</td>
+<td style="text-align: right;">2.8245059</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2016-09-30</td>
+<td style="text-align: left;">14.3</td>
+<td style="text-align: right;">2.7666667</td>
+<td style="text-align: right;">2.7673687</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2016-10-31</td>
+<td style="text-align: left;">17.5</td>
+<td style="text-align: right;">3.4322581</td>
+<td style="text-align: right;">3.4331520</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2016-11-30</td>
+<td style="text-align: left;">19.5</td>
+<td style="text-align: right;">3.2800000</td>
+<td style="text-align: right;">3.2785596</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2016-12-31</td>
+<td style="text-align: left;">22.4</td>
+<td style="text-align: right;">5.0322581</td>
+<td style="text-align: right;">5.0324333</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2017-01-31</td>
+<td style="text-align: left;">24.3</td>
+<td style="text-align: right;">1.2322581</td>
+<td style="text-align: right;">1.2314781</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2017-02-28</td>
+<td style="text-align: left;">25.6</td>
+<td style="text-align: right;">2.5000000</td>
+<td style="text-align: right;">2.4996043</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2017-03-31</td>
+<td style="text-align: left;">23.6</td>
+<td style="text-align: right;">5.3290323</td>
+<td style="text-align: right;">5.3272539</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2017-04-30</td>
+<td style="text-align: left;">20.3</td>
+<td style="text-align: right;">2.1400000</td>
+<td style="text-align: right;">2.1396619</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2017-05-31</td>
+<td style="text-align: left;">19</td>
+<td style="text-align: right;">7.6258065</td>
+<td style="text-align: right;">7.6239368</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2017-06-30</td>
+<td style="text-align: left;">15.9</td>
+<td style="text-align: right;">2.1600000</td>
+<td style="text-align: right;">2.1612225</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2017-07-31</td>
+<td style="text-align: left;">16.2</td>
+<td style="text-align: right;">0.4000000</td>
+<td style="text-align: right;">0.4006584</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2017-08-31</td>
+<td style="text-align: left;">17</td>
+<td style="text-align: right;">2.8967742</td>
+<td style="text-align: right;">2.8957494</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2017-09-30</td>
+<td style="text-align: left;">18.8</td>
+<td style="text-align: right;">4.2333333</td>
+<td style="text-align: right;">4.2348296</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2017-10-31</td>
+<td style="text-align: left;">19.1</td>
+<td style="text-align: right;">9.2064516</td>
+<td style="text-align: right;">9.2060530</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2017-11-30</td>
+<td style="text-align: left;">20.1</td>
+<td style="text-align: right;">3.3866667</td>
+<td style="text-align: right;">3.3861512</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2017-12-31</td>
+<td style="text-align: left;">22.4</td>
+<td style="text-align: right;">1.0967742</td>
+<td style="text-align: right;">1.0955330</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2018-01-31</td>
+<td style="text-align: left;">24.3</td>
+<td style="text-align: right;">1.8322581</td>
+<td style="text-align: right;">1.8313129</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2018-02-28</td>
+<td style="text-align: left;">23.8</td>
+<td style="text-align: right;">1.9714286</td>
+<td style="text-align: right;">1.9717327</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2018-03-31</td>
+<td style="text-align: left;">23.1</td>
+<td style="text-align: right;">4.9161290</td>
+<td style="text-align: right;">4.9147801</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2018-04-30</td>
+<td style="text-align: left;">23.1</td>
+<td style="text-align: right;">5.0933333</td>
+<td style="text-align: right;">5.0927225</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2018-05-31</td>
+<td style="text-align: left;">18.6</td>
+<td style="text-align: right;">2.9612903</td>
+<td style="text-align: right;">2.9612431</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2018-06-30</td>
+<td style="text-align: left;">13.3</td>
+<td style="text-align: right;">3.6466667</td>
+<td style="text-align: right;">3.6447070</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2018-07-31</td>
+<td style="text-align: left;">13.9</td>
+<td style="text-align: right;">6.4516129</td>
+<td style="text-align: right;">6.4532897</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2018-08-31</td>
+<td style="text-align: left;">13.6</td>
+<td style="text-align: right;">3.1225806</td>
+<td style="text-align: right;">3.1223251</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2018-09-30</td>
+<td style="text-align: left;">17.5</td>
+<td style="text-align: right;">4.4000000</td>
+<td style="text-align: right;">4.4015977</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2018-10-31</td>
+<td style="text-align: left;">19</td>
+<td style="text-align: right;">2.8258065</td>
+<td style="text-align: right;">2.8260840</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2018-11-30</td>
+<td style="text-align: left;">21.3</td>
+<td style="text-align: right;">3.9400000</td>
+<td style="text-align: right;">3.9392104</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2018-12-31</td>
+<td style="text-align: left;">22.3</td>
+<td style="text-align: right;">1.1161290</td>
+<td style="text-align: right;">1.1141747</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2019-01-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019-02-28</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2019-03-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019-04-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2019-05-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019-06-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2019-07-31</td>
+<td style="text-align: left;">13.2</td>
+<td style="text-align: right;">4.6967742</td>
+<td style="text-align: right;">4.6959205</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019-08-31</td>
+<td style="text-align: left;">14</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2019-09-30</td>
+<td style="text-align: left;">15.4</td>
+<td style="text-align: right;">3.4600000</td>
+<td style="text-align: right;">3.4618134</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019-10-31</td>
+<td style="text-align: left;">18.4</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2019-11-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2019-12-31</td>
+<td style="text-align: left;">22.7</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020-01-31</td>
+<td style="text-align: left;">24.8</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2020-02-29</td>
+<td style="text-align: left;">23.5</td>
+<td style="text-align: right;">1.6000000</td>
+<td style="text-align: right;">1.5990516</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020-03-31</td>
+<td style="text-align: left;">23.8</td>
+<td style="text-align: right;">0.8774194</td>
+<td style="text-align: right;">0.8754300</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2020-04-30</td>
+<td style="text-align: left;">20.4</td>
+<td style="text-align: right;">0.9600000</td>
+<td style="text-align: right;">0.9590175</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020-05-31</td>
+<td style="text-align: left;">16.9</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2020-06-30</td>
+<td style="text-align: left;">15.5</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020-07-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2020-08-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020-09-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2020-10-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2020-11-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2020-12-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021-01-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-02-28</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021-03-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-04-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021-05-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-06-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021-07-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-08-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021-09-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-10-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2021-11-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2021-12-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022-01-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2022-02-28</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022-03-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2022-04-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022-05-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2022-06-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022-07-31</td>
+<td style="text-align: left;">14.9</td>
+<td style="text-align: right;">4.4064516</td>
+<td style="text-align: right;">4.4084016</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2022-08-31</td>
+<td style="text-align: left;">14.5</td>
+<td style="text-align: right;">3.8387097</td>
+<td style="text-align: right;">3.8372324</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022-09-30</td>
+<td style="text-align: left;">15.4</td>
+<td style="text-align: right;">2.7333333</td>
+<td style="text-align: right;">2.7326942</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2022-10-31</td>
+<td style="text-align: left;">18</td>
+<td style="text-align: right;">2.5935484</td>
+<td style="text-align: right;">2.5924107</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2022-11-30</td>
+<td style="text-align: left;">20.2</td>
+<td style="text-align: right;">1.7666667</td>
+<td style="text-align: right;">1.7646828</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2022-12-31</td>
+<td style="text-align: left;">22.3</td>
+<td style="text-align: right;">2.7419355</td>
+<td style="text-align: right;">2.7433980</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2023-01-31</td>
+<td style="text-align: left;">24.4</td>
+<td style="text-align: right;">1.1677419</td>
+<td style="text-align: right;">1.1678486</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2023-02-28</td>
+<td style="text-align: left;">24.4</td>
+<td style="text-align: right;">3.2214286</td>
+<td style="text-align: right;">3.2197219</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2023-03-31</td>
+<td style="text-align: left;">24.8</td>
+<td style="text-align: right;">1.5806452</td>
+<td style="text-align: right;">1.5805409</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2023-04-30</td>
+<td style="text-align: left;">21</td>
+<td style="text-align: right;">1.2866667</td>
+<td style="text-align: right;">1.2883125</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2023-05-31</td>
+<td style="text-align: left;">19</td>
+<td style="text-align: right;">5.6129032</td>
+<td style="text-align: right;">5.6111597</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2023-06-30</td>
+<td style="text-align: left;">16.4</td>
+<td style="text-align: right;">5.2133333</td>
+<td style="text-align: right;">5.2124970</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2023-07-31</td>
+<td style="text-align: left;">15.2</td>
+<td style="text-align: right;">6.1612903</td>
+<td style="text-align: right;">6.1631494</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2023-08-31</td>
+<td style="text-align: left;">15.4</td>
+<td style="text-align: right;">2.2580645</td>
+<td style="text-align: right;">2.2587311</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2023-09-30</td>
+<td style="text-align: left;">16</td>
+<td style="text-align: right;">12.3000000</td>
+<td style="text-align: right;">12.2996997</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2023-10-31</td>
+<td style="text-align: left;">17.5</td>
+<td style="text-align: right;">1.1612903</td>
+<td style="text-align: right;">1.1630938</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2023-11-30</td>
+<td style="text-align: left;">19.7</td>
+<td style="text-align: right;">4.9000000</td>
+<td style="text-align: right;">4.9009927</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2023-12-31</td>
+<td style="text-align: left;">21.6</td>
+<td style="text-align: right;">4.7354839</td>
+<td style="text-align: right;">4.7347735</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-01-31</td>
+<td style="text-align: left;">23.7</td>
+<td style="text-align: right;">1.0967742</td>
+<td style="text-align: right;">1.0979024</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-02-29</td>
+<td style="text-align: left;">24.3</td>
+<td style="text-align: right;">2.1517241</td>
+<td style="text-align: right;">2.1505443</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-03-31</td>
+<td style="text-align: left;">24.1</td>
+<td style="text-align: right;">0.8000000</td>
+<td style="text-align: right;">0.7983542</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-04-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-05-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-06-30</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2024-07-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">2024-08-31</td>
+<td style="text-align: left;">null</td>
+<td style="text-align: right;">NA</td>
+<td style="text-align: right;">NA</td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tabela)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(tabela[,<span class="sc">-</span><span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>)])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>     Data             tempMed               Dia             Mes        
- Length:121         Length:121         Min.   :28.00   Min.   : 1.000  
- Class :character   Class :character   1st Qu.:30.00   1st Qu.: 4.000  
- Mode  :character   Mode  :character   Median :31.00   Median : 7.000  
-                                       Mean   :30.45   Mean   : 6.512  
-                                       3rd Qu.:31.00   3rd Qu.: 9.000  
-                                       Max.   :31.00   Max.   :12.000  
-                                                                       
-      Ano          PrecMed        PrecMed_jittered 
+<pre><code>      Ano          PrecMed        PrecMed_jittered 
  Min.   :2014   Min.   : 0.2533   Min.   : 0.2524  
  1st Qu.:2017   1st Qu.: 1.8295   1st Qu.: 1.8288  
  Median :2019   Median : 3.0980   Median : 3.0972  
@@ -259,6 +868,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
  3rd Qu.:2022   3rd Qu.: 4.7625   3rd Qu.: 4.7635  
  Max.   :2024   Max.   :12.3000   Max.   :12.2997  
                 NA's   :43        NA's   :43       </code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(tabela<span class="sc">$</span>Ano, tabela<span class="sc">$</span>PrecMed)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="pagina2_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
 </div>
 </div>
 
