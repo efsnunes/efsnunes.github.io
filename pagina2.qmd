@@ -13,11 +13,12 @@ editor: visual
 
 ![Gráfico](https://github.com/efsnunes/MinhaPagina/blob/main/ima_estac.png?raw=true)
 
-```{r}
-
-```
 
 ```{r}
 tabela <- read.csv("mostardas.csv")
 knitr::kable(tabela, caption = "Minha Tabela do GitHub")
 ```
+```{r}
+summary(tabela)
+```
+
