@@ -15,13 +15,14 @@ editor: visual
 
 ```{r}
 tabela <- read.csv("https://raw.githubusercontent.com/efsnunes/efsnunes.github.io/main/mostardas.csv")
-tabela
+library(knitr)
+kable(tabela[,-c(3,4,5)])
 ```
 
 ```{r}
-summary(tabela)
+summary(tabela[,-c(1,2,3,4)])
 ```
 
 ```{r}
-plot(mostardas$tempMed)
+plot(tabela$Ano, tabela$PrecMed)
 ```
