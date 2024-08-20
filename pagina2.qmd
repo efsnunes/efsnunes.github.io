@@ -21,7 +21,7 @@ tabela
 ```{r}
 summary(tabela)
 ```
+
 ```{r}
 plot(mostardas$tempMed)
 ```
-
