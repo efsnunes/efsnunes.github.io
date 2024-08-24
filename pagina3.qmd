@@ -9,5 +9,6 @@ editor: visual
 
 [violão](https://www.youtube.com/watch?v=RFPnZayG0VI&list=RDEMQHlO2ou9qG5b9fKT66mAXw&start_radio=1)\[![](https://www.pucrs.br/cultura/wp-content/uploads/sites/282/2022/04/907x500-1.png){.absolute width="30%"}\]
 
-[![volte para pg 2](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](pagina2.html)
+[foco](https://www.youtube.com/watch?v=MX-iaTDEyGI)
 
+[![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](pagina2.html)
