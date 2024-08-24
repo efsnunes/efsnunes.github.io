@@ -5,6 +5,21 @@ format: html
 editor: visual
 ---
 
+---
+title: "Meu Documento R Markdown"
+output:
+  html_document:
+    includes:
+      in_header: |
+        <style>
+          body {
+              background-color: #F5F5F5;  /* Cor de fundo clara */
+              color: #333333;  /* Cor do texto */
+          }
+        </style>
+---
+
+
 [Pos-Graduação](https://ppgambientometria.furg.br/)
 
 [Guia Rápido do R](https://raw.githubusercontent.com/efsnunes/efsnunes.github.io/main/guiaRapidoR.txt)
