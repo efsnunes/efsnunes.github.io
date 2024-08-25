@@ -4,13 +4,9 @@ author: "Edison Fernando"
 format: html
 editor: visual
 ---
-
----
-title: "Meu Documento R Markdown"
-output:
-  html_document:
+html_document:
     includes:
-      in_header: |
+      in_header:|
         <style>
           body {
               background-color: #F5F5F5;  /* Cor de fundo clara */
@@ -18,7 +14,6 @@ output:
           }
         </style>
 ---
-
 
 [Pos-Graduação](https://ppgambientometria.furg.br/)
 
