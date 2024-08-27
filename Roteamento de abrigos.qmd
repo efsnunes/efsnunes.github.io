@@ -1,0 +1,20 @@
+---
+title: "Otimizar Rotas para Eventos Extremos"
+author: "Edison Fernando"
+format: revealjs
+editor: visual
+---
+
+## MEU PRIMEIRO SLIDE
+
+
+
+
+## MEU SEGUNDO SLIDE
+
+
+
+## CONCLUSÃO
+
+```{}
+```

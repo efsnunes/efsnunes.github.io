@@ -4,7 +4,7 @@ author: "Edison Fernando"
 format: html
 editor: visual
 ---
-ef
+
 [![](https://raw.githubusercontent.com/efsnunes/efsnunes.github.io/main/furg.png){.absolute width="10%"}](https://www.furg.br)
 
 [![](https://raw.github.com/efsnunes/efsnunes.github.io/a2ea3791fb8495b30db67f6225b41506b9899cb3/logo_imef.jpg){.absolute width="20%"}](https://www.imef.furg.br)
