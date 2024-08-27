@@ -35,6 +35,11 @@ kable(tabela[,-c(3,4,5)])
 summary(tabela[,-c(1,2,3,4)])
 ```
 
+
+
 ```{r}
 plot(tabela$Ano, tabela$PrecMed)
 ```
+
+$y = \mu + \sum_{i=1}^p \beta_i x_i + \epsilon$
+
