@@ -9,7 +9,6 @@ editor: visual
 
 [![](https://raw.github.com/efsnunes/efsnunes.github.io/a2ea3791fb8495b30db67f6225b41506b9899cb3/logo_imef.jpg){.absolute width="20%"}](https://www.imef.furg.br)
 
-[![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](pagina3.html)
 
 [alertas de grandes desastres](https://www.gdacs.org/)
 
