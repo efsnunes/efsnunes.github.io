@@ -42,4 +42,6 @@ plot(tabela$Ano, tabela$PrecMed)
 ```
 
 $y = \mu + \sum_{i=1}^p \beta_i x_i + \epsilon$
+ 
+ $x^{2}$
 
