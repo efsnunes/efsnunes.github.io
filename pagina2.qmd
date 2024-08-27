@@ -45,3 +45,34 @@ plot(tabela$Ano, tabela$PrecMed)
 $y = \mu + \sum_{i=1}^p \beta_i x_i + \epsilon$
 
 $x^{2}$
+
+
+
+
+
+
+
+
+
+<div>
+  <ul class="pagination">
+  <li class="page-item disabled">
+  <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&laquo;</font></font></a>
+  </li>
+  <li class="page-item active">
+  <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></a>
+   </li>
+   <li class="page-item">
+   <a class="page-link" href="pagina2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></a>
+   </li>
+   <li class="page-item">
+   <a class="page-link" href="pagina3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></a>
+   </li>
+   <li class="page-item">
+   <a class="page-link" href="pagina4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a>
+   </li>
+   </li>
+  </ul>
+</div>
+<div>
+
