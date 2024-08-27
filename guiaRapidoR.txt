@@ -1,0 +1,132 @@
+Introdução
+
+R é uma linguagem e ambiente de programação estatística e gráfica. Considerando apenas a parte gráfica, existem muitos recursos, sendo possível fazer desde gráficos simples de pontos ou barras até figuras complexas como mapas e filogenias. Para fazer um gráfico, muitos parâmetros devem ser especificados, e a tarefa de produzir um bom gráfico não é das mais fáceis. Os problemas são principalmente pela quantidade de parâmetros que podem ser especificados e pela documentação que não é apresentada de maneira visual.
+
+A proposta deste texto é mostrar as principais opções para a construção de gráficos utilizando as funções gráficas básicas. O objetivo não é explorar todos os parâmetros e nem esgotar as possibilidades do R, apenas mostrar as principais funções e argumentos. O conjunto básico de funções gráficas já é suficiente para produzir bons gráficos, embora essa não seja a única opção disponível no programa. Pacotes como `ggplot2` estão se tornando populares por aparentemente apresentar soluções mais simples e eficientes. Entretanto, as opções básicas são bastante flexíveis para adicionar qualquer elemento gráfico sem a necessidade de formatação prévia específica.
+
+Este texto é dividido em cinco partes:
+
+1. **Funções básicas para adicionar elementos gráficos.**
+2. **Princípios de design eficaz de gráficos.**
+3. **Construção de gráficos personalizados.**
+4. **Elaboração de painéis gráficos.**
+5. **Opções de exportação.**
+
+Ao final, também é apresentado um guia de ajuda rápida mostrando visualmente os principais argumentos das funções gráficas. Os códigos apresentados ao longo do texto podem ser executados passo a passo para entender o funcionamento de cada argumento, sendo que os dados de exemplos provêm de conjuntos de dados inclusos em alguns pacotes do R. Para carregar esses dados, basta usar a função `data` com o nome do conjunto de dados (ex: `data("anscombe")`). Além disso, antes de executar os códigos dos gráficos, os dados foram organizados em dataframes para padronizar a indexação das variáveis.
+
+Funções básicas
+
+Para construir um gráfico, usa-se a função genérica `plot`. A função `plot` produz gráficos de maneira automática, dependendo do tipo de informação e classe do objeto passado para ela. Quando apropriado, os eixos, nomes dos eixos e títulos são gerados automaticamente (a menos que especificado o contrário). Existem várias funções auxiliares para adicionar elementos ao gráfico.
+
+Função `plot()`
+
+Dados: O conjunto de dados `anscombe` é um exemplo clássico para uso em regressões lineares. Ele é formado por 4 pares de variáveis independente e dependente, totalizando 11 observações.
+
+```r
+data(anscombe)
+dados <- anscombe
+str(dados)
+```
+
+```r
+'data.frame':   11 obs. of  8 variables:
+ $ x1: num  10 8 13 9 11 14 6 4 12 7 ...
+ $ x2: num  10 8 13 9 11 14 6 4 12 7 ...
+ $ x3: num  10 8 13 9 11 14 6 4 12 7 ...
+ $ x4: num  8 8 8 8 8 8 8 19 8 8 ...
+ $ y1: num  8.04 6.95 7.58 8.81 8.33 ...
+ $ y2: num  9.14 8.14 8.74 8.77 9.26 8.1 6.13 3.1 9.13 7.26 ...
+ $ y3: num  7.46 6.77 12.74 7.11 7.81 ...
+ $ y4: num  6.58 5.76 7.71 8.84 8.47 7.04 5.25 12.5 5.56 7.91 ...
+```
+
+Gráficos de pontos
+
+Se `x` e `y` são dois vetores do tipo `numeric`, o gráfico resultante é de pontos, sendo `x` as coordenadas dos pontos no eixo horizontal e `y` as coordenadas do eixo vertical.
+
+```r
+plot(dados$x1, dados$y1) # plot(y1 ~ x1, data=dados) produz o mesmo resultado.
+```
+
+Gráficos de séries
+
+Se apenas um vetor do tipo `numeric` é fornecido, a função gera uma série com os dados, seguindo a ordem que os valores estão no vetor.
+
+```r
+plot(dados$x1)
+```
+
+Gráficos de barra
+
+Se apenas um vetor do tipo `factor` é fornecido, a função gera um gráfico de barra.
+
+```r
+plot(as.factor(dados$x1))
+```
+
+Boxplot
+
+Se forem fornecidos um vetor do tipo `factor` e outro do tipo `numeric`, a função `plot` gera um boxplot.
+
+```r
+plot(as.factor(dados$x1), dados$y1)
+```
+
+Painéis gráficos
+
+Se um objeto do tipo `data.frame` é fornecido, a função gera gráficos com os pares de todas as variáveis.
+
+```r
+plot(dados)
+```
+
+Função `par()`
+
+Os parâmetros gráficos gerais são predefinidos pela função `par` e podem ser acessados pela função de ajuda `?par`. O R possui vários dispositivos que são usados para gerar gráficos. Normalmente usa-se um dispositivo para visualizar gráficos e outro para exportá-los para um arquivo de imagem ou vetorial. Informações sobre cada dispositivo podem ser obtidas na ajuda `?Devices`, sendo que cada dispositivo possui uma lista de parâmetros própria.
+
+Cada parâmetro define uma opção de configuração do gráfico. Por exemplo, o parâmetro `pch` define o tipo de símbolo usado em um gráfico de pontos. Os parâmetros definem uma infinidade de opções, como cor e tamanho do texto, tamanho das margens e tipos de eixos. Pode-se alterar esses parâmetros de duas formas:
+
+1. Alterar diretamente na função `plot`**: Especificando o nome do parâmetro e o novo valor que receberá. Desta forma, o gráfico que será construído mostrará a nova opção, conforme especificado.
+   
+2. Alterar usando a função `par`**: Antes de começar a construir o gráfico. Desta maneira, os parâmetros serão alterados de maneira permanente para todos os gráficos feitos pelo dispositivo, até que o dispositivo seja reiniciado. Em geral, parâmetros mais gerais da figura, como o tamanho das margens, só podem ser alterados pela função `par`.
+
+Pode-se salvar as alterações da função `par` em um objeto, permitindo que os parâmetros alterados possam ser restaurados facilmente a qualquer momento.
+
+```r
+op <- par(las = 1) # Alterar parâmetro las para todos os gráficos
+par(op) # Restaurar parâmetros originais
+```
+
+Alterando eixos
+
+Uma das opções mais utilizadas na elaboração de gráficos refere-se às alterações dos aspectos relacionados aos eixos. Em quase todos os gráficos altera-se os nomes dos eixos, títulos e os limites dos eixos.
+
+Principais argumentos:
+
+- `xlab` e `ylab`: Alterar nomes dos eixos x e y, respectivamente. Podem ser usados junto com `font.lab` para alterar o tipo de fonte, `col.lab` para alterar a cor e `cex.lab` para alterar o tamanho da fonte.
+- `main`: Alterar o nome do título do gráfico. Pode ser usado junto com `font.main`, `col.main` e `cex.main` para alterar fonte, cor e tamanho do título, respectivamente.
+  
+Exemplo de uso:
+
+```r
+plot(dados$x1, dados$y1, 
+     xlab = "Variável preditora", ylab = "Variável resposta", 
+     main = "Anscombe")
+```
+
+- `las`: Alterar orientação dos números nos eixos. Valores aceitos: 0 (paralelo ao eixo), 1 (horizontal), 2 (perpendicular) e 3 (vertical).
+- `xlim` e `ylim`: Alterar limites dos eixos x e y, respectivamente. Argumento do tipo vetor com dois valores, sendo o primeiro valor o mínimo e o segundo o valor máximo do eixo.
+- `xaxs` e `yaxs`: Alterar o estilo de cálculo dos limites dos eixos x e y, respectivamente. Valores aceitos: “r” (o limite de cada eixo estende por 4% em cada lado do eixo) e “i” (o limite fica exatamente no estabelecido pelos argumentos `xlim` e `ylim` ou pelos dados).
+- `cex.axis`: Altera o tamanho da fonte para os valores dos eixos. Argumento numérico com padrão = 1. Pode ser usado junto com `font.axis` para alterar o tipo de fonte e `col.axis` para alterar a cor.
+
+```r
+plot(dados$x1, dados$y1, 
+     xlab = "Variável preditora", ylab = "Variável resposta",  
+     main = "Anscombe",
+     las = 1, 
+     xlim = c(0, 16), ylim = c(0, 12), 
+     xaxs = "i", yaxs = "i", 
+     cex.axis = 1)
+```
+
+- `xaxp` e `yaxp`: Alterar a posição e quantidade de separadores dos eixos x e y, respectivamente. Argumento do tipo vetor com `c(x1, x2, n)`, onde x1 e x2 são o mínimo e
