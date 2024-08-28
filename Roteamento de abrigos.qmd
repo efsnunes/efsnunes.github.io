@@ -7,14 +7,33 @@ editor: visual
 
 ## MEU PRIMEIRO SLIDE
 
-
-
+\[![](https://s2-g1.glbimg.com/67H_n7GDefoflz7wtkVkm6Aobjs=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/Z/4/oLeOGLTlqvO5SZwTQ9yg/rgs2.jpeg)
 
 ## MEU SEGUNDO SLIDE
 
+\[![](https://minio.scielo.br/documentstore/1678-5142/TjQ34PqPjppqkhwPzFWcbwz/d9f67ed88d98af0124dacc2d461c9b2c5897aa91.gif)
 
+**Logística Humanitária: Resposta e Recuperação em Desastres Naturais**
+
+###### A logística humanitária envolve a organização e coordenação de atividades para fornecer ajuda rápida e eficaz em situações de desastre, como transporte de suprimentos, gestão de estoques e distribuição de recursos essenciais. Esse campo lida com desafios significativos, incluindo infraestrutura precária, condições adversas e a necessidade de garantir equidade no acesso aos recursos. O desastre natural ocorrido em maio de 2024 no sul do Brasil, causado por chuvas intensas e inundações, destacou a importância da logística humanitária eficiente para salvar vidas e minimizar danos. Tecnologias avançadas e colaboração entre organizações são essenciais para melhorar a resposta e a recuperação em situações de emergência.
+
+## MEU TERCEIRO SLIDE
+
+### FORMULAÇÃO MATEMATICA PARA O PROBLEMA DE ROTEAMENTO DE VEICULOS
+
+Minimizar
+
+$z= \sum{i,j}^{}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
+
+Sujeito a:
+
+$\sum{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum{k}^{}y{ik}=m  \quad \text{para} \quad  i=1$
+
+$\sum{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
+
+$\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
 
 ## CONCLUSÃO
 
-```{}
+```         
 ```
