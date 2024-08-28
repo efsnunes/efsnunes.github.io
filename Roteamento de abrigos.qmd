@@ -22,11 +22,10 @@ A logística humanitária organiza e coordena a entrega de ajuda em desastres, e
 Os Problemas de Roteamento de Veículos (PRV) consiste basicamente em determinar rotas para realizar algum tipo de serviço, de maneira que o custo seja mínimo.
 Resolver um PRV, significa procurar a forma de distribuir a um ou mais veículos uma determida lista de compromissos de entrega, associados a determinados pontos, devendo os veículos retornar ao ponto de origem ao final do trabalho.
 
-## MEU TERCEIRO SLIDE
+## FORMULAÇÃO MATEMÁTICA PARA O PROBLEMA DE ROTEAMENTO DE VEÍCULOS
 
-### FORMULAÇÃO MATEMÁTICA PARA O PROBLEMA DE ROTEAMENTO DE VEÍCULOS
+### Minimizar 
 
-Minimizar
 
 $z= \sum{i,j}^{}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
 
@@ -40,5 +39,6 @@ $\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n
 
 ## CONCLUSÃO
 
+Este projeto busca contribuir para a logística humanitária, aplicando técnicas de roteamento e modelos de p-medianas para otimizar o fluxo de redes e minimizar os custos em desastres de inundações. O modelo desenvolvido visa melhorar a eficiência das operações de socorro, fornecendo um framework replicável em outros contextos de desastres naturais. A conclusão deste estudo poderá apoiar a formulação de políticas públicas e estratégias de gerenciamento de desastres, aumentando a resiliência de comunidades vulneráveis e garantindo uma resposta mais eficaz e coordenada em situações de emergência.
 ```         
 ```
