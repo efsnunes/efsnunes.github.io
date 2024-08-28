@@ -5,7 +5,6 @@ format: html
 editor: visual
 ---
 
-html_document: includes: in_header:\|
 
 ```{=html}
 <style>
