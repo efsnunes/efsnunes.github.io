@@ -5,21 +5,26 @@ format: revealjs
 editor: visual
 ---
 
-## MEU PRIMEIRO SLIDE
+## **Logística Humanitária**
 
 \[![](https://s2-g1.glbimg.com/67H_n7GDefoflz7wtkVkm6Aobjs=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/Z/4/oLeOGLTlqvO5SZwTQ9yg/rgs2.jpeg)
 
-## MEU SEGUNDO SLIDE
+## **Logística Humanitária**
 
 \[![](https://minio.scielo.br/documentstore/1678-5142/TjQ34PqPjppqkhwPzFWcbwz/d9f67ed88d98af0124dacc2d461c9b2c5897aa91.gif)
 
-**Logística Humanitária: Resposta e Recuperação em Desastres Naturais**
+**Resposta e Recuperação em Desastres Naturais**
 
-###### A logística humanitária envolve a organização e coordenação de atividades para fornecer ajuda rápida e eficaz em situações de desastre, como transporte de suprimentos, gestão de estoques e distribuição de recursos essenciais. Esse campo lida com desafios significativos, incluindo infraestrutura precária, condições adversas e a necessidade de garantir equidade no acesso aos recursos. O desastre natural ocorrido em maio de 2024 no sul do Brasil, causado por chuvas intensas e inundações, destacou a importância da logística humanitária eficiente para salvar vidas e minimizar danos. Tecnologias avançadas e colaboração entre organizações são essenciais para melhorar a resposta e a recuperação em situações de emergência.
+A logística humanitária organiza e coordena a entrega de ajuda em desastres, enfrentando desafios como infraestrutura precária e condições adversas. As inundações no sul do Brasil em maio de 2024 evidenciaram a importância de uma resposta rápida para salvar vidas e reduzir danos. Tecnologias avançadas e cooperação entre organizações são cruciais para melhorar a eficácia das operações de emergência.
+
+## Problemas de Roteamento de Veículos
+
+Os Problemas de Roteamento de Veículos (PRV) consiste basicamente em determinar rotas para realizar algum tipo de serviço, de maneira que o custo seja mínimo.
+Resolver um PRV, significa procurar a forma de distribuir a um ou mais veículos uma determida lista de compromissos de entrega, associados a determinados pontos, devendo os veículos retornar ao ponto de origem ao final do trabalho.
 
 ## MEU TERCEIRO SLIDE
 
-### FORMULAÇÃO MATEMATICA PARA O PROBLEMA DE ROTEAMENTO DE VEICULOS
+### FORMULAÇÃO MATEMÁTICA PARA O PROBLEMA DE ROTEAMENTO DE VEÍCULOS
 
 Minimizar
 
