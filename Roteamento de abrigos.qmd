@@ -14,6 +14,7 @@ editor: visual
 
 A logística humanitária organiza e coordena as atividades logísticas em operações de ajuda humanitária, abordando desafios como a rápida entrega de suprimentos essenciais em áreas afetadas por desastres. Tais desastres, sejam naturais ou provocados pelo homem, causam significativos danos humanos, materiais e econômicos. Um levantamento no Brasil indicou um alto número de desastres naturais, particularmente de inundações, que têm consequências devastadoras para a sociedade, resultando em fatalidades, feridos e desabrigados. Em maio de 2024, fortes chuvas no sul do Brasil causaram inundações severas, afetando centenas de municípios e milhões de pessoas. Tais eventos destacam a importância de tecnologias avançadas e de uma coordenação eficaz entre organizações para a resposta e recuperação pós-desastres.
 
+
 ### 2. JUSTIFICATIVA
 
 A crescente frequência e severidade dos desastres naturais, como as inundações recentes no Rio Grande do Sul em maio de 2024, evidenciam a necessidade urgente de desenvolver e implementar estratégias eficazes de logística humanitária. Esses eventos sublinham a importância de uma resposta rápida e coordenada para salvar vidas, minimizar danos e apoiar a recuperação das comunidades afetadas. No entanto, os desafios impostos por infraestruturas precárias e condições adversas frequentemente dificultam a entrega eficaz de ajuda humanitária.
@@ -22,11 +23,13 @@ A aplicação de técnicas de otimização de fluxo de redes em operações de s
 
 Este estudo visa fornecer ferramentas e conhecimentos práticos para gestores e tomadores de decisão, promovendo maior resiliência e capacidade de resposta em situações de emergência. Ao implementar técnicas de otimização e estratégias logísticas avançadas, espera-se melhorar a prontidão e a eficiência das respostas a desastres, fortalecendo a capacidade das comunidades de lidar com os impactos de eventos extremos e facilitando a recuperação pós-desastre.
 
+
 ### 3. OBJETIVOS
 
 #### 3.1. Objetivo Geral
 
 Aplicar técnicas de otimização de fluxo de redes para minimizar os custos associados a desastres de inundações, melhorando a eficiência na distribuição de recursos e na alocação de serviços de emergência.
+
 
 #### 3.2. Objetivos Específicos
 
@@ -35,33 +38,39 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos ass
 3.  Avaliar a eficácia do modelo na redução de custos e na eficiência das operações de socorro.
 4.  Propor recomendações para estratégias de logística humanitária baseadas nos resultados.
 
+
 ### 4. METODOLOGIA
 
 #### 4.1. Coleta de Dados
 
-Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise. Mapas geoespaciais serão utilizados para modelagem das áreas afetadas.
+Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise.
+
 
 #### 4.2. Desenvolvimento do Modelo
 
 Um modelo matemático de otimização de fluxo de redes será desenvolvido, incluindo variáveis como disponibilidade de suprimentos, rotas de transporte e demanda por serviços de emergência.
 
+
 #### 4.3. Simulação e Análise
 
 O modelo será simulado usando dados reais das inundações de 2024 no Rio Grande do Sul, focando na eficiência de distribuição e na redução de custos operacionais. Testes de sensibilidade serão realizados para avaliar diferentes cenários.
 
-## Problemas de Localização de P-Medianas
+
+## 5. Problemas de Localização de P-Medianas
 
 Os Problemas de Localização de P-Medianas procuram minimizar a distância média, ou seja, minimizar a soma das menores distâncias dentro de uma região, determinando a localização ideal de ( p ) facilidades (ou centros de serviço) de forma que a demanda total de uma área seja atendida de maneira eficiente. Esses problemas são comumente aplicados em contextos de planejamento urbano, logística de distribuição, e situações de resposta a emergências, onde a meta é reduzir o tempo ou o custo de transporte entre as instalações e os pontos de demanda. A solução do problema envolve escolher ( p ) locais de um conjunto de possíveis locais de instalação para que a soma das distâncias ponderadas (baseadas na demanda) dos pontos de demanda até as instalações mais próximas seja minimizada.
 
-## Problemas de Roteamento de Veículos
+
+## 6. Problemas de Roteamento de Veículos
 
 \[![](https://minio.scielo.br/documentstore/1678-5142/TjQ34PqPjppqkhwPzFWcbwz/d9f67ed88d98af0124dacc2d461c9b2c5897aa91.gif)
 
 Os Problemas de Roteamento de Veículos (PRV) consiste basicamente em determinar rotas para realizar algum tipo de serviço, de maneira que o custo seja mínimo. Resolver um PRV, significa procurar a forma de distribuir a um ou mais veículos uma determida lista de compromissos de entrega, associados a determinados pontos, devendo os veículos retornar ao ponto de origem ao final do trabalho.
 
-## FORMULAÇÃO MATEMÁTICA PARA O PROBLEMA DE ROTEAMENTO DE VEÍCULOS
 
-### Minimizar
+## 7. FORMULAÇÃO MATEMÁTICA PARA O PROBLEMA DE ROTEAMENTO DE VEÍCULOS
+
+Minimizar
 
 $z= \sum{i,j}^{}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
 
@@ -73,14 +82,14 @@ $\sum{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
 
 $\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
 
-### 5. CONCLUSÃO
+### 8. CONCLUSÃO
 
 Este projeto busca contribuir para a logística humanitária ao aplicar técnicas de roteamento e modelos de p-medianas para otimizar o fluxo de redes e minimizar os custos em desastres de inundações. O modelo desenvolvido visa melhorar a eficiência das operações de socorro, oferecendo um framework replicável em outros cenários de desastres naturais. A conclusão deste estudo poderá apoiar a formulação de políticas públicas e estratégias de gerenciamento de desastres, aumentando a resiliência das comunidades vulneráveis e garantindo uma resposta mais coordenada em situações de emergência.
 
 ```         
 ```
 
-## Introdução
+## 1. Introdução
 
 ### Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações
 
@@ -92,92 +101,88 @@ Imagem representativa de inundações no sul do Brasil
 
 Ponto-chave: Introdução à logística humanitária e sua importância em situações de desastres naturais.
 
-## Logística Humanitária
+## 1.1 Logística Humanitária
 
-### O que é Logística Humanitária?
+#### O que é Logística Humanitária?
 
-#### "Organização e coordenação das atividades logísticas em operações de ajuda humanitária. Foco na entrega rápida de suprimentos essenciais em áreas afetadas por desastres."
+Organização e coordenação das atividades logísticas em operações de ajuda humanitária. Foco na entrega rápida de suprimentos essenciais em áreas afetadas por desastres
 
 Imagem/Gráfico: Esquema básico de logística humanitária
 
 \[![](C:\Users\conta\Desktop\estatistica_ambiental\Professora%20Raquel\Trab_Final_Ago\efsnunes.github.io\roteamento.png)
 
-Nota: Desafios enfrentados como infraestrutura precária e condições adversas.
+Desafios enfrentados como infraestrutura precária e condições adversas.
 
-## Impacto das Inundações no Sul do Brasil
+## 1.2 Impacto das Inundações no Sul do Brasil
 
-### Contexto das Inundações em Maio de 2024
+#### Contexto das Inundações em Maio de 2024
 
-#### "Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz."
+Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz.
 
 \[![](https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg)
 
-Nota: Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
+Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
 
-## Justificativa do Estudo
+## 2. Justificativa
 
-### Por que este Estudo é Importante?
+#### Por que este Estudo é Importante?
 
-#### "Aumentar a eficiência na distribuição de recursos e minimizar custos em operações de socorro. Melhorar a resiliência das comunidades afetadas."
+Aumentar a eficiência na distribuição de recursos e minimizar custos em operações de socorro. Melhorar a resiliência das comunidades afetadas
 
 \[![](https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg)
 
-Nota: Necessidade de estratégias eficazes de logística humanitária.
+Necessidade de estratégias eficazes de logística humanitária.
 
-## Objetivos do Projeto
+## 3. Objetivos
 
-### Objetivo Geral:
+### 3.1 Objetivo Geral:
 
-"Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de resposta a desastres."
+Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de resposta a desastres.
 
-### Objetivos Específicos:
+### 3.2 Objetivos Específicos:
 
 ```         
-Analisar padrões de inundações. 
-Desenvolver um modelo de otimização de fluxo de redes. 
-Avaliar a eficácia do modelo. 
-Propor recomendações para estratégias de logística humanitária.
+1.Analisar padrões de inundações. 
+2.Desenvolver um modelo de otimização de fluxo de redes. 
+3.Avaliar a eficácia do modelo. 
+4.Propor recomendações para estratégias de logística humanitária.
 ```
 
-## Metodologia
+## 4. Metodologia
 
-### Metodologia do Estudo
+#### 4.1 Coleta de Dados:
 
-#### Coleta de Dados:
+Dados meteorológicos, de desastres, mapas e informações de infraestrutura.
 
-"Dados meteorológicos, de desastres, mapas e informações de infraestrutura."
+#### 4.2 Desenvolvimento do Modelo:
 
-#### Desenvolvimento do Modelo:
+Modelo de otimização de fluxo de redes com variáveis-chave.
 
-"Modelo de otimização de fluxo de redes com variáveis-chave."
+#### 4.3 Simulação e Análise:
 
-#### Simulação e Análise:
+Uso de dados reais de inundações para avaliar eficiência e custos.
 
-"Uso de dados reais de inundações para avaliar eficiência e custos."
+## 5. Problemas de Localização de P-Medianas
 
-## Problemas de Localização de P-Medianas
-
-### "Minimização da distância média e identificação de locais ideais para centros de distribuição."
+Minimização da distância média e identificação de locais ideais para centros de distribuição.
 
 \[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/p-medianas.png)
 
-Imagem: Esquema de p-medianas aplicadas a um mapa de uma região afetada
+Esquema de p-medianas aplicadas a um mapa de uma região afetada
 
-#### Aplicações em planejamento urbano e resposta a emergências.
+## 6. Problemas de Roteamento de Veículos (PRV)
 
-## Problemas de Roteamento de Veículos (PRV)
-
-### "Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos."
+Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos.
 
 [![](https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg)
 
-Imagem/Gráfico: Exemplo de rotas otimizadas para veículos de socorro
+Exemplo de rotas otimizadas para veículos de socorro
 
-Nota: Importância do PRV na logística humanitária.
+Importância do PRV na logística humanitária.
 
-## Formulação Matemática para PRV
+## 7. Formulação Matemática para PRV
 
-### Exibição das equações matemáticas de minimização de custos e restrições do modelo.
+Exibição das equações matemáticas de minimização de custos e restrições do modelo.
 
 $z= \sum{i,j}^{}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
 
@@ -189,30 +194,28 @@ $\sum{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
 
 $\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
 
-Imagem: Fórmula do PRV mostrada visualmente Nota:
+Fórmula do PRV mostrada visualmente Nota:
 
 Explicação básica sobre como a fórmula é aplicada na prática.
 
-## Conclusão
+## 8. Conclusão
 
-### Conclusões do Projeto:
-
-"Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logística humanitária, aumentar a eficiência e reduzir custos em desastres."
+Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logística humanitária, aumentar a eficiência e reduzir custos em desastres.
 
 [![](https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png)
 
 [![](https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLH.png)
 
-Imagem: Infográfico de impacto positivo na comunidade
+Infográfico de impacto positivo na comunidade
 
-Nota: Implicações para políticas públicas e estratégias de gestão de desastres.
+Implicações para políticas públicas e estratégias de gestão de desastres.
 
-## Próximos Passos e Recomendações
+## 9. Recomendações
 
-### "Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados."
+Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados.
 
 [![](https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png)
 
-Imagem: Roda de melhorias contínuas ou gráfico de impacto esperado
+Roda de melhorias contínuas ou gráfico de impacto esperado
 
-Nota: Importância de feedback constante e adaptação das estratégias.
+Importância de feedback constante e adaptação das estratégias.
