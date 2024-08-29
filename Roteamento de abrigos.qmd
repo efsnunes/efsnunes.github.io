@@ -110,6 +110,8 @@ Nota: Desafios enfrentados como infraestrutura precária e condições adversas.
 
 #### "Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz."
 
+[![](https://github.com/efsnunes/efsnunes.github.io/blob/main/mapaRS.jpeg)
+
 \[![](https://pbs.twimg.com/media/GNURlrhWoAAfD_b?format=jpg)
 
 Nota: Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
