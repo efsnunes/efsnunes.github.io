@@ -110,9 +110,7 @@ Nota: Desafios enfrentados como infraestrutura precária e condições adversas.
 
 #### "Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz."
 
-[![](https://github.com/efsnunes/efsnunes.github.io/blob/main/mapaRS.jpeg)
-
-\[![](https://pbs.twimg.com/media/GNURlrhWoAAfD_b?format=jpg)
+[![](https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg)
 
 Nota: Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
 
@@ -122,7 +120,7 @@ Nota: Dados sobre os municípios afetados, número de pessoas impactadas, ferido
 
 #### "Aumentar a eficiência na distribuição de recursos e minimizar custos em operações de socorro. Melhorar a resiliência das comunidades afetadas."
 
-Imagem de operações de socorro em andamento
+[![](https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg)
 
 Nota: Necessidade de estratégias eficazes de logística humanitária.
 
@@ -160,6 +158,8 @@ Propor recomendações para estratégias de logística humanitária.
 ## Problemas de Localização de P-Medianas
 
 ### "Minimização da distância média e identificação de locais ideais para centros de distribuição."
+
+[![](https://github.com/efsnunes/efsnunes.github.io/blob/main/p-medianas.png)
 
 Imagem/Diagrama: Esquema de p-medianas aplicadas a um mapa de uma região afetada
 
