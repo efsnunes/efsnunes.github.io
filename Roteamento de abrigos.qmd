@@ -110,7 +110,7 @@ Nota: Desafios enfrentados como infraestrutura precária e condições adversas.
 
 #### "Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz."
 
-[![](https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg)
+\[![](https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg)
 
 Nota: Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
 
@@ -120,7 +120,7 @@ Nota: Dados sobre os municípios afetados, número de pessoas impactadas, ferido
 
 #### "Aumentar a eficiência na distribuição de recursos e minimizar custos em operações de socorro. Melhorar a resiliência das comunidades afetadas."
 
-[![](https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg)
+\[![](https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg)
 
 Nota: Necessidade de estratégias eficazes de logística humanitária.
 
@@ -159,15 +159,17 @@ Propor recomendações para estratégias de logística humanitária.
 
 ### "Minimização da distância média e identificação de locais ideais para centros de distribuição."
 
-[![](https://github.com/efsnunes/efsnunes.github.io/blob/main/p-medianas.png)
+\[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/p-medianas.png)
 
-Imagem/Diagrama: Esquema de p-medianas aplicadas a um mapa de uma região afetada
+Imagem: Esquema de p-medianas aplicadas a um mapa de uma região afetada
 
 #### Aplicações em planejamento urbano e resposta a emergências.
 
 ## Problemas de Roteamento de Veículos (PRV)
 
 ### "Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos."
+
+[![](https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg)
 
 Imagem/Gráfico: Exemplo de rotas otimizadas para veículos de socorro
 
@@ -176,6 +178,16 @@ Nota: Importância do PRV na logística humanitária.
 ## Formulação Matemática para PRV
 
 ### Exibição das equações matemáticas de minimização de custos e restrições do modelo.
+
+$z= \sum{i,j}^{}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
+
+Sujeito a:
+
+$\sum{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum{k}^{}y{ik}=m  \quad \text{para} \quad  i=1$
+
+$\sum{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
+
+$\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
 
 Imagem: Fórmula do PRV mostrada visualmente Nota:
 
@@ -187,13 +199,19 @@ Explicação básica sobre como a fórmula é aplicada na prática.
 
 "Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logística humanitária, aumentar a eficiência e reduzir custos em desastres."
 
-Imagem/Gráfico: Infográfico de impacto positivo na comunidade
+[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png)
+
+[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLH.png)
+
+Imagem: Infográfico de impacto positivo na comunidade
 
 Nota: Implicações para políticas públicas e estratégias de gestão de desastres.
 
 ## Próximos Passos e Recomendações
 
 ### "Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados."
+
+[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png)
 
 Imagem: Roda de melhorias contínuas ou gráfico de impacto esperado
 
