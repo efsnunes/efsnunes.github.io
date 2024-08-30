@@ -338,10 +338,11 @@ Edison Fernando da Silva Nunes
 </div>
 
 </section>
-<section id="logística-humanitária" class="slide level2">
-<h2><strong>Logística Humanitária</strong></h2>
-<p>[<img data-src="https://s2-g1.glbimg.com/67H_n7GDefoflz7wtkVkm6Aobjs=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/Z/4/oLeOGLTlqvO5SZwTQ9yg/rgs2.jpeg"></p>
+<section class="slide level2">
+
 <h3 id="introdução">1. INTRODUÇÃO</h3>
+<h3 id="logística-humanitária">Logística Humanitária</h3>
+<p>[<img data-src="https://s2-g1.glbimg.com/67H_n7GDefoflz7wtkVkm6Aobjs=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/Z/4/oLeOGLTlqvO5SZwTQ9yg/rgs2.jpeg"></p>
 <p>A logística humanitária organiza e coordena as atividades logísticas em operações de ajuda humanitária, abordando desafios como a rápida entrega de suprimentos essenciais em áreas afetadas por desastres. Tais desastres, sejam naturais ou provocados pelo homem, causam significativos danos humanos, materiais e econômicos. Um levantamento no Brasil indicou um alto número de desastres naturais, particularmente de inundações, que têm consequências devastadoras para a sociedade, resultando em fatalidades, feridos e desabrigados. Em maio de 2024, fortes chuvas no sul do Brasil causaram inundações severas, afetando centenas de municípios e milhões de pessoas. Tais eventos destacam a importância de tecnologias avançadas e de uma coordenação eficaz entre organizações para a resposta e recuperação pós-desastres.</p>
 <h3 id="justificativa">2. JUSTIFICATIVA</h3>
 <p>A crescente frequência e severidade dos desastres naturais, como as inundações recentes no Rio Grande do Sul em maio de 2024, evidenciam a necessidade urgente de desenvolver e implementar estratégias eficazes de logística humanitária. Esses eventos sublinham a importância de uma resposta rápida e coordenada para salvar vidas, minimizar danos e apoiar a recuperação das comunidades afetadas. No entanto, os desafios impostos por infraestruturas precárias e condições adversas frequentemente dificultam a entrega eficaz de ajuda humanitária.</p>
@@ -351,12 +352,10 @@ Edison Fernando da Silva Nunes
 <h4 id="objetivo-geral">3.1. Objetivo Geral</h4>
 <p>Aplicar técnicas de otimização de fluxo de redes para minimizar os custos associados a desastres de inundações, melhorando a eficiência na distribuição de recursos e na alocação de serviços de emergência.</p>
 <h4 id="objetivos-específicos">3.2. Objetivos Específicos</h4>
-<ol type="1">
-<li>Analisar os padrões de inundações na região sul do Brasil.</li>
-<li>Desenvolver um modelo de otimização de fluxo de redes para desastres naturais.</li>
-<li>Avaliar a eficácia do modelo na redução de custos e na eficiência das operações de socorro.</li>
-<li>Propor recomendações para estratégias de logística humanitária baseadas nos resultados.</li>
-</ol>
+<pre><code>1.  Analisar os padrões de inundações na região sul do Brasil.
+2.  Desenvolver um modelo de otimização de fluxo de redes para desastres naturais.
+3.  Avaliar a eficácia do modelo na redução de custos e na eficiência das operações de socorro.
+4.  Propor recomendações para estratégias de logística humanitária baseadas nos resultados.</code></pre>
 <h3 id="metodologia">4. METODOLOGIA</h3>
 <h4 id="coleta-de-dados">4.1. Coleta de Dados</h4>
 <p>Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise.</p>
@@ -381,8 +380,12 @@ Edison Fernando da Silva Nunes
 <p>Sujeito a:</p>
 <p><span class="math inline">\(\sum{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum{k}^{}y{ik}=m  \quad \text{para} \quad  i=1\)</span></p>
 <p><span class="math inline">\(\sum{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m\)</span></p>
-<p><span class="math inline">\(\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m\)</span> <span class="math inline">\(y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m\)</span> <span class="math inline">\(x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m\)</span></p>
-<h3 id="conclusão">8. CONCLUSÃO</h3>
+<p><span class="math inline">\(\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m\)</span></p>
+<p><span class="math inline">\(y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m\)</span></p>
+<p><span class="math inline">\(x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m\)</span></p>
+</section>
+<section id="conclusão" class="slide level2">
+<h2>8. CONCLUSÃO</h2>
 <p>Este projeto busca contribuir para a logística humanitária ao aplicar técnicas de roteamento e modelos de p-medianas para otimizar o fluxo de redes e minimizar os custos em desastres de inundações. O modelo desenvolvido visa melhorar a eficiência das operações de socorro, oferecendo um framework replicável em outros cenários de desastres naturais. A conclusão deste estudo poderá apoiar a formulação de políticas públicas e estratégias de gerenciamento de desastres, aumentando a resiliência das comunidades vulneráveis e garantindo uma resposta mais coordenada em situações de emergência.</p>
 <pre><code></code></pre>
 </section>
@@ -399,7 +402,7 @@ Edison Fernando da Silva Nunes
 <h4 id="o-que-é-logística-humanitária">O que é Logística Humanitária?</h4>
 <p>Organização e coordenação das atividades logísticas em operações de ajuda humanitária. Foco na entrega rápida de suprimentos essenciais em áreas afetadas por desastres</p>
 <p>Imagem/Gráfico: Esquema básico de logística humanitária</p>
-<p>[<img data-src="C:\Users\conta\Desktop\estatistica_ambiental\Professora%20Raquel\Trab_Final_Ago\efsnunes.github.io\roteamento.png"></p>
+<p>[<img data-src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png"></p>
 <p>Desafios enfrentados como infraestrutura precária e condições adversas.</p>
 </section>
 <section id="impacto-das-inundações-no-sul-do-brasil" class="slide level2">
@@ -462,7 +465,7 @@ Edison Fernando da Silva Nunes
 <section id="conclusão-1" class="slide level2">
 <h2>8. Conclusão</h2>
 <p>Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logística humanitária, aumentar a eficiência e reduzir custos em desastres.</p>
-<p>[<img data-src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png"></p>
+<p>[</p>
 <p>[<img data-src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLH.png"></p>
 <p>Infográfico de impacto positivo na comunidade</p>
 <p>Implicações para políticas públicas e estratégias de gestão de desastres.</p>
@@ -471,8 +474,6 @@ Edison Fernando da Silva Nunes
 <h2>9. Recomendações</h2>
 <p>Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados.</p>
 <p>[<img data-src="https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png"></p>
-<p>Roda de melhorias contínuas ou gráfico de impacto esperado</p>
-<p>Importância de feedback constante e adaptação das estratégias.</p>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
