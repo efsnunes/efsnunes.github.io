@@ -23,6 +23,8 @@ editor: visual
 
 ![Gráfico](https://github.com/efsnunes/MinhaPagina/blob/main/ima_estac.png?raw=true)
 
+[Minha Apresentação](https://github.com/efsnunes/efsnunes.github.io/blob/main/Roteamento%20de%20abrigos.qmd)
+
 ```{r}
 tabela <- read.csv("https://raw.githubusercontent.com/efsnunes/efsnunes.github.io/main/mostardas.csv")
 library(knitr)
