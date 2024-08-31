@@ -296,3 +296,8 @@ Implicações para políticas públicas e estratégias de gestão de desastres.
 Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados.
 
 \[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png)
+
+```{r}
+
+```
+

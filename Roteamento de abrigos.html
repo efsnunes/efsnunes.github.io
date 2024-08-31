@@ -404,7 +404,9 @@ Edison Fernando da Silva Nunes
 </section>
 <section id="problemas-de-localização-de-p-medianas" class="slide level2">
 <h2>5. Problemas de Localização de P-Medianas</h2>
-<p>Os Problemas de Localização de P-Medianas procuram minimizar a distância média, ou seja, minimizar a soma das menores distâncias dentro de uma região, determinando a localização ideal de ( p ) facilidades (ou centros de serviço) de forma que a demanda total de uma área seja atendida de maneira eficiente.</p>
+</section>
+<section id="os-problemas-de-localização-de-p-medianas-procuram-minimizar-a-distância-média-ou-seja-minimizar-a-soma-das-menores-distâncias-dentro-de-uma-região-determinando-a-localização-ideal-de-p-facilidades-ou-centros-de-serviço-de-forma-que-a-demanda-total-de-uma-área-seja-atendida-de-maneira-eficiente." class="slide level2">
+<h2>Os Problemas de Localização de P-Medianas procuram minimizar a distância média, ou seja, minimizar a soma das menores distâncias dentro de uma região, determinando a localização ideal de ( p ) facilidades (ou centros de serviço) de forma que a demanda total de uma área seja atendida de maneira eficiente.</h2>
 </section>
 <section id="problemas-de-localização-de-p-medianas-1" class="slide level2">
 <h2>5. Problemas de Localização de P-Medianas</h2>
@@ -770,6 +772,82 @@ Edison Fernando da Silva Nunes
         ]
       });
     </script>
+    
+
+    <script>
+
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+
+      // slide changes (different for each slide format).
+
+      (function () {
+
+        // dispatch for htmlwidgets
+
+        function fireSlideEnter() {
+
+          const event = window.document.createEvent("Event");
+
+          event.initEvent("slideenter", true, true);
+
+          window.document.dispatchEvent(event);
+
+        }
+
+    
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+
+          fireSlideEnter();
+
+    
+
+          // dispatch for shiny
+
+          if (window.jQuery) {
+
+            if (previousSlide) {
+
+              window.jQuery(previousSlide).trigger("hidden");
+
+            }
+
+            if (currentSlide) {
+
+              window.jQuery(currentSlide).trigger("shown");
+
+            }
+
+          }
+
+        }
+
+    
+
+        // hookup for slidy
+
+        if (window.w3c_slidy) {
+
+          window.w3c_slidy.add_observer(function (slide_num) {
+
+            // slide_num starts at position 1
+
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+
+          });
+
+        }
+
+    
+
+      })();
+
+    </script>
+
+    
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

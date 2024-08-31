@@ -68,6 +68,7 @@ Aqui você encontrará informações sobre o mestrado em Ambientometria e Músic
 
 <a href="previsãodotempo.html" style = "color: white;">Previsão do Tempo</a>
 
+<a href="Roteamento de abrigos.html" style = "color: white;">Roteamento de abrigos</a>
 
 
 
