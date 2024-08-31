@@ -93,7 +93,7 @@ O modelo será simulado usando dados reais das inundações de 2024 no Rio Grand
 
 ## 5. Problemas de Localização de P-Medianas
 
-## Os Problemas de Localização de P-Medianas procuram minimizar a distância média, ou seja, minimizar a soma das menores distâncias dentro de uma região, determinando a localização ideal de ( p ) facilidades (ou centros de serviço) de forma que a demanda total de uma área seja atendida de maneira eficiente.
+Os Problemas de Localização de P-Medianas procuram minimizar a distância média, ou seja, minimizar a soma das menores distâncias dentro de uma região, determinando a localização ideal de ( p ) facilidades (ou centros de serviço) de forma que a demanda total de uma área seja atendida de maneira eficiente.
 
 ## 5. Problemas de Localização de P-Medianas
 
@@ -218,8 +218,7 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 
 #### 4.1 Coleta de Dados:
 
-Dados meteorológicos, de desastres, mapas e informações de infraestrutura.
-
+Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise.
 ---
 
 ## 4. Metodologia
@@ -234,7 +233,6 @@ Modelo de otimização de fluxo de redes com variáveis-chave.
 #### 4.3 Simulação e Análise:
 
 Uso de dados reais de inundações para avaliar eficiência e custos.
-
 ---
 
 ## 5. Problemas de Localização de P-Medianas
@@ -302,4 +300,3 @@ Implementação prática das técnicas estudadas, formação de parcerias com ag
 ```{r}
 
 ```
-
