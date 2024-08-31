@@ -219,6 +219,7 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 #### 4.1 Coleta de Dados:
 
 Dados meteorológicos, de desastres, mapas e informações de infraestrutura.
+
 ---
 
 ## 4. Metodologia
@@ -233,6 +234,7 @@ Modelo de otimização de fluxo de redes com variáveis-chave.
 #### 4.3 Simulação e Análise:
 
 Uso de dados reais de inundações para avaliar eficiência e custos.
+
 ---
 
 ## 5. Problemas de Localização de P-Medianas
