@@ -82,13 +82,9 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 4.Propor recomendações para estratégias de logística humanitária.
 ```
 
----
-## 4. Metodologia
+------------------------------------------------------------------------
 
-#### 4.1 Coleta de Dados:
-
-Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise.
----
+------------------------------------------------------------------------
 
 ## 4. Metodologia
 
@@ -98,10 +94,6 @@ Modelo de otimização de fluxo de redes com variáveis-chave.
 
 ---
 ## 4. Metodologia
-
-#### 4.3 Simulação e Análise:
-
-Uso de dados reais de inundações para avaliar eficiência e custos.
 ---
 
 ## 5. Problemas de Localização de P-Medianas

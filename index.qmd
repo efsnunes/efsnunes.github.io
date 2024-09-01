@@ -70,6 +70,7 @@ Aqui você encontrará informações sobre o mestrado em Ambientometria e Músic
 
 <a href="Roteamento de abrigos.html" style = "color: white;">Roteamento de abrigos</a>
 
+<a href="slides roteamento.html" style = "color: white;">Apresentação dos slides roteamento</a>
 
 
 
