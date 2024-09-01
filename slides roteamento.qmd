@@ -4,7 +4,6 @@ author: "Edison Fernando da Silva Nunes"
 format: revealjs
 editor: visual
 ---
-
 ## 1. Introdução
 
 ### Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações
