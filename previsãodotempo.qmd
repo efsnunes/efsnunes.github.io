@@ -5,10 +5,28 @@ format: html
 editor: visual
 ---
 
-[![]([https://github.com/efsnunes/efsnunes.github.io/raw/main/metsul.png)
+[![](https://raw.githubusercontent.com/efsnunes/efsnunes.github.io/main/metsul.png){.absolute width="50%"}](https://www.metsul.com)
 
-[Previsão do Tempo](https://metsul.com/previsao/rs/rio-grande/)
 
-[![](https://i.pinimg.com/564x/3c/f7/94/3cf794fe42cd0b2c6d781e0e0dd6b4bb.jpg){.absolute width="10%"}](pagina3.html)
+<div>
+  <ul class="pagination">
+  <li class="page-item disabled">
+  <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&laquo;</font></font></a>
+  </li>
+  <li class="page-item active">
+  <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></a>
+   </li>
+   <li class="page-item">
+   <a class="page-link" href="pagina2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></a>
+   </li>
+   <li class="page-item">
+   <a class="page-link" href="pagina3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></a>
+   </li>
+   <li class="page-item">
+   <a class="page-link" href="pagina4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a>
+   </li>
+   </li>
+  </ul>
+</div>
+<div>
 
-[![](https://i.pinimg.com/736x/69/f3/a1/69f3a1814bae7a531d75722d21498a77.jpg){.absolute width="10%"}](index.html)
