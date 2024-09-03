@@ -25,7 +25,7 @@ css: styles.css
 
 #### O que é Logística Humanitária?
 
-Organização e coordenação das atividades logísticas em operações de ajuda humanitária. Foco na entrega rápida de suprimentos essenciais em áreas afetadas por desastres
+Organização e coordenação das atividades logísticas em operações de ajuda humanitária. Foco na entrega rápida de suprimentos essenciais em áreas afetadas por desastres.
 
 <div style="text-align: center;">
   <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png" alt="Descrição da Imagem" style="width: 30%;">
