@@ -3,7 +3,7 @@ title: "Apresentação Roteamento dos Abrigos"
 author: "Edison Fernando da Silva Nunes"
 format: revealjs
 editor: visual
-theme: simple
+theme: beige
 css: styles.css
 ---
 
