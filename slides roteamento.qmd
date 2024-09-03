@@ -4,69 +4,104 @@ author: "Edison Fernando da Silva Nunes"
 format: revealjs
 editor: visual
 theme: beige
+transition: convex
 css: styles.css
+slide-number: true
 ---
+## **[Sumário](#sumário)**
 
-## 1. Introdução
+**[Introdução](#Introdução)**
+
+**[Logística Humanitária](#Logística Humanitária)**
+
+**[Justificativa](#Justificativa)**
+
+**[Objetivos](#Objetivos)**
+
+**[Metodologia](#Metodologia)**
+
+**[Problemas de Localização de P-Medianas](#Problemas de Localização de P-Medianas)**
+
+**[Problemas de Roteamento de Veículos](#Problemas de Roteamento de Veículos)**
+
+**[Formulação Matemática para PRV](#Formulação Matemática para PRV)**
+
+**[Conclusão](#Conclusão)**
+
+**[Recomendação](#Recomendação)**
+
+
+## 1. Introdução {#Introdução}
 
 ### Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações.
 
 #### Foco na criação de um centro de distribuição para atender abrigos em situações de emergência.
 
+::: {style="text-align: center;"}
+<img src="https://www.rbsdirect.com.br/filestore/7/7/1/7/1/8/4_b5dab759f432dfb/4817177_55d7fe199d70eeb.jpg?w=1400" alt="Descrição da Imagem" style="width: 35%;"/>
+:::
 
-<div style="text-align: center;">
-  <img src="https://www.rbsdirect.com.br/filestore/7/7/1/7/1/8/4_b5dab759f432dfb/4817177_55d7fe199d70eeb.jpg?w=1400" alt="Descrição da Imagem" style="width: 35%;">
-</div>
-<p style="text-align: center;">Imagem representativa de inundações no sul do Brasil.</p>
+<p style="text-align: center;">
+
+Imagem representativa de inundações no sul do Brasil.
+
+</p>
 
 ------------------------------------------------------------------------
 
-## 1.1 Logística Humanitária
+## 1.1 Logística Humanitária {#Logística Humanitária}
 
 #### O que é Logística Humanitária?
 
 Organização e coordenação das atividades logísticas em operações de ajuda humanitária. Foco na entrega rápida de suprimentos essenciais em áreas afetadas por desastres.
 
-<div style="text-align: center;">
-  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png" alt="Descrição da Imagem" style="width: 30%;">
-</div>
+::: {style="text-align: center;"}
+<img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png" alt="Descrição da Imagem" style="width: 30%;"/>
+:::
 
-<p style="text-align: center;">Esquema básico de logística humanitária.</p>
+<p style="text-align: center;">
 
+Esquema básico de logística humanitária.
+
+</p>
 
 ## 1.2 Impacto das Inundações no Sul do Brasil
 
 #### Contexto das Inundações em Maio de 2024
 
-Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz. 
+Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz.
 
-<div style="text-align: center;">
-  <img src="https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg" alt="Descrição da Imagem" style="width: 30%;">
-</div>
+::: {style="text-align: center;"}
+<img src="https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg" alt="Descrição da Imagem" style="width: 30%;"/>
+:::
 
-<p style="text-align: center;">Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.</p>
+<p style="text-align: center;">
+
+Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
+
+</p>
 
 ------------------------------------------------------------------------
 
-## 2. Justificativa
+## 2. Justificativa {Justificativa}
 
 #### Por que este Estudo é Importante?
 
 Aumentar a eficiência na distribuição de recursos e minimizar custos em operações de socorro. Melhorar a resiliência das comunidades afetadas
 
-<div style="text-align: center;">
-  <img src="https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg" alt="Descrição da Imagem" style="width: 50%;">
-</div>
+::: {style="text-align: center;"}
+<img src="https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg" alt="Descrição da Imagem" style="width: 50%;"/>
+:::
 
-<p style="text-align: center;">Necessidade de estratégias eficazes de logística humanitária.</p>
+<p style="text-align: center;">
 
+Necessidade de estratégias eficazes de logística humanitária.
 
-
-
+</p>
 
 ------------------------------------------------------------------------
 
-## 3. Objetivos
+## 3. Objetivos {Objetivos}
 
 ### 3.1 Objetivo Geral:
 
@@ -85,7 +120,7 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 4.Propor recomendações para estratégias de logística humanitária.
 ```
 
-## 4. METODOLOGIA
+## 4. Metodologia {Metodologia}
 
 #### 4.1. Coleta de Dados
 
@@ -97,102 +132,134 @@ Dados meteorológicos, relatórios de desastres e informações sobre infraestru
 
 Modelo de otimização de fluxo de redes com variáveis-chave.
 
-## 4. METODOLOGIA
+## 4. Metodologia
 
 #### 4.3. Simulação e Análise
 
 O modelo será simulado usando dados reais das inundações de 2024 no Rio Grande do Sul, focando na eficiência de distribuição e na redução de custos operacionais. Testes de sensibilidade serão realizados para avaliar diferentes cenários.
 
-## 5. Problemas de Localização de P-Medianas
+## 5. Problemas de Localização de P-Medianas {Problemas de Localização de P-Medianas}
 
-Minimização da distância média e identificação de locais ideais para centros de distribuição. 
-<div style="text-align: center;">
-  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/p-medianas.png" alt="Descrição da Imagem" style="width: 50%;">
-</div>
+Minimização da distância média e identificação de locais ideais para centros de distribuição.
 
-<p style="text-align: center;">Esquema de p-medianas aplicadas a um mapa de uma região afetada.</p>
+::: {style="text-align: center;"}
+<img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/p-medianas.png" alt="Descrição da Imagem" style="width: 50%;"/>
+:::
 
+<p style="text-align: center;">
 
-## 6. Problemas de Roteamento de Veículos (PRV)
+Esquema de p-medianas aplicadas a um mapa de uma região afetada.
+
+</p>
+
+## 6. Problemas de Roteamento de Veículos (PRV) {Problemas de Roteamento de Veículos}
 
 Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos.
 
-<div style="text-align: center;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg" alt="Descrição da Imagem" style="width: 50%;">
-</div>
+::: {style="text-align: center;"}
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg" alt="Descrição da Imagem" style="width: 50%;"/>
+:::
 
-<p style="text-align: center;">Exemplo de rotas otimizadas para veículos de socorro
-.</p>
-<p style="text-align: center;">Importância do PRV na logística humanitária.</p>
+<p style="text-align: center;">
 
+Exemplo de rotas otimizadas para veículos de socorro .
+
+</p>
+
+<p style="text-align: center;">
+
+Importância do PRV na logística humanitária.
+
+</p>
 
 ------------------------------------------------------------------------
 
-## 7. Formulação Matemática para PRV
+## 7. Formulação Matemática para PRV {Formulação Matemática para PRV}
 
 Exibição das equações matemáticas de minimização de custos e restrições do modelo.
 
-$z= \sum{i,j}^{}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
+$z= \sum_{i,j}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
 
 Sujeito a:
 
-$\sum{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum{k}^{}y{ik}=m  \quad \text{para} \quad  i=1$
+$\sum_{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum{k}^{}y{ik}=m  \quad \text{para} \quad  i=1$
 
-$\sum{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
+$\sum_{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
 
-$\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
-
+$\sum_{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
 
 ------------------------------------------------------------------------
 
-## 8. Conclusão
+## 8. Conclusão {Conclusão}
 
 Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logística humanitária, aumentar a eficiência e reduzir custos em desastres.
 
-<div style="text-align: center;">
-  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLH.png" alt="Descrição da Imagem" style="width: 50%;">
-</div>
+::: {style="text-align: center;"}
+<img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLH.png" alt="Descrição da Imagem" style="width: 50%;"/>
+:::
 
-<p style="text-align: center;">Infográfico de impacto positivo na comunidade.</p>
-<p style="text-align: center;">Implicações para políticas públicas e estratégias de gestão de desastres.</p>
+<p style="text-align: center;">
 
+Infográfico de impacto positivo na comunidade.
 
+</p>
 
+<p style="text-align: center;">
 
+Implicações para políticas públicas e estratégias de gestão de desastres.
 
-
+</p>
 
 ------------------------------------------------------------------------
 
-## 9. Recomendações
+## 9. Recomendações {Recomendação}
 
 Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados.
 
 <div style="text-align: center;">
-  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png" alt="Descrição da Imagem" style="width: 50%;">
 
-
+<img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png" alt="Descrição da Imagem" style="width: 50%;"/>
 
 <div>
+
 <ul class="pagination">
+
 <li class="page-item disabled">
+
 <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">«</font></font></a>
+
 </li>
+
 <li class="page-item active">
+
 <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></a>
+
 </li>
+
 <li class="page-item">
+
 <a class="page-link" href="pagina2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></a>
+
 </li>
+
 <li class="page-item">
+
 <a class="page-link" href="pagina3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></a>
+
 </li>
+
 <li class="page-item">
+
 <a class="page-link" href="pagina4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a>
+
 </li>
+
 </li>
+
 </ul>
+
 </div>
+
 <div>
 
 ```{r}
