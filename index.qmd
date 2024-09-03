@@ -66,11 +66,11 @@ Aqui você encontrará informações sobre o mestrado em Ambientometria e Músic
 
 <a href="previsãodotempo.html" style = "color: white;">Previsão do Tempo</a>
 
-<a href=""C:\Users\conta\Desktop\estatistica_ambiental\Professor Mauricio\efsnunes.github.io\projetosbombeiros\Roteamento\Roteamento.pdf"" style = "color: white;">Roteamento de abrigos</a>
+<a href="Roteamento de abrigos.html" style = "color: white;">Roteamento de abrigos</a>
 
 <a href="slides roteamento.html" style = "color: white;">Apresentação dos slides roteamento</a>
 
-<a href="/projetosbombeiros/Roteamento/Roteamento.PDF" style = "color: white;">Apresentaçãodo Roteamento em PDF</a>
+<a href="\projetosbombeiros\Roteamento\Roteamento.pdf" style = "color: white;">Apresentaçãodo Roteamento em PDF</a>
 
 <div>
 
