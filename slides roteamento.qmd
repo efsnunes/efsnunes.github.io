@@ -7,19 +7,19 @@ theme: simple
 css: styles.css
 ---
 
-
-
 ## 1. Introdução
 
 ### Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações
 
-#### Foco na criação de um centro de distribuição para atender abrigos em situações de emergência Imagem de fundo:
+#### Foco na criação de um centro de distribuição para atender abrigos em situações de emergência.
 
-Imagem representativa de inundações no sul do Brasil
 
-[![](https://www.rbsdirect.com.br/filestore/7/7/1/7/1/8/4_b5dab759f432dfb/4817177_55d7fe199d70eeb.jpg?w=1400){width="30%"}]
+<div style="text-align: center;">
+  <img src="https://www.rbsdirect.com.br/filestore/7/7/1/7/1/8/4_b5dab759f432dfb/4817177_55d7fe199d70eeb.jpg?w=1400" alt="Descrição da Imagem" style="width: 35%;">
+</div>
+<p style="text-align: center;">Imagem representativa de inundações no sul do Brasil.</p>
 
-Ponto-chave: Introdução à logística humanitária e sua importância em situações de desastres naturais.
+------------------------------------------------------------------------
 
 ## 1.1 Logística Humanitária
 
@@ -27,25 +27,24 @@ Ponto-chave: Introdução à logística humanitária e sua importância em situa
 
 Organização e coordenação das atividades logísticas em operações de ajuda humanitária. Foco na entrega rápida de suprimentos essenciais em áreas afetadas por desastres
 
-\[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png) Esquema básico de logística humanitária
+<div style="text-align: center;">
+  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLHtempo.png" alt="Descrição da Imagem" style="width: 30%;">
+</div>
 
-Desafios enfrentados como infraestrutura precária e condições adversas.
+<p style="text-align: center;">Esquema básico de logística humanitária.</p>
 
-## 1.2 Impacto das Inundações no Sul do Brasil
-
-#### Contexto das Inundações em Maio de 2024
-
-Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz.
-
-------------------------------------------------------------------------
 
 ## 1.2 Impacto das Inundações no Sul do Brasil
 
 #### Contexto das Inundações em Maio de 2024
 
-\[![](https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg){.absolute width="50%"}
+Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando a necessidade de uma resposta rápida e eficaz. 
 
-Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
+<div style="text-align: center;">
+  <img src="https://www.oaltouruguai.com.br/_imagens/noticias/b3727975efdc1668e57d7b2ccc6f6e64.jpeg" alt="Descrição da Imagem" style="width: 30%;">
+</div>
+
+<p style="text-align: center;">Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.</p>
 
 ------------------------------------------------------------------------
 
@@ -55,15 +54,15 @@ Dados sobre os municípios afetados, número de pessoas impactadas, feridos e ó
 
 Aumentar a eficiência na distribuição de recursos e minimizar custos em operações de socorro. Melhorar a resiliência das comunidades afetadas
 
-------------------------------------------------------------------------
+<div style="text-align: center;">
+  <img src="https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg" alt="Descrição da Imagem" style="width: 50%;">
+</div>
 
-## 2. Justificativa
+<p style="text-align: center;">Necessidade de estratégias eficazes de logística humanitária.</p>
 
-#### Por que este Estudo é Importante?
 
-\[![](https://projetocolabora.com.br/wp-content/uploads/2024/05/20240508chuvasrspets2-anselmocunhaafp-000-34qn8f3.jpg){.absolute width="50%"}
 
-Necessidade de estratégias eficazes de logística humanitária.
+
 
 ------------------------------------------------------------------------
 
@@ -86,10 +85,11 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 4.Propor recomendações para estratégias de logística humanitária.
 ```
 
-                                                                                                   
-## 4. METODOLOGIA                                                                                            |
-#### 4.1. Coleta de Dados                                                                                     |
-Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise. |
+## 4. METODOLOGIA
+
+#### 4.1. Coleta de Dados
+
+Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise.
 
 ## 4. Metodologia
 
@@ -97,24 +97,34 @@ Dados meteorológicos, relatórios de desastres e informações sobre infraestru
 
 Modelo de otimização de fluxo de redes com variáveis-chave.
 
-## 4. METODOLOGIA                                                                           
-#### 4.3. Simulação e Análise                                                                
- asdfghjkl                                                                                   
+## 4. METODOLOGIA
 
-## 5. Problemas de Localização de P-Medianas                                                 
- Minimização da distância média e identificação de locais ideais para centros de distribuição. 
-\[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/p-medianas.png)                 
- Esquema de p-medianas aplicadas a um mapa de uma região afetada                               
+#### 4.3. Simulação e Análise
+
+O modelo será simulado usando dados reais das inundações de 2024 no Rio Grande do Sul, focando na eficiência de distribuição e na redução de custos operacionais. Testes de sensibilidade serão realizados para avaliar diferentes cenários.
+
+## 5. Problemas de Localização de P-Medianas
+
+Minimização da distância média e identificação de locais ideais para centros de distribuição. 
+<div style="text-align: center;">
+  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/p-medianas.png" alt="Descrição da Imagem" style="width: 50%;">
+</div>
+
+<p style="text-align: center;">Esquema de p-medianas aplicadas a um mapa de uma região afetada.</p>
+
 
 ## 6. Problemas de Roteamento de Veículos (PRV)
 
 Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos.
 
-\[![](https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg){.absolute width="50%"}
+<div style="text-align: center;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg" alt="Descrição da Imagem" style="width: 50%;">
+</div>
 
-Exemplo de rotas otimizadas para veículos de socorro
+<p style="text-align: center;">Exemplo de rotas otimizadas para veículos de socorro
+.</p>
+<p style="text-align: center;">Importância do PRV na logística humanitária.</p>
 
-Importância do PRV na logística humanitária.
 
 ------------------------------------------------------------------------
 
@@ -132,9 +142,6 @@ $\sum{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
 
 $\sum{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
 
-Fórmula do PRV mostrada visualmente Nota:
-
-Explicação básica sobre como a fórmula é aplicada na prática.
 
 ------------------------------------------------------------------------
 
@@ -142,11 +149,18 @@ Explicação básica sobre como a fórmula é aplicada na prática.
 
 Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logística humanitária, aumentar a eficiência e reduzir custos em desastres.
 
-\[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLH.png)
+<div style="text-align: center;">
+  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/cicloLH.png" alt="Descrição da Imagem" style="width: 50%;">
+</div>
 
-Infográfico de impacto positivo na comunidade
+<p style="text-align: center;">Infográfico de impacto positivo na comunidade.</p>
+<p style="text-align: center;">Implicações para políticas públicas e estratégias de gestão de desastres.</p>
 
-Implicações para políticas públicas e estratégias de gestão de desastres.
+
+
+
+
+
 
 ------------------------------------------------------------------------
 
@@ -154,48 +168,31 @@ Implicações para políticas públicas e estratégias de gestão de desastres.
 
 Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados.
 
-\[![](https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png){.absolute width="50%"}
+<div style="text-align: center;">
+  <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png" alt="Descrição da Imagem" style="width: 50%;">
+
+
 
 <div>
-
 <ul class="pagination">
-
 <li class="page-item disabled">
-
 <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">«</font></font></a>
-
 </li>
-
 <li class="page-item active">
-
 <a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></a>
-
 </li>
-
 <li class="page-item">
-
 <a class="page-link" href="pagina2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></a>
-
 </li>
-
 <li class="page-item">
-
 <a class="page-link" href="pagina3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></a>
-
 </li>
-
 <li class="page-item">
-
 <a class="page-link" href="pagina4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a>
-
 </li>
-
 </li>
-
 </ul>
-
 </div>
-
 <div>
 
 ```{r}

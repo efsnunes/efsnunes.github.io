@@ -1,8 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="generator" content="quarto-1.5.54" />
+<html lang="en"><head>
+<script src="Roteamento de abrigos_files/libs/clipboard/clipboard.min.js"></script>
+<script src="Roteamento de abrigos_files/libs/quarto-html/tabby.min.js"></script>
+<script src="Roteamento de abrigos_files/libs/quarto-html/popper.min.js"></script>
+<script src="Roteamento de abrigos_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="Roteamento de abrigos_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="Roteamento de abrigos_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="Roteamento de abrigos_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="Roteamento de abrigos_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.5.54">
 
   <meta name="author" content="Edison Fernando da Silva Nunes">
   <title>Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações</title>
@@ -315,11 +321,11 @@
     }
   </style>
 </head>
-<body>
+<body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block">
+<section id="title-slide" class="quarto-title-block center">
   <h1 class="title">Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações</h1>
   <p class="subtitle">Foco na Criação de um Centro de Distribuição para Atender Abrigos</p>
 
@@ -336,15 +342,19 @@ Edison Fernando da Silva Nunes
 
 <h3 id="introdução">1. INTRODUÇÃO</h3>
 <h4 id="logística-humanitária">Logística Humanitária</h4>
-<p>[<img data-src="https://s2-g1.glbimg.com/67H_n7GDefoflz7wtkVkm6Aobjs=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/Z/4/oLeOGLTlqvO5SZwTQ9yg/rgs2.jpeg" class="absolute" style="width: 50%; " /></p>
+<div style="text-align: center;">
+<p><img src="https://s2-g1.glbimg.com/67H_n7GDefoflz7wtkVkm6Aobjs=/0x0:1920x1080/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2024/Z/4/oLeOGLTlqvO5SZwTQ9yg/rgs2.jpeg" alt="Descrição da Imagem" style="width: 75%;"></p>
+</div>
 </section>
 <section class="slide level2">
 
+<h3 id="introdução-1">1. INTRODUÇÃO</h3>
 <h4 id="logística-humanitária-1">Logística Humanitária</h4>
 <p>A logística humanitária organiza e coordena as atividades logísticas em operações de ajuda humanitária, abordando desafios como a rápida entrega de suprimentos essenciais em áreas afetadas por desastres. Tais desastres, sejam naturais ou provocados pelo homem, causam significativos danos humanos, materiais e econômicos. Um levantamento no Brasil indicou um alto número de desastres naturais, particularmente de inundações, que têm consequências devastadoras para a sociedade, resultando em fatalidades, feridos e desabrigados.</p>
 </section>
 <section class="slide level2">
 
+<h3 id="introdução-2">1. INTRODUÇÃO</h3>
 <h4 id="logística-humanitária-2">Logística Humanitária</h4>
 <p>Em maio de 2024, fortes chuvas no sul do Brasil causaram inundações severas, afetando centenas de municípios e milhões de pessoas. Tais eventos destacam a importância de tecnologias avançadas e de uma coordenação eficaz entre organizações para a resposta e recuperação pós-desastres.</p>
 </section>
@@ -373,10 +383,12 @@ Edison Fernando da Silva Nunes
 
 <h3 id="objetivos-1">3. OBJETIVOS</h3>
 <h4 id="objetivos-específicos">3.2. Objetivos Específicos</h4>
-<pre><code>1.  Analisar os padrões de inundações na região sul do Brasil.
-2.  Desenvolver um modelo de otimização de fluxo de redes para desastres naturais.
-3.  Avaliar a eficácia do modelo na redução de custos e na eficiência das operações de socorro.
-4.  Propor recomendações para estratégias de logística humanitária baseadas nos resultados.</code></pre>
+<ol type="1">
+<li>Analisar os padrões de inundações na região sul do Brasil.</li>
+<li>Desenvolver um modelo de otimização de fluxo de redes para desastres naturais.</li>
+<li>Avaliar a eficácia do modelo na redução de custos e na eficiência das operações de socorro.</li>
+<li>Propor recomendações para estratégias de logística humanitária baseadas nos resultados.</li>
+</ol>
 </section>
 <section class="slide level2">
 
@@ -406,8 +418,10 @@ Edison Fernando da Silva Nunes
 </section>
 <section id="problemas-de-roteamento-de-veículos" class="slide level2">
 <h2>6. Problemas de Roteamento de Veículos</h2>
-<p>[<img data-src="https://minio.scielo.br/documentstore/1678-5142/TjQ34PqPjppqkhwPzFWcbwz/d9f67ed88d98af0124dacc2d461c9b2c5897aa91.gif" class="absolute" style="width: 50%; " /></p>
 <p>Os Problemas de Roteamento de Veículos (PRV) consiste basicamente em determinar rotas para realizar algum tipo de serviço, de maneira que o custo seja mínimo. Resolver um PRV, significa procurar a forma de distribuir a um ou mais veículos uma determida lista de compromissos de entrega, associados a determinados pontos, devendo os veículos retornar ao ponto de origem ao final do trabalho.</p>
+<div style="text-align: center;">
+<p><img src="https://minio.scielo.br/documentstore/1678-5142/TjQ34PqPjppqkhwPzFWcbwz/d9f67ed88d98af0124dacc2d461c9b2c5897aa91.gif" alt="Descrição da Imagem" style="width: 75%;"></p>
+</div>
 </section>
 <section id="formulação-matemática-para-o-problema-de-roteamento-de-veículos" class="slide level2">
 <h2>7. Formulação matemática para o problema de roteamento de veículos</h2>
@@ -440,7 +454,7 @@ Edison Fernando da Silva Nunes
 <li class="page-item">
 <a class="page-link" href="pagina4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a>
 </li>
-</li>
+
 </ul>
 </div>
 <div>
@@ -475,7 +489,16 @@ Edison Fernando da Silva Nunes
 
       // Full list of configuration options available at:
       // https://revealjs.com/config/
-      Reveal.initialize({ 
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': false,
+ 
         // Display controls in the bottom right corner
         controls: false,
 
@@ -494,7 +517,7 @@ Edison Fernando da Silva Nunes
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: c/t,
+        slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
@@ -644,7 +667,8 @@ Edison Fernando da Silva Nunes
         },
 
         // reveal.js plugins
-        plugins: [
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
+
           RevealMath,
           RevealNotes,
           RevealSearch,
@@ -652,7 +676,7 @@ Edison Fernando da Silva Nunes
         ]
       });
     </script>
-    <script id = "quarto-html-after-body" type="application/javascript">
+    <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
         const mode = bsSheetEl.getAttribute("data-mode");
@@ -839,5 +863,6 @@ Edison Fernando da Silva Nunes
       }
     });
     </script>
-    </body>
-</html>
+    
+
+</body></html>
