@@ -91,7 +91,7 @@ Dados sobre os municípios afetados, número de pessoas impactadas, feridos e ó
 
 ------------------------------------------------------------------------
 
-## 2. Justificativa {Justificativa}
+## 2. Justificativa {#Justificativa}
 
 #### Por que este Estudo é Importante?
 
@@ -112,7 +112,7 @@ Necessidade de estratégias eficazes de logística humanitária.
 
 ------------------------------------------------------------------------
 
-## 3. Objetivos {Objetivos}
+## 3. Objetivos {#Objetivos}
 
 ### 3.1 Objetivo Geral:
 
@@ -137,7 +137,7 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 </footer>
 ```
 
-## 4. Metodologia {Metodologia}
+## 4. Metodologia {#Metodologia}
 
 #### 4.1. Coleta de Dados
 
@@ -164,7 +164,7 @@ O modelo será simulado usando dados reais das inundações de 2024 no Rio Grand
   <a href="#sumário">Sumário</a>
 </footer>
 
-## 5. Problemas de Localização de P-Medianas {ProblemasdeLocalizaçãodeP-Medianas}
+## 5. Problemas de Localização de P-Medianas {#ProblemasdeLocalizaçãodeP-Medianas}
 
 Minimização da distância média e identificação de locais ideais para centros de distribuição.
 
@@ -181,7 +181,7 @@ Esquema de p-medianas aplicadas a um mapa de uma região afetada.
   <a href="#sumário">Sumário</a>
 </footer>
 
-## 6. Problemas de Roteamento de Veículos (PRV) {ProblemasdeRoteamentodeVeículos}
+## 6. Problemas de Roteamento de Veículos (PRV) {#ProblemasdeRoteamentodeVeículos}
 
 Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos.
 
@@ -206,7 +206,7 @@ Importância do PRV na logística humanitária.
 
 ------------------------------------------------------------------------
 
-## 7. Formulação Matemática para PRV {FormulaçãoMatemáticaparaPRV}
+## 7. Formulação Matemática para PRV {#FormulaçãoMatemáticaparaPRV}
 
 Exibição das equações matemáticas de minimização de custos e restrições do modelo.
 
@@ -225,7 +225,7 @@ $\sum_{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,
 
 ------------------------------------------------------------------------
 
-## 8. Conclusão {Conclusão}
+## 8. Conclusão {#Conclusão}
 
 Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logística humanitária, aumentar a eficiência e reduzir custos em desastres.
 
