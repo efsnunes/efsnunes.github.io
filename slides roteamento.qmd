@@ -12,7 +12,7 @@ slide-number: true
 
 **[Introdução](#Introdução)**
 
-**[Logística Humanitária](#Logística Humanitária)**
+**[Logística Humanitária](#LogísticaHumanitária)**
 
 **[Justificativa](#Justificativa)**
 
@@ -20,15 +20,15 @@ slide-number: true
 
 **[Metodologia](#Metodologia)**
 
-**[Problemas de Localização de P-Medianas](#Problemas de Localização de P-Medianas)**
+**[Problemas de Localização de P-Medianas](#ProblemasdeLocalizaçãodeP-Medianas)**
 
-**[Problemas de Roteamento de Veículos](#Problemas de Roteamento de Veículos)**
+**[Problemas de Roteamento de Veículos](#ProblemasdeRoteamentodeVeículos)**
 
-**[Formulação Matemática para PRV](#Formulação Matemática para PRV)**
+**[Formulação Matemática para PRV](#FormulaçãoMatemáticaparaPRV)**
 
 **[Conclusão](#Conclusão)**
 
-**[Recomendação](#Recomendação)**
+**[Recomendação](#Recomendações)**
 
 
 ## 1. Introdução {#Introdução}
@@ -46,10 +46,12 @@ slide-number: true
 Imagem representativa de inundações no sul do Brasil.
 
 </p>
-
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 ------------------------------------------------------------------------
 
-## 1.1 Logística Humanitária {#Logística Humanitária}
+## 1.1 Logística Humanitária {#LogísticaHumanitária}
 
 #### O que é Logística Humanitária?
 
@@ -64,6 +66,9 @@ Organização e coordenação das atividades logísticas em operações de ajuda
 Esquema básico de logística humanitária.
 
 </p>
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ## 1.2 Impacto das Inundações no Sul do Brasil
 
@@ -80,6 +85,9 @@ Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando
 Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
 
 </p>
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ------------------------------------------------------------------------
 
@@ -98,6 +106,9 @@ Aumentar a eficiência na distribuição de recursos e minimizar custos em opera
 Necessidade de estratégias eficazes de logística humanitária.
 
 </p>
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ------------------------------------------------------------------------
 
@@ -106,6 +117,9 @@ Necessidade de estratégias eficazes de logística humanitária.
 ### 3.1 Objetivo Geral:
 
 Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de resposta a desastres.
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ------------------------------------------------------------------------
 
@@ -118,6 +132,9 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 2.Desenvolver um modelo de otimização de fluxo de redes. 
 3.Avaliar a eficácia do modelo. 
 4.Propor recomendações para estratégias de logística humanitária.
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 ```
 
 ## 4. Metodologia {Metodologia}
@@ -125,20 +142,29 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 #### 4.1. Coleta de Dados
 
 Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise.
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ## 4. Metodologia
 
 #### 4.2 Desenvolvimento do Modelo:
 
 Modelo de otimização de fluxo de redes com variáveis-chave.
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ## 4. Metodologia
 
 #### 4.3. Simulação e Análise
 
 O modelo será simulado usando dados reais das inundações de 2024 no Rio Grande do Sul, focando na eficiência de distribuição e na redução de custos operacionais. Testes de sensibilidade serão realizados para avaliar diferentes cenários.
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
-## 5. Problemas de Localização de P-Medianas {Problemas de Localização de P-Medianas}
+## 5. Problemas de Localização de P-Medianas {ProblemasdeLocalizaçãodeP-Medianas}
 
 Minimização da distância média e identificação de locais ideais para centros de distribuição.
 
@@ -151,8 +177,11 @@ Minimização da distância média e identificação de locais ideais para centr
 Esquema de p-medianas aplicadas a um mapa de uma região afetada.
 
 </p>
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
-## 6. Problemas de Roteamento de Veículos (PRV) {Problemas de Roteamento de Veículos}
+## 6. Problemas de Roteamento de Veículos (PRV) {ProblemasdeRoteamentodeVeículos}
 
 Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos.
 
@@ -171,10 +200,13 @@ Exemplo de rotas otimizadas para veículos de socorro .
 Importância do PRV na logística humanitária.
 
 </p>
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ------------------------------------------------------------------------
 
-## 7. Formulação Matemática para PRV {Formulação Matemática para PRV}
+## 7. Formulação Matemática para PRV {FormulaçãoMatemáticaparaPRV}
 
 Exibição das equações matemáticas de minimização de custos e restrições do modelo.
 
@@ -187,6 +219,9 @@ $\sum_{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum{k}^{}y{ik}=m  \quad \t
 $\sum_{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
 
 $\sum_{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ------------------------------------------------------------------------
 
@@ -209,59 +244,22 @@ Infográfico de impacto positivo na comunidade.
 Implicações para políticas públicas e estratégias de gestão de desastres.
 
 </p>
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
+</footer>
 
 ------------------------------------------------------------------------
 
-## 9. Recomendações {Recomendação}
+## 9. Recomendações {#Recomendações}
 
 Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados.
 
 <div style="text-align: center;">
 
 <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png" alt="Descrição da Imagem" style="width: 50%;"/>
+<footer class="footer">
+  <a href="#sumário">Sumário</a>
 
-<div>
+  [Pág Incial](index.html)
+</footer>
 
-<ul class="pagination">
-
-<li class="page-item disabled">
-
-<a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">«</font></font></a>
-
-</li>
-
-<li class="page-item active">
-
-<a class="page-link" href="index.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></a>
-
-</li>
-
-<li class="page-item">
-
-<a class="page-link" href="pagina2.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></a>
-
-</li>
-
-<li class="page-item">
-
-<a class="page-link" href="pagina3.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></a>
-
-</li>
-
-<li class="page-item">
-
-<a class="page-link" href="pagina4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a>
-
-</li>
-
-</li>
-
-</ul>
-
-</div>
-
-<div>
-
-```{r}
-
-```

@@ -70,6 +70,8 @@ Aqui você encontrará informações sobre o mestrado em Ambientometria e Músic
 
 <a href="slides roteamento.html" style = "color: white;">Apresentação dos slides roteamento</a>
 
+<a href="Roteamento.pdf" style = "color: white;">Apresentaçãodo Roteamento em PDF</a>
+
 <div>
 
 <ul class="pagination">
@@ -111,3 +113,6 @@ Aqui você encontrará informações sobre o mestrado em Ambientometria e Músic
 </div>
 
 <div>
+
+
+
