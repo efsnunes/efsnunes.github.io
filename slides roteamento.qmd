@@ -9,7 +9,7 @@ css: styles.css
 
 ## 1. Introdução
 
-### Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações
+### Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações.
 
 #### Foco na criação de um centro de distribuição para atender abrigos em situações de emergência.
 
