@@ -3,6 +3,7 @@ title: "Analista de dados ambientais"
 author: "Edison Fernando"
 format: html
 editor: visual
+transition: convex
 ---
 
 <html lang="pt-BR">
