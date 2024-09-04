@@ -30,6 +30,7 @@ slide-number: true
 
 **[Recomendação](#Recomendações)**
 
+**[Pág Incial](index.html)**
 
 ## 1. Introdução {#Introdução}
 
@@ -42,10 +43,9 @@ slide-number: true
 :::
 
 <p style="text-align: center;">
-
 Imagem representativa de inundações no sul do Brasil.
-
 </p>
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
@@ -62,10 +62,9 @@ Organização e coordenação das atividades logísticas em operações de ajuda
 :::
 
 <p style="text-align: center;">
-
 Esquema básico de logística humanitária.
-
 </p>
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
@@ -81,10 +80,9 @@ Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando
 :::
 
 <p style="text-align: center;">
-
 Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
-
 </p>
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
@@ -104,8 +102,8 @@ Aumentar a eficiência na distribuição de recursos e minimizar custos em opera
 <p style="text-align: center;">
 
 Necessidade de estratégias eficazes de logística humanitária.
-
 </p>
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
@@ -127,15 +125,19 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de 
 
 ### 3.2 Objetivos Específicos:
 
-```         
-1.Analisar padrões de inundações. 
+        
+1.Analisar padrões de inundações.
+
 2.Desenvolver um modelo de otimização de fluxo de redes. 
+
 3.Avaliar a eficácia do modelo. 
+
 4.Propor recomendações para estratégias de logística humanitária.
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
-```
+
 
 ## 4. Metodologia {#Metodologia}
 
@@ -173,10 +175,9 @@ Minimização da distância média e identificação de locais ideais para centr
 :::
 
 <p style="text-align: center;">
-
 Esquema de p-medianas aplicadas a um mapa de uma região afetada.
-
 </p>
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
@@ -186,20 +187,17 @@ Esquema de p-medianas aplicadas a um mapa de uma região afetada.
 Determinação de rotas otimizadas para serviços de emergência, com foco na minimização de custos.
 
 ::: {style="text-align: center;"}
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg" alt="Descrição da Imagem" style="width: 50%;"/>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/PRVC.jpg" alt="Descrição da Imagem" style="width: 45%;"/>
 :::
 
 <p style="text-align: center;">
-
 Exemplo de rotas otimizadas para veículos de socorro .
-
 </p>
 
 <p style="text-align: center;">
-
 Importância do PRV na logística humanitária.
-
 </p>
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
@@ -210,11 +208,11 @@ Importância do PRV na logística humanitária.
 
 Exibição das equações matemáticas de minimização de custos e restrições do modelo.
 
-$z= \sum_{i,j}\left ( c{ij} \sum{k}^{}x{ijk}\right)$
+$z= \sum_{i,j}\left ( c{ij} \sum_{k}^{}x{ijk}\right)$
 
 Sujeito a:
 
-$\sum_{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum{k}^{}y{ik}=m  \quad \text{para} \quad  i=1$
+$\sum_{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum_{k}^{}y{ik}=m  \quad \text{para} \quad  i=1$
 
 $\sum_{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
 
@@ -234,16 +232,13 @@ Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logísti
 :::
 
 <p style="text-align: center;">
-
 Infográfico de impacto positivo na comunidade.
-
 </p>
 
 <p style="text-align: center;">
-
 Implicações para políticas públicas e estratégias de gestão de desastres.
-
 </p>
+
 <footer class="footer">
   <a href="#sumário">Sumário</a>
 </footer>
