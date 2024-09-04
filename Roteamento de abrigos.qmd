@@ -4,11 +4,34 @@ subtitle: "Foco na Criação de um Centro de Distribuição para Atender Abrigos
 author: "Edison Fernando da Silva Nunes"
 format: revealjs
 editor: visual
-theme: simple
+theme: beige
+transition: convex
 slide-number: true
 ---
 
-### 1. INTRODUÇÃO
+## **[Sumário](#sumário)**
+
+**[Introdução](#Introdução)**
+
+**[Logística Humanitária](#LogísticaHumanitária)**
+
+**[Justificativa](#Justificativa)**
+
+**[Objetivos](#Objetivos)**
+
+**[Metodologia](#Metodologia)**
+
+**[Problemas de Localização de P-Medianas](#ProblemasdeLocalizaçãodeP-Medianas)**
+
+**[Problemas de Roteamento de Veículos](#ProblemasdeRoteamentodeVeículos)**
+
+**[Formulação Matemática para PRV](#FormulaçãoMatemáticaparaPRV)**
+
+**[Conclusão](#Conclusão)**
+
+
+
+### 1. INTRODUÇÃO {#Introdução}
 
 #### Logística Humanitária
 

@@ -102,7 +102,15 @@ Here is another:
 
 Inline equations: $\sum_{i = 2}^\infty\{\alpha_i^\beta\}$
 
-# Figures and tables
+# introdução
+
+COLOCA AQYUI USDYDW
+
+DSUDGISAD
+
+gidsufsd
+
+hdafhdu
 
 Figure \ref{fig2} is generated using an R chunk.
 
