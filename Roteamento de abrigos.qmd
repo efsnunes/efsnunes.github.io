@@ -11,25 +11,23 @@ slide-number: true
 
 ## **[Sumário](#sumário)**
 
-**[Introdução](#Introdução)**
+[**Introdução**](#Introdução)
 
-**[Logística Humanitária](#LogísticaHumanitária)**
+[**Logística Humanitária**](#LogísticaHumanitária)
 
-**[Justificativa](#Justificativa)**
+[**Justificativa**](#Justificativa)
 
-**[Objetivos](#Objetivos)**
+[**Objetivos**](#Objetivos)
 
-**[Metodologia](#Metodologia)**
+[**Metodologia**](#Metodologia)
 
-**[Problemas de Localização de P-Medianas](#ProblemasdeLocalizaçãodeP-Medianas)**
+[**Problemas de Localização de P-Medianas**](#ProblemasdeLocalizaçãodeP-Medianas)
 
-**[Problemas de Roteamento de Veículos](#ProblemasdeRoteamentodeVeículos)**
+[**Problemas de Roteamento de Veículos**](#ProblemasdeRoteamentodeVeículos)
 
-**[Formulação Matemática para PRV](#FormulaçãoMatemáticaparaPRV)**
+[**Formulação Matemática para PRV**](#FormulaçãoMatemáticaparaPRV)
 
-**[Conclusão](#Conclusão)**
-
-
+[**Conclusão**](#Conclusão)
 
 ### 1. INTRODUÇÃO {#Introdução}
 
@@ -41,7 +39,7 @@ slide-number: true
 
 ------------------------------------------------------------------------
 
-### 1. INTRODUÇÃO
+### 1. INTRODUÇÃO {#introdução}
 
 #### Logística Humanitária
 
@@ -61,7 +59,7 @@ Em maio de 2024, fortes chuvas no sul do Brasil causaram inundações severas, a
 
 ------------------------------------------------------------------------
 
-### 2. JUSTIFICATIVA
+### 2. JUSTIFICATIVA {#justificativa}
 
 ::: {style="text-align: justify;"}
 A crescente frequência e severidade dos desastres naturais, como as inundações recentes no Rio Grande do Sul em maio de 2024, evidenciam a necessidade urgente de desenvolver e implementar estratégias eficazes de logística humanitária. Esses eventos sublinham a importância de uma resposta rápida e coordenada para salvar vidas, minimizar danos e apoiar a recuperação das comunidades afetadas. No entanto, os desafios impostos por infraestruturas precárias e condições adversas frequentemente dificultam a entrega eficaz de ajuda humanitária.
@@ -85,7 +83,7 @@ Este estudo visa fornecer ferramentas e conhecimentos práticos para gestores e 
 
 ------------------------------------------------------------------------
 
-## 3. OBJETIVOS
+## 3. OBJETIVOS {#objetivos}
 
 #### 3.1. Objetivo Geral
 
@@ -107,7 +105,7 @@ Aplicar técnicas de otimização de fluxo de redes para minimizar os custos ass
 
 4.  Propor recomendações para estratégias de logística humanitária baseadas nos resultados.
 
-## 4. METODOLOGIA
+## 4. METODOLOGIA {#metodologia}
 
 #### 4.1. Coleta de Dados
 
@@ -173,7 +171,7 @@ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...
 
 ------------------------------------------------------------------------
 
-## 8. CONCLUSÃO
+## 8. CONCLUSÃO {#conclusão}
 
 ::: {style="text-align: justify;"}
 Este projeto busca contribuir para a logística humanitária ao aplicar técnicas de roteamento e modelos de p-medianas para otimizar o fluxo de redes e minimizar os custos em desastres de inundações. O modelo desenvolvido visa melhorar a eficiência das operações de socorro, oferecendo um framework replicável em outros cenários de desastres naturais. A conclusão deste estudo poderá apoiar a formulação de políticas públicas e estratégias de gerenciamento de desastres, aumentando a resiliência das comunidades vulneráveis e garantindo uma resposta mais coordenada em situações de emergência.
