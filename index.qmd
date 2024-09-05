@@ -1,6 +1,6 @@
 ---
 title: "Analista de dados ambientais"
-author: "Edison Fernando"
+author: "Edison Fernando da Silva Nunes"
 format: html
 editor: visual
 ---
