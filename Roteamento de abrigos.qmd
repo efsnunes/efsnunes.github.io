@@ -29,6 +29,8 @@ slide-number: true
 
 [**Conclusão**](#Conclusão)
 
+---
+
 ## 1. INTRODUÇÃO {#Introdução}
 
 #### Logística Humanitária
