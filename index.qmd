@@ -68,6 +68,8 @@ editor: visual
 
 <a href="projetobombeiros/projetobombeiros.pdf" style = "color: white;">Apresentação do Roteamento em PDF</a>
 
+<a href="Artigo.docx" style = "color: white;">Artigo</a>
+
 <div>
 
 <ul class="pagination">
