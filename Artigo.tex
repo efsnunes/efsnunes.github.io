@@ -1,0 +1,367 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[margin=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage{bookmark}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdftitle={Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações},
+  pdfauthor={Edison Fernando da Silva Nunes},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Aplicação de Técnicas de Otimização de Fluxo de Redes para
+Minimizar Custos Associados a Desastres e Inundações}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{Foco em um Centro de Distribuição para Atender Abrigos}
+\author{Edison Fernando da Silva Nunes}
+\date{2024-09-07}
+
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  INTRODUÇÃO
+
+  A logística humanitária refere-se à organização e coordenação das
+  atividades logísticas envolvidas em operações de ajuda humanitária. É
+  um campo especializado que lida com os desafios enfrentados pelos
+  trabalhadores humanitários, como a entrega rápida de suprimentos
+  essenciais em áreas remotas ou afetadas por desastres. Os desastres
+  resultam de eventos adversos, naturais ou provocados pelo homem, que
+  impactam ecossistemas vulneráveis, causando danos humanos, materiais
+  e/ou ambientais, além de prejuízos econômicos e sociais.
+  Especificamente, desastres naturais têm consequências drásticas para
+  sociedades, regiões e países, resultando em vítimas fatais, feridos,
+  desabrigados, cidades destruídas e altos custos de reconstrução. No
+  Brasil, um levantamento realizado pelo Centro de Estudos e Pesquisas
+  sobre Desastres (CEPED, 2013) no período de 1991 a 2012 registrou
+  38.996 desastres naturais, com destaque para os anos de 2010, 2011 e
+  2012, que concentraram 78\% dos desastres registrados. A cada ano,
+  centenas de desastres naturais, como terremotos, enchentes e
+  inundações, ocorrem em todo o mundo. Diversas atividades de logística
+  humanitária, como o transporte de suprimentos, a gestão de estoques, a
+  tecnologia da informação e comunicação, a distribuição eficiente de
+  alimentos, água e abrigos, bem como serviços de saúde e gestão de
+  resíduos, são necessárias. Também pode incluir outras organizações e
+  agências governamentais, a fim de garantir uma resposta eficaz. A
+  logística humanitária enfrenta muitos desafios, como a falta de
+  infraestrutura básica em áreas afetadas, condições climáticas e
+  ambientais adversas, logística precária e questões de segurança. Além
+  disso, há dificuldades em garantir a equidade e o acesso igualitário
+  aos recursos entre as populações afetadas. Nesse contexto, o desastre
+  natural ocorrido durante o mês de maio de 2024 na região sul do
+  Brasil, no estado do Rio Grande do Sul, devido à chuvas intensas e
+  consequentes inundações, afetou gravemente as regiões dos vales dos
+  rios Taquari, Caí, Pardo, Jacuí, Sinos e Gravataí, além de Porto
+  Alegre pelo rio Guaíba e regiões de Pelotas e Rio Grande pela Lagoa
+  dos Patos. As inundações devastaram áreas urbanas e rurais, resultando
+  em danos significativos como desabrigados e desalojados com grande
+  prejuízo material. Ao todo, 478 municípios foram afetados, com uma
+  população de 2.398.255 pessoas impactadas. As inundações resultaram em
+  806 feridos, 31 desaparecidos e 182 óbitos confirmados. A partir da
+  coleta de dados de monitoramento já realizados e pela produção prévia
+  de mapas do município de Rio Grande-RS, que indicavam os locais
+  possivelmente afetados pela elevação das águas da Lagoa dos Patos, foi
+  possível tomadas de decisões mais assertivas e maior previsibilidade
+  das ações. Ao longo dos anos, a logística humanitária avançou
+  consideravelmente, com o uso de tecnologias avançadas, como drones e
+  análise de dados, para melhorar a eficiência e a eficácia das
+  operações. Também foi desenvolvida uma rede global de organizações e
+  agências especializadas em logística humanitária para o
+  compartilhamento de conhecimentos e recursos. A logística humanitária
+  desempenha um papel vital na resposta a emergências e desastres,
+  garantindo que os recursos essenciais cheguem às pessoas que mais
+  precisam. Além disso, desempenha um papel importante na recuperação e
+  reconstrução pós-desastre, ajudando a restabelecer infraestruturas
+  básicas e a fornecer apoio contínuo às comunidades afetadas.
+\item
+  JUSTIFICATIVA
+\end{enumerate}
+
+A crescente frequência e severidade dos desastres naturais, como as
+inundações recentes no Rio Grande do Sul em maio de 2024, evidenciam a
+necessidade urgente de desenvolver e implementar estratégias eficazes de
+logística humanitária. Esses eventos sublinham a importância de uma
+resposta rápida e coordenada para salvar vidas, minimizar danos e apoiar
+a recuperação das comunidades afetadas. No entanto, os desafios impostos
+por infraestrutura precária e condições adversas frequentemente
+dificultam a entrega eficaz de ajuda humanitária. A aplicação de
+técnicas de otimização de fluxo de redes em operações de socorro pode
+aprimorar significativamente a distribuição de recursos e serviços de
+emergência. Essas técnicas não apenas melhoram a alocação eficiente de
+suprimentos críticos, como também reduzem os custos operacionais
+envolvidos, garantindo que os recursos limitados sejam utilizados da
+melhor forma possível. Tecnologias avançadas e uma colaboração estreita
+entre organizações são essenciais para enfrentar os desafios logísticos
+em situações de desastre, aumentando a eficácia das operações de
+emergência. Este estudo visa fornecer ferramentas e conhecimentos
+práticos para gestores e tomadores de decisão, promovendo maior
+resiliência e capacidade de resposta em situações de emergência. Ao
+implementar técnicas de otimização e estratégias logísticas avançadas,
+espera-se melhorar a prontidão e a eficiência das respostas a desastres,
+fortalecendo a capacidade das comunidades de lidar com os impactos de
+eventos extremos e facilitando a recuperação pós-desastre.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{2}
+\item
+  OBJETIVOS
+
+  3.1. Objetivo Geral
+
+  Aplicar técnicas de otimização de fluxo de redes para minimizar o
+  tempo de atendimento à vítimas de desastres de inundações para o
+  município de Rio Grande - RS, melhorando a eficiência na distribuição
+  de recursos e na alocação de serviços de emergência.
+\end{enumerate}
+
+3.2. Objetivos Específicos
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Mapear a região identificando locais com menor e maior risco de
+  inundações;
+\item
+  Desenvolver um modelo de otimização para a localização de abrigos às
+  vítimas de desastres provocados por inundações no município de Rio
+  Grande - RS;
+\item
+  Desenvolver um modelo de roteamento para a entrega dos principais
+  suprimentos (alimentos, remédios e roupas).
+\item
+  Realizar simulações para os dois modelos apontando a solução ótima.
+\item
+  Propor recomendações para estratégias de logística humanitária
+  baseadas nos resultados obtidos.
+\item
+  METODOLOGIA
+\end{enumerate}
+
+O trabalho proposto, segundo (Pizzolato, 2012), seguirá a metodologia
+básica da Pesquisa Operacional, passando pela identificação do problema,
+a formulação de um modelo matemático utilizando hipóteses
+simplificadoras, a resolução do modelo, a validação dos resultados e
+posteriormente o oferecimento de propostas para implementação. Exemplos
+de formulações matemáticas para o problema, sobretudo na busca por
+respostas, para minimizar danos causados por desastre natural, que
+constitui o tema principal deste trabalho encontram-se relacionados
+abaixo.
+
+4.1. Tipos de Metodologia
+
+4.1.1. O modelo da P-Mediana
+
+Para o número ótimo e localização dos abrigos, pretende-se utilizar o
+modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a
+distância média, ou seja, minimizar a soma das menores distâncias dentro
+de uma região, determinando a localização ideal de (p) instalações
+(abrigos) de forma que a demanda total desta área seja atendida de
+maneira eficiente. Esses problemas são comumente aplicados em contextos
+de planejamento urbano, logística de distribuição, e situações de
+resposta a emergências, onde a meta é reduzir o tempo ou o custo de
+transporte entre os centros de distribuição e os abrigos. A solução do
+problema envolve escolher (p) locais de um conjunto de possíveis locais
+de abrigos para que a soma das distâncias ponderadas (baseadas na
+demanda) dos centros de distribuição até as instalações mais próximas
+seja minimizada. Sejam N=\{1,\ldots,n\} o conjunto de pontos de demanda;
+
+\[
+i \in \mathbb{N}
+\] um determinado cliente ou vértice; \[
+j \in \mathbb{N}
+\] uma instalação em potencial ou mediana; p o número de instalações de
+serviço ou medianas a serem localizadas; \[
+w_i
+\] o peso ou importância de cliente \[i\]; \[
+[d_{ij}]_{n \times n}
+\] a matriz simétrica de distâncias de cada cliente \[i\] à instalação
+\[
+j
+\] , com \[
+d_{ii}=0, \forall i; [x_{ij}]_{n \times n} 
+\] a matriz de alocação de cada cliente \[i\]; onde \[
+x_{ij}=1
+\] se o cliente \[
+i
+\] é alocado à instalação \[
+j
+\] e \[
+x_{ij}=0
+\] , caso contrário; \[
+x_{jj}=1
+\] indica que \[
+j
+\] é uma mediana e \[
+x_{jj}=0
+\] em caso contrário. Então, o modelo da p-mediana é apresentado da
+seguinte forma:
+
+\[
+Min  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i_}d_{ij}x_{ij}  (1)
+\] Sujeito a \[
+\sum_{j \in \mathbb{N}}x_{ij}=1; i \in \mathbb{N}
+\] \[
+\sum_{j \in \mathbb{N}}x_{jj}=p
+\] \[
+x_{ij} \leq x_{jj}; i,j \in \mathbb{N}
+\] \[
+x_{ij} \in \mathbb{0,1}; i,j \in \mathbb{N}
+\] onde a função objetivo (1) indica a minimização das distâncias
+ponderadas entre os clientes e os opostos que oferecem serviços; as
+restrições em (2) indicam que cada cliente \[
+i
+\] é alocado a somente uma instalação \[
+j
+\] ; a restrição (3) garante que somente \[
+p
+\] instalações oferecem o serviço proposto; as restrições em (4) afirmam
+que um cliente somente é atendido num local onde existe uma instalação
+que oferece o serviço, e as restrições em (5) impõem variáveis de
+decisão binárias. Cabe lembrar que pode existir uma lista prévia de
+pontos candidatos a serem escolhidos como mediana; nesse caso o modelo
+acima sofre pequenas modificações e recebe o nome tradicional de
+problema de localização de uma planta simples ou em inglês \[ simple \]
+\[ plant \] \[ lOcation \] \[ model \] \[(SPLP)\] Observamos ainda que,
+em lugar de localização, o modelo acima pode ser interpretado como
+modelo de zoneamento, em que se busca dividir o espaço em \[
+p
+\] zonas. Nessa ótica de zoneamento, o modelo de p-mediana pode ser
+aplicadoao problema de classificação de um conjunto de padrões,
+conhecido como \[
+cluster
+\] \[
+analysis
+\] (Xavier e Xavier, 2011), que busca agrupar elementos com padrões
+semelhantes em certo \[
+cluster
+\] e com padrões diferentes em \[
+clusters
+\] distintos
+
+4.2.2.. O Modelo para o Roteamento de Veículos
+
+Os problemas de roteamento de veículos (PRV) consistem basicamente em
+determinar rotas para realizar algum tipo de serviço, de maneira que o
+custo seja mínimo. Resolver um PRV significa procurar a forma de
+distribuir a um ou mais veículos uma determinada lista de compromissos
+de entrega, associados a determinados pontos, devendo os veículos
+retornar ao ponto de origem ao final do trabalho. A formulação
+matemática para um Problema de Roteamento de Veículos (PRV) é
+apresentada abaixo:
+
+DIGITAR NA SEQUÊNCIA O QUE ESTÁ COLOCADO ABAIXO
+
+Onde: Definir cada termo
+
+4.3. Simulação e Análise Os modelos serão simulados usando dados reais
+das inundações de 2024 no município de Rio Grande - RS, focando na
+eficiência de distribuição e na redução de custos operacionais. Testes
+de sensibilidade serão realizados para avaliar diferentes cenários.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  CONCLUSÃO RESULTADOS ESPERADOS
+\end{enumerate}
+
+Aqui precisa um pouco de mais blá, blá, \ldots. que iremos construir.
+Este projeto busca contribuir para a logística humanitária ao aplicar
+modelos de p-medianas e técnicas de roteamento para diminuir os tempos
+de atendimentos às vitimas de inundações no município de Rio Grande --
+RS, tanto no que se refere ao local mais próximo que servirá de abrigo
+como ao abastecimento de cada abrigo com suprimentos.
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{4}
+\tightlist
+\item
+  CRONOGRAMA Etapas 1° trim. 2024 2° trim. 2024 3° trim. 2024 4° trim.
+  2024 1° trim. 2025 2° trim. 2025 3° trim. 2025 4° trim. 2025
+\end{enumerate}
+
+Revisão Bibliográfica\\
+Submissão de artigo da disciplina de Seminários em Ambientometria\\
+Estudos dos Modelos\\
+Desenvolvimento dos Modelos\\
+Conclusões
+
+4.1. Coleta de Dados Dados meteorológicos, relatórios dos últimos
+desastres e informações sobre infraestrutura do município serão
+coletados para análise.
+
+4.2. Desenvolvimento do Modelo Serão utilizados modelos matemáticos para
+a localização dos abrigos e para a entrega de suprimentos. Estes modelos
+serão alimentado com variáveis como: quantidades de suprimentos,
+veículos disponíveis, rotas de transporte e demanda por serviços de
+emergência.
+
+\end{document}

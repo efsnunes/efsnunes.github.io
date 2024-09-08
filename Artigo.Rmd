@@ -159,30 +159,103 @@ uma instalação em potencial ou mediana; p o número de instalações de servi�
 $$
 w_i
 $$
-o peso ou importância de cliente i;
+o peso ou importância de cliente $$i$$;
 $$
 [d_{ij}]_{n \times n}
 $$
-a matriz simétrica de distâncias de cada cliente i à instalação j, com
+a matriz simétrica de distâncias de cada cliente $$i$$ à instalação 
+$$
+j
+$$
+, com
 $$
 d_{ii}=0, \forall i; [x_{ij}]_{n \times n} 
 $$
-a matriz simétrica de distâncias de cada cliente i à instalação j, com
+a matriz de alocação de cada cliente $$i$$; onde
 $$
-d_{ij}
+x_{ij}=1
 $$
-
-
-
-
-
+se o cliente 
+$$
+i
+$$
+é alocado à instalação 
+$$
+j
+$$ e 
+$$
+x_{ij}=0
+$$
+, caso contrário; 
+$$
+x_{jj}=1
+$$
+indica que 
+$$
+j
+$$
+é uma mediana e 
+$$
+x_{jj}=0
+$$
+em caso contrário. Então, o modelo da p-mediana é apresentado da seguinte forma:
 
 $$
-\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i_{ij}}
+Min  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i_}d_{ij}x_{ij}  (1)
 $$
-
-Cuidar o
-tempo verbal, procurar escrever todo texto no mesmo tempo verbal.
+Sujeito a 
+$$
+\sum_{j \in \mathbb{N}}x_{ij}=1; i \in \mathbb{N}
+$$
+$$
+\sum_{j \in \mathbb{N}}x_{jj}=p
+$$
+$$
+x_{ij} \leq x_{jj}; i,j \in \mathbb{N}
+$$
+$$
+x_{ij} \in \mathbb{0,1}; i,j \in \mathbb{N}
+$$
+onde a função objetivo (1) indica a minimização das distâncias ponderadas entre os clientes e os opostos que oferecem serviços; as restrições em (2) indicam que cada cliente 
+$$
+i
+$$
+é alocado a somente uma instalação 
+$$
+j
+$$
+; a restrição (3) garante que somente 
+$$
+p
+$$
+instalações oferecem o serviço proposto; as restrições em (4) afirmam que um cliente somente é atendido num local onde existe uma instalação que oferece o serviço, e as restrições em (5) impõem variáveis de decisão binárias.
+Cabe lembrar que pode existir uma lista prévia de pontos candidatos a serem escolhidos como mediana; nesse caso o modelo acima sofre pequenas modificações e recebe o nome tradicional de problema de localização de uma planta simples ou em inglês 
+$$ simple $$ 
+$$ plant $$ 
+$$ lOcation $$
+$$ model $$
+$$(SPLP)$$
+Observamos ainda que, em lugar de localização, o modelo acima pode ser interpretado como modelo de zoneamento, em que se busca dividir o espaço em 
+$$
+p
+$$
+zonas.
+Nessa ótica de zoneamento, o modelo de p-mediana pode ser aplicadoao problema de classificação de um conjunto de padrões, conhecido como 
+$$
+cluster
+$$
+$$
+analysis
+$$
+(Xavier e Xavier, 2011), que busca agrupar elementos com padrões semelhantes em certo 
+$$
+cluster
+$$
+e com padrões diferentes em 
+$$
+clusters
+$$
+distintos
 
 4.2.2.. O Modelo para o Roteamento de Veículos
 
