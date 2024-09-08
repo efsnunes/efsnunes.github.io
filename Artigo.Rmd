@@ -301,7 +301,7 @@ tanto no que se refere ao local mais próximo que servirá de abrigo como
 ao abastecimento de cada abrigo com suprimentos.
 
 6.  CRONOGRAMA
-\[
+
 \begin{table}[ht]
 \centering
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
@@ -316,7 +316,7 @@ A6   & B6   & C6   & D6   & E6   & F6   & G6   & H6   & I6   \\ \hline
 \end{tabular}
 \caption{Sua tabela de 9 colunas e 6 linhas}
 \end{table}
-\]
+
 
 Etapas 1° trim. 2024 2° trim. 2024 3° trim. 2024 4° trim.
     2024 1° trim. 2025 2° trim. 2025 3° trim. 2025 4° trim. 2025
