@@ -167,7 +167,9 @@ distribuir a um ou mais veículos uma determinada lista de compromissos
 de entrega, associados a determinados pontos, devendo os veículos
 retornar ao ponto de origem ao final do trabalho. A formulação
 matemática para um Problema de Roteamento de Veículos (PRV) é
-apresentada abaixo: DIGITAR NA SEQUÊNCIA O QUE ESTÁ COLOCADO ABAIXO
+apresentada abaixo:
+
+DIGITAR NA SEQUÊNCIA O QUE ESTÁ COLOCADO ABAIXO
 
 Onde: Definir cada termo
 
