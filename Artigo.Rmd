@@ -1,6 +1,7 @@
 ---
-title: "Foco na criação de abrigos"
-author: "Edison Fernando"
+title: "Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações"
+subtitle: "Foco em um Centro de Distribuição para Atender Abrigos"
+author: "Edison Fernando da Silva Nunes"
 date: "2024-09-07"
 output: word_document
 editor_options: 
@@ -8,21 +9,10 @@ editor_options:
     wrap: 72
 ---
 
-```{}
-```
-
-Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar
-Custos Associados a Desastres e Inundações
-
-Foco na Criação de um Centro de Distribuição para Atender Abrigos
-
-Edison Fernando da Silva Nunes
-
 1.  INTRODUÇÃO
 
-    A logística humanitária refere-se à organização e coordenação das
-    atividades logísticas envolvidas em operações de ajuda humanitária.
-    É um campo especializado que lida com os desafios únicos enfrentados
+    A logística humanitária refere-se à organização e coordenação das atividades logísticas envolvidas em operações de ajuda humanitária.
+    É um campo especializado que lida com os desafios enfrentados
     pelos trabalhadores humanitários, como a entrega rápida de
     suprimentos essenciais em áreas remotas ou afetadas por desastres.
     Os desastres resultam de eventos adversos, naturais ou provocados
@@ -41,8 +31,8 @@ Edison Fernando da Silva Nunes
     suprimentos, a gestão de estoques, a tecnologia da informação e
     comunicação, a distribuição eficiente de alimentos, água e abrigos,
     bem como serviços de saúde e gestão de resíduos, são necessárias.
-    Também pode incluir a coordenação com outras organizações e agências
-    governamentais, a fim de garantir uma resposta eficaz e coordenada.
+    Também pode incluir outras organizações e agências
+    governamentais, a fim de garantir uma resposta eficaz.
     A logística humanitária enfrenta muitos desafios, como a falta de
     infraestrutura básica em áreas afetadas, condições climáticas e
     ambientais adversas, logística precária e questões de segurança.
@@ -62,8 +52,8 @@ Edison Fernando da Silva Nunes
     de monitoramento já realizados e pela produção prévia de mapas do
     município de Rio Grande-RS, que indicavam os locais possivelmente
     afetados pela elevação das águas da Lagoa dos Patos, foi possível
-    realizar um estudo para uma tomadas de decisões mais assertivas e
-    com maior previsibilidade das ações. Ao longo dos anos, a logística
+    tomadas de decisões mais assertivas e
+    maior previsibilidade das ações. Ao longo dos anos, a logística
     humanitária avançou consideravelmente, com o uso de tecnologias
     avançadas, como drones e análise de dados, para melhorar a
     eficiência e a eficácia das operações. Também foi desenvolvida uma
@@ -102,7 +92,7 @@ espera-se melhorar a prontidão e a eficiência das respostas a desastres,
 fortalecendo a capacidade das comunidades de lidar com os impactos de
 eventos extremos e facilitando a recuperação pós-desastre.
 
-1.  OBJETIVOS
+3.  OBJETIVOS
 
     3.1. Objetivo Geral
 
@@ -113,22 +103,22 @@ eventos extremos e facilitando a recuperação pós-desastre.
 
 3.2. Objetivos Específicos
 
-1\. Conhecer Mapear a região identificando locais com menor e maior
+1. Mapear a região identificando locais com menor e maior
 risco de inundações;
 
-2\. Desenvolver um modelo de otimização para a localização de abrigos às
+2. Desenvolver um modelo de otimização para a localização de abrigos às
 vítimas de desastres provocados por inundações no município de Rio
 Grande - RS;
 
-3\. Desenvolver um modelo de roteamento para a entrega dos principais
+3. Desenvolver um modelo de roteamento para a entrega dos principais
 suprimentos (alimentos, remédios e roupas).
 
-4\. Realizar simulações para os dois modelos apontando a solução ótima.
+4. Realizar simulações para os dois modelos apontando a solução ótima.
 
-5\. Propor recomendações para estratégias de logística humanitária
+5. Propor recomendações para estratégias de logística humanitária
 baseadas nos resultados obtidos.
 
-4\. METODOLOGIA
+4. METODOLOGIA
 
 O trabalho proposto, segundo (Pizzolato, 2012), seguirá a metodologia
 básica da Pesquisa Operacional, passando pela identificação do problema,
@@ -142,9 +132,10 @@ abaixo.
 
 4.1. Tipos de Metodologia
 
-4.1.1. O modelo da P-Mediana Para o número ótimo e localização dos
-abrigos, pretende-se utilizar o modelo das P-Medianas. Os problemas de
-localização de Nesse modelo p-medianas procura-se minimizar a distância
+4.1.1. O modelo da P-Mediana 
+
+Para o número ótimo e localização dos
+abrigos, pretende-se utilizar o modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a distância
 média, ou seja, minimizar a soma das menores distâncias dentro de uma
 região, determinando a localização ideal de (p) instalações (abrigos) de
 forma que a demanda total desta área seja atendida de maneira eficiente.
@@ -155,7 +146,43 @@ entre os centros de distribuição e os abrigos. A solução do problema
 envolve escolher (p) locais de um conjunto de possíveis locais de
 abrigos para que a soma das distâncias ponderadas (baseadas na demanda)
 dos centros de distribuição até as instalações mais próximas seja
-minimizada. DIGITAR NA SEQUÊNCIA O QUE ESTÁ COLOCADO ABAIXO Cuidar o
+minimizada. 
+Sejam N={1,...,n} o conjunto de pontos de demanda; 
+
+$$
+i \in \mathbb{N}
+$$
+um determinado cliente ou vértice;
+$$
+j \in \mathbb{N}
+$$
+uma instalação em potencial ou mediana; p o número de instalações de serviço ou medianas a serem localizadas;
+$$
+w_i
+$$
+o peso ou importância de cliente i;
+$$
+[d_{ij}]_{n \times n}
+$$
+a matriz simétrica de distâncias de cada cliente i à instalação j, com
+$$
+d_{ii}=0, \forall i; [x_{ij}]_{n \times n} 
+$$
+a matriz simétrica de distâncias de cada cliente i à instalação j, com
+$$
+d_{ij}
+$$
+
+
+
+
+
+
+$$
+\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i_{ij}}
+$$
+
+Cuidar o
 tempo verbal, procurar escrever todo texto no mesmo tempo verbal.
 
 4.2.2.. O Modelo para o Roteamento de Veículos
