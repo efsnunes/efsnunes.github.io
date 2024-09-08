@@ -178,27 +178,27 @@ eventos extremos e facilitando a recuperação pós-desastre.
   tempo de atendimento à vítimas de desastres de inundações para o
   município de Rio Grande - RS, melhorando a eficiência na distribuição
   de recursos e na alocação de serviços de emergência.
-\end{enumerate}
 
-3.2. Objetivos Específicos
+  3.2. Objetivos Específicos
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
-\item
-  Mapear a região identificando locais com menor e maior risco de
-  inundações;
-\item
-  Desenvolver um modelo de otimização para a localização de abrigos às
-  vítimas de desastres provocados por inundações no município de Rio
-  Grande - RS;
-\item
-  Desenvolver um modelo de roteamento para a entrega dos principais
-  suprimentos (alimentos, remédios e roupas).
-\item
-  Realizar simulações para os dois modelos apontando a solução ótima.
-\item
-  Propor recomendações para estratégias de logística humanitária
-  baseadas nos resultados obtidos.
+  \begin{enumerate}
+  \def\labelenumii{\arabic{enumii}.}
+  \item
+    Mapear a região identificando locais com menor e maior risco de
+    inundações;
+  \item
+    Desenvolver um modelo de otimização para a localização de abrigos às
+    vítimas de desastres provocados por inundações no município de Rio
+    Grande - RS;
+  \item
+    Desenvolver um modelo de roteamento para a entrega dos principais
+    suprimentos (alimentos, remédios e roupas).
+  \item
+    Realizar simulações para os dois modelos apontando a solução ótima.
+  \item
+    Propor recomendações para estratégias de logística humanitária
+    baseadas nos resultados obtidos.
+  \end{enumerate}
 \item
   METODOLOGIA
 \end{enumerate}
@@ -213,9 +213,11 @@ respostas, para minimizar danos causados por desastre natural, que
 constitui o tema principal deste trabalho encontram-se relacionados
 abaixo.
 
+\begin{verbatim}
 4.1. Tipos de Metodologia
 
-4.1.1. O modelo da P-Mediana
+  4.1.1. O modelo da P-Mediana
+\end{verbatim}
 
 Para o número ótimo e localização dos abrigos, pretende-se utilizar o
 modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a
@@ -233,12 +235,20 @@ seja minimizada. Sejam N=\{1,\ldots,n\} o conjunto de pontos de demanda;
 
 \[
 i \in \mathbb{N}
-\] um determinado cliente ou vértice; \[
+\]
+
+um determinado cliente ou vértice;
+
+\[
 j \in \mathbb{N}
 \] uma instalação em potencial ou mediana; p o número de instalações de
 serviço ou medianas a serem localizadas; \[
 w_i
-\] o peso ou importância de cliente \[i\]; \[
+\] o peso ou importância de cliente \[
+i
+\];
+
+\[
 [d_{ij}]_{n \times n}
 \] a matriz simétrica de distâncias de cada cliente \[i\] à instalação
 \[
@@ -263,22 +273,27 @@ x_{jj}=0
 seguinte forma:
 
 \[
-Min  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i_}d_{ij}x_{ij}  (1)
-\] Sujeito a \[
+Min \quad  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i}d_{ij}x_{ij}    (1)
+\] Sujeito a
+
+\[
 \sum_{j \in \mathbb{N}}x_{ij}=1; i \in \mathbb{N}
-\] \[
+\]
+
+\[
 \sum_{j \in \mathbb{N}}x_{jj}=p
-\] \[
+\]
+
+\[
 x_{ij} \leq x_{jj}; i,j \in \mathbb{N}
-\] \[
+\]
+
+\[
 x_{ij} \in \mathbb{0,1}; i,j \in \mathbb{N}
 \] onde a função objetivo (1) indica a minimização das distâncias
 ponderadas entre os clientes e os opostos que oferecem serviços; as
-restrições em (2) indicam que cada cliente \[
-i
-\] é alocado a somente uma instalação \[
-j
-\] ; a restrição (3) garante que somente \[
+restrições em (2) indicam que cada cliente \[i\] é alocado a somente uma
+instalação \[j\] ; a restrição (3) garante que somente \[
 p
 \] instalações oferecem o serviço proposto; as restrições em (4) afirmam
 que um cliente somente é atendido num local onde existe uma instalação
@@ -290,21 +305,13 @@ problema de localização de uma planta simples ou em inglês \[ simple \]
 \[ plant \] \[ lOcation \] \[ model \] \[(SPLP)\] Observamos ainda que,
 em lugar de localização, o modelo acima pode ser interpretado como
 modelo de zoneamento, em que se busca dividir o espaço em \[
-p
-\] zonas. Nessa ótica de zoneamento, o modelo de p-mediana pode ser
+p\] zonas. Nessa ótica de zoneamento, o modelo de p-mediana pode ser
 aplicadoao problema de classificação de um conjunto de padrões,
-conhecido como \[
-cluster
-\] \[
-analysis
-\] (Xavier e Xavier, 2011), que busca agrupar elementos com padrões
-semelhantes em certo \[
-cluster
-\] e com padrões diferentes em \[
-clusters
-\] distintos
+conhecido como \[cluster\] \[analysis\] (Xavier e Xavier, 2011), que
+busca agrupar elementos com padrões semelhantes em certo \[ cluster \] e
+com padrões diferentes em \[ clusters \] distintos
 
-4.2.2.. O Modelo para o Roteamento de Veículos
+4.2.2. O Modelo para o Roteamento de Veículos
 
 Os problemas de roteamento de veículos (PRV) consistem basicamente em
 determinar rotas para realizar algum tipo de serviço, de maneira que o
@@ -313,11 +320,23 @@ distribuir a um ou mais veículos uma determinada lista de compromissos
 de entrega, associados a determinados pontos, devendo os veículos
 retornar ao ponto de origem ao final do trabalho. A formulação
 matemática para um Problema de Roteamento de Veículos (PRV) é
-apresentada abaixo:
+apresentada abaixo: Minimizar
 
-DIGITAR NA SEQUÊNCIA O QUE ESTÁ COLOCADO ABAIXO
-
-Onde: Definir cada termo
+\[
+z=\sum_{i,j}(c_{ij}\sum_{k}x_{ijk})
+\] Sujeito a: \[
+\sum_{k}y_{ik}=1 \quad \text{para} \quad  i=2, \dots,n
+\] \[
+\sum_{k}y_{ik}=1\quad \text{para} \quad  i=1
+\] \[
+\sum_{i}q_{i}y_{ik} \leq Q_{k} \quad \text{para} \quad  k=1, \dots,m
+\] \[
+\sum_{j}x_{ijk} \leq\sum x_{jix}=y_{ik} \quad \text{para}\quad i=1,\dots,n\quad k=1,\dots,m
+\] \[
+y_{ik} \in \{0,1\}\quad\text{para}\quad i=1,\dots,n\quad\text{para}\quad k=1,\dots,m
+\] \[
+x_{ijk} \in \{0,1\}\quad\text{para}\quad i,j=1,\dots,n\quad\text{para}\quad k=1,\dots,m
+\] \#\#Onde: Definir cada termo
 
 4.3. Simulação e Análise Os modelos serão simulados usando dados reais
 das inundações de 2024 no município de Rio Grande - RS, focando na
@@ -329,24 +348,41 @@ de sensibilidade serão realizados para avaliar diferentes cenários.
 \setcounter{enumi}{4}
 \tightlist
 \item
-  CONCLUSÃO RESULTADOS ESPERADOS
+  RESULTADOS ESPERADOS
 \end{enumerate}
 
-Aqui precisa um pouco de mais blá, blá, \ldots. que iremos construir.
-Este projeto busca contribuir para a logística humanitária ao aplicar
-modelos de p-medianas e técnicas de roteamento para diminuir os tempos
-de atendimentos às vitimas de inundações no município de Rio Grande --
-RS, tanto no que se refere ao local mais próximo que servirá de abrigo
-como ao abastecimento de cada abrigo com suprimentos.
+\#\#Aqui precisa um pouco de mais blá, blá, \ldots. que iremos
+construir. Este projeto busca contribuir para a logística humanitária ao
+aplicar modelos de p-medianas e técnicas de roteamento para diminuir os
+tempos de atendimentos às vitimas de inundações no município de Rio
+Grande -- RS, tanto no que se refere ao local mais próximo que servirá
+de abrigo como ao abastecimento de cada abrigo com suprimentos.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\setcounter{enumi}{4}
+\setcounter{enumi}{5}
 \tightlist
 \item
-  CRONOGRAMA Etapas 1° trim. 2024 2° trim. 2024 3° trim. 2024 4° trim.
-  2024 1° trim. 2025 2° trim. 2025 3° trim. 2025 4° trim. 2025
+  CRONOGRAMA \[
+  \begin{table}[ht]
+  \centering
+  \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+  \hline
+  Col1 & Col2 & Col3 & Col4 & Col5 & Col6 & Col7 & Col8 & Col9 \\ \hline
+  A1   & B1   & C1   & D1   & E1   & F1   & G1   & H1   & I1   \\ \hline
+  A2   & B2   & C2   & D2   & E2   & F2   & G2   & H2   & I2   \\ \hline
+  A3   & B3   & C3   & D3   & E3   & F3   & G3   & H3   & I3   \\ \hline
+  A4   & B4   & C4   & D4   & E4   & F4   & G4   & H4   & I4   \\ \hline
+  A5   & B5   & C5   & D5   & E5   & F5   & G5   & H5   & I5   \\ \hline
+  A6   & B6   & C6   & D6   & E6   & F6   & G6   & H6   & I6   \\ \hline
+  \end{tabular}
+  \caption{Sua tabela de 9 colunas e 6 linhas}
+  \end{table}
+  \]
 \end{enumerate}
+
+Etapas 1° trim. 2024 2° trim. 2024 3° trim. 2024 4° trim. 2024 1° trim.
+2025 2° trim. 2025 3° trim. 2025 4° trim. 2025
 
 Revisão Bibliográfica\\
 Submissão de artigo da disciplina de Seminários em Ambientometria\\
