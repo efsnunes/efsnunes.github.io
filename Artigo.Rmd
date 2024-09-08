@@ -3,7 +3,7 @@ title: "Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimiza
 subtitle: "Foco em um Centro de Distribuição para Atender Abrigos"
 author: "Edison Fernando da Silva Nunes"
 date: "2024-09-07"
-output: word_document
+output: pdf_document
 editor_options: 
   markdown: 
     wrap: 72
