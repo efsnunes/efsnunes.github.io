@@ -307,8 +307,8 @@ ao abastecimento de cada abrigo com suprimentos.
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|}
 \hline
 Col1 & Col2 & Col3 & Col4 & Col5 & Col6 & Col7 & Col8 & Col9 \\ \hline
-A1   & B1   & C1   & D1   & E1   & F1   & G1   & H1   & I1   \\ \hline
-A2   & B2   & C2   & D2   & E2   & F2   & G2   & H2   & I2   \\ \hline
+Etapas   & B1   & C1   & D1   & E1   & F1   & G1   & H1   & I1   \\ \hline
+Revisão Bibliográfica   & B2   & C2   & D2   & E2   & F2   & G2   & H2   & I2   \\ \hline
 A3   & B3   & C3   & D3   & E3   & F3   & G3   & H3   & I3   \\ \hline
 A4   & B4   & C4   & D4   & E4   & F4   & G4   & H4   & I4   \\ \hline
 A5   & B5   & C5   & D5   & E5   & F5   & G5   & H5   & I5   \\ \hline
