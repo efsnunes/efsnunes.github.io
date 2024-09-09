@@ -10,6 +10,11 @@ editor_options:
   markdown: 
     wrap: 72
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo=FALSE)
+```
+
+
 
 ```{r}
 options(repos = c(CRAN = "https://cloud.r-project.org"))
@@ -21,10 +26,6 @@ install.packages("tinytex")
 ```
 ```{r}
 library(tinytex)
-```
-
-```{r}
-tinytex::tlmgr_version()
 ```
 
 
@@ -366,4 +367,11 @@ Conclusões   & B6   & C6   & D6   & E6   & F6   & G6   & H6   & I6   \\ \hline
 \caption{Sua tabela de 9 colunas e 6 linhas}
 \end{table}
 
+```{r}
+tinytex::uninstall_tinytex()
+```
+
+```{r}
+tinytex::install_tinytex()
+```
 
