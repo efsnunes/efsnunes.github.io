@@ -3,17 +3,34 @@ title: "Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimiza
 subtitle: "Foco em um Centro de Distribuição para Atender Abrigos"
 author: "Edison Fernando da Silva Nunes"
 date: "2024-09-07"
-output: pdf_document
-  pdf_engine:xelatex
+output: 
+  pdf_document:
+    latex_engine: xelatex
 editor_options: 
   markdown: 
     wrap: 72
 ---
 
+```{r}
+options(repos = c(CRAN = "https://cloud.r-project.org"))
+
+```
+
+```{r}
+install.packages("tinytex")
+```
+```{r}
+library(tinytex)
+```
+
+```{r}
+tinytex::tlmgr_version()
+```
+
+
 1.  INTRODUÇÃO
 
-    A logística humanitária refere-se à organização e coordenação das
-    atividades logísticas envolvidas em operações de ajuda humanitária.
+    A logística humanitária refere-se à organização e coordenação das atividades logísticas envolvidas em operações de ajuda humanitária.
     É um campo especializado que lida com os desafios enfrentados pelos
     trabalhadores humanitários, como a entrega rápida de suprimentos
     essenciais em áreas remotas ou afetadas por desastres. Os desastres
