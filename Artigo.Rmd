@@ -4,6 +4,7 @@ subtitle: "Foco em um Centro de Distribuição para Atender Abrigos"
 author: "Edison Fernando da Silva Nunes"
 date: "2024-09-07"
 output: pdf_document
+  pdf_engine:xelatex
 editor_options: 
   markdown: 
     wrap: 72
