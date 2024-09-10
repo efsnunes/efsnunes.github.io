@@ -7,11 +7,12 @@ output:
   pdf_document:
     keep_tex: true
     latex_engine: xelatex
+header-includes:
+      - \setlength{\parindent}{1em}
 editor_options: 
   markdown: 
     wrap: 72
-    header-includes:
-      - \setlength{\parident}{1em}
+    
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE)
