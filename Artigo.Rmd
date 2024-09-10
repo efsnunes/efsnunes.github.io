@@ -1,6 +1,6 @@
 ---
 title: "Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações"
-subtitle: "Foco em um Centro de Distribuição para atender Abrigos"
+subtitle: "Foco em um Centro de Distribuição para Atender Abrigos"
 author: "Edison Fernando da Silva Nunes"
 date: "2024-09-07"
 output: 
