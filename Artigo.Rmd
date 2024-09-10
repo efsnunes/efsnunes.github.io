@@ -10,6 +10,8 @@ output:
 editor_options: 
   markdown: 
     wrap: 72
+    header-includes:
+      - \setlength{\parident}{1em}
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo=FALSE)
