@@ -75,7 +75,7 @@ Minimizar Custos Associados a Desastres e Inundações}
   \apptocmd{\@title}{\par {\large #1 \par}}{}{}
 }
 \makeatother
-\subtitle{Foco em um Centro de Distribuição para Atender Abrigos}
+\subtitle{Foco em um Centro de Distribuição para atender Abrigos}
 \author{Edison Fernando da Silva Nunes}
 \date{2024-09-07}
 
@@ -85,16 +85,14 @@ Minimizar Custos Associados a Desastres e Inundações}
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
 \item
-  INTRODUÇÃO
-
-  A logística humanitária refere-se à organização e coordenação das
-  atividades logísticas envolvidas em operações de ajuda humanitária. É
-  um campo especializado que lida com os desafios enfrentados pelos
-  trabalhadores humanitários, como a entrega rápida de suprimentos
-  essenciais em áreas remotas ou afetadas por desastres. Os desastres
-  resultam de eventos adversos, naturais ou provocados pelo homem, que
-  impactam ecossistemas vulneráveis, causando danos humanos, materiais
-  e/ou ambientais, além de prejuízos econômicos e sociais.
+  INTRODUÇÃO A logística humanitária refere-se à organização e
+  coordenação das atividades logísticas envolvidas em operações de ajuda
+  humanitária. É um campo especializado que lida com os desafios
+  enfrentados pelos trabalhadores humanitários, como a entrega rápida de
+  suprimentos essenciais em áreas remotas ou afetadas por desastres. Os
+  desastres resultam de eventos adversos, naturais ou provocados pelo
+  homem, que impactam ecossistemas vulneráveis, causando danos humanos,
+  materiais e/ou ambientais, além de prejuízos econômicos e sociais.
   Especificamente, desastres naturais têm consequências drásticas para
   sociedades, regiões e países, resultando em vítimas fatais, feridos,
   desabrigados, cidades destruídas e altos custos de reconstrução. No
@@ -216,35 +214,36 @@ abaixo.
 
 \begin{verbatim}
 4.1. Tipos de Metodologia
-\end{verbatim}
-
-4.1. Coleta de Dados Dados meteorológicos, relatórios dos últimos
+4.1. Coleta de Dados
+Dados meteorológicos, relatórios dos últimos
 desastres e informações sobre infraestrutura do município serão
 coletados para análise.
 
-\begin{verbatim}
-  4.1.1. O modelo da P-Mediana
-\end{verbatim}
 
-Para o número ótimo e localização dos abrigos, pretende-se utilizar o
-modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a
-distância média, ou seja, minimizar a soma das menores distâncias dentro
-de uma região, determinando a localização ideal de (p) instalações
-(abrigos) de forma que a demanda total desta área seja atendida de
-maneira eficiente. Esses problemas são comumente aplicados em contextos
-de planejamento urbano, logística de distribuição, e situações de
-resposta a emergências, onde a meta é reduzir o tempo ou o custo de
-transporte entre os centros de distribuição e os abrigos. A solução do
-problema envolve escolher (p) locais de um conjunto de possíveis locais
-de abrigos para que a soma das distâncias ponderadas (baseadas na
-demanda) dos centros de distribuição até as instalações mais próximas
-seja minimizada. Sejam N=\{1,\ldots,n\} o conjunto de pontos de demanda;
+  4.1.1. O modelo da P-Mediana
+
+  Para o número ótimo e localização dos abrigos, pretende-se utilizar o
+  modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a
+  distância média, ou seja, minimizar a soma das menores distâncias dentro
+  de uma região, determinando a localização ideal de (p) instalações
+  (abrigos) de forma que a demanda total desta área seja atendida de
+  maneira eficiente. Esses problemas são comumente aplicados em contextos
+  de planejamento urbano, logística de distribuição, e situações de
+  resposta a emergências, onde a meta é reduzir o tempo ou o custo de
+  transporte entre os centros de distribuição e os abrigos. A solução do
+  problema envolve escolher (p) locais de um conjunto de possíveis locais
+  de abrigos para que a soma das distâncias ponderadas (baseadas na
+  demanda) dos centros de distribuição até as instalações mais próximas
+  seja minimizada. Sejam N={1,...,n} o conjunto de pontos de demanda;
+\end{verbatim}
 
 \[
 i \in \mathbb{N}
 \]
 
-um determinado cliente ou vértice;
+\begin{verbatim}
+  um determinado cliente ou vértice; 
+\end{verbatim}
 
 \[
 j \in \mathbb{N}
