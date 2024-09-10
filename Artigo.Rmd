@@ -19,7 +19,8 @@ knitr::opts_chunk$set(echo=FALSE)
 ```
 
 
-1.  INTRODUÇÃO
+1. INTRODUÇÃO
+
 A logística humanitária refere-se à organização e coordenação das atividades logísticas envolvidas em operações de ajuda humanitária.
 É um campo especializado que lida com os desafios enfrentados pelos
 trabalhadores humanitários, como a entrega rápida de suprimentos
@@ -75,7 +76,7 @@ infraestruturas básicas e a fornecer apoio contínuo às comunidades
 afetadas.
 
     
-2.  JUSTIFICATIVA
+2. JUSTIFICATIVA
 
 A crescente frequência e severidade dos desastres naturais, como as
 inundações recentes no Rio Grande do Sul em maio de 2024, evidenciam a
@@ -101,33 +102,33 @@ espera-se melhorar a prontidão e a eficiência das respostas a desastres,
 fortalecendo a capacidade das comunidades de lidar com os impactos de
 eventos extremos e facilitando a recuperação pós-desastre.
 
-3.  OBJETIVOS
+3. OBJETIVOS
 
-    3.1. Objetivo Geral
+   3.1. Objetivo Geral
 
-    Aplicar técnicas de otimização de fluxo de redes para minimizar o
-    tempo de atendimento à vítimas de desastres de inundações para o
-    município de Rio Grande - RS, melhorando a eficiência na
-    distribuição de recursos e na alocação de serviços de emergência.
+   Aplicar técnicas de otimização de fluxo de redes para minimizar o
+   tempo de atendimento à vítimas de desastres de inundações para o
+   município de Rio Grande - RS, melhorando a eficiência na
+   distribuição de recursos e na alocação de serviços de emergência.
 
-    3.2. Objetivos Específicos
+   3.2. Objetivos Específicos
 
-    1.  Mapear a região identificando locais com menor e maior risco de
-    inundações;
+   1.  Mapear a região identificando locais com menor e maior risco de
+   inundações;
 
-    2.  Desenvolver um modelo de otimização para a localização de abrigos às
-    vítimas de desastres provocados por inundações no município de Rio
-    Grande - RS;
+   2.  Desenvolver um modelo de otimização para a localização de abrigos às
+   vítimas de desastres provocados por inundações no município de Rio
+   Grande - RS;
 
-    3.  Desenvolver um modelo de roteamento para a entrega dos principais
-    suprimentos (alimentos, remédios e roupas).
+   3.  Desenvolver um modelo de roteamento para a entrega dos principais
+   suprimentos (alimentos, remédios e roupas).
 
-    4.  Realizar simulações para os dois modelos apontando a solução ótima.
+   4.  Realizar simulações para os dois modelos apontando a solução ótima.
 
-    5.  Propor recomendações para estratégias de logística humanitária
-    baseadas nos resultados obtidos.
+   5.  Propor recomendações para estratégias de logística humanitária
+   baseadas nos resultados obtidos.
 
-4.  METODOLOGIA
+4. METODOLOGIA
 
 O trabalho proposto, segundo (Pizzolato, 2012), seguirá a metodologia
 básica da Pesquisa Operacional, passando pela identificação do problema,
@@ -139,28 +140,30 @@ respostas, para minimizar danos causados por desastre natural, que
 constitui o tema principal deste trabalho encontram-se relacionados
 abaixo.
 
-    4.1. Tipos de Metodologia
-    4.1. Coleta de Dados
-    Dados meteorológicos, relatórios dos últimos
-    desastres e informações sobre infraestrutura do município serão
-    coletados para análise.
+   4.1. Tipos de Metodologia
+    
+   4.1. Coleta de Dados
+    
+   Dados meteorológicos, relatórios dos últimos
+   desastres e informações sobre infraestrutura do município serão
+   coletados para análise.
 
 
-      4.1.1. O modelo da P-Mediana
+    4.1.1. O modelo da P-Mediana
 
-      Para o número ótimo e localização dos abrigos, pretende-se utilizar o
-      modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a
-      distância média, ou seja, minimizar a soma das menores distâncias dentro
-      de uma região, determinando a localização ideal de (p) instalações
-      (abrigos) de forma que a demanda total desta área seja atendida de
-      maneira eficiente. Esses problemas são comumente aplicados em contextos
-      de planejamento urbano, logística de distribuição, e situações de
-      resposta a emergências, onde a meta é reduzir o tempo ou o custo de
-      transporte entre os centros de distribuição e os abrigos. A solução do
-      problema envolve escolher (p) locais de um conjunto de possíveis locais
-      de abrigos para que a soma das distâncias ponderadas (baseadas na
-      demanda) dos centros de distribuição até as instalações mais próximas
-      seja minimizada. Sejam N={1,...,n} o conjunto de pontos de demanda;
+    Para o número ótimo e localização dos abrigos, pretende-se utilizar o
+    modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a
+    distância média, ou seja, minimizar a soma das menores distâncias dentro
+    de uma região, determinando a localização ideal de (p) instalações
+    (abrigos) de forma que a demanda total desta área seja atendida de
+    maneira eficiente. Esses problemas são comumente aplicados em contextos
+    de planejamento urbano, logística de distribuição, e situações de
+    resposta a emergências, onde a meta é reduzir o tempo ou o custo de
+    transporte entre os centros de distribuição e os abrigos. A solução do
+    problema envolve escolher (p) locais de um conjunto de possíveis locais
+    de abrigos para que a soma das distâncias ponderadas (baseadas na
+    demanda) dos centros de distribuição até as instalações mais próximas
+    seja minimizada. Sejam N={1,...,n} o conjunto de pontos de demanda;
 
 $$
 i \in \mathbb{N}
@@ -263,7 +266,9 @@ p$$ zonas. Nessa ótica de zoneamento, o modelo de p-mediana pode ser
 aplicadoao problema de classificação de um conjunto de padrões,
 conhecido como $$cluster$$ $$analysis$$ (Xavier e Xavier, 2011), que busca agrupar elementos com padrões semelhantes em certo $$ cluster $$ e com padrões diferentes em $$ clusters $$ distintos
 
-4.2. Desenvolvimento do Modelo Serão utilizados modelos matemáticos para
+4.2. Desenvolvimento do Modelo
+
+Serão utilizados modelos matemáticos para
 a localização dos abrigos e para a entrega de suprimentos. Estes modelos
 serão alimentado com variáveis como: quantidades de suprimentos,
 veículos disponíveis, rotas de transporte e demanda por serviços de
@@ -325,6 +330,7 @@ $$y_{ij}  é uma variável binária que indica se o ponto i será atendido pelo 
 ##
 
 4.3. Simulação e Análise 
+
 Os modelos serão simulados usando dados reais
 das inundações de 2024 no município de Rio Grande - RS, focando na
 eficiência de distribuição e na redução de custos operacionais. Testes
