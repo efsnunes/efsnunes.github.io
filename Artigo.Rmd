@@ -5,15 +5,7 @@ author: "Edison Fernando da Silva Nunes"
 date: "2024-09-07"
 output: 
   pdf_document:
-    keep_tex: true
     latex_engine: xelatex
-header-includes:
-      -\usepackage{setspace}
-      -\usepackage{ragged2e}
-      -\justifying
-      -\setlength{\parindent}{1em}
-      -\setstretch{1.5}
-      -\renewcommand{\normalsize}{\fontsize{12}{14}\selectfont}
 editor_options: 
   markdown: 
     wrap: 72
