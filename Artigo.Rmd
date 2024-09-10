@@ -8,7 +8,7 @@ output:
     keep_tex: true
     latex_engine: xelatex
 header-includes:
-      - \setlength{\parindent}{1em}
+      - \input{custom-header.tex}
 editor_options: 
   markdown: 
     wrap: 72
