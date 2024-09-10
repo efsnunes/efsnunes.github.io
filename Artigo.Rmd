@@ -354,11 +354,4 @@ Conclusões   & B6   & C6   & D6   & E6   & F6   & G6   & H6   & I6   \\ \hline
 \caption{Sua tabela de 9 colunas e 6 linhas}
 \end{table}
 
-```{r}
-tinytex::uninstall_tinytex()
-```
-
-```{r}
-tinytex::install_tinytex()
-```
 
