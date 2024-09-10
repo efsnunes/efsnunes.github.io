@@ -19,9 +19,7 @@ editor_options:
     wrap: 72
     
 ---
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo=FALSE)
-```
+
 
 
 1. INTRODUÇÃO
