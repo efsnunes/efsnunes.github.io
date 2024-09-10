@@ -111,6 +111,3 @@ editor: visual
 </div>
 
 <div>
-
-
-
