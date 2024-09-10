@@ -16,21 +16,6 @@ knitr::opts_chunk$set(echo=FALSE)
 ```
 
 
-
-
-```{r}
-options(repos = c(CRAN = "https://cloud.r-project.org"))
-
-```
-
-```{r}
-install.packages("tinytex")
-```
-```{r}
-library(tinytex)
-```
-
-
 1.  INTRODUÇÃO
 
     A logística humanitária refere-se à organização e coordenação das atividades logísticas envolvidas em operações de ajuda humanitária.
