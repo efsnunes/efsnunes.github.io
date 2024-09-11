@@ -102,6 +102,40 @@ editor: visual
 
 <a class="page-link" href="pagina4.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></a>
 
+<div>
+
+</li>
+
+<li class="page-item">
+
+<a class="page-link" href="Artigo.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></a>
+
+</div>
+
+<div>
+
+</li>
+
+<li class="page-item">
+
+<a class="page-link" href="slides roteamento.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></a>
+
+</div>
+
+<div>
+
+<div>
+
+</li>
+
+<li class="page-item">
+
+<a class="page-link" href="Roteamento de abrigos.html"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></a>
+
+</div>
+
+</div>
+
 </li>
 
 </li>
