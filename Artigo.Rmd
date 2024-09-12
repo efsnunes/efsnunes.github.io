@@ -118,6 +118,36 @@ Melhoria na alocação de abrigos: Espera-se que o modelo de P-Mediana sugira um
 
 Este projeto busca contribuir para a logística humanitária ao aplicar modelos de P-Medianas e técnicas de roteamento, focando na diminuição dos tempos de atendimento às vítimas de inundações no município de Rio Grande – RS. A aplicação desses modelos não só auxilia na escolha do local mais próximo que servirá de abrigo, mas também no abastecimento adequado de cada abrigo com suprimentos essenciais, como alimentos, medicamentos e água. Além disso, espera-se que o estudo possa oferecer insights valiosos sobre como aprimorar a alocação de recursos em cenários futuros, utilizando técnicas de otimização para criar uma rede de resposta rápida e eficiente. A utilização de modelos matemáticos e algoritmos de roteamento também permitirá identificar as melhores rotas de distribuição de suprimentos, minimizando o tempo de transporte e os custos operacionais envolvidos, resultando em um sistema de resposta mais ágil e menos oneroso.
 
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Etapas & 1º trim 2024 & 2º trim 2024 & 3º trim 2024 & 4º trim 2024 & 1º trim 2025 & 2º trim 2025 & 3º trim 2025 & 4º trim 2025 \\ \hline
+Revisão Bibliográfica   &    &    &    &    &    &    &    &    \\ \hline
+Submissão de artigo da
+disciplina de Seminários
+em Ambientometria   &    &    &    &    &    &    &    &    \\ \hline
+Estudo dos Modelos   &    &    &    &    &    &    &    &    \\ \hline
+Desenvolvimento dos Modelos &    &    &    &    &    &    &    &    \\ \hline
+Conclusões   &    &    &    &    &    &    &    &    \\ \hline
+\end{tabular}
+\caption{Sua tabela de 9 colunas e 6 linhas}
+\end{table}
+
+\newpage % Adiciona uma nova página
+
+Referências Bibliográficas
+
+Pizzolato, N.D. (2012). Introdução à Pesquisa Operacional: conceitos e práticas. LTC.
+
+Xavier, M.C., & Xavier, R.L. (2011). Problemas de localização e roteamento. Elsevier.
+
+Centro de estudos e Pesquisas sobre Desastres (CEPED). (2013). Desastres Naturais no Brasil 1992-2012. CEPED.
+
+
+
+
+
 6.  CRONOGRAMA
 
 ```{=tex}
