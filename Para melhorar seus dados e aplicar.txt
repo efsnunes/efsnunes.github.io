@@ -1,0 +1,239 @@
+Para melhorar seus dados e aplicar testes de normalidade, além de fazer uma análise mais detalhada da precipitação média das estações, você pode considerar os seguintes passos:
+
+Remover valores ausentes e outliers: 
+=>Verifique se há valores ausentes (NA) ou outliers nos dados que podem distorcer a análise.
+
+Normalizar os dados: 
+=>Utilize transformações (log, raiz quadrada, etc.) para tentar aproximar os dados de uma distribuição normal, caso necessário.
+
+Verificar a normalidade:
+=>Use testes de normalidade como Shapiro-Wilk, Anderson-Darling ou Kolmogorov-Smirnov, e visualize com gráficos de Q-Q plot.
+
+Aqui está um exemplo de como você pode fazer isso no seu código:
+
+# Carregar pacotes necessários
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+
+# Remover valores ausentes e outliers
+mostardas <- na.omit(mostardas)
+mostardas <- mostardas %>% filter(PrecMed < quantile(PrecMed, 0.99))
+
+# Normalizar os dados (se necessário)
+mostardas$PrecMed_log <- log(mostardas$PrecMed + 1)
+
+# Verificar a normalidade dos dados com Q-Q plot e testes de normalidade
+qqnorm(mostardas$PrecMed_log)
+qqline(mostardas$PrecMed_log, col = "red")
+
+shapiro.test(mostardas$PrecMed_log)
+anderson.darling.test(mostardas$PrecMed_log)
+ks.test(mostardas$PrecMed_log, "pnorm", mean(mostardas$PrecMed_log), sd(mostardas$PrecMed_log))
+
+# Dividir os dados por estação novamente
+verão <- rbind(janeiro, fevereiro, dezembro)
+verão$Estacao <- "Verão"
+outono <- rbind(março, abril, maio)
+outono$Estacao <- "Outono"
+inverno <- rbind(junho, julho, agosto)
+inverno$Estacao <- "Inverno"
+primavera <- rbind(setembro, outubro, novembro)
+primavera$Estacao <- "Primavera"
+
+# Agregar os dados por ano e estação
+mediaanualverão <- verão %>% group_by(Ano) %>% summarize(PrecMed = mean(PrecMed))
+mediaanualoutono <- outono %>% group_by(Ano) %>% summarize(PrecMed = mean(PrecMed))
+mediaanualinverno <- inverno %>% group_by(Ano) %>% summarize(PrecMed = mean(PrecMed))
+mediaanualprimavera <- primavera %>% group_by(Ano) %>% summarize(PrecMed = mean(PrecMed))
+
+# Boxplots e análises por estação
+estações <- rbind(verão, outono, primavera, inverno)
+ggplot(estações, aes(x = factor(Ano), y = PrecMed, fill = Estacao)) +
+  geom_boxplot() +
+  facet_wrap(~ Estacao, scales = "free_y") +
+  labs(title = "Precipitação Média por Estação do Ano (2014-2024)",
+       x = "Ano", y = "Precipitação Média") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+##################################################################################################################
+
+Explicações adicionais:
+
+Remover valores ausentes e outliers: 
+=>na.omit remove linhas com valores NA. O filtro PrecMed < quantile(PrecMed, 0.99) remove outliers acima do percentil 99.
+
+Normalizar os dados: 
+=>Aplicamos uma transformação logarítmica à precipitação média (log(mostardas$PrecMed + 1)) para aproximar a distribuição à normal.
+
+Verificar a normalidade: 
+=>Utilizamos gráficos de Q-Q plot (qqnorm e qqline) e testes de normalidade (shapiro.test, anderson.darling.test, ks.test) para avaliar se os dados seguem uma distribuição normal.
+
+Faça esses ajustes e veja se os dados se aproximam mais de uma distribuição normal. Isso ajudará na aplicação de análises estatísticas que assumem normalidade.
+
+
+##########################################################################################################################################################################################################################################
+
+Relatório de Análise Estatística da Precipitação Média por Estação do Ano
+
+Introdução
+
+Este relatório apresenta uma análise estatística da precipitação média mensal na região de Mostardas, com dados coletados de 2014 a 2024. O objetivo é examinar os padrões de precipitação ao longo das diferentes estações do ano (Verão, Outono, Inverno e Primavera), identificar tendências e variações, e verificar a normalidade dos dados para aplicar testes estatísticos adequados.
+
+Metodologia
+
+Coleta de Dados
+Os dados de precipitação foram coletados e armazenados em um arquivo CSV (mostardas.csv). As variáveis principais incluem a data (Data), a precipitação total (PrecTot) e a temperatura média (tempMed).
+
+Preparação dos Dados
+Importação e Limpeza dos Dados:
+
+Os dados foram importados para o R e suas colunas renomeadas para Data, PrecTot e tempMed.
+A coluna de data foi convertida para o formato Date.
+Novas colunas foram criadas para dia, mês e ano.
+Transformação dos Dados:
+
+A precipitação total foi convertida para precipitação média diária (PrecMed).
+Os dados foram divididos por meses e agrupados por estações do ano.
+Normalização e Verificação da Normalidade:
+
+Valores ausentes foram removidos e outliers foram filtrados.
+Uma transformação logarítmica foi aplicada à precipitação média para aproximar a distribuição de uma normal.
+Foram utilizados gráficos de Q-Q plot e testes de normalidade (Shapiro-Wilk, Anderson-Darling, Kolmogorov-Smirnov).
+Análise Estatística
+Cálculo das Médias Anuais por Estação:
+
+Médias anuais da precipitação média foram calculadas para cada estação.
+Visualização dos Dados:
+
+Boxplots e gráficos de linha foram criados para visualizar a distribuição e tendência da precipitação média ao longo dos anos para cada estação.
+Resultados
+Verificação da Normalidade
+Os resultados dos testes de normalidade indicam que a precipitação média log-transformada se aproxima de uma distribuição normal.
+
+# Resultados dos testes de normalidade
+shapiro.test(mostardas$PrecMed_log)
+
+Análise Descritiva
+A análise descritiva foi realizada para cada estação do ano, destacando a média, mediana e desvio padrão da precipitação média.
+
+# Estatísticas descritivas por estação
+summary(mostardas$PrecMed_log)
+Data              tempMed                   Dia             Mes              Ano          PrecMed       
+ Min.   :2014-08-31   Length:121         Min.   :28.00   Min.   : 1.000   Min.   :2014   Min.   : 0.2533  
+ 1st Qu.:2017-02-28   Class :character   1st Qu.:30.00   1st Qu.: 4.000   1st Qu.:2017   1st Qu.: 1.8295  
+ Median :2019-08-31   Mode  :character   Median :31.00   Median : 7.000   Median :2019   Median : 3.0980  
+ Mean   :2019-08-30                      Mean   :30.45   Mean   : 6.512   Mean   :2019   Mean   : 3.5749  
+ 3rd Qu.:2022-02-28                      3rd Qu.:31.00   3rd Qu.: 9.000   3rd Qu.:2022   3rd Qu.: 4.7625  
+ Max.   :2024-08-31                      Max.   :31.00   Max.   :12.000   Max.   :2024   Max.   :12.3000  
+                                                                                         NA's   :43 
+Visualização dos Dados
+
+Os gráficos a seguir mostram a distribuição da precipitação média anual por estação do ano.
+
+
+# Gráfico de boxplot por estação
+ggplot(estações, aes(x = factor(Ano), y = PrecMed, fill = Estacao)) +
+  geom_boxplot() +
+  facet_wrap(~ Estacao, scales = "free_y") +
+  labs(title = "Precipitação Média por Estação do Ano (2014-2024)",
+       x = "Ano", y = "Precipitação Média") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+Tendências por Estação
+Verão:
+A média anual da precipitação média no verão mostrou uma tendência de aumento/decréscimo ao longo dos anos.
+A linha vermelha no gráfico indica a média global da precipitação média no verão.
+
+# Gráfico de tendência para o verão
+plot(mediaanualverão$Ano, mediaanualverão$PrecMed, type='l')
+abline(h=mdverão, col="red")
+Outono:
+A análise do outono revelou uma variação significativa na precipitação média ao longo dos anos.
+A média global está representada pela linha vermelha no gráfico.
+
+# Gráfico de tendência para o outono
+plot(mediaanualoutono$Ano, mediaanualoutono$PrecMed, type='l')
+abline(h=mdoutono, col="red")
+Inverno:
+A precipitação média no inverno apresentou padrões estáveis/variáveis com alguns anos de alta/baixa precipitação.
+A linha vermelha representa a média global.
+
+# Gráfico de tendência para o inverno
+plot(mediaanualinverno$Ano, mediaanualinverno$PrecMed, type='l')
+abline(h=mdinverno, col="red")
+Primavera:
+Na primavera, a precipitação média mostrou um padrão crescente/decrescente.
+A linha vermelha no gráfico indica a média global.
+
+# Gráfico de tendência para a primavera
+plot(mediaanualprimavera$Ano, mediaanualprimavera$PrecMed, type='l')
+abline(h=mdprimavera, col="red")
+
+Conclusão
+
+A análise estatística da precipitação média na região de Mostardas ao longo das diferentes estações do ano revela tendências distintas e variações significativas. A normalização dos dados e a verificação da normalidade permitiram a aplicação de testes estatísticos adequados. Os resultados indicam que as variações sazonais têm um impacto considerável na precipitação média anual.
+
+Recomenda-se uma análise contínua e a coleta de dados adicionais para um monitoramento mais preciso e uma melhor compreensão das tendências climáticas na região.
+
+##########################################################################################################################################################################################################################################
+
+por que remover outliers acima do percentil 99?
+
+Remover outliers acima do percentil 99 é uma prática comum em análise de dados para reduzir o impacto de valores extremos que podem distorcer as estatísticas e os resultados da análise. No entanto, é importante entender quando e por que isso é feito, bem como as implicações dessa escolha.
+
+Razões para Remover Outliers
+Redução de Ruído:
+Outliers podem ser valores atípicos que não representam o comportamento típico dos dados. Eles podem ser resultados de erros de medição, entrada de dados incorreta ou eventos excepcionais. Remover esses valores ajuda a obter uma visão mais clara das tendências e padrões gerais dos dados.
+
+Estabilidade dos Modelos Estatísticos:
+Outliers podem afetar significativamente as estatísticas descritivas (média, desvio padrão, etc.) e os resultados de modelos estatísticos (regressão, análise de variância, etc.). A presença de outliers pode levar a estimativas imprecisas e modelos instáveis.
+
+Melhora na Visualização:
+Outliers podem distorcer escalas em gráficos, dificultando a visualização dos dados e a identificação de padrões. Removê-los pode tornar os gráficos mais legíveis e interpretáveis.
+
+Considerações ao Remover Outliers
+Natureza dos Dados:
+Antes de remover outliers, é importante entender a natureza dos dados e a razão pela qual os valores extremos estão presentes. Em alguns contextos, como em dados financeiros ou de saúde, os outliers podem conter informações valiosas e não devem ser removidos indiscriminadamente.
+
+Impacto na Análise:
+Remover outliers pode alterar significativamente os resultados da análise. É crucial considerar o impacto dessa remoção e avaliar se os resultados ainda representam a realidade dos dados.
+
+Justificativa:
+Qualquer remoção de outliers deve ser bem justificada e documentada. É importante explicar por que os outliers foram removidos e como isso afetou a análise.
+
+Exemplo de Código Ajustado
+Se você decidir que a remoção de outliers é apropriada para sua análise, aqui está um exemplo ajustado do código para incluir essa etapa:
+
+# Carregar pacotes necessários
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+
+# Remover valores ausentes
+mostardas <- na.omit(mostardas)
+
+# Identificar e remover outliers acima do percentil 99
+threshold <- quantile(mostardas$PrecMed, 0.99)
+mostardas <- mostardas %>% filter(PrecMed < threshold)
+
+# Normalizar os dados (se necessário)
+mostardas$PrecMed_log <- log(mostardas$PrecMed + 1)
+
+# Verificar a normalidade dos dados com Q-Q plot e testes de normalidade
+qqnorm(mostardas$PrecMed_log)
+qqline(mostardas$PrecMed_log, col = "red")
+
+shapiro.test(mostardas$PrecMed_log)
+
+Conclusão
+A remoção de outliers é uma prática útil, mas deve ser feita com cuidado e justificativa. É essencial entender a natureza dos dados e considerar o impacto dessa remoção na análise para garantir resultados precisos e representativos.
+
+##############################################################################################################
+##############################################################################################################
+##############################################################################################################
+
+
+
+

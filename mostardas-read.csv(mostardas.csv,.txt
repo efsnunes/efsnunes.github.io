@@ -1,0 +1,102 @@
+> mostardas<-read.csv("mostardas.csv", header=TRUE, sep=";", dec=",")
+> str(mostardas)
+'data.frame':	121 obs. of  4 variables:
+ $ Data.Medicao                        : chr  "2014-08-31" "2014-09-30" "2014-10-31" "2014-11-30" ...
+ $ PRECIPITACAO.TOTAL..MENSAL..AUT..mm.: chr  "99.2" "102.4" "147.8" "54.6" ...
+ $ TEMPERATURA.MEDIA..MENSAL..AUT...C. : chr  "15" "17.4" "19.2" "21.7" ...
+ $ X                                   : logi  NA NA NA NA NA NA ...
+> library("tidyverse")
+── Attaching core tidyverse packages ──────────────────────────────────────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package to force all conflicts to become errors
+> library("dplyr")
+> #renomeando as colunas
+> nomecoluna<-c("Data","PrecTot","tempMed")
+> names(mostardas)<-nomecoluna
+> mostardas<-mostardas[,-4]
+> view(mostardas)
+> 
+> mostardas$Data<- as.Date(mostardas$Data, "%Y-%m-%d")
+> #transforma uma data em dia, mes e ano ##
+> mostardas$Dia<-as.numeric(format(mostardas$Data, format = "%d"))
+> mostardas$Mes<-as.numeric(format(mostardas$Data, format = "%m"))
+> mostardas$Ano<-as.numeric(format(mostardas$Data, format = "%Y"))
+> view(mostardas)
+> mostardas$PrecTot<-as.numeric(mostardas$PrecTot)
+Mensagen de aviso:
+NAs introduzidos por coerção 
+> mostardas<-transform(mostardas,PrecMed=PrecTot/Dia)
+> mostardas<-mostardas[,-2]
+> view(mostardas)
+> janeiro<-mostardas%>%filter(Mes=="1")
+> #plot(janeiro$Ano,janeiro$PrecMed)
+> fevereiro<-mostardas%>%filter(Mes=="2")
+> março<-mostardas%>%filter(Mes=="3")
+> abril<-mostardas%>%filter(Mes=="4")
+> maio<-mostardas%>%filter(Mes=="5")
+> junho<-mostardas%>%filter(Mes=="6")
+> julho<-mostardas%>%filter(Mes=="7")
+> agosto<-mostardas%>%filter(Mes=="8")
+> setembro<-mostardas%>%filter(Mes=="9")
+> outubro<-mostardas%>%filter(Mes=="10")
+> novembro<-mostardas%>%filter(Mes=="11")
+> dezembro<-mostardas%>%filter(Mes=="12")
+> verão<-rbind(janeiro,fevereiro,dezembro)
+> verão$Estacao <- "Verão"
+> outono<-rbind(março,abril,maio)
+> outono$Estacao <- "Outono"
+> inverno<-rbind(junho,julho,agosto)
+> inverno$Estacao <- "Inverno"
+> primavera<-rbind(setembro,outubro,novembro)
+> primavera$Estacao <- "Primavera"
+> mediaanualverão<-aggregate(PrecMed~Ano,data=verão,FUN=mean)
+> mdverão<-mean(mediaanualverão$PrecMed)
+> plot(mediaanualverão$Ano,mediaanualverão$PrecMed,type='l')
+> abline(h=mdverão, col="red")
+> mediaanualoutono<-aggregate(PrecMed~Ano,data=outono,FUN=mean)
+> mdoutono<-mean(mediaanualoutono$PrecMed)
+> plot(mediaanualoutono$Ano,mediaanualoutono$PrecMed,type='l')
+> abline(h=mdoutono, col="red")
+> mediaanualinverno<-aggregate(PrecMed~Ano,data=inverno,FUN=mean)
+> mdinverno<-mean(mediaanualinverno$PrecMed)
+> plot(mediaanualinverno$Ano,mediaanualinverno$PrecMed,type='l')
+> abline(h=mdinverno, col="red")
+> mediaanualprimavera<-aggregate(PrecMed~Ano,data=primavera,FUN=mean)
+> mdprimavera<-mean(mediaanualprimavera$PrecMed)
+> plot(mediaanualprimavera$Ano,mediaanualprimavera$PrecMed,type='l')
+> abline(h=mdprimavera, col="red")
+> summary(mostardas)
+      Data              tempMed               Dia             Mes              Ano          PrecMed       
+ Min.   :2014-08-31   Length:121         Min.   :28.00   Min.   : 1.000   Min.   :2014   Min.   : 0.2533  
+ 1st Qu.:2017-02-28   Class :character   1st Qu.:30.00   1st Qu.: 4.000   1st Qu.:2017   1st Qu.: 1.8295  
+ Median :2019-08-31   Mode  :character   Median :31.00   Median : 7.000   Median :2019   Median : 3.0980  
+ Mean   :2019-08-30                      Mean   :30.45   Mean   : 6.512   Mean   :2019   Mean   : 3.5749  
+ 3rd Qu.:2022-02-28                      3rd Qu.:31.00   3rd Qu.: 9.000   3rd Qu.:2022   3rd Qu.: 4.7625  
+ Max.   :2024-08-31                      Max.   :31.00   Max.   :12.000   Max.   :2024   Max.   :12.3000  
+                                                                                         NA's   :43       
+> estações<-rbind(verão,outono,primavera,inverno)
+> boxplot(verão$PrecMed~verão$Ano)
+> boxplot(outono$PrecMed~outono$Ano)
+> boxplot(primavera$PrecMed~primavera$Ano)
+> boxplot(inverno$PrecMed~inverno$Ano,main="Precipitação Média no Inverno")
+> # Carregar o pacote ggplot2
+> library(ggplot2)
+> # Criar o boxplot combinado
+> ggplot(estações, aes(x = factor(Ano), y = estações$PrecMed, fill = Estacao)) +
++   geom_boxplot() +
++   facet_wrap(~ Estacao, scales = "free_y") +  # Dividir os gráficos por estação
++   labs(title = "Precipitação Média por Estação do Ano (2014-2024)",
++        x = "Ano", y = "Precipitação Média") +
++   theme_minimal() +
++   theme(axis.text.x = element_text(angle = 45, hjust = 1))  
+Mensagens de aviso:
+1: Use of `estações$PrecMed` is discouraged.
+ℹ Use `PrecMed` instead. 
+2: Removed 43 rows containing non-finite outside the scale range (`stat_boxplot()`). 

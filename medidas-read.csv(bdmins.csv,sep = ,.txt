@@ -1,0 +1,52 @@
+medidas<-read.csv("bdmins.csv",sep = ",",dec = ".")
+str(medidas)
+library(tidyverse)
+library(dplyr)
+medidaparcial<-medidas%>% select(sex,hgt,wgt)
+hmedida<-subset(medidaparcial, sex == 1)
+mmedida<-subset(medidaparcial, sex == 0)
+
+#medidas em fator
+medidaparcial$sex<-as.factor(medidaparcial$sex)
+
+library(ggplot2)
+
+ggplot(medidaparcial,aes(x=hgt,color=sex))+
+  geom_histogram(fill="white", alpha=0.3,position = "identity")
+
+##resumo dos dados dos homens
+summary(hmedida$hgt)
+sd(hmedida$hgt)
+
+IQR(hmedida$hgt)
+
+##resumo dos dados das mulheres
+summary(mmedida$hgt)
+sd(mmedida$hgt)
+IQR(mmedida$hgt)
+
+ggplot(medidaparcial,aes(x=hgt,color=sex))+
+  geom_boxplot(fill="white",alpha=0.3)
+ggplot(mmedida,aes(x=hgt))+
+  geom_histogram(fill="white",alpha=0.3,color="red",bins=8)
+hist(mmedida$hgt, probability = TRUE,ylim = c(0, 0.06))
+x <- 140:190
+y <- dnorm(x = x, mean = mean(mmedida$hgt), sd = sd(mmedida$hgt))
+lines(x = x, y = y, col = "blue")
+qqnorm(mmedida$hgt)
+qqline(mmedida$hgt)
+sim_norm <- rnorm(n = length(mmedida$hgt), mean = mean(mmedida$hgt), sd = sd(mmedida$hgt))
+
+qqnorm(sim_norm)
+qqline(sim_norm, col='blue')
+
+library(ggplot2)
+ggplot(data = data.frame(x = c(-3, 3)), aes(x))+
+  stat_function(fun = dnorm, n = 101,
+                args = list(mean = 0, sd = 1))+geom_vline(xintercept = 0)
+
+pnorm(q=169, mean=mean(mmedida$hgt), sd=sd(mmedida$hgt))
+1-pnorm(q=169, mean=mean(mmedida$hgt), sd=sd(mmedida$hgt))
+pnorm(q=169, mean=mean(mmedida$hgt), sd=sd(mmedida$hgt), lower.tail = FALSE)
+sum(mmedida$hgt >= 169) / length(mmedida$hgt)
+save.as(aula_30_abr.R)

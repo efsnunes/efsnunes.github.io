@@ -1,0 +1,135 @@
+Trabalho Agosto
+
+### Preparação dos Dados
+
+```r
+# Carregar pacotes necessários
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(tidyr)
+library(nortest)
+library(car)
+
+# Importar os dados
+# Assumindo que o arquivo CSV foi salvo como "precipitacao_mostardas.csv"
+dados <- read.csv("precipitacao_mostardas.csv", sep = ";")
+
+# Renomear colunas
+colnames(dados) <- c("Data", "PrecTot", "tempMed")
+
+# Converter a coluna Data para o formato Date
+dados$Data <- as.Date(dados$Data, format="%Y-%m-%d")
+
+# Criar colunas adicionais para Dia, Mês e Ano
+dados <- dados %>%
+  mutate(Dia = day(Data),
+         Mes = month(Data),
+         Ano = year(Data))
+
+# Criar uma coluna de Precipitação Média Diária (se necessário)
+dados <- dados %>%
+  mutate(PrecMed = PrecTot / Dia)
+
+# Agrupar por Estação do Ano
+dados <- dados %>%
+  mutate(Estacao = case_when(
+    Mes %in% c(12, 1, 2) ~ "Verão",
+    Mes %in% c(3, 4, 5) ~ "Outono",
+    Mes %in% c(6, 7, 8) ~ "Inverno",
+    Mes %in% c(9, 10, 11) ~ "Primavera"
+  ))
+```
+
+### Análise Exploratória Geral dos Dados
+
+```r
+# Resumo estatístico das variáveis
+summary(dados)
+
+# Gráficos de Dispersão: Precipitação Total vs. Temperatura Média Diária
+ggplot(dados, aes(x = tempMed, y = PrecTot, color = Estacao)) +
+  geom_point() +
+  labs(title = "Precipitação Total vs Temperatura Média Diária",
+       x = "Temperatura Média Diária (°C)",
+       y = "Precipitação Total (mm)")
+
+# Gráficos de Densidade para Precipitação Média Diária por Estação
+ggplot(dados, aes(x = PrecMed, fill = Estacao)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Densidade da Precipitação Média Diária por Estação",
+       x = "Precipitação Média Diária (mm/dia)",
+       y = "Densidade")
+```
+
+### Especificidades dos Dados
+
+```r
+# Verificação de Tendências Temporais na Precipitação Média Diária
+ggplot(dados, aes(x = Ano, y = PrecMed, color = Estacao)) +
+  geom_line(stat = "summary", fun = "mean") +
+  labs(title = "Tendências da Precipitação Média Diária por Estação",
+       x = "Ano",
+       y = "Precipitação Média Diária (mm/dia)")
+
+# Verificação de Assimetria na Distribuição de Precipitação Média Diária
+summary(dados$PrecMed)
+```
+
+### Gráficos e Tabelas Pertinentes
+
+```r
+# Boxplots de Precipitação Média Diária por Estação
+ggplot(dados, aes(x = Estacao, y = PrecMed, fill = Estacao)) +
+  geom_boxplot() +
+  labs(title = "Distribuição da Precipitação Média Diária por Estação",
+       x = "Estação",
+       y = "Precipitação Média Diária (mm/dia)")
+
+# Tabelas Resumidas para Precipitação Média Diária por Estação
+tabela_resumo <- dados %>%
+  group_by(Estacao) %>%
+  summarise(
+    Minimo = min(PrecMed, na.rm = TRUE),
+    `1º Quartil` = quantile(PrecMed, 0.25, na.rm = TRUE),
+    Mediana = median(PrecMed, na.rm = TRUE),
+    Media = mean(PrecMed, na.rm = TRUE),
+    `3º Quartil` = quantile(PrecMed, 0.75, na.rm = TRUE),
+    Maximo = max(PrecMed, na.rm = TRUE)
+  )
+print(tabela_resumo)
+```
+
+### Teste de Hipótese: Comparação da Temperatura Média Diária Entre Estações
+
+```r
+# Teste de Normalidade para a Temperatura Média Diária
+shapiro.test(dados$tempMed)
+ad.test(dados$tempMed)
+lillie.test(dados$tempMed)
+sf.test(dados$tempMed)
+
+# Se os dados não forem normais, aplicar uma transformação (se necessário)
+dados$tempMed_log <- log1p(dados$tempMed)
+
+# Teste de Hipótese ANOVA para verificar diferença na Temperatura Média Diária entre Estações
+anova_temp <- aov(tempMed_log ~ Estacao, data = dados)
+summary(anova_temp)
+
+# Se ANOVA for significativa, realizar post-hoc para identificar onde estão as diferenças
+TukeyHSD(anova_temp)
+```
+
+### Explicação:
+
+1. **Preparação dos Dados**: O código prepara os dados, renomeando colunas, convertendo datas, criando novas colunas e agrupando por estações do ano.
+
+2. **Análise Exploratória Geral dos Dados**: Aqui, o código realiza uma análise exploratória, incluindo gráficos de dispersão e gráficos de densidade, além de um resumo estatístico das variáveis.
+
+3. **Especificidades dos Dados**: Inclui a verificação de tendências temporais e a análise de assimetria na distribuição da precipitação média diária.
+
+4. **Gráficos e Tabelas Pertinentes**: Foram gerados gráficos de boxplot para a precipitação média diária e uma tabela resumida das estatísticas descritivas.
+
+5. **Teste de Hipótese**: Realiza um teste ANOVA para verificar se há diferença significativa na temperatura média diária entre as estações, após verificar a normalidade dos dados.
+
+Esse código deve cobrir todas as etapas sugeridas para uma análise detalhada dos dados de precipitação e temperatura. Se precisar de mais detalhes ou ajustes, estou à disposição!

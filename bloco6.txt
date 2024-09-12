@@ -1,0 +1,95 @@
+library(MASS)
+View(Cars93)
+hist(Cars93$Price)
+hist(Cars93$Price,xlab="Preço(x$1.000)",xlim = c(0,70),main="Preço de 93 modelos de carros em 1993")
+hist(Cars93$Price, xlab="Preço (x $1.000)", xlim=c(0,70), main="Preço de 93 modelos de carros em 1993", probability = TRUE)
+lines(density(Cars93$Price))
+table(Cars93Type)
+table(Cars93$Type)
+barblopt(table(Cars93$Type))
+barplott(table(Cars93$Type))
+barplot(table(Cars93$Type))
+save.image(carros=R.Data)
+save.image(carros=R.Data)
+ylim=c(0,25)
+xlab="Type"
+ylab="Frequency"
+axis.tly="solid"
+space=.05
+barplot(table(Cars93$Type),ylim=c(0,25),xlab="Type",ylab="Frequency",axis.tly="solid",space=.05)
+axis.lty="solid"
+space=.05
+barplot(table(Cars93$Type),ylim=c(0,25),xlab="Type",ylab="Frequency",axis.lty="solid",space=.05)
+pie(table(Cars93$Type))
+dotchart(x,labels)
+dotchart(x,labels,2,5)
+type.frame<-data.frame(table(Cars93$Type))
+type.frame
+dotchart(type.frame$Freq,type.frame$Var1)
+dotchart(type.frame[,2],type.frame[1])
+dotchart(type.frame[,2],type.frame[,1])
+plot(Cars93$Horsepower,Cars93$MPG.city,xlab="Horsepower",y=lab="MPG City",main="MPG City vs Horsepower")
+plot(Cars93$Horsepower,Cars93$MPG.city,xlab="Horsepower",ylab="MPG City",main="MPG City vs Horsepower")
+plot(Cars93$Horsepower,Cars93$MPG.city,xlab="Horsepower",ylab="MPG City",main="MPG City vs Horsepower",pch=16)
+pch=as.character(Cars93$Cylinders)
+plot(Cars93$Horsepower,Cars93$MPG.city,xlab="Horsepower",ylab="MPG City",main="MPG City vs Horsepower",pch=as.character(Cars93$Cylinders))
+cars.subset<-subset(Cars93,select=c(MPG.city,Price,Horsepower))
+head(cars.subset)
+pairs(cars.subset)
+boxplot(Cars93$Horsepower~Cars93$Cylinders,xlab = "Cylinders",ylab="Horsepower")
+ggplot(Cars93,aes(x=Price))
+library(ggplot2)
+ggplot(Cars93,aes(x=Price))
+ggplot(Cars93,aes(x=Price))+geom_histogram()
+geom_histogram(binwidth = 5,color="black",fill="white")
+labs(x="Price(x$1000)",y="Frequency",title = "Prices of 93 Models of 1993 Cars")
+ggplot(Cars93,aes(x=Price))+geom_histogram()+geom_histogram(binwidth = 5,color="black",fill="white")+
+labs(x="Price(x$1000)",y="Frequency",title = "Prices of 93 Models of 1993 Cars")
+ggplot(Cars93,aes(x=Type))+geom_bar()+
+save.image(carros=R.Data)
+ggplot(Cars93,aes(x=Type))+geom_bar()+
+labs(y="Frequency",title = "Cars Type and Frequency in Cars93")
+ggplot(Cars93,aes(x=Price))+geom_histogram()+geom_histogram(binwidth = 5,color="black",fill="white")+
+labs(x="Preço(x$1000)",y="Frequency",title = "Prices of 93 Models of 1993 Cars")
+ggplot(Cars93,aes(x=Type))+geom_bar()+
+labs(y="Frequencia",title = "Preços de 93 Modelos de Carros de 1993")
+ggplot(Cars93,aes(x=Preço))+geom_bar()+
+labs(y="Frequencia",title = "Preços de 93 Modelos de Carros de 1993")
+Type
+ice
+ggplot(Cars93,aes(x=Price))+geom_histogram()+geom_histogram(binwidth = 5,color="black",fill="white")+
+labs(x="Price(x$1000)",y="Frequency",title = "Prices of 93 Models of 1993 Cars")
+ggplot(Cars93,aes(x=Type))+geom_bar()+
+labs(y="Frequencia",title = "Preços de 93 Modelos de Carros de 1993")
+type.frame<-data.frame((table(Cars$93.Type)))
+type.frame<-data.frame((table(Cars93.Type)))
+type.frame<-data.frame((table(Cars93$Type)))
+colnames((type.frame)<-c("Type","Frequency"))
+colnames((type.frame)<- c("Type","Frequency"))
+colnames(type.frame)<- c("Type","Frequency")
+type.frame
+ggplot(type.frame,aes(x=Frequency,y=Type))
+ggplot(type.frame,aes(x=Frequency,y=Type))+geom_point()
+ggplot(type.frame,aes(x=Frequencia,y=Tipo))
+ggplot(type.frame,aes(x=Frequencia,y=Tipo))+geom_point()
+colnames(type.frame)<- c("Tipo","Frequencia")
+type.frame
+ggplot(type.frame,aes(x=Frequencia,y=Tipo))
+ggplot(type.frame,aes(x=Frequencia,y=Tipo))+geom_point()
+ggplot(type.frame,aes(xFrequencia, y=reorder(Tipo,Frequencia)))
+ggplot(type.frame,aes(x=Frequencia, y=reorder(Tipo,Frequencia)))
+geom_point(size=4)
+theme_bw()+theme(panel.grid.major.x = element_blank(),panel.grid.major.y = element_line(color = "black",linetype = "dotted")
+labs(y="Type")
+theme_bw()+theme(panel.grid.major.x = element_blank(),panel.grid.major.y = element_line(color = "black",linetype = "dotted"))
+labs(y="Type")
+ggplot(type.frame,aes(x=Frequencia, y=reorder(Tipo,Frequencia)))+geom_point(size=4)+
+theme_bw()+theme(panel.grid.major.x = element_blank(),panel.grid.major.y = element_line(color = "black",linetype = "dotted"))+
+labs(y="Type")
+space.rev
+cars.subset<-subset(Cars93,select=c(mpg.city,Price,Horsepower))
+cars.subset<-subset(Cars93,select=c(MPG.city,Price,Horsepower))
+ggpairs(cars.subset)
+library(GGally)
+ggpairs(cars.subset)
+save.image(carros=R.Data)

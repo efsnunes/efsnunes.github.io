@@ -1,0 +1,175 @@
+library("tidyverse")
+library("dplyr")
+
+inundacao<-read.csv("tabela.csv",sep=";",dec=",")
+str(inundacao)
+hist(inundacao$Raj..Vento..m.s.)
+main="Dados Rajadas de Vento"
+xlab="Rajada(x$3.6)"
+xlim=c(0,30)
+hist(inundacao$Raj..Vento..m.s.,xlab="Rajada(x$3.6)",xlim=c(0,30),main="Dados Rajadas de Vento")
+probability=TRUE
+hist(inundacao$Raj..Vento..m.s.,xlab="Rajada(x$3.6)",xlim=c(0,30),main="Dados Rajadas de Vento",probability=TRUE)
+lines(inundacao$Raj..Vento..m.s.)
+as.numeric(inundacao$Raj..Vento..m.s.)
+density(lines(inundacao$Raj..Vento..m.s.))
+hist(inundacao$Chuva..mm.)
+main="Dados Volume de Chuva"
+xlab="Chuva"
+xlim=c(0,30)
+hist(inundacao$Chuva..mm.,xlab="Chuva",xlim=c(0,30),main="Dados Volume de Chuva")
+probability=TRUE
+hist(inundacao$Raj..Vento..m.s.,xlab="Chuva",xlim=c(0,30),main="Dados Volume de Chuva",probability=TRUE)
+lines(inundacao$Chuva..mm.)
+as.numeric(inundacao$Chuva..mm.)
+
+
+#primeiras linhas
+head(inundacao,n=15)
+
+#ultimas linhas
+tail(inundacao,n=20)
+
+#mostra todo conjunto
+View(inundacao)
+summary(inundacao)
+
+mean(inundacao$Vel..Vento..m.s.)
+mean(inundacao$Vel..Vento..m.s.,na.rm=TRUE)
+
+plot(inundacao$Vel..Vento..m.s.,inundacao$Chuva..mm., xlab= "vento", ylab="chuva", main="vento x chuva")
+##boxplot(Cars93$Horsepower~Cars93$Cylinders, xlab="Cilindros", ylab="Potencia",col=minhapaleta)
+#tabela para visualizar e resumir os tipos de carros
+
+tipo <- table(inundacao$Vel..Vento..m.s.)
+
+#Gráfico de barras
+
+barplot(tipo)
+
+pie(tipo)
+pie(tipo, col=minhapaleta)
+library(RColorBrewer)
+minhapaleta <- brewer.pal(6, "Accent") 
+boxplot(inundacao$Vel..Vento..m.s.~inundacao$Raj..Vento..m.s., xlab="rajada vento", ylab="velocidade vento",col=minhapaleta)
+boxplot(inundacao$Temp..Max...C.~inundacao$Raj..Vento..m.s., xlab="TempMax", ylab="velocidade vento",col=minhapaleta)
+boxplot(inundacao$Temp..Min...C.~inundacao$Raj..Vento..m.s., xlab="TempMin", ylab="velocidade vento",col=minhapaleta)
+
+
+library("tidyverse")
+library("dplyr")
+
+inundacao<-read.csv("tabela.csv",sep=";",dec=",")
+str(inundacao)
+
+hist(inundacao$Raj..Vento..m.s.*3.6,main="Rajadas de Vento",
+     xlab="Rajada(km/h)", ylab="Densidade", xlim=c(0,100),probability=TRUE)
+
+hist(inundacao$Raj..Vento..m.s.*3.6,main="Dados Rajadas de Vento",
+     xlab="Rajada(km/h)", ylab="Frequência", xlim=c(0,100))
+
+
+plot(inundacao$Raj..Vento..m.s.*3.6,main="Rajadas de Vento",
+     xlab="Hora", ylab="Rajada(km/h)", type="l")
+
+hist(inundacao$Chuva..mm.,xlab="Chuva (mm/hora)",xlim=c(0,30),main="Volume de  (mm/h)", ylab="Frequência")
+plot(inundacao$Chuva..mm.,main="Chuva (mm/hora)",
+     xlab="Hora", ylab="Chuva (mm/hora)", type="l")
+
+abline(h=mean(inundacao$Chuva..mm.,na.rm = TRUE),col="red")
+
+boxplot(inundacao$Temp..Max...C.,inundacao$Temp..Ins...C.,inundacao$Temp..Min...C., xlab="TempMax   -  TempMed   -   TempMin", ylab="Temperatura",col=minhapaleta)
+
+#correlação 
+cor(na.omit(inundacao$Temp..Ins...C.),na.omit(inundacao$Raj..Vento..m.s.))
+cor(na.omit(inundacao$Chuva..mm.),na.omit(inundacao$Raj..Vento..m.s.))
+
+#inundacao$Data<-as.Date(inundacao$Data,"%Y-%m-%d")
+
+inundacao$Data<-as.Date(inundacao$Data,"%d/%m/%Y")
+
+inundacao$Dia<-as.numeric(format(inundacao$Data,format = "%d"))
+inundacao$Mes<-as.numeric(format(inundacao$Data,format = "%m"))
+inundacao$Ano<-as.numeric(format(inundacao$Data,format = "%Y"))
+
+#vendo estrutura da tabela
+str(inundacao)
+
+#correlacao_direcao_velocidade
+
+correlacao_Mes_temperatura <- cor(inundacao$Temp..Max...C., inundacao$Vel..Vento..m.s., use = "complete.obs")
+
+# Exibindo o resultado
+correlacao_Mes_temperatura
+
+# Selecionar as colunas de temperatura, mês e ano
+
+tempmed<-dplyr::select(inundacao,Mes,Ano,Raj..Vento..m.s.,Temp..Min...C.)
+
+
+# Calcular a média geral da temperatura
+media_geral <- mean(tempmed$Temp..Min...C., na.rm = TRUE)
+
+# Filtrar as linhas onde a temperatura está acima da média geral
+temp_acima_media <- tempmed[tempmed$Temp..Min...C. > media_geral, ]
+
+# Contar o número de dias que a temperatura esteve acima da média geral
+dias_acima_media <- nrow(temp_acima_media)
+
+# Exibir o número de dias
+print(dias_acima_media)
+
+#correlacao_Chuva
+
+correlacao_Mes_chuva <- cor(inundacao$Chuva..mm., inundacao$Vel..Vento..m.s., use = "complete.obs")
+
+# Exibindo o resultado
+correlacao_Mes_chuva
+
+# Selecionar as colunas de chuva, dia e vento
+
+chuvamed<-dplyr::select(inundacao,Dia,Chuva..mm.,Vel..Vento..m.s.)
+
+
+# Calcular a média geral da chuva
+media_geral <- mean(chuvamed$Chuva..mm., na.rm = TRUE)
+
+# Filtrar as linhas onde a chuva está acima da média geral
+chuva_acima_media <- chuvamed[chuvamed$Chuva..mm. > media_geral, ]
+
+# Contar o número de dias que a temperatura esteve acima da média geral
+dias_acima_media <- nrow(chuva_acima_media)
+
+# Exibir o número de dias
+print(dias_acima_media)
+
+
+# Instalar e carregar os pacotes necessários
+install.packages("lubridate")
+library(lubridate)
+library("dplyr")
+
+# Supondo que o dataframe se chame 'df' e a coluna com data e hora se chame 'DateTime'
+inundacao <- data.frame(
+  Data = seq(from = as.POSIXct("2023-01-01 00:00"), to = as.POSIXct("2023-01-23 23:00"), by = "hour"),
+  Chuva = sample(0:10, 552, replace = TRUE)  # Dados de chuva exemplo
+)
+
+# Visualizando as primeiras linhas do dataframe original
+head(inundacao)
+
+# Convertendo a coluna 'DateTime' para apenas data
+inundacao <- inundacao %>%
+  mutate(Date = as.Date(Data))
+
+# Agrupando por dia e somando a precipitação diária (exemplo de análise)
+inundacao_daily <- inundacao %>%
+  group_by(Date) %>%
+  summarise(Total_Chuva = sum(Chuva))
+
+# Visualizando as primeiras linhas do dataframe agrupado por dia
+head(inundacao_daily)
+
+# Análise: contagem de dias com chuva
+dias_com_chuva <- nrow(filter(inundacao_daily, Total_Chuva > 0))
+print(dias_com_chuva)

@@ -238,46 +238,18 @@ transporte entre os centros de distribuição e os abrigos. A solução do
 problema envolve escolher (p) locais de um conjunto de possíveis locais
 de abrigos para que a soma das distâncias ponderadas (baseadas na
 demanda) dos centros de distribuição até as instalações mais próximas
-seja minimizada. Sejam N=\{1,\ldots,n\} o conjunto de pontos de demanda;
-
-\[
-i \in \mathbb{N}
-\]
-
-um determinado cliente ou vértice;
-
-\[
-j \in \mathbb{N}
-\] uma instalação em potencial ou mediana; p o número de instalações de
-serviço ou medianas a serem localizadas; \[
-w_i
-\] o peso ou importância de cliente \[
-i
-\];
-
-\[
-[d_{ij}]_{n \times n}
-\] a matriz simétrica de distâncias de cada cliente \[i\] à instalação
-\[
-j
-\] , com \[
-d_{ii}=0, \forall i; [x_{ij}]_{n \times n} 
-\] a matriz de alocação de cada cliente \[i\]; onde \[
-x_{ij}=1
-\] se o cliente \[
-i
-\] é alocado à instalação \[
-j
-\] e \[
-x_{ij}=0
-\] , caso contrário; \[
-x_{jj}=1
-\] indica que \[
-j
-\] é uma mediana e \[
-x_{jj}=0
-\] em caso contrário. Então, o modelo da p-mediana é apresentado da
-seguinte forma:
+seja minimizada. Sejam N=\{1,\ldots,n\} o conjunto de pontos de
+demanda;\[
+i \in \mathbb{N}\], um determinado cliente ou
+vértice;\[j \in \mathbb{N}\] uma instalação em potencial ou mediana; p o
+número de instalações de serviço ou medianas a serem localizadas;
+\[w_i\] o peso ou importância de cliente \[i\];\[[d_{ij}]_{n \times n}\]
+a matriz simétrica de distâncias de cada cliente \[i\] à instalação
+\[j\] , com \[d_{ii}=0, \forall i; [x_{ij}]_{n \times n}\] a matriz de
+alocação de cada cliente \[i\]; onde \[x_{ij}=1\] se o cliente \[i\] é
+alocado à instalação \[j\] e \[x_{ij}=0\] , caso contrário; \[x_{jj}=1\]
+indica que \[j\] é uma mediana e \[x_{jj}=0\] em caso contrário. Então,
+o modelo da p-mediana é apresentado da seguinte forma:
 
 \[
 Min \quad  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i}d_{ij}x_{ij}    (1)
@@ -296,27 +268,25 @@ x_{ij} \leq x_{jj}; i,j \in \mathbb{N}
 \]
 
 \[
-x_{ij} \in \mathbb{0,1}; i,j \in \mathbb{N}
-\] onde a função objetivo (1) indica a minimização das distâncias
-ponderadas entre os clientes e os opostos que oferecem serviços; as
-restrições em (2) indicam que cada cliente \[i\] é alocado a somente uma
-instalação \[j\] ; a restrição (3) garante que somente \[
-p
-\] instalações oferecem o serviço proposto; as restrições em (4) afirmam
-que um cliente somente é atendido num local onde existe uma instalação
-que oferece o serviço, e as restrições em (5) impõem variáveis de
-decisão binárias. Cabe lembrar que pode existir uma lista prévia de
-pontos candidatos a serem escolhidos como mediana; nesse caso o modelo
-acima sofre pequenas modificações e recebe o nome tradicional de
-problema de localização de uma planta simples ou em inglês \[ simple \]
-\[ plant \] \[ lOcation \] \[ model \] \[(SPLP)\] Observamos ainda que,
-em lugar de localização, o modelo acima pode ser interpretado como
-modelo de zoneamento, em que se busca dividir o espaço em \[
-p\] zonas. Nessa ótica de zoneamento, o modelo de p-mediana pode ser
-aplicadoao problema de classificação de um conjunto de padrões,
+x_{ij} \in \mathbb{0,1}; i,j \in \mathbb{N}\] onde a função objetivo (1)
+indica a minimização das distâncias ponderadas entre os clientes e os
+opostos que oferecem serviços; as restrições em (2) indicam que cada
+cliente \[i\] é alocado a somente uma instalação \[j\] ; a restrição (3)
+garante que somente \[p\] instalações oferecem o serviço proposto; as
+restrições em (4) afirmam que um cliente somente é atendido num local
+onde existe uma instalação que oferece o serviço, e as restrições em (5)
+impõem variáveis de decisão binárias. Cabe lembrar que pode existir uma
+lista prévia de pontos candidatos a serem escolhidos como mediana; nesse
+caso o modelo acima sofre pequenas modificações e recebe o nome
+tradicional de problema de localização de uma planta simples ou em
+inglês \[ simple \] \[ plant \] \[ location \] \[ model \] \[(SPLP)\]
+Observamos ainda que, em lugar de localização, o modelo acima pode ser
+interpretado como modelo de zoneamento, em que se busca dividir o espaço
+em \[p\] zonas. Nessa ótica de zoneamento, o modelo de p-mediana pode
+ser aplicadoao problema de classificação de um conjunto de padrões,
 conhecido como \[cluster\] \[analysis\] (Xavier e Xavier, 2011), que
 busca agrupar elementos com padrões semelhantes em certo \[ cluster \] e
-com padrões diferentes em \[ clusters \] distintos
+com padrões diferentes em \[ clusters \] distintos.
 
 4.2. Desenvolvimento do Modelo
 
@@ -336,21 +306,20 @@ retornar ao ponto de origem ao final do trabalho. A formulação
 matemática para um Problema de Roteamento de Veículos (PRV) é
 apresentada abaixo: Minimizar
 
-\[
-z=\sum_{i,j}(c_{ij}\sum_{k}x_{ijk})
-\] Sujeito a: \[
-\sum_{k}y_{ik}=1 \quad \text{para} \quad  i=2, \dots,n
-\] \[
-\sum_{k}y_{ik}=1\quad \text{para} \quad  i=1
-\] \[
-\sum_{i}q_{i}y_{ik} \leq Q_{k} \quad \text{para} \quad  k=1, \dots,m
-\] \[
-\sum_{j}x_{ijk} \leq\sum x_{jix}=y_{ik} \quad \text{para}\quad i=1,\dots,n\quad k=1,\dots,m
-\] \[
-y_{ik} \in \{0,1\}\quad\text{para}\quad i=1,\dots,n\quad\text{para}\quad k=1,\dots,m
-\] \[
-x_{ijk} \in \{0,1\}\quad\text{para}\quad i,j=1,\dots,n\quad\text{para}\quad k=1,\dots,m
-\] \#\#Onde: Definir cada termo Formulação matemática
+z=\sum*\{i,j\}(c\emph{\{ij\}}\sum*\{k\}x\{ijk\}) \[ Sujeito a:\]
+\[\sum_{k}y_{ik}=1 \quad \text{para} \quad  i=2, \dots,n\]
+
+\[\sum_{k}y_{ik}=1\quad \text{para} \quad  i=1\]
+
+\[\sum_{i}q_{i}y_{ik} \leq Q_{k} \quad \text{para} \quad  k=1, \dots,m
+\]
+\[\sum_{j}x_{ijk} \leq\sum x_{jix}=y_{ik} \quad \text{para}\quad i=1,\dots,n\quad k=1,\dots,m
+\]
+\[y_{ik} \in \{0,1\}\quad\text{para}\quad i=1,\dots,n\quad\text{para}\quad k=1,\dots,m
+\]
+\[x_{ijk} \in \{0,1\}\quad\text{para}\quad i,j=1,\dots,n\quad\text{para}\quad k=1,\dots,m\]
+
+Onde: Definir cada termo Formulação matemática
 
 Seja 𝑁=\{1,\ldots,𝑛\} N=\{1,\ldots,n\} o conjunto de pontos de demanda,
 onde:
@@ -364,10 +333,8 @@ onde:
 \[x_{j}\] é uma variável binária que indica se um abrigo será instalado
 no local j (1 se sim, 0 caso contrário);
 
-\$\$y\_\{ij\} é uma variável binária que indica se o ponto i será
-atendido pelo abrigo j.
-
-\subsection{}\label{section}
+\[y_{ij}\] é uma variável binária que indica se o ponto i será atendido
+pelo abrigo j.
 
 4.3. Simulação e Análise
 
@@ -384,14 +351,13 @@ para avaliar diferentes cenários.
   RESULTADOS ESPERADOS
 \end{enumerate}
 
-\#\#Aqui precisa um pouco de mais blá, blá, \ldots. que iremos
-construir. Melhoria na alocação de abrigos: Espera-se que o modelo de
-P-Mediana sugira um conjunto de locais estratégicos para a instalação de
-abrigos, considerando a minimização da distância média entre os pontos
-de demanda e os abrigos. Isso deve reduzir significativamente o tempo de
-resposta durante desastres, permitindo que as vítimas sejam acolhidas de
-forma mais rápida e eficiente. A localização estratégica dos abrigos é
-crucial em cenários de inundações, onde o tempo de resposta pode ser
+Melhoria na alocação de abrigos: Espera-se que o modelo de P-Mediana
+sugira um conjunto de locais estratégicos para a instalação de abrigos,
+considerando a minimização da distância média entre os pontos de demanda
+e os abrigos. Isso deve reduzir significativamente o tempo de resposta
+durante desastres, permitindo que as vítimas sejam acolhidas de forma
+mais rápida e eficiente. A localização estratégica dos abrigos é crucial
+em cenários de inundações, onde o tempo de resposta pode ser
 determinante para salvar vidas e mitigar o impacto dos desastres. Além
 disso, a distribuição eficiente dos abrigos contribui para a otimização
 de recursos, uma vez que evita sobrecarga em determinados locais e

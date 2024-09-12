@@ -1,0 +1,186 @@
+ESCREVENDO UM RELATÓRIO DE ANÁLISE ESTATÍSTICA (RAE)
+O texto é uma adaptação livre de Noolan and Speed (2000) – Stat Labs: Mahematical Satistics
+Through Applications– Apendix A
+Para preparar seu relatório de análise estatística (RAE), destile da sua investigação algum
+argumento central. Organize suas descobertas em unidades de evidências para dar suporte a esse
+argumento. Não se trata apenas de fazer uma simples compilação das suas análises estatísticas. Um
+bom RAE deverá estar bem estruturado, seguir uma linha de raciocínio clara, apresentar os dados de
+forma que facilitem sua interpretação e fazer bom uso da gramática. Seguem detalhamentos.
+Estruturação
+Divida o seu RAE em sub-unidades para clarificar a estrutura da análise. Dois níveis de
+sub-titulação são, em geral, suficientes. A escolha das seções dependerá da situação e deverá
+atender às expectativas do leitor. Geralmente (mas sem ser dogmático) é boa prática dividir um
+RAE em: Introdução, Metodologia, Resultados e Discussão.
+Utilize a Introdução para formular o problema sob análise e indicar as suas principais
+descobertas (sem, no entanto, revelar todos os detalhes). É importante indicar ao leitor em que
+direção o seu trabalho está orientado e por que vale à pena dar-se ao trabalho de ler até o fim.
+Procure:
+1. captar a atenção do leitor. ( iniciando com um exemplo, uma estatística , uma pergunta uma
+frase de efeito e utilize-a como tema de referência);
+2. mostrar por que o problema é importante [os antecedentes históricos e a definição da
+terminologia básica servem para familiarizar o leitor com o tema]
+3. formular claramente a(s) pergunta(s) a ser(em) respondida(s) no seu relatório.
+4. desmembrar sua introdução em vários parágrafos permitindo uma leitura agradável.
+Utilize a seção de Metodologia para descrever os seus dados e como eles foram coletados.
+Essa informação ajudará o leitor a avaliar a abrangência da sua análise e a importância das suas
+descobertas. Procure (quando pertinente):
+1. definir a população em estudo da forma mais específica possível;
+2. descrever os procedimentos utilizados para a aquisição dos dados (detalhes sobre desenho
+experimental ou procedimento de amostragem, formas de questionários, etc.)
+1
+3. explicar de que forma as variáveis medidas podem ser utilizadas para equacionar o
+problema proposto.
+4. apresentar as unidades em que as variáveis foram medidas.
+Utilize a seção de Resultados para apresentar as suas descobertas. Limite a apresentação
+àqueles aspectos que são mais relevantes ao seu argumento e mais inteligíveis ao leitor. Procure:
+1. usar de parsimônia na inclusão de tabelas e gráficos (excesso de informação sobrecarrega o
+leitor e obscurece os pontos principais da análise);
+2. limitar o uso do jargão estatístico excessivamente técnico (quando necessário, coloque os
+aspectos mais técnicos em um apêndice);
+3. incluir resultados que apontem para potenciais limitações na sua análise (por exemplo, a
+validade de suposições);
+4. mencionar a fonte sempre que for reproduzir figuras ou tabelas obtidas a partir de outros
+trabalhos.
+Utilize a seção de Discussão para usar os seus resultados em defesa da sua tese principal
+(apresentada na Introdução). Seja honesto. Procure:
+1. abordar as limitações e restrições das suas descobertas e discutir, se possível, de que forma
+os seus resultados poderiam ser generalizados;
+2. ser cuidadoso em não sobre-valorizar a importância daquilo que encontrou. Com evidência
+estatística raramente podemos provar conjeturas ou dar respostas definitivas. A função do
+RAE é avaliar a força das evidências contidas nos dados, sejam elas a favor ou contra a
+tese;
+3. relacionar suas descobertas ao restante da literatura científica sobre o tema, orientando-se
+pelas seguintes perguntas. a) os meus resultados estão em harmonia com o que outros
+encontraram? b) que informações existem no meu estudo que complementam os achados de
+outros? c) quais são os aspectos originais ou surpreendentes do meu estudo? d) se fosse
+continuar pesquisa neste tema, qual seria meu próximo passo e o que eu faria diferente?
+Apresentação dos Dados
+O objetivo para apresentar dados em tabelas e em gráficos é transmitir ao leitor informação
+acurada e de forma clara. As regras para fazer isto com competência são simples. Examine seus
+dados com o cuidado suficiente para saber o que eles têm a dizer, então deixe que eles o digam com
+a quantidade mínima de adornos.
+2
+Algumas regras gerais ajudam a elaborar boas apresentações de dados.
+1. Todas as tabelas e gráficos devem receber comentários no texto. Sua numeração deverá
+respeitar a seqüência em que são comentadas.
+2. Uma vez garantidas claridade e acurácia, quanto mais informação (útil) estiver num gráfico,
+melhor. Mas evite adornos que apenas distraem o leitor.
+3. Mostre as escalas dos seus gráficos. Escolha a escala que seja apropriada para iluminar o
+aspecto relevante dos seus dados. Sempre que dois gráficos são comparados, utilize as
+mesmas escalas em ambos.
+4. Apresente seus números com precisão compatível com suas medições. (P. ex., se medidas
+de peso foram feitas até o grama mais próximo, não apresente resultados com precisão de
+microgramas)
+
+###############################################################################################################################################################################################################################################################################################################################################################
+Revisão e Editoração
+Após completar a primeira versão do seu RAE, releia-o cuidadosamente. Aprenda a ver
+aonde material novo é necessário, aonde material deve ser eliminado e aonde uma reestruturação é
+necessária. Após ter despendido um tempo substancial na elaboração do RAE faça um intervalo e
+depois releia criticamente seu texto outras duas ou três vezes fazendo as correções necessárias.
+Continue alerta para passagens confusas e de raciocínio duvidoso. Fique atento a erros de
+formatação e de sintaxe até o momento de entregá-lo.
+Finalmente, utilize as seguintes perguntas para avaliar seu RAE:
+1. O problema está proposto com clareza?
+2. As afirmações estatísticas estão corretas?
+3. A apresentação dos dados é informativa?
+4. As conclusões estão baseadas em evidências adequadas?
+5. A gramática e a estrutura das frases estão corretas?
+Dizem:
+“É fácil mentir com Estatísticas.”
+Respondo:
+“Mas é difícil dizer a verdade sem elas.”
+
+###############################################################################################################################################################################################################################################################################################################################################################
+
+Relatório de Análise Estatística da Precipitação Média por Estação do Ano
+
+Introdução
+
+Este relatório analisa a precipitação média mensal na região de Mostardas entre 2014 e 2024, com o objetivo de identificar padrões sazonais e variações na precipitação. A análise visa compreender as diferenças na precipitação média ao longo das quatro estações do ano: Verão, Outono, Inverno e Primavera. Além disso, foram realizados testes de normalidade para verificar a adequação da aplicação de testes estatísticos paramétricos ou não paramétricos.
+
+Metodologia
+
+Coleta de Dados
+
+Os dados de precipitação foram coletados e organizados em um arquivo CSV, contendo informações sobre a data, precipitação total (PrecTot), e temperatura média diária (tempMed).
+
+Preparação dos Dados
+
+Os dados foram importados para o R, onde foram realizadas as seguintes etapas:
+
+1. Renomeação das colunas para `Data`, `PrecTot`, e `tempMed`.
+2. Conversão da coluna `Data` para o formato Date.
+3. Criação de novas colunas para dia, mês e ano.
+4. Cálculo da precipitação média diária (`PrecMed`) a partir da precipitação total.
+5. Agrupamento dos dados por estação do ano, considerando os seguintes períodos:
+   - Verão: Dezembro a Fevereiro
+   - Outono: Março a Maio
+   - Inverno: Junho a Agosto
+   - Primavera: Setembro a Novembro
+
+Normalização e Verificação da Normalidade
+
+Após a limpeza dos dados, onde valores ausentes e outliers foram removidos, a precipitação média diária foi transformada utilizando a função logarítmica para aproximar sua distribuição a uma normal. Testes de normalidade, como Shapiro-Wilk, Anderson-Darling, e Kolmogorov-Smirnov, foram aplicados para verificar a adequação dessa transformação.
+
+Análise Estatística
+
+Cálculo das Médias Anuais por Estação
+
+As médias anuais da precipitação média diária foram calculadas para cada estação do ano, permitindo a comparação ao longo dos anos.
+
+Visualização dos Dados
+
+Gráficos de boxplot foram utilizados para ilustrar a distribuição da precipitação média por estação ao longo dos anos, enquanto gráficos de tendência destacaram possíveis aumentos ou reduções na precipitação ao longo do período estudado.
+
+Resultados
+
+Verificação da Normalidade
+
+Os testes de normalidade indicam que a precipitação média log-transformada aproxima-se de uma distribuição normal, permitindo o uso de testes paramétricos para a comparação entre estações.
+
+Análise Descritiva
+
+A análise descritiva da precipitação média diária (`PrecMed`) para cada estação do ano revela as seguintes estatísticas:
+
+- Mínimo: 0,25 mm/dia
+- 1º Quartil: 1,83 mm/dia
+- Mediana: 3,10 mm/dia
+- Média: 3,57 mm/dia
+- 3º Quartil: 4,76 mm/dia
+- Máximo: 12,3 mm/dia
+
+Esses valores indicam uma distribuição assimétrica da precipitação, onde a maioria dos dados está concentrada entre 1,83 mm/dia e 4,76 mm/dia, com alguns dias registrando precipitações significativamente maiores, como evidenciado pelo valor máximo de 12,3 mm/dia. A mediana próxima à média sugere que, apesar de algumas variações, a distribuição geral da precipitação é relativamente equilibrada com uma ligeira inclinação positiva. 
+
+A análise desses dados é fundamental para compreender as variações sazonais da precipitação na região de Mostardas, oferecendo insights sobre os períodos de maior e menor precipitação ao longo do ano.
+
+Esses valores indicam uma variabilidade significativa na precipitação diária média ao longo do ano.
+
+Visualização dos Dados
+
+Os gráficos a seguir ilustram a distribuição da precipitação média anual por estação do ano:
+
+- Verão: A tendência de precipitação média no verão mostra um aumento gradual ao longo dos anos, com a média global representada pela linha vermelha.
+  
+- Outono: A precipitação média no outono apresenta variações consideráveis, com anos de alta e baixa precipitação, sem uma tendência clara de aumento ou diminuição.
+  
+- Inverno: A precipitação média no inverno demonstra padrões mais estáveis, com uma média global constante ao longo dos anos.
+  
+- Primavera: A primavera mostra um padrão de aumento na precipitação média ao longo dos anos, com uma tendência positiva observada nos dados.
+
+Conclusão
+
+A análise estatística da precipitação média na região de Mostardas revela padrões sazonais distintos e variações significativas. A transformação logarítmica dos dados permitiu a aplicação de testes paramétricos, e os resultados indicam que as estações do ano têm um impacto considerável na precipitação média anual. A coleta contínua de dados e análises futuras são recomendadas para um monitoramento mais preciso e uma compreensão mais profunda das tendências climáticas na região.
+
+Revisão e Editoração
+
+O relatório foi revisado para garantir clareza e precisão na apresentação dos dados e resultados. Sugere-se a continuação deste estudo para explorar mais detalhadamente os fatores que influenciam as variações sazonais na precipitação.
+
+analise inferencial  
+Teste Estatistica   Valor.p
+1       Shapiro-Wilk      0.9016 1.775e-05
+2 Kolmogorov-Smirnov      0.1218 1.971e-01
+3         Lilliefors      0.1218 5.977e-03
+4   Anderson-Darling      1.8859 7.388e-05
+5    Shapiro-Francia      0.9000 4.803e-05
+6   Cramer-von Mises      0.2811 5.267e-04

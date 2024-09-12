@@ -1,0 +1,242 @@
+#ler o conjunto de dados
+library(readr)
+primatas <- read_csv("cayo.csv")
+
+library(dplyr)
+idade<-primatas%>%select(sex,age_at_death,treatment)
+idade$sex<-as.factor(idade$sex)
+idade$treatment<-as.factor(idade$treatment)
+machos <- subset(idade, sex == "m")
+femeas <- subset(idade, sex == "f")
+mctr<-subset(machos, treatment=="control")
+mhur<-subset(machos, treatment== "hurricane")
+
+fctr<-subset(femeas, treatment=="control")
+fhur<-subset(femeas, treatment== "hurricane")
+#Teste de hipótese comparando com uma média "teórica"t.
+xbarra<-mean(machos$age_at_death)
+mu<-3.8
+n<-length(machos$age_at_death)
+s<-sd(machos$age_at_death)
+t<-(xbarra-mu)/(s/sqrt(n))
+t
+pt(-abs(t),df=n-1)
+pt
+shapiro.test(machos$age_at_death)
+shapiro.test(femeas$age_at_death)
+shapiro.test(mmedida$hgt)
+shapiro.test(hmedida$hgt)
+shapiro.test(mmedida$wgt)
+shapiro.test(hmedida$wgt)
+
+t.test(machos$age_at_death,femeas$age_at_death)
+t.test(mctr$age_at_death,mhur$age_at_death)
+t.test(fctr$age_at_death,fhur$age_at_death)
+
+#Alturas tem distribuição normal
+# testar para um valor
+# comparar um vetor com outro
+
+#Peso homens 
+#testar antes e depois (dividir conjunto de dados ao meio pareado)
+summary(hmedida$wgt)
+teste<-rnorm(247,73,sd(hmedida$wgt))
+t.test(hmedida$wgt,teste,paired=TRUE)
+
+verificar a normalidade dos dados\
+identificar a natureza dos dados (amostras pareadas, não pareadas, numero de grupos…)\
+identificar o teste paramétrico ou não paramétrico para comparação dos dados \
+aplicar o teste no R\
+Teste de Normalidade no R
+Diversos métodos estatísticos, entre os quais correlação, regressão, testes z, t e análise de variância, pressupõem que os dados seguem uma distribuição normal. Tais testes são chamados de testes paramétricos, pois sua validade depende da distribuição dos dados.
+
+Todas as suposições feitas pelos testes, dentre elas a normalidade, devem ser seriamente respeitadas, visando a obtenção de interpretações e conclusões confiáveis dos estudos. Considera-se que amostras grandes, maiores que 30, levando em consideração o teorema central do limite, tendem a ser nomalmente distribuídas possibilitando o uso de métodos paramétricos.
+
+Aqui serão instalados os pacotes necessários para as análises que serão realizadas
+
+#instalar pacotes necessários
+
+library(tidyverse)
+
+library(ggpubr) # pacote que facilita a criação de gráficos baseados no  ggplot2
+
+library(rstatix) # pacote par
+
+library(FSAdata) #pacote com banco de dados de peixes
+
+library(dgof) # teste de kolmogorv-smirnov
+
+library(nortest) # pacote com alguns testes de noemalidade
+O conjunto de dados que será usado é da biblioteca FSAdata e é referente a um coleta de peixes CISCO do lago Trout em Wisconsin, EUA.
+
+view(CiscoTL) # Dados que serão usados: Lengths, weights, and sex of Cisco from Trout Lake, WI. https://en.wikipedia.org/wiki/Trout_Lake_(Wisconsin)
+#separa uma amostra
+Serão tomadas como variáveis de trabalho o comprimento e o peso dos peixes e como tratamentos será considerado a variável sexo.
+
+Testando a Normalidade no R
+O primeiro passo pode ser uma análise visual dos dados.
+
+O gráfico de densidade e o gráfico Q-Q podem ser usados para verificar a normalidade visualmente.
+
+Gráfico de densidade permite que seja feito um visual sobre se a distribuição tem a forma de um sino ou não. Já o gráfico QQ, traça a correlação entre uma determinada amostra e a distribuição normal. Uma linha de referência de 45 graus também é traçada. Em um gráfico QQ, cada observação é plotada como um único ponto. Se os dados forem normais, os pontos devem formar uma linha reta.
+
+# Gráfico de densidade dos pesos gerais
+ggdensity(CiscoTL$weight, fill = "lightgray", na.rm=TRUE)
+
+
+# QQ plot pesos gerais
+ggqqplot(CiscoTL$weight, na.rm=TRUE)
+
+
+# Gráfico de densidade dos COMPRIMENTOS gerais
+ggdensity(CiscoTL$length, fill = "lightgray", na.rm=TRUE)
+
+
+# QQ plot OMPRIMENTOS g gerais
+ggqqplot(CiscoTL$length, na.rm=TRUE)
+
+
+Aqui verifica-se que os dados de forma geal não apresentam distribuição normal. Fazendo o teste de normalidade de Shapiro-wilk verifica-se o mesmo, p<0,05
+ para os pesos de machos e fêmeas em separado.
+
+### Teste de normalidade para o peso ua função implenmentada na biblioteca  rstatix
+teste1<-CiscoTL %>% shapiro_test(weight) 
+
+teste1
+## # A tibble: 1 × 3
+##   variable statistic        p
+##   <chr>        <dbl>    <dbl>
+## 1 weight       0.651 1.33e-44
+#### Teste de normalidade para  o comprimento usando a função implementada  no pacote básico stats
+
+#shapiro.test(CiscoTL$length) 
+
+#Show in New WindowClear OutputExpand/Collapse Output
+#Error: Problem with `mutate()` column `data`. i `data = map(.data$data, #.f, ...)`. x sample size must be between 3 and 5000 
+
+ks.test(CiscoTL$length,"pnorm",mean(CiscoTL$length),sd(CiscoTL$length))
+## Warning in ks.test(CiscoTL$length, "pnorm", mean(CiscoTL$length), sd(CiscoTL$length)): default ks.test() cannot compute correct p-values with ties;
+##  see help page for one-sample Kolmogorov test for discrete distributions.
+## 
+##  One-sample Kolmogorov-Smirnov test
+## 
+## data:  CiscoTL$length
+## D = 0.095114, p-value < 2.2e-16
+## alternative hypothesis: two-sided
+
+machos<-CiscoTL%>%filter(sex=="M" ,na.rm=TRUE)
+
+# Gráfico de densidade dos pesos MACHOS
+ggdensity(machos$weight, fill = "lightgray", na.rm=TRUE)
+
+
+# QQ plot pesos MACHOS
+ggqqplot(machos$weight, na.rm=TRUE)
+
+
+shapiro.test(machos$weight)
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  machos$weight
+## W = 0.87007, p-value = 0.0009726
+ks.test(machos$weight,"pnorm",mean(machos$weight,na.rm = TRUE),sd(machos$weight,na.rm = TRUE))
+## 
+##  One-sample Kolmogorov-Smirnov test
+## 
+## data:  machos$weight
+## D = 0.18608, p-value = 0.2033
+## alternative hypothesis: two-sided
+#####################
+# Gráfico de densidade dos COMPRIMENTOS MACHOS
+ggdensity(machos$length, fill = "lightgray", na.rm=TRUE)
+
+
+# QQ plot COMPRIMENTOS MACHOS
+ggqqplot(machos$length, na.rm=TRUE)
+
+
+shapiro.test(machos$length) 
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  machos$length
+## W = 0.82159, p-value = 1.972e-05
+ks.test(machos$length,"pnorm",mean(machos$length,na.rm = TRUE),sd(machos$length,na.rm = TRUE))
+## 
+##  One-sample Kolmogorov-Smirnov test
+## 
+## data:  machos$length
+## D = 0.2171, p-value = 0.04608
+## alternative hypothesis: two-sided
+##########################################
+###Femeas
+
+femeas<-CiscoTL%>%filter(sex=="F" ,na.rm=TRUE)
+
+# Gráfico de densidade dos pesos  femeas
+ggdensity(femeas$weight, fill = "lightgray", na.rm=TRUE)
+
+
+# QQ plot pesos femeas
+ggqqplot(femeas$weight, na.rm=TRUE)
+
+
+shapiro.test(femeas$weight) 
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  femeas$weight
+## W = 0.91763, p-value = 0.002456
+ks.test(femeas$weight,"pnorm",mean(femeas$weight,na.rm = TRUE),sd(femeas$weight,na.rm = TRUE))
+## 
+##  One-sample Kolmogorov-Smirnov test
+## 
+## data:  femeas$weight
+## D = 0.12031, p-value = 0.4906
+## alternative hypothesis: two-sided
+# Gráfico de densidade dos COMPRIMENTOS  femeas
+ggdensity(femeas$length, fill = "lightgray", na.rm=TRUE)
+
+
+# QQ plot cOMPRIMENTOS femeas
+ggqqplot(femeas$length, na.rm=TRUE)
+
+
+shapiro.test(femeas$length) 
+## 
+##  Shapiro-Wilk normality test
+## 
+## data:  femeas$length
+## W = 0.95438, p-value = 0.01761
+ks.test(femeas$length,"pnorm",mean(femeas$length,na.rm = TRUE),sd(femeas$length,na.rm = TRUE))
+## 
+##  One-sample Kolmogorov-Smirnov test
+## 
+## data:  femeas$length
+## D = 0.13141, p-value = 0.2116
+## alternative hypothesis: two-sided
+
+
+
+# Testes
+t1 <- shapiro.test(femeas$length) # Shapiro-Wilk
+t2 <- dgof::ks.test(femeas$length,"pnorm",mean(femeas$length,na.rm = TRUE),sd(femeas$length,na.rm = TRUE)) # KS
+## Warning in dgof::ks.test(femeas$length, "pnorm", mean(femeas$length, na.rm = TRUE), : default ks.test() cannot compute correct p-values with ties;
+##  see help page for one-sample Kolmogorov test for discrete distributions.
+t3 <- lillie.test(femeas$length) # Lilliefors
+t4 <- ad.test(femeas$length) # Anderson-Darling
+t5 <- sf.test(femeas$length) # Shapiro-Francia
+t6 <- cvm.test(femeas$length) # Cramér-von Mises
+print(resultados, digits = 4)
+##                                                Estatística        p
+## Shapiro-Wilk normality test                         0.9544 0.017608
+## One-sample Kolmogorov-Smirnov test                  0.1314 0.211593
+## Lilliefors (Kolmogorov-Smirnov) normality test      0.1314 0.007136
+## Anderson-Darling normality test                     1.1515 0.004823
+## Shapiro-Francia normality test                      0.9597 0.034142
+## Cramer-von Mises normality test                     0.1978 0.005491
+
+
+
+

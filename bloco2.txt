@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protected Page</title>
+</head>
+<body>
+    <h2>Protected Page</h2>
+    <p>Please enter the password to access the content.</p>
+
+    <input type="password" id="password" placeholder="Enter password">
+    <button onclick="checkPassword()">Submit</button>
+
+    <script>
+        function checkPassword() {
+            const correctPassword = "sua_senha_aqui"; // Coloque a senha desejada aqui
+            const inputPassword = document.getElementById("password").value;
+
+            if (inputPassword === correctPassword) {
+                window.location.href = "protected-content.html"; // Página protegida
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+    </script>
+</body>
+</html>

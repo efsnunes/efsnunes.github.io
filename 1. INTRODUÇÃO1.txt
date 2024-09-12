@@ -1,0 +1,94 @@
+1. INTRODUÇÃO
+
+A Logística Humanitária refere-se à organização e coordenação das atividades logísticas envolvidas em operações de ajuda humanitária. É um campo especializado que lida com os desafios únicos enfrentados pelos trabalhadores humanitários, como a entrega rápida de suprimentos essenciais em áreas remotas ou afetadas por desastres. Os desastres resultam de eventos adversos, naturais ou provocados pelo homem, que impactam ecossistemas vulneráveis, causando danos humanos, materiais e/ou ambientais, além de prejuízos econômicos e sociais. Especificamente, desastres naturais têm consequências drásticas para sociedades, regiões e países, resultando em vítimas fatais, feridos, desabrigados, cidades destruídas e altos custos de reconstrução.
+
+No Brasil, um levantamento realizado pelo Centro de Estudos e Pesquisas sobre Desastres (CEPED, 2013), no período de 1991 a 2012, registrou 38.996 desastres naturais, com destaque para os anos de 2010, 2011 e 2012, que concentraram 78% dos desastres registrados. A cada ano, centenas de desastres naturais, como terremotos, enchentes e inundações, ocorrem em todo o mundo. Diversas atividades de logística humanitária, como o transporte de suprimentos, a gestão de estoques, a tecnologia da informação e comunicação, a distribuição eficiente de alimentos, água e abrigos, bem como serviços de saúde e gestão de resíduos, são necessárias. Também é fundamental a coordenação com outras organizações e agências governamentais para garantir uma resposta eficaz e coordenada.
+
+A logística humanitária enfrenta muitos desafios, como a falta de infraestrutura básica em áreas afetadas, condições climáticas e ambientais difíceis, logística precária e questões de segurança. Além disso, há dificuldades em garantir a equidade e o acesso igualitário aos recursos entre as populações afetadas.
+
+Nesse contexto, o desastre natural ocorrido em maio de 2024 na região sul do Brasil, especificamente no estado do Rio Grande do Sul, devido a chuvas intensas e consequentes inundações, afetou gravemente as regiões dos vales dos rios Taquari, Caí, Pardo, Jacuí, Sinos e Gravataí, além de Porto Alegre pelo rio Guaíba e as regiões de Pelotas e Rio Grande pela Lagoa dos Patos. As inundações devastaram áreas urbanas e rurais, resultando em significativos danos materiais e em grande número de desabrigados e desalojados.
+
+O estado do Rio Grande do Sul, no último mês de maio, enfrentou fortes chuvas que resultaram em inundações devastadoras, afetando amplamente diversas regiões. Entre as áreas atingidas estão os vales dos rios Taquari, Caí, Pardo, Jacuí, Sinos e Gravataí, assim como o Guaíba, em Porto Alegre, e a Lagoa dos Patos, em Pelotas e Rio Grande. Essas chuvas intensas causaram grandes danos materiais e deslocamentos populacionais. Ao todo, 478 municípios foram afetados, com uma população de 2.398.255 pessoas impactadas. As inundações resultaram em 806 feridos, 31 desaparecidos e 182 óbitos confirmados.
+
+A partir da coleta de dados de monitoramento já realizados e pela produção prévia de mapas do município de Rio Grande-RS, que indicavam os locais possivelmente afetados pela elevação das águas da Lagoa dos Patos, foi possível realizar um estudo para uma tomada de decisão mais assertiva e com maior previsibilidade das ações.
+
+Ao longo dos anos, a logística humanitária avançou consideravelmente, com o uso de tecnologias avançadas, como drones e análise de dados, para melhorar a eficiência e a eficácia das operações. Também foi desenvolvida uma rede global de organizações e agências especializadas em logística humanitária para o compartilhamento de conhecimentos e recursos.
+
+A logística humanitária desempenha um papel vital na resposta a emergências e desastres, garantindo que os recursos essenciais cheguem às pessoas que mais precisam. Além disso, desempenha um papel importante na recuperação e reconstrução pós-desastre, ajudando a restabelecer infraestruturas básicas e a fornecer apoio contínuo às comunidades afetadas.
+
+###############################################################################################################################################################################################################################################################################################################################################################
+
+Título: Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações
+
+---
+
+1. INTRODUÇÃO
+
+A Logística Humanitária refere-se à organização e coordenação das atividades logísticas envolvidas em operações de ajuda humanitária. É um campo especializado que lida com os desafios únicos enfrentados pelos trabalhadores humanitários, como a entrega rápida de suprimentos essenciais em áreas remotas ou afetadas por desastres. Os desastres resultam de eventos adversos, naturais ou provocados pelo homem, que impactam ecossistemas vulneráveis, causando danos humanos, materiais e/ou ambientais, além de prejuízos econômicos e sociais. Especificamente, desastres naturais têm consequências drásticas para sociedades, regiões e países, resultando em vítimas fatais, feridos, desabrigados, cidades destruídas e altos custos de reconstrução.
+
+No Brasil, um levantamento realizado pelo Centro de Estudos e Pesquisas sobre Desastres (CEPED, 2013), no período de 1991 a 2012, registrou 38.996 desastres naturais, com destaque para os anos de 2010, 2011 e 2012, que concentraram 78% dos desastres registrados. A cada ano, centenas de desastres naturais, como terremotos, enchentes e inundações, ocorrem em todo o mundo. Diversas atividades de logística humanitária, como o transporte de suprimentos, a gestão de estoques, a tecnologia da informação e comunicação, a distribuição eficiente de alimentos, água e abrigos, bem como serviços de saúde e gestão de resíduos, são necessárias. Também é fundamental a coordenação com outras organizações e agências governamentais para garantir uma resposta eficaz e coordenada.
+
+A logística humanitária enfrenta muitos desafios, como a falta de infraestrutura básica em áreas afetadas, condições climáticas e ambientais difíceis, logística precária e questões de segurança. Além disso, há dificuldades em garantir a equidade e o acesso igualitário aos recursos entre as populações afetadas.
+
+Nesse contexto, o desastre natural ocorrido em maio de 2024 na região sul do Brasil, especificamente no estado do Rio Grande do Sul, devido a chuvas intensas e consequentes inundações, afetou gravemente as regiões dos vales dos rios Taquari, Caí, Pardo, Jacuí, Sinos e Gravataí, além de Porto Alegre pelo rio Guaíba e as regiões de Pelotas e Rio Grande pela Lagoa dos Patos. As inundações devastaram áreas urbanas e rurais, resultando em significativos danos materiais e em grande número de desabrigados e desalojados.
+
+O estado do Rio Grande do Sul, no último mês de maio, enfrentou fortes chuvas que resultaram em inundações devastadoras, afetando amplamente diversas regiões. Entre as áreas atingidas estão os vales dos rios Taquari, Caí, Pardo, Jacuí, Sinos e Gravataí, assim como o Guaíba, em Porto Alegre, e a Lagoa dos Patos, em Pelotas e Rio Grande. Essas chuvas intensas causaram grandes danos materiais e deslocamentos populacionais. Ao todo, 478 municípios foram afetados, com uma população de 2.398.255 pessoas impactadas. As inundações resultaram em 806 feridos, 31 desaparecidos e 182 óbitos confirmados.
+
+A partir da coleta de dados de monitoramento já realizados e pela produção prévia de mapas do município de Rio Grande-RS, que indicavam os locais possivelmente afetados pela elevação das águas da Lagoa dos Patos, foi possível realizar um estudo para uma tomada de decisão mais assertiva e com maior previsibilidade das ações.
+
+Ao longo dos anos, a logística humanitária avançou consideravelmente, com o uso de tecnologias avançadas, como drones e análise de dados, para melhorar a eficiência e a eficácia das operações. Também foi desenvolvida uma rede global de organizações e agências especializadas em logística humanitária para o compartilhamento de conhecimentos e recursos.
+
+A logística humanitária desempenha um papel vital na resposta a emergências e desastres, garantindo que os recursos essenciais cheguem às pessoas que mais precisam. Além disso, desempenha um papel importante na recuperação e reconstrução pós-desastre, ajudando a restabelecer infraestruturas básicas e a fornecer apoio contínuo às comunidades afetadas.
+
+
+2. JUSTIFICATIVA
+
+A crescente frequência e intensidade dos desastres naturais, especialmente as inundações, têm causado impactos devastadores em termos de perdas humanas, danos materiais e custos econômicos. No estado do Rio Grande do Sul, os recentes eventos de chuvas intensas e inundações em maio de 2024 evidenciaram a vulnerabilidade das comunidades locais e a necessidade de uma resposta rápida e eficiente para minimizar os danos.
+
+A aplicação de técnicas de otimização de fluxo de redes em logística humanitária é uma abordagem promissora para aprimorar a gestão de recursos durante desastres. Ao otimizar a distribuição de suprimentos e a alocação de serviços de emergência, é possível reduzir significativamente os custos associados a desastres e melhorar a eficácia das operações de socorro.
+
+Este estudo é justificado pela necessidade urgente de desenvolver e implementar estratégias mais eficientes para enfrentar desastres naturais, com foco na redução dos custos e no aumento da resiliência das comunidades afetadas. A pesquisa contribuirá para o avanço do conhecimento em logística humanitária e fornecerá ferramentas práticas para gestores e tomadores de decisão em situações de emergência.
+
+
+
+3. OBJETIVOS
+
+3.1. Objetivo Geral
+
+- Aplicar técnicas de otimização de fluxo de redes para minimizar os custos associados a desastres de inundações, com foco em melhorar a eficiência na distribuição de recursos e na alocação de serviços de emergência.
+
+3.2. Objetivos Específicos
+
+1. Analisar os padrões de inundações na região sul do Brasil, com foco no estado do Rio Grande do Sul.
+2. Desenvolver um modelo de otimização de fluxo de redes aplicável a cenários de desastres naturais.
+3. Avaliar o impacto da aplicação do modelo de otimização na redução de custos operacionais e no aumento da eficiência das operações de socorro.
+4. Propor recomendações para a implementação de estratégias de logística humanitária baseadas nos resultados obtidos.
+
+
+
+4. METODOLOGIA
+
+4.1. Coleta de Dados
+
+Os dados utilizados neste estudo serão obtidos a partir de fontes secundárias, incluindo registros meteorológicos, dados de inundações, relatórios de desastres e informações sobre infraestrutura e logística na região do Rio Grande do Sul. Além disso, serão utilizados mapas e dados geoespaciais para modelagem e análise das áreas afetadas.
+
+4.2. Desenvolvimento do Modelo
+
+Será desenvolvido um modelo matemático de otimização de fluxo de redes para aplicação em cenários de inundações. O modelo incluirá variáveis como disponibilidade de suprimentos, rotas de transporte, capacidade de infraestrutura, demanda por serviços de emergência e restrições de tempo.
+
+4.3. Simulação e Análise
+
+A simulação do modelo será realizada utilizando dados reais das inundações ocorridas em maio de 2024 no Rio Grande do Sul. A análise dos resultados se concentrará na eficiência das rotas de distribuição de recursos e na redução dos custos operacionais. Serão realizados testes de sensibilidade para avaliar o impacto de diferentes cenários.
+
+
+
+5. CONCLUSÃO
+
+Este projeto de dissertação busca fornecer uma contribuição significativa para o campo da logística humanitária, aplicando técnicas de otimização de fluxo de redes para minimizar os custos associados a desastres de inundações. Espera-se que o modelo desenvolvido não apenas melhore a eficiência das operações de socorro, mas também ofereça um framework replicável em outros contextos de desastres naturais.
+
+A conclusão deste estudo poderá fornecer subsídios para a formulação de políticas públicas e estratégias de gerenciamento de desastres, aumentando a resiliência das comunidades vulneráveis e garantindo uma resposta mais eficaz e coordenada em situações de emergência.
+
+---
+PROBLEMAS DAS P-MEDIANAS
+PROBLEMAS DE ROTEMAENTO
+18 ATE 23

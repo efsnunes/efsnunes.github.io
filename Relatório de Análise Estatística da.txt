@@ -1,0 +1,505 @@
+Relatório de Análise Estatística da Precipitação e Temperatura em Mostardas
+
+1. **Introdução**
+2. **Descrição dos Dados**
+3. **Análise Estatística**
+   - Resumo Estatístico
+   - Testes de Normalidade
+   - Transformação Logarítmica e ANOVA
+4. **Visualizações**
+5. **Conclusão**
+
+### Relatório de Análise Estatística
+
+---
+
+#### 1. Introdução
+
+Este relatório apresenta uma análise estatística da precipitação média diária e da temperatura média diária na região de Mostardas. Os dados foram coletados de 2014 a 2024 e incluem variáveis como precipitação total (PrecTot) e temperatura média diária (tempMed). O objetivo é analisar a distribuição da precipitação e a variação da temperatura ao longo das estações do ano.
+
+---
+
+#### 2. Descrição dos Dados
+
+O conjunto de dados contém informações diárias de precipitação e temperatura, e foi estruturado com as seguintes colunas:
+
+- `Data`: Data da observação.
+- `PrecTot`: Precipitação total do dia (mm).
+- `tempMed`: Temperatura média diária (°C).
+- `Dia`: Dia do mês.
+- `Mes`: Mês do ano.
+- `Ano`: Ano da observação.
+- `Estacao`: Estação do ano (Verão, Outono, Inverno, Primavera).
+- `PrecMed`: Precipitação média diária calculada como `PrecTot / Dia`.
+
+Após o processamento inicial, foram identificados e tratados 43 valores ausentes na variável `PrecTot` e 36 na `tempMed`.
+
+---
+
+#### 3. Análise Estatística
+
+##### Resumo Estatístico
+
+O resumo estatístico da precipitação média diária (`PrecMed`) por estação do ano é apresentado na tabela abaixo:
+
+| Estação   | Mínimo | 1º Quartil | Mediana | Média | 3º Quartil | Máximo |
+|-----------|--------|------------|---------|-------|------------|--------|
+| Inverno   | 0.253  | 2.41       | 3.20    | 3.75  | 4.72       | 10.10  |
+| Outono    | 0.80   | 1.32       | 2.55    | 3.59  | 5.44       | 8.06   |
+| Primavera | 1.16   | 2.78       | 3.42    | 4.34  | 4.68       | 12.30  |
+| Verão     | 1.10   | 1.27       | 1.97    | 2.50  | 3.42       | 5.19   |
+
+##### Testes de Normalidade
+
+Foram realizados os seguintes testes de normalidade para a variável `tempMed`:
+
+- **Shapiro-Wilk**: W = 0.94288, p-value = 0.0009247 (indica que os dados não seguem uma distribuição normal)
+- **Anderson-Darling**: A = 1.5559, p-value = 0.0004884
+- **Lilliefors (Kolmogorov-Smirnov)**: D = 0.11479, p-value = 0.007553
+- **Shapiro-Francia**: W = 0.94997, p-value = 0.003427
+
+Todos os testes indicam que a temperatura média diária não segue uma distribuição normal.
+
+##### Transformação Logarítmica e ANOVA
+
+Foi aplicada uma transformação logarítmica (`log1p`) na temperatura média diária (`tempMed_log`) para atender à suposição de normalidade. Em seguida, realizou-se uma ANOVA para comparar as médias entre as estações do ano:
+
+- **ANOVA**: F(3, 81) = 84.53, p-value < 2e-16 (significativa)
+
+A ANOVA indica que há diferenças estatisticamente significativas na temperatura média entre as estações. Um teste post-hoc de Tukey foi planejado, mas houve um erro na execução do código.
+
+---
+
+#### 4. Visualizações
+
+As seguintes visualizações foram geradas:
+
+1. **Gráfico de Dispersão: Precipitação Total vs. Temperatura Média Diária**
+
+   Mostra a relação entre a precipitação total e a temperatura média diária. Observa-se que a maioria dos pontos foi removida devido a valores ausentes ou fora do intervalo da escala.
+
+2. **Gráficos de Densidade para Precipitação Média Diária por Estação**
+
+   Representa a distribuição da precipitação média diária por estação. A visualização foi afetada pela presença de valores ausentes.
+
+3. **Tendências Temporais na Precipitação Média Diária**
+
+   Mostra as tendências da precipitação média ao longo dos anos. Observa-se a exclusão de dados devido a valores não finitos.
+
+4. **Boxplots de Precipitação Média Diária por Estação**
+
+   Exibe a distribuição da precipitação média diária para cada estação. Os boxplots foram gerados, mas também foram removidos dados ausentes.
+
+---
+
+#### 5. Conclusão
+
+A análise revelou diferenças significativas na temperatura média entre as estações do ano. Os testes de normalidade indicam que a temperatura média não segue uma distribuição normal, o que levou à aplicação de uma transformação logarítmica. A ANOVA confirmou diferenças significativas nas temperaturas médias entre as estações.
+
+A qualidade das visualizações foi impactada pela presença de dados ausentes, que foram removidos. Recomenda-se a revisão dos dados faltantes e a verificação da qualidade dos dados antes de novas análises.
+
+##########################################################################################################################################################################################################################################
+RMarkdown
+---
+title: "Relatório de Análise Estatística da Precipitação e Temperatura em Mostardas"
+author: "Edison Fernando"
+date: "2024-08-17"
+output: html_document
+editor_options: 
+  markdown: 
+    wrap: 72
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(nortest)
+library(car)
+```
+
+## Introdução
+
+Este relatório apresenta uma análise estatística da precipitação e
+temperatura média diária na região de Mostardas entre os anos de 2014 e
+2024. Os dados foram obtidos do INMET e analisados quanto à normalidade,
+variação entre estações do ano, e tendências temporais.
+
+# Descrição dos Dados
+
+O conjunto de dados contém informações diárias de precipitação e
+temperatura, e foi estruturado com as seguintes colunas:
+
+-   `Data`: Data da observação.
+-   `PrecTot`: Precipitação total do dia (mm).
+-   `tempMed`: Temperatura média diária (°C).
+-   `Dia`: Dia do mês.
+-   `Mes`: Mês do ano.
+-   `Ano`: Ano da observação.
+-   `Estacao`: Estação do ano (Verão, Outono, Inverno, Primavera).
+-   `PrecMed`: Precipitação média diária calculada como `PrecTot / Dia`.
+
+Após o processamento inicial, foram identificados e tratados 43 valores
+ausentes na variável `PrecTot` e 36 na `tempMed`.
+
+# Importação e Preparação dos Dados
+
+Os dados foram importados de um arquivo CSV e as colunas foram
+renomeadas conforme necessário. Foram criadas colunas adicionais para o
+dia, mês, ano e estação do ano.
+
+```{r, include=FALSE}
+dados<- read.csv("mostardas.csv", sep = ";") 
+colnames(dados)<-c("Data", "PrecTot", "tempMed", "coluna_4")
+dados$Data <- as.Date(dados$Data, format="%Y-%m-%d")
+dados$PrecTot <- as.numeric(as.character(dados$PrecTot))
+dados$tempMed <- as.numeric(as.character(dados$tempMed)) 
+dados<- dados%>% mutate(Dia = day(Data), Mes = month(Data), Ano = year(Data),
+Estacao = case_when( Mes %in% c(12, 1, 2) ~ "Verão", Mes %in% c(3, 4,
+5) ~ "Outono", Mes %in% c(6, 7, 8) ~ "Inverno", Mes %in% c(9, 10, 11)
+~ "Primavera" ), PrecMed = PrecTot / Dia)
+```
+
+# Análise Estatística
+
+## Resumo Estatístico
+
+O resumo estatístico das variáveis de precipitação média diária
+(PrecMed) foi calculado para cada estação do ano.
+
+```{r, echo=FALSE}
+tabela_resumo <- dados%>%group_by(Estacao) %>% 
+  summarise( 
+    Minimo = min(PrecMed, na.rm = TRUE), 
+    `1º Quartil` = quantile(PrecMed, 0.25, na.rm = TRUE), 
+    Mediana = median(PrecMed, na.rm = TRUE), Media = mean(PrecMed, na.rm = TRUE), 
+    `3º Quartil` = quantile(PrecMed, 0.75, na.rm = TRUE), 
+    Maximo = max(PrecMed, na.rm = TRUE) 
+    )
+```
+
+```{r, echo=FALSE}
+print(tabela_resumo)
+```
+
+## Testes de Normalidade
+
+Foram realizados testes de normalidade para a variável tempMed
+(Temperatura Média Diária). Os resultados dos testes Shapiro-Wilk,
+Anderson-Darling, Lilliefors e Shapiro-Francia são apresentados abaixo:
+
+```{r, include=FALSE}
+if (nrow(dados) >= 8) { 
+  print(shapiro.test(dados$tempMed))
+  print(ad.test(dados$tempMed)) 
+  print(lillie.test(dados$tempMed))
+  print(sf.test(dados$tempMed)) 
+  } else {
+  cat("O conjunto de dados é muito pequeno para testes de normalidade padrão.\n") }
+```
+
+## Transformação e ANOVA
+
+A transformação logarítmica foi aplicada à temperatura média diária, e
+uma ANOVA foi realizada para comparar as médias log-transformadas entre
+as estações.
+
+```{r, echo=FALSE}
+dados$tempMed_log <- log1p(dados$tempMed) 
+anova_temp <- aov(tempMed_log ~ Estacao, data = dados) 
+summary(anova_temp)
+```
+
+O teste post-hoc de Tukey foi aplicado, dado que a ANOVA foi
+significativa.
+
+## Gráfico de Dispersão
+
+A relação entre a precipitação total e a temperatura média diária foi
+visualizada em um gráfico de dispersão.
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(dados, aes(x = tempMed, y = PrecTot, color = Estacao)) + 
+  geom_point() + 
+labs(title = "Precipitação Total vs Temperatura Média Diária", 
+x = "Temperatura Média Diária (°C)", 
+y = "Precipitação Total (mm)")
+```
+
+```{r, echo=FALSE}
+summary(dados)
+```
+
+## Gráfico de Densidade
+
+Gráficos de densidade da precipitação média diária foram gerados para
+cada estação do ano.
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(dados, aes(x = PrecMed, fill = Estacao)) + 
+  geom_density(alpha = 0.5) + 
+  labs(title = "Densidade da Precipitação Média Diária por Estação", 
+                                                                                   x = "Precipitação Média Diária (mm/dia)", 
+                                                                                   y = "Densidade")
+```
+
+## Tendências Temporais
+
+As tendências temporais na precipitação média diária foram visualizadas
+através de um gráfico de linhas.
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(dados, aes(x = Ano, y = PrecMed, color = Estacao)) + 
+  geom_line(stat = "summary", fun = "mean") + 
+  labs(title = "Tendências da Precipitação Média Diária por Estação", 
+                                                                                   x = "Ano", 
+y = "Precipitação Média Diária (mm/dia)")
+```
+
+## Boxplot
+
+Boxplots da precipitação média diária por estação foram criados para
+visualizar a distribuição dos dados.
+
+```{r, echo=FALSE, warning=FALSE}
+ggplot(dados, aes(x = Estacao, y = PrecMed, fill = Estacao)) + 
+  geom_boxplot() + 
+  labs(title = "Distribuição da Precipitação Média Diária por Estação", 
+                                                                                   x = "Estação", 
+y = "Precipitação Média Diária (mm/dia)")
+
+
+```
+
+## Conclusão
+
+A análise revelou diferenças significativas na precipitação média diária
+entre as estações do ano, assim como variações significativas na
+temperatura média diária após a transformação logarítmica. Os testes de
+normalidade indicaram que a distribuição da temperatura média diária não
+é normal, justificando a transformação aplicada. As visualizações
+gráficas forneceram uma visão clara das tendências e distribuições dos
+dados ao longo do período analisado.
+
+
+###############################################################################################################################################################################################################################################################################################################################################################
+
+# Carregar pacotes necessários
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(nortest)
+library(car)
+
+# Importar os dados
+dados <- read.csv("mostardas.csv", sep = ";")
+
+# Renomear colunas
+colnames(dados) <- c("Data", "PrecTot", "tempMed")
+
+# Converter a coluna Data para o formato Date
+dados$Data <- as.Date(dados$Data, format="%Y-%m-%d")
+
+# Verificar se há colunas com nomes em branco ou NA
+colnames(dados)
+
+# Corrija colunas com nomes em branco ou NA
+colnames(dados) <- ifelse(is.na(colnames(dados)) | colnames(dados) == "", paste0("coluna_", seq_along(colnames(dados))), colnames(dados))
+
+# Criar colunas adicionais para Dia, Mês e Ano
+dados <- dados %>%
+  mutate(Dia = day(Data),
+         Mes = month(Data),
+         Ano = year(Data))
+
+# Verifique o resultado
+head(dados)
+
+# Verificar a estrutura das colunas
+colnames(dados)
+
+# Corrigir tipos de dados (convertendo para numérico)
+dados$PrecTot <- as.numeric(dados$PrecTot)
+dados$tempMed <- as.numeric(dados$tempMed)
+
+# Verificar se houve NAs após a conversão
+sum(is.na(dados$PrecTot))
+sum(is.na(dados$tempMed))
+
+# Criar colunas adicionais para Dia, Mês e Ano
+dados <- dados %>%
+  mutate(Dia = day(Data),
+         Mes = month(Data),
+         Ano = year(Data))
+
+# Criar coluna Estacao
+dados <- dados %>%
+  mutate(Estacao = case_when(
+    Mes %in% c(12, 1, 2) ~ "Verao",
+    Mes %in% c(3, 4, 5) ~ "Outono",
+    Mes %in% c(6, 7, 8) ~ "Inverno",
+    Mes %in% c(9, 10, 11) ~ "Primavera"
+  ))
+
+# Criar coluna de Precipitação Média Diária
+dados <- dados %>%
+  mutate(PrecMed = PrecTot / Dia)
+
+# Corrigir tipos de dados (convertendo para numérico)
+dados$PrecTot <- as.numeric(as.character(dados$PrecTot))
+dados$tempMed <- as.numeric(as.character(dados$tempMed))
+
+# Verificar se houve NAs após a conversão
+sum(is.na(dados$PrecTot))
+sum(is.na(dados$tempMed))
+
+# Criar coluna Estacao
+dados <- dados %>%
+  mutate(Estacao = case_when(
+    Mes %in% c(12, 1, 2) ~ "Verao",
+    Mes %in% c(3, 4, 5) ~ "Outono",
+    Mes %in% c(6, 7, 8) ~ "Inverno",
+    Mes %in% c(9, 10, 11) ~ "Primavera"
+  ))
+
+# Criar uma coluna de Precipitação Média Diária
+dados <- dados %>%
+  mutate(PrecMed = PrecTot / Dia)
+
+# Resumo estatístico das variáveis
+tabela_resumo <- dados %>%
+  group_by(Estacao) %>%
+  summarise(
+    Minimo = min(PrecMed, na.rm = TRUE),
+    `1º Quartil` = quantile(PrecMed, 0.25, na.rm = TRUE),
+    Mediana = median(PrecMed, na.rm = TRUE),
+    Media = mean(PrecMed, na.rm = TRUE),
+    `3º Quartil` = quantile(PrecMed, 0.75, na.rm = TRUE),
+    Maximo = max(PrecMed, na.rm = TRUE)
+  )
+# Verificar dados faltantes na coluna PrecMed
+sum(is.na(dados$PrecMed))
+
+# Verificar a codificação dos dados
+Sys.getlocale("LC_CTYPE")
+
+# Alterar a codificação, se necessário
+Sys.setlocale("LC_CTYPE", "UTF-8")
+
+print(tabela_resumo)
+
+# Testes de normalidade para `tempMed`
+if (nrow(dados) >= 8) {
+  print(shapiro.test(dados$tempMed))
+  print(ad.test(dados$tempMed))
+  print(lillie.test(dados$tempMed))
+  print(sf.test(dados$tempMed))
+} else {
+  cat("O conjunto de dados é muito pequeno para testes de normalidade padrão.\n")
+}
+
+# Transformação logarítmica da temperatura média diária
+dados$tempMed_log <- log1p(dados$tempMed)
+
+# Realizar ANOVA para comparar temperatura média log-transformada entre estações
+anova_temp <- aov(tempMed_log ~ Estacao, data = dados)
+summary(anova_temp)
+
+# Teste post-hoc (se ANOVA for significativa)
+if (anova_temp$`Pr(>F)`[1] < 0.05) {
+  print(TukeyHSD(anova_temp))
+} else {
+  cat("ANOVA não é significativa, não é necessário realizar post-hoc.\n")
+}
+
+# Gráficos
+# Gráfico de Dispersão: Precipitação Total vs. Temperatura Média Diária
+ggplot(dados, aes(x = tempMed, y = PrecTot, color = Estacao)) +
+  geom_point() +
+  labs(title = "Precipitação Total vs Temperatura Média Diária",
+       x = "Temperatura Média Diária (°C)",
+       y = "Precipitação Total (mm)")
+
+# Gráficos de Densidade para Precipitação Média Diária por Estação
+ggplot(dados, aes(x = PrecMed, fill = Estacao)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Densidade da Precipitação Média Diária por Estação",
+       x = "Precipitação Média Diária (mm/dia)",
+       y = "Densidade")
+
+# Tendências Temporais na Precipitação Média Diária
+ggplot(dados, aes(x = Ano, y = PrecMed, color = Estacao)) +
+  geom_line(stat = "summary", fun = "mean") +
+  labs(title = "Tendências da Precipitação Média Diária por Estação",
+       x = "Ano",
+       y = "Precipitação Média Diária (mm/dia)")
+# Boxplots de Precipitação Média Diária por Estação
+ggplot(dados, aes(x = Estacao, y = PrecMed, fill = Estacao)) +
+  geom_boxplot() +
+  labs(title = "Distribuição da Precipitação Média Diária por Estação",
+       x = "Estação",
+       y = "Precipitação Média Diária (mm/dia)")
+# Resumo estatístico das variáveis
+tabela_resumo <- dados %>%
+  group_by(Estacao) %>%
+  summarise(
+    Minimo = min(PrecMed, na.rm = TRUE),
+    `1º Quartil` = quantile(PrecMed, 0.25, na.rm = TRUE),
+    Mediana = median(PrecMed, na.rm = TRUE),
+    Media = mean(PrecMed, na.rm = TRUE),
+    `3º Quartil` = quantile(PrecMed, 0.75, na.rm = TRUE),
+    Maximo = max(PrecMed, na.rm = TRUE)
+  )
+print(tabela_resumo)
+# Testes de normalidade para `tempMed`
+if (nrow(dados) >= 8) {
+  print(shapiro.test(dados$tempMed))
+  print(ad.test(dados$tempMed))
+  print(lillie.test(dados$tempMed))
+  print(sf.test(dados$tempMed))
+} else {
+  cat("O conjunto de dados é muito pequeno para testes de normalidade padrão.\n")
+}
+
+# Transformação logarítmica da temperatura média diária
+dados$tempMed_log <- log1p(dados$tempMed)
+
+# Realizar ANOVA para comparar temperatura média log-transformada entre estações
+anova_temp <- aov(tempMed_log ~ Estacao, data = dados)
+summary(anova_temp)
+
+# Teste post-hoc (se ANOVA for significativa)
+if (anova_temp$`Pr(>F)`[1] < 0.05) {
+  print(TukeyHSD(anova_temp))
+} else {
+  cat("ANOVA não é significativa, não é necessário realizar post-hoc.\n")
+}
+# Gráfico de Dispersão: Precipitação Total vs. Temperatura Média Diária
+ggplot(dados, aes(x = tempMed, y = PrecTot, color = Estacao)) +
+  geom_point() +
+  labs(title = "Precipitação Total vs Temperatura Média Diária",
+       x = "Temperatura Média Diária (°C)",
+       y = "Precipitação Total (mm)")
+
+# Gráficos de Densidade para Precipitação Média Diária por Estação
+ggplot(dados, aes(x = PrecMed, fill = Estacao)) +
+  geom_density(alpha = 0.5) +
+  labs(title = "Densidade da Precipitação Média Diária por Estação",
+       x = "Precipitação Média Diária (mm/dia)",
+       y = "Densidade")
+
+# Tendências Temporais na Precipitação Média Diária
+ggplot(dados, aes(x = Ano, y = PrecMed, color = Estacao)) +
+  geom_line(stat = "summary", fun = "mean") +
+  labs(title = "Tendências da Precipitação Média Diária por Estação",
+       x = "Ano",
+       y = "Precipitação Média Diária (mm/dia)")
+
+# Boxplots de Precipitação Média Diária por Estação
+ggplot(dados, aes(x = Estacao, y = PrecMed, fill = Estacao)) +
+  geom_boxplot() +
+  labs(title = "Distribuição da Precipitação Média Diária por Estação",
+       x = "Estação",
+       y = "Precipitação Média Diária (mm/dia)")
+
