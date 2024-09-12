@@ -55,7 +55,7 @@ Dados meteorológicos, relatórios dos últimos desastres e informações sobre 
 
 4.1.1. O modelo da P-Mediana
 
-Para o número ótimo e localização dos abrigos, pretende-se utilizar o modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a distância média, ou seja, minimizar a soma das menores distâncias dentro de uma região, determinando a localização ideal de (p) instalações (abrigos) de forma que a demanda total desta área seja atendida de maneira eficiente. Esses problemas são comumente aplicados em contextos de planejamento urbano, logística de distribuição, e situações de resposta a emergências, onde a meta é reduzir o tempo ou o custo de transporte entre os centros de distribuição e os abrigos. A solução do problema envolve escolher (p) locais de um conjunto de possíveis locais de abrigos para que a soma das distâncias ponderadas (baseadas na demanda) dos centros de distribuição até as instalações mais próximas seja minimizada. Sejam N={1,...,n} o conjunto de pontos de demanda;\(i \in \mathbb{N}\), um determinado cliente ou vértice;\(j \in \mathbb{N}\) uma instalação em potencial ou mediana; p o número de instalações de serviço ou medianas a serem localizadas; $$w_i$$ o peso ou importância de cliente *i*;\([d_{ij}]_{n \times n}\) a matriz simétrica de distâncias de cada cliente *i* à instalação $$j$$ , com \(d_{ii}=0, \forall i; [x_{ij}]_{n \times n}\) a matriz de alocação de cada cliente *i*; onde \(x_{ij}=1\) se o cliente *i* é alocado à instalação *j* e \(x_{ij}=0\) , caso contrário; \(x_{jj}=1\) indica que *j* é uma mediana e \(x_{jj}=0\) em caso contrário. Então, o modelo da p-mediana é apresentado da seguinte forma:
+Para o número ótimo e localização dos abrigos, pretende-se utilizar o modelo das P-Medianas. Nesse modelo p-medianas procura-se minimizar a distância média, ou seja, minimizar a soma das menores distâncias dentro de uma região, determinando a localização ideal de (p) instalações (abrigos) de forma que a demanda total desta área seja atendida de maneira eficiente. Esses problemas são comumente aplicados em contextos de planejamento urbano, logística de distribuição, e situações de resposta a emergências, onde a meta é reduzir o tempo ou o custo de transporte entre os centros de distribuição e os abrigos. A solução do problema envolve escolher (p) locais de um conjunto de possíveis locais de abrigos para que a soma das distâncias ponderadas (baseadas na demanda) dos centros de distribuição até as instalações mais próximas seja minimizada. Sejam N={1,...,n} o conjunto de pontos de demanda;\(i \in \mathbb{N}\), um determinado cliente ou vértice;\(j \in \mathbb{N}\) uma instalação em potencial ou mediana; p o número de instalações de serviço ou medianas a serem localizadas; $$w_i$$ o peso ou importância de cliente *i*;\([d_{ij}]_{n \times n}\) a matriz simétrica de distâncias de cada cliente *i* à instalação *j* , com \(d_{ii}=0, \forall i; [x_{ij}]_{n \times n}\) a matriz de alocação de cada cliente *i*; onde \(x_{ij}=1\) se o cliente *i* é alocado à instalação *j* e \(x_{ij}=0\) , caso contrário; \(x_{jj}=1\) indica que *j* é uma mediana e \(x_{jj}=0\) em caso contrário. Então, o modelo da p-mediana é apresentado da seguinte forma:
 
 $$
 Min \quad  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i}d_{ij}x_{ij}    (1)
@@ -129,12 +129,12 @@ Etapas & 1º trim 2024 & 2º trim 2024 & 3º trim 2024 & 4º trim 2024 & 1º tri
 Revisão Bibliográfica   &    &    &    &    &    &    &    &    \\ \hline
 Submissão de artigo da
 disciplina de Seminários
-em Ambientometria   & B2   & C2   & D2   & E2   & F2   & G2   & H2   & I2   \\ \hline
-& B3   & C3   & D3   & E3   & F3   & G3   & H3   & I3   \\ \hline
-Estudo dos Modelos   & B4   & C4   & D4   & E4   & F4   & G4   & H4   & I4   \\ \hline
+em Ambientometria   &    &    &    &    &    &    &    &    \\ \hline
+&    &    &    &    &    &    &    &    \\ \hline
+Estudo dos Modelos   &    &    &    &    &    &    &    &    \\ \hline
 Desenvolvimento dos Modelos
-& B5   & C5   & D5   & E5   & F5   & G5   & H5   & I5   \\ \hline
-Conclusões   & B6   & C6   & D6   & E6   & F6   & G6   & H6   & I6   \\ \hline
+&    &    &    &    &    &    &    &    \\ \hline
+Conclusões   &    &    &    &    &    &    &    &    \\ \hline
 \end{tabular}
 \caption{Sua tabela de 9 colunas e 6 linhas}
 \end{table}
