@@ -120,6 +120,20 @@ Este projeto busca contribuir para a logística humanitária ao aplicar modelos 
 
 6. Cronograma
 
+```{=tex}
+\begin{table}[ht]
+\centering
+\begin{tabular}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+Etapas & 1º trim 2024 & 2º trim 2024 & 3º trim 2024 & 4º trim 2024 & 1º trim 2025 & 2º trim 2025 & 3º trim 2025 & 4º trim 2025 \\ \hline
+Revisão Bibliográfica   &    &    &    &    &    &    &    &    \\ \hline
+Desenvolvimento dos Modelos &    &    &    &    &    &    &    &    \\ \hline
+\end{tabular}
+\caption{Sua tabela de 9 colunas e 6 linhas}
+\end{table}
+
+
+
 {=tex}
 \begin{table}[ht]
 \centering
