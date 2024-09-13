@@ -112,12 +112,13 @@ Seja 𝑁={1,...,𝑛} N={1,...,n} o conjunto de pontos de demanda, onde:
 
 Os modelos serão simulados usando dados reais das inundações de 2024 no município de Rio Grande - RS, focando na eficiência de distribuição e na redução de custos operacionais. Testes de sensibilidade serão realizados para avaliar diferentes cenários.
 
-5.  RESULTADOS ESPERADOS
+5. Resultados Esperados
 
 Melhoria na alocação de abrigos: Espera-se que o modelo de P-Mediana sugira um conjunto de locais estratégicos para a instalação de abrigos, considerando a minimização da distância média entre os pontos de demanda e os abrigos. Isso deve reduzir significativamente o tempo de resposta durante desastres, permitindo que as vítimas sejam acolhidas de forma mais rápida e eficiente. A localização estratégica dos abrigos é crucial em cenários de inundações, onde o tempo de resposta pode ser determinante para salvar vidas e mitigar o impacto dos desastres. Além disso, a distribuição eficiente dos abrigos contribui para a otimização de recursos, uma vez que evita sobrecarga em determinados locais e garante que todos os abrigos recebam um fluxo equilibrado de vítimas.
 
 Este projeto busca contribuir para a logística humanitária ao aplicar modelos de P-Medianas e técnicas de roteamento, focando na diminuição dos tempos de atendimento às vítimas de inundações no município de Rio Grande – RS. A aplicação desses modelos não só auxilia na escolha do local mais próximo que servirá de abrigo, mas também no abastecimento adequado de cada abrigo com suprimentos essenciais, como alimentos, medicamentos e água. Além disso, espera-se que o estudo possa oferecer insights valiosos sobre como aprimorar a alocação de recursos em cenários futuros, utilizando técnicas de otimização para criar uma rede de resposta rápida e eficiente. A utilização de modelos matemáticos e algoritmos de roteamento também permitirá identificar as melhores rotas de distribuição de suprimentos, minimizando o tempo de transporte e os custos operacionais envolvidos, resultando em um sistema de resposta mais ágil e menos oneroso.
 
+6. Cronograma
 \begin{table}[ht]
 \centering
 \begin{tabular}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
@@ -131,12 +132,12 @@ Estudo dos Modelos   &    &    &    &    &    &    &    &    \\ \hline
 Desenvolvimento dos Modelos &    &    &    &    &    &    &    &    \\ \hline
 Conclusões   &    &    &    &    &    &    &    &    \\ \hline
 \end{tabular}
-\caption <!--Sua tabela de 9 colunas e 6 linhas-->
+\caption  <!--Sua tabela de 9 colunas e 6 linhas-->
 \end{table}
 
 \newpage <!--Adiciona uma nova página-->
 
-Referências Bibliográficas
+7. Referências Bibliográficas
 
 Pizzolato, N.D. (2012). Introdução à Pesquisa Operacional: conceitos e práticas. LTC.
 
