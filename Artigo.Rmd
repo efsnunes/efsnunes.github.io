@@ -120,7 +120,7 @@ Este projeto busca contribuir para a logística humanitária ao aplicar modelos 
 
 6. Cronograma
 
-```{=tex}
+{=tex}
 \begin{table}[ht]
 \centering
 \begin{tabular}{|p{3cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|p{1.5cm}|}
