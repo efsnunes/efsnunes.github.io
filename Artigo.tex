@@ -236,42 +236,43 @@ indica que \emph{j} é uma mediana e \(x_{jj}=0\) em caso contrário.
 Então, o modelo da p-mediana é apresentado da seguinte forma:
 
 \[
-Min \quad  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i}d_{ij}x_{ij}    (1)
+Min \quad  z=\sum_{i \in \mathbb{N}} \sum_{j \in \mathbb{N}} w_{i}d_{ij}x_{ij} \quad    (1)
 \] Sujeito a
 
 \[
-\sum_{j \in \mathbb{N}}x_{ij}=1; i \in \mathbb{N}
+\sum_{j \in \mathbb{N}}x_{ij}=1; i \in \mathbb{N} \quad (2)
 \]
 
 \[
-\sum_{j \in \mathbb{N}}x_{jj}=p
+\sum_{j \in \mathbb{N}}x_{jj}=p \quad (3)
 \]
 
 \[
-x_{ij} \leq x_{jj}; i,j \in \mathbb{N}
+x_{ij} \leq x_{jj}; i,j \in \mathbb{N} \quad (4)
 \]
 
 \[
-x_{ij} \in \mathbb{0,1}; i,j \in \mathbb{N}\] onde a função objetivo (1)
-indica a minimização das distâncias ponderadas entre os clientes e os
-opostos que oferecem serviços; as restrições em (2) indicam que cada
-cliente \emph{i} é alocado a somente uma instalação \emph{j} ; a
-restrição (3) garante que somente \emph{p} instalações oferecem o
-serviço proposto; as restrições em (4) afirmam que um cliente somente é
-atendido num local onde existe uma instalação que oferece o serviço, e
-as restrições em (5) impõem variáveis de decisão binárias. Cabe lembrar
-que pode existir uma lista prévia de pontos candidatos a serem
-escolhidos como mediana; nesse caso o modelo acima sofre pequenas
-modificações e recebe o nome tradicional de problema de localização de
-uma planta simples ou em inglês \emph{simple plant location model
-(SPLP)} Observamos ainda que, em lugar de localização, o modelo acima
-pode ser interpretado como modelo de zoneamento, em que se busca dividir
-o espaço em \emph{p} zonas. Nessa ótica de zoneamento, o modelo de
-p-mediana pode ser aplicadoao problema de classificação de um conjunto
-de padrões, conhecido como \emph{cluster} \emph{analysis} (Xavier e
-Xavier, 2011), que busca agrupar elementos com padrões semelhantes em
-certo \emph{cluster} e com padrões diferentes em \emph{clusters}
-distintos.
+x_{ij} \in \mathbb{0,1}; i,j \in \mathbb{N}\] \quad (5)
+
+onde a função objetivo (1) indica a minimização das distâncias
+ponderadas entre os clientes e os opostos que oferecem serviços; as
+restrições em (2) indicam que cada cliente \emph{i} é alocado a somente
+uma instalação \emph{j} ; a restrição (3) garante que somente \emph{p}
+instalações oferecem o serviço proposto; as restrições em (4) afirmam
+que um cliente somente é atendido num local onde existe uma instalação
+que oferece o serviço, e as restrições em (5) impõem variáveis de
+decisão binárias. Cabe lembrar que pode existir uma lista prévia de
+pontos candidatos a serem escolhidos como mediana; nesse caso o modelo
+acima sofre pequenas modificações e recebe o nome tradicional de
+problema de localização de uma planta simples ou em inglês \emph{simple
+plant location model (SPLP)} Observamos ainda que, em lugar de
+localização, o modelo acima pode ser interpretado como modelo de
+zoneamento, em que se busca dividir o espaço em \emph{p} zonas. Nessa
+ótica de zoneamento, o modelo de p-mediana pode ser aplicadoao problema
+de classificação de um conjunto de padrões, conhecido como
+\emph{cluster} \emph{analysis} (Xavier e Xavier, 2011), que busca
+agrupar elementos com padrões semelhantes em certo \emph{cluster} e com
+padrões diferentes em \emph{clusters} distintos.
 
 \textbf{4.2. Desenvolvimento do Modelo}
 
