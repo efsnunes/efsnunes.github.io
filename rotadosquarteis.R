@@ -1,3 +1,9 @@
+
+install.packages("osrm")
+install.packages(c("leaflet", "sf", "ggplot2", "leaflet.extras"))
+
+library(leaflet.extras)
+library(ggplot2)
 library(leaflet)
 library(osrm)
 library(sf)
@@ -94,14 +100,6 @@ for (abrigo in pontos_interesse_sf$name[grepl("Abrigo", pontos_interesse_sf$name
   }
 }
 
-# Exibir o mapa final
-mapa_interativo
-
-install.packages("osrm")
-library(leaflet)
-library(osrm)
-library(sf)
-
 # Dados dos pontos de interesse
 pontos_interesse <- data.frame(
   name = c("Corpo de Bombeiros Centro", "Corpo de Bombeiros Cassino", "Centro de Distribuição", "Abrigo no Centro"),
@@ -164,10 +162,6 @@ add_route_to_map <- function(map, start, end, color) {
   return(map)
 }
 
-# Criar o mapa base
-mapa_interativo <- leaflet() %>%
-  addTiles()
-
 # Adicionar rotas entre Bombeiros Centro e Abrigos / Centros de Distribuição
 for (abrigo in pontos_interesse_sf$name[grepl("Abrigo", pontos_interesse_sf$name)]) {
   mapa_interativo <- add_route_to_map(
@@ -218,18 +212,6 @@ for (abrigo in pontos_interesse_sf$name[grepl("Abrigo", pontos_interesse_sf$name
   }
 }
 
-# Exibir o mapa interativo
-mapa_interativo
-
-
-
-
-
-
-
-library(leaflet)
-library(osrm)
-library(sf)
 
 # Dados dos pontos de interesse
 pontos_interesse <- data.frame(
@@ -294,10 +276,6 @@ add_route_to_map <- function(map, start, end, color) {
   return(map)
 }
 
-# Criar o mapa base
-mapa_interativo <- leaflet() %>%
-  addTiles()
-
 # Adicionar rotas entre Bombeiros Centro e Abrigos / Centros de Distribuição
 for (abrigo in pontos_interesse_sf$name[grepl("Abrigo", pontos_interesse_sf$name)]) {
   mapa_interativo <- add_route_to_map(
@@ -348,19 +326,6 @@ for (abrigo in pontos_interesse_sf$name[grepl("Abrigo", pontos_interesse_sf$name
   }
 }
 
-# Exibir o mapa interativo
-mapa_interativo
-
-
-
-
-
-
-
-library(osmdata)
-library(sf)
-library(leaflet)
-
 # Definir a área de interesse (Rio Grande, por exemplo)
 area <- opq(bbox = c(-52.3, -32.2, -51.9, -32)) %>%
   add_osm_feature(key = "highway")  # Extraindo apenas as estradas
@@ -377,18 +342,6 @@ mapa <- leaflet() %>%
   addPolylines(data = ruas_linhas, color = "blue", weight = 1)
 
 mapa
-
-
-
-
-
-
-
-
-
-
-library(leaflet)
-library(sf)
 
 # Carregar os dados de rotas (supondo que você exportou as rotas como GeoJSON)
 rotas_centro_dist <- st_read("rotas_centro_dist.geojson")
@@ -410,15 +363,6 @@ mapa <- leaflet() %>%
                        "Bombeiros Cassino - Abrigos"))
 
 mapa
-
-
-
-
-
-
-
-library(leaflet)
-library(sf)
 
 # Defina o diretório de trabalho onde os arquivos GeoJSON estão localizados
 setwd("caminho/para/seu/diretório")
@@ -442,20 +386,11 @@ mapa <- leaflet() %>%
                        "Bombeiros Centro - Abrigos", 
                        "Bombeiros Cassino - Abrigos"))
 
-mapa
-
-
-
-
 # Verifique o diretório de trabalho atual
 getwd()
 
 # Defina um diretório de trabalho válido onde os arquivos GeoJSON estão localizados
 setwd("C:/caminho/para/seu/diretório")  # Use o caminho absoluto correto para o diretório onde os arquivos estão localizados
-# Liste todos os arquivos no diretório de trabalho
-list.files()
-library(leaflet)
-library(sf)
 
 # Carregar os dados de rotas
 rotas_centro_dist <- st_read("rotas_centro_dist.geojson")
@@ -475,16 +410,6 @@ mapa <- leaflet() %>%
                        "Bombeiros Cassino - Centro de Distribuição",
                        "Bombeiros Centro - Abrigos", 
                        "Bombeiros Cassino - Abrigos"))
-
-mapa
-
-################################################################
-################################################################
-################################################################
-
-library(leaflet)
-library(osrm)
-library(sf)
 
 # Dados de exemplo
 pontos_interesse <- data.frame(
@@ -536,13 +461,6 @@ mapa_interativo <- add_route_to_map(
   pontos_interesse_sf[2, ],
   "red"
 )
-
-# Exibir o mapa final
-mapa_interativo
-
-library(leaflet)
-library(osrm)
-library(sf)
 
 # Dados dos pontos de interesse
 pontos_interesse <- data.frame(
@@ -607,10 +525,6 @@ add_route_to_map <- function(map, start, end, color) {
   return(map)
 }
 
-# Criar o mapa base
-mapa_interativo <- leaflet() %>%
-  addTiles()
-
 # Adicionar rotas entre Bombeiros Centro e Abrigos / Centros de Distribuição
 for (abrigo in pontos_interesse_sf$name[grepl("Abrigo", pontos_interesse_sf$name)]) {
   mapa_interativo <- add_route_to_map(
@@ -647,11 +561,7 @@ for (centro_distribuicao in pontos_interesse_sf$name[grepl("Centro de Distribui�
     pontos_interesse
     
     
-library(leaflet)
-library(osrm)
-    library(sf)
-    
-    # Dados dos pontos de interesse
+  # Dados dos pontos de interesse
     pontos_interesse <- data.frame(
       name = c("Corpo de Bombeiros Centro", "Corpo de Bombeiros Cassino", "Centro de Distribuição", "Abrigo no Centro"),
       lat = c(-32.035111, -32.184528, -32.114083, -32.040167),
@@ -694,13 +604,6 @@ library(osrm)
       rota <- osrmRoute(
         src = s
 
-        
-        
-        
-        library(leaflet)
-        library(osrm)
-        library(sf)
-        
         # Dados dos pontos de interesse
         pontos_interesse <- data.frame(
           name = c("Corpo de Bombeiros Centro", "Corpo de Bombeiros Cassino", "Centro de Distribuição", "Abrigo no Centro"),
@@ -763,11 +666,7 @@ library(osrm)
           return(map)
         }
         
-        # Criar o mapa base
-        mapa_interativo <- leaflet() %>%
-          addTiles()
-        
-        # Adicionar rotas entre Bombeiros Centro e Abrigos / Centros de Distribuição
+          # Adicionar rotas entre Bombeiros Centro e Abrigos / Centros de Distribuição
         for (abrigo in pontos_interesse_sf$name[grepl("Abrigo", pontos_interesse_sf$name)]) {
           mapa_interativo <- add_route_to_map(
             mapa_interativo,
@@ -816,22 +715,8 @@ library(osrm)
             )
           }
         }
-        
-        # Exibir o mapa interativo
-        mapa_interativo
-
-        
-        
-        
-        
-        
-        
-        
-        library(leaflet)
-        library(osrm)
-        library(sf)
-        
-        # Dados dos pontos de interesse
+   
+       # Dados dos pontos de interesse
         pontos_interesse <- data.frame(
           name = c("Corpo de Bombeiros Centro", "Centro de Distribuição"),
           lat = c(-32.035111, -32.114083),
@@ -868,11 +753,7 @@ library(osrm)
           
           return(map)
         }
-        
-        # Criar o mapa base
-        mapa_interativo <- leaflet() %>%
-          addTiles()
-        
+      
         # Adicionar a rota inicial do Corpo de Bombeiros ao Centro de Distribuição
         mapa_interativo <- add_route_to_map(
           mapa_interativo,
@@ -904,9 +785,10 @@ library(osrm)
           )
         }
         
-        # Exibir o mapa interativo
-        mapa_interativo
-        
-                
+        # Criar o mapa base
+        mapa_interativo <- leaflet() %>%
+          addTiles()
+        # Exibir o mapa final
+        mapa_interativo          
     
     
