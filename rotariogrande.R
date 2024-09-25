@@ -501,9 +501,9 @@ create_pontos_interesse <- function() {
 # Função para criar os postos de saúde
 create_postos_saude <- function() {
   data.frame(
-    name = c("Posto de Saúde 1", "Posto de Saúde 3"),
-    lat = c(-32.035444, -32.091111),
-    lon = c(-52.102222, -52.135000)
+    name = c("Posto de Saúde 1", "Posto de Saúde 2"),
+    lat = c(-32.035444, -32.04895),
+    lon = c(-52.102222, -52.11343)
   )
 }
 
@@ -701,5 +701,232 @@ mapa <- create_mapa_interativo()
 
 # Salvar o mapa em um arquivo HTML
 library(htmlwidgets)
+saveWidget(mapa, file = "mapa_interativo.html")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+library(leaflet)
+library(sf)
+library(osrm)
+library(htmlwidgets)
+
+# Função para criar ícones personalizados
+create_icons <- function() {
+  list(
+    bombeiros = awesomeIcons(icon = 'fire', iconColor = 'white', markerColor = 'red', library = 'fa'),
+    saude = awesomeIcons(icon = 'medkit', iconColor = 'white', markerColor = 'green', library = 'fa'),
+    distribuicao = awesomeIcons(icon = 'building', iconColor = 'white', markerColor = 'blue', library = 'fa'),
+    abrigo = awesomeIcons(icon = 'bed', iconColor = 'white', markerColor = 'purple', library = 'fa')
+  )
+}
+
+# Função para criar os pontos de interesse
+create_pontos_interesse <- function() {
+  data.frame(
+    name = c("Corpo de Bombeiros Centro", "Corpo de Bombeiros Cassino", "Centro de Distribuição", 
+             "Abrigo 01", "Abrigo 02", "Abrigo 03", "Abrigo 04", "Abrigo 05", "Abrigo 06", 
+             "Abrigo 07", "Abrigo 08", "Abrigo 09", "Abrigo 10", "Abrigo 11", "Abrigo 12", 
+             "Abrigo 13", "Abrigo 14", "Abrigo 15", "Abrigo 16"),
+    lat = c(-32.035111, -32.184528, -32.114083, -32.04038, -31.99608, -32.02390, -32.07563, 
+            -32.17724, -32.07512, -32.17828, -32.07817, -32.07855, -32.07700, -32.07217, 
+            -32.04657, -32.09553, -32.03525, -32.07506, -32.16760),
+    lon = c(-52.105528, -52.166111, -52.175278, -52.10052, -52.25032, -52.2487, -52.17996, 
+            -52.15971, -52.17957, -52.14572, -52.19077, -52.19079, -52.19024, -52.16065, 
+            -52.11592, -52.18284, -52.09896, -52.25398, -52.16963)
+  )
+}
+
+# Função para criar os postos de saúde
+create_postos_saude <- function() {
+  data.frame(
+    name = c("Posto de Saúde 1", "Posto de Saúde 2"),
+    lat = c(-32.035444, -32.04895),
+    lon = c(-52.102222, -52.11343)
+  )
+}
+
+# Função para adicionar rotas ao mapa
+add_route_to_map <- function(map, start, end, color) {
+  rota <- osrmRoute(src = st_coordinates(start), dst = st_coordinates(end), returnclass = "sf")
+  if (!is.null(rota)) {
+    dist_km <- round(as.numeric(rota$distance), 2)  # Distância em km
+    map <- map %>% 
+      addPolylines(data = rota, color = color, weight = 2, opacity = 0.7, 
+                   label = paste("Distância:", dist_km, "km"))
+  }
+  return(map)
+}
+
+# Função para adicionar áreas inundadas ao mapa
+add_flood_areas <- function(map) {
+  coords_20cm <- matrix(c(-52.11963, -32.03737, -52.12163, -32.03737, -52.12163, -32.03937, -52.11963, -32.03937, -52.11963, -32.03737), ncol = 2, byrow = TRUE)
+  coords_50cm <- matrix(c(-52.07862, -32.04986, -52.08677, -32.04339, -52.10020, -32.04168, -52.10148, -32.04470, -52.10093, -32.04273, -52.10021, -32.04168, -52.07862, -32.04986), ncol = 2, byrow = TRUE)
+  coords_1m <- matrix(c(-52.10800, -32.03265, -52.11057, -32.02828, -52.14844, -32.05355, -52.15638, -32.05147, -52.10059, -32.04325, -52.10800, -32.03265), ncol = 2, byrow = TRUE)
+  
+  area_20cm <- st_sfc(st_polygon(list(coords_20cm)), crs = 4326)
+  area_50cm <- st_sfc(st_polygon(list(coords_50cm)), crs = 4326)
+  area_1m <- st_sfc(st_polygon(list(coords_1m)), crs = 4326)
+  
+  map <- map %>%
+    addPolygons(data = area_20cm, color = "cyan", weight = 2, fillOpacity = 0.2, label = "Lâmina de 20cm", group = "Áreas Inundadas") %>%
+    addPolygons(data = area_50cm, color = "orange", weight = 2, fillOpacity = 0.3, label = "Lâmina de 50cm", group = "Áreas Inundadas") %>%
+    addPolygons(data = area_1m, color = "red", weight = 2, fillOpacity = 0.4, label = "Lâmina de 1m", group = "Áreas Inundadas")
+  
+  return(map)
+}
+
+# Função para adicionar a bússola com dados climáticos e hora
+add_compass_with_weather <- function(map, wind_speed, wind_direction, temperature, pressure, humidity, hour) {
+  wind_direction_label <- get_wind_direction_label(wind_direction)
+  
+  compass_css <- sprintf("
+    <style>
+      .compass-container {
+        position: relative;
+        text-align: center;
+        margin-top: 10px;
+      }
+      .compass-icon {
+        width: 48px;
+        height: 48px;
+        transform: rotate(%fdeg);
+      }
+      .weather-info {
+        font-size: 12px;
+        margin-top: 5px;
+        color: #000;
+        background-color: #fff;
+        padding: 5px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+      }
+    </style>", wind_direction)
+  
+  compass_html <- sprintf("
+    <div class='compass-container'>
+      <img src='https://img.icons8.com/color/48/000000/compass.png' class='compass-icon'/>
+      <div class='weather-info'>
+        <div>Vento: %.1f km/h (%s)</div>
+        <div>Temperatura: %.1f °C</div>
+        <div>Pressão: %.1f hPa</div>
+        <div>Umidade: %.1f%%</div>
+        <div>Hora: %s</div>
+      </div>
+    </div>", wind_speed, wind_direction_label, temperature, pressure, humidity, hour)
+  
+  map <- map %>% 
+    addControl(html = paste(compass_css, compass_html), position = "topright")
+  
+  return(map)
+}
+
+# Função para adicionar o relógio dinâmico no canto inferior direito
+add_dynamic_clock <- function(map) {
+  clock_html <- "
+  <div id='clock-container' style='background-color: white; padding: 5px; border-radius: 5px;'>
+    <div style='font-size: 12px;'>Hora Exata:</div>
+    <div id='current_time' style='font-size: 14px; font-weight: bold;'>00:00:00</div>
+  </div>
+  <script>
+    setInterval(function() {
+      var now = new Date();
+      var hours = now.getHours().toString().padStart(2, '0');
+      var minutes = now.getMinutes().toString().padStart(2, '0');
+      var seconds = now.getSeconds().toString().padStart(2, '0');
+      var currentTime = hours + ':' + minutes + ':' + seconds;
+      document.getElementById('current_time').textContent = currentTime;
+    }, 1000);
+  </script>
+  "
+  
+  map <- map %>% 
+    addControl(html = clock_html, position = "bottomright")
+  
+  return(map)
+}
+
+# Função principal para criar o mapa interativo
+create_mapa_interativo <- function() {
+  # Ajustar o fuso horário para América/Sao_Paulo
+  Sys.setenv(TZ="America/Sao_Paulo")
+  
+  # Dados e ícones
+  pontos_interesse <- create_pontos_interesse()
+  postos_saude <- create_postos_saude()
+  icons <- create_icons()
+  hora_atual <- format(Sys.time(), "%H:%M:%S")
+  
+  # Converter para objeto sf
+  pontos_interesse_sf <- st_as_sf(pontos_interesse, coords = c("lon", "lat"), crs = 4326)
+  postos_saude_sf <- st_as_sf(postos_saude, coords = c("lon", "lat"), crs = 4326)
+  
+  # Criar o mapa base
+  mapa_interativo <- leaflet() %>%
+    addTiles() %>%
+    # Adicionar ícones dos bombeiros, centro de distribuição e postos de saúde
+    addAwesomeMarkers(lat = pontos_interesse$lat[1:2], lng = pontos_interesse$lon[1:2], icon = icons$bombeiros, 
+                      label = pontos_interesse$name[1:2], group = "Bombeiros") %>%
+    addAwesomeMarkers(lat = postos_saude$lat, lng = postos_saude$lon, icon = icons$saude, label = postos_saude$name, 
+                      group = "Postos de Saúde") %>%
+    addAwesomeMarkers(lat = -32.114083, lng = -52.175278, icon = icons$distribuicao, label = "Centro de Distribuição", 
+                      group = "Centro de Distribuição") %>%
+    # Adicionar ícones dos abrigos
+    addAwesomeMarkers(lat = pontos_interesse$lat[4:nrow(pontos_interesse)], lng = pontos_interesse$lon[4:nrow(pontos_interesse)], 
+                      icon = icons$abrigo, label = pontos_interesse$name[4:nrow(pontos_interesse)], group = "Abrigos") %>%
+    # Adicionar áreas inundadas
+    add_flood_areas() %>%
+    # Adicionar círculo de inundação de 1 km
+    add_inundation_circle(-52.08428, -32.03216, 1) %>%
+    
+    # Adicionar o relógio dinâmico
+    add_dynamic_clock() %>%
+    
+    # Adicionar controle de camadas
+    addLayersControl(overlayGroups = c("Bombeiros", "Postos de Saúde", "Abrigos", "Áreas Inundadas"),
+                     options = layersControlOptions(collapsed = FALSE)) %>%
+    # Adicionar legenda
+    addLegend(position = "topright", colors = c("blue", "red", "green", "purple", "cyan", "orange", "red"), 
+              labels = c("Rota Bombeiros Centro", "Rota Bombeiros Cassino", "Postos de Saúde", "Abrigos", 
+                         "Lâmina 20cm", "Lâmina 50cm", "Lâmina 1m"))
+  
+  # Adicionar a bússola com os dados climáticos e a hora
+  mapa_interativo <- add_compass_with_weather(mapa_interativo, wind_speed = 50, wind_direction = 45, 
+                                              temperature = 23.5, pressure = 1015.3, humidity = 60, hour = hora_atual)
+  
+  # Adicionar rotas entre Bombeiros Centro e Abrigos / Postos de Saúde
+  for (i in 4:nrow(pontos_interesse_sf)) {
+    mapa_interativo <- add_route_to_map(mapa_interativo, pontos_interesse_sf[1, ], pontos_interesse_sf[i, ], "blue")
+  }
+  for (i in 1:nrow(postos_saude_sf)) {
+    mapa_interativo <- add_route_to_map(mapa_interativo, pontos_interesse_sf[1, ], postos_saude_sf[i, ], "blue")
+  }
+  
+  # Adicionar rotas entre Bombeiros Cassino e Abrigos / Postos de Saúde
+  for (i in 4:nrow(pontos_interesse_sf)) {
+    mapa_interativo <- add_route_to_map(mapa_interativo, pontos_interesse_sf[2, ], pontos_interesse_sf[i, ], "red")
+  }
+  for (i in 1:nrow(postos_saude_sf)) {
+    mapa_interativo <- add_route_to_map(mapa_interativo, pontos_interesse_sf[2, ], postos_saude_sf[i, ], "red")
+  }
+  
+  return(mapa_interativo)
+}
+
+# Gerar o mapa interativo
+mapa <- create_mapa_interativo()
+
+# Salvar o mapa em um arquivo HTML
 saveWidget(mapa, file = "mapa_interativo.html")
 
