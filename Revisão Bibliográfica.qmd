@@ -1,0 +1,129 @@
+---
+title: "Revisão Bibliográfica"
+author: "Edison Fernando"
+format: html
+editor: visual
+---
+
+Para realizar a revisão bibliográfica do seu artigo de dissertação sobre **Aplicação de Técnicas de Otimização dentro da Logística Humanitária**, com foco em **roteamento de veículos e análise da rota mínima com p-medianas**, siga uma abordagem estruturada, priorizando fontes confiáveis e de alta relevância científica.
+
+### Passos para Realizar a Revisão Bibliográfica:
+
+#### 1. **Definir Palavras-chave para Pesquisa**
+
+Como seu foco é em técnicas de otimização aplicadas à logística humanitária, com ênfase em roteamento de veículos e p-medianas, use palavras-chave adequadas para buscar artigos em bases de dados científicas. Algumas sugestões incluem: - "Humanitarian logistics optimization" - "Vehicle routing problem in disaster management" - "p-median problem in logistics" - "Minimum route analysis in humanitarian aid" - "Optimization techniques in emergency logistics"
+
+A combinação de termos relacionados a "logística humanitária", "otimização", "roteamento de veículos" e "p-medianas" pode ampliar a abrangência dos resultados.
+
+#### 2. **Usar Bases de Dados Científicas**
+
+Aqui estão algumas das melhores bases de dados para procurar artigos acadêmicos:
+
+-   **Portal de Periódicos CAPES**: Oferece acesso a diversas revistas científicas de alto impacto, sendo uma das principais fontes para encontrar artigos sobre otimização e logística humanitária.
+-   **ScienceDirect**: Com foco em áreas de ciência e tecnologia, você pode encontrar estudos relevantes sobre otimização de rotas e modelos matemáticos aplicados à logística humanitária.
+-   **IEEE Xplore**: Essencial para buscar artigos sobre técnicas de otimização e algoritmos em problemas de roteamento de veículos, especialmente com enfoque em engenharia de sistemas e ciência da computação.
+-   **Scopus** e **Web of Science**: Bases abrangentes com periódicos e conferências de várias áreas, incluindo logística, otimização e ciências aplicadas.
+-   **Google Scholar**: Pode ser útil para encontrar artigos de uma gama mais ampla de fontes, especialmente dissertações e relatórios técnicos que tratam de problemas de p-medianas e roteamento de veículos.
+
+#### 3. **Seleção de Artigos Relevantes**
+
+Durante a busca, procure por estudos relacionados à aplicação de técnicas de otimização no contexto de logística humanitária. Alguns tópicos específicos podem incluir: - **Modelos de p-medianas**: Existem diversos estudos aplicando o modelo de p-medianas para problemas de localização de abrigos e centros de distribuição em cenários de desastres. - **Roteamento de veículos em logística humanitária**: Muitos artigos discutem abordagens baseadas em heurísticas e metaheurísticas, como algoritmos genéticos ou simulated annealing, para resolver o problema de roteamento em ambientes de emergência. - **Casos de aplicação em desastres naturais**: Revise estudos de casos específicos em desastres naturais, onde essas técnicas foram aplicadas para a entrega eficiente de suprimentos e serviços.
+
+#### 4. **Ler e Compilar Informações**
+
+Ao encontrar artigos relevantes, leia atentamente os seguintes pontos: - **Métodos e técnicas de otimização aplicados**: Veja quais métodos (ex: algoritmos de p-medianas, heurísticas de roteamento de veículos) foram utilizados e como eles foram adaptados para cenários humanitários. - **Estudos de caso e resultados práticos**: É importante incluir estudos que mostram resultados práticos, como a redução de tempos de entrega ou melhor alocação de recursos em cenários de desastres. - **Comparação com outras técnicas**: Verifique como a técnica de p-medianas e roteamento de veículos se comparam com outras abordagens usadas em logística humanitária, como algoritmos de clusterização ou modelos de fluxo de rede.
+
+#### 5. **Organização da Revisão**
+
+Estruture sua revisão de acordo com os principais temas emergentes, como: - Introdução às técnicas de otimização na logística humanitária - Problemas de roteamento de veículos em desastres - Modelos de p-medianas e sua aplicação em localização de abrigos - Comparação entre diferentes métodos de otimização e suas eficiências em cenários de desastres
+
+#### 6. **Ferramentas para Gerenciamento de Referências**
+
+Use ferramentas como **Mendeley** ou **Zotero** para organizar suas referências bibliográficas e gerar citações no formato adequado para seu artigo.
+
+### Dicas:
+
+-   Sempre verifique a relevância e o fator de impacto dos periódicos onde os artigos foram publicados.
+-   Busque revisões sistemáticas ou meta-análises sobre o tema para obter uma visão mais ampla.
+
+Ao aplicar essas técnicas, você terá uma revisão bibliográfica bem fundamentada e completa, alinhada ao seu tema de **logística humanitária** com foco em **roteamento de veículos e p-medianas**.
+
+Para realizar a revisão bibliográfica do seu artigo de dissertação sobre **Aplicação de Técnicas de Otimização dentro da Logística Humanitária**, com foco em **roteamento de veículos e análise da rota mínima com p-medianas**, siga uma abordagem estruturada, priorizando fontes confiáveis e de alta relevância científica.
+
+### Passos para Realizar a Revisão Bibliográfica:
+
+#### 1. **Definir Palavras-chave para Pesquisa**
+
+Como seu foco é em técnicas de otimização aplicadas à logística humanitária, com ênfase em roteamento de veículos e p-medianas, use palavras-chave adequadas para buscar artigos em bases de dados científicas. Algumas sugestões incluem: - "Humanitarian logistics optimization" - "Vehicle routing problem in disaster management" - "p-median problem in logistics" - "Minimum route analysis in humanitarian aid" - "Optimization techniques in emergency logistics"
+
+A combinação de termos relacionados a "logística humanitária", "otimização", "roteamento de veículos" e "p-medianas" pode ampliar a abrangência dos resultados.
+
+#### 2. **Usar Bases de Dados Científicas**
+
+Aqui estão algumas das melhores bases de dados para procurar artigos acadêmicos:
+
+-   **Portal de Periódicos CAPES**: Oferece acesso a diversas revistas científicas de alto impacto, sendo uma das principais fontes para encontrar artigos sobre otimização e logística humanitária.
+-   **ScienceDirect**: Com foco em áreas de ciência e tecnologia, você pode encontrar estudos relevantes sobre otimização de rotas e modelos matemáticos aplicados à logística humanitária.
+-   **IEEE Xplore**: Essencial para buscar artigos sobre técnicas de otimização e algoritmos em problemas de roteamento de veículos, especialmente com enfoque em engenharia de sistemas e ciência da computação.
+-   **Scopus** e **Web of Science**: Bases abrangentes com periódicos e conferências de várias áreas, incluindo logística, otimização e ciências aplicadas.
+-   **Google Scholar**: Pode ser útil para encontrar artigos de uma gama mais ampla de fontes, especialmente dissertações e relatórios técnicos que tratam de problemas de p-medianas e roteamento de veículos.
+
+#### 3. **Seleção de Artigos Relevantes**
+
+Durante a busca, procure por estudos relacionados à aplicação de técnicas de otimização no contexto de logística humanitária. Alguns tópicos específicos podem incluir: - **Modelos de p-medianas**: Existem diversos estudos aplicando o modelo de p-medianas para problemas de localização de abrigos e centros de distribuição em cenários de desastres. - **Roteamento de veículos em logística humanitária**: Muitos artigos discutem abordagens baseadas em heurísticas e metaheurísticas, como algoritmos genéticos ou simulated annealing, para resolver o problema de roteamento em ambientes de emergência. - **Casos de aplicação em desastres naturais**: Revise estudos de casos específicos em desastres naturais, onde essas técnicas foram aplicadas para a entrega eficiente de suprimentos e serviços.
+
+#### 4. **Ler e Compilar Informações**
+
+Ao encontrar artigos relevantes, leia atentamente os seguintes pontos: - **Métodos e técnicas de otimização aplicados**: Veja quais métodos (ex: algoritmos de p-medianas, heurísticas de roteamento de veículos) foram utilizados e como eles foram adaptados para cenários humanitários. - **Estudos de caso e resultados práticos**: É importante incluir estudos que mostram resultados práticos, como a redução de tempos de entrega ou melhor alocação de recursos em cenários de desastres. - **Comparação com outras técnicas**: Verifique como a técnica de p-medianas e roteamento de veículos se comparam com outras abordagens usadas em logística humanitária, como algoritmos de clusterização ou modelos de fluxo de rede.
+
+#### 5. **Organização da Revisão**
+
+Estruture sua revisão de acordo com os principais temas emergentes, como: - Introdução às técnicas de otimização na logística humanitária - Problemas de roteamento de veículos em desastres - Modelos de p-medianas e sua aplicação em localização de abrigos - Comparação entre diferentes métodos de otimização e suas eficiências em cenários de desastres
+
+#### 6. **Ferramentas para Gerenciamento de Referências**
+
+Use ferramentas como **Mendeley** ou **Zotero** para organizar suas referências bibliográficas e gerar citações no formato adequado para seu artigo.
+
+### Dicas:
+
+-   Sempre verifique a relevância e o fator de impacto dos periódicos onde os artigos foram publicados.
+-   Busque revisões sistemáticas ou meta-análises sobre o tema para obter uma visão mais ampla.
+
+Ao aplicar essas técnicas, você terá uma revisão bibliográfica bem fundamentada e completa, alinhada ao seu tema de **logística humanitária** com foco em **roteamento de veículos e p-medianas**.
+
+**Resultados da Pesquisa:**
+
+| Tipo      | Otimização da Logística Humanitária | Problema de roteamento de veículos  | Problema p-mediana em logística | Análise de rota mínima  | Técnicas de otimização em logística  |
+|-------------------------------|--------------------------------|--|-------------------------------------|----------------------------------------|--|
+| Mestrado  | 8                                   | 231                                 | 10                              | 37                      | 43                                   |
+| Doutorado | 5                                   | 52                                  | 6                               | 16                      | 12                                   |
+
+: Portal da CAPES
+
+| Tipo   | Otimização da Logística Humanitária | Problema de roteamento de veículos  | Problema p-mediana | Análise de rota mínima  | Técnicas de otimização em logística  |
+|------------|-----------|-------------|------------|-------------|-------------|
+| Artigo | 2                                   | 63                                  | 11                 | 8                       | 15                                   |
+
+: Periodicos da CAPES
+
+| Tipo   | Otimização da Logística Humanitária | Problema de roteamento de veículos | Problema p-mediana | Análise de rota mínima | Técnicas de otimização em logística |
+|--------|-------------------------------------|------------------------------------|--------------------|------------------------|-------------------------------------|
+| Artigo | 2                                   | 15                                 | 1                  | 0                      | 5                                   |
+
+: Scielo
+
+| Tipo      | Otimização da Logística Humanitária | Problema de Roteamento de veículos | Problema p-median | Análise de rota mínima | Técnicas de otimização em logística |
+|-----------|-------------------------------------|------------------------------------|-------------------|------------------------|-------------------------------------|
+| Mestrado  | 8                                   | 206                                | 742               | 138                    | 111                                 |
+| Doutorado | 5                                   | 66                                 | 325               | 63                     | 40                                  |
+|           |                                     |                                    |                   |                        |                                     |
+
+: BDTD
+
+| Tipo        | Logística Humanitária | Problema de Roteamento de veículos | Problema p-mediana | Rota mínima | Otimização em logística |
+|-------------|-----------------------|------------------------------------|--------------------|-------------|-------------------------|
+| Publicações | 1                     | 2                                  | 458                | 4369        | 3                       |
+|             |                       |                                    |                    |             |                         |
+|             |                       |                                    |                    |             |                         |
+
+: Springer
