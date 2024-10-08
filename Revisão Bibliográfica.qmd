@@ -93,16 +93,16 @@ Ao aplicar essas técnicas, você terá uma revisão bibliográfica bem fundamen
 
 **Resultados da Pesquisa:**
 
-| Tipo      | Otimização da Logística Humanitária | Problema de roteamento de veículos  | Problema p-mediana em logística | Análise de rota mínima  | Técnicas de otimização em logística  |
-|-------------------------------|--------------------------------|--|-------------------------------------|----------------------------------------|--|
-| Mestrado  | 8                                   | 231                                 | 10                              | 37                      | 43                                   |
-| Doutorado | 5                                   | 52                                  | 6                               | 16                      | 12                                   |
+| Tipo      | Otimização da Logística Humanitária | Problema de roteamento de veículos | Problema p-mediana em logística | Análise de rota mínima | Técnicas de otimização em logística |
+|-----------|-------------------------------------|------------------------------------|---------------------------------|------------------------|-------------------------------------|
+| Mestrado  | 8                                   | 231                                | 10                              | 37                     | 43                                  |
+| Doutorado | 5                                   | 52                                 | 6                               | 16                     | 12                                  |
 
 : Portal da CAPES
 
-| Tipo   | Otimização da Logística Humanitária | Problema de roteamento de veículos  | Problema p-mediana | Análise de rota mínima  | Técnicas de otimização em logística  |
-|------------|-----------|-------------|------------|-------------|-------------|
-| Artigo | 2                                   | 63                                  | 11                 | 8                       | 15                                   |
+| Tipo   | Otimização da Logística Humanitária | Problema de roteamento de veículos | Problema p-mediana | Análise de rota mínima | Técnicas de otimização em logística |
+|--------|-------------------------------------|------------------------------------|--------------------|------------------------|-------------------------------------|
+| Artigo | 2                                   | 63                                 | 11                 | 8                      | 15                                  |
 
 : Periodicos da CAPES
 
