@@ -1,0 +1,26 @@
+---
+title: "Previsão do Tempo e Mercado Financeiro"
+author: "Edison Fernando"
+date: "2024-10-09"
+output: html_document
+---
+
+```{r}
+# Exemplo de script para obter a cotação do dólar
+library(httr)
+library(jsonlite)
+
+# Usar uma API de cotação do dólar
+url <- "https://economia.awesomeapi.com.br/json/last/USD-BRL"
+response <- GET(url)
+dolar_data <- fromJSON(content(response, "text"))
+
+# Mostrar o valor do dólar
+dolar_value <- dolar_data$USDBRL$bid
+cat("Cotação atual do Dólar: R$", dolar_value)
+
+# Previsão do tempo usando uma API de tempo
+weather_url <- "https://api.open-meteo.com/v1/forecast?latitude=-32.03&longitude=-52.09&current_weather=true"
+weather_response <- GET(weather_url)
+weather_data <- fromJSON(content(weather_response, "text"))
+cat("Temperatura atual em Rio Grande: ", weather_data$current_weather$temperature, "°C")
