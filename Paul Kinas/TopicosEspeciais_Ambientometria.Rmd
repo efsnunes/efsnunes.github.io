@@ -1,0 +1,38 @@
+---
+title: "Tópicos Especiais em Ambientometria"
+author: "Edison Fernando"
+date: "2024-10-07"
+output: word_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+(1) Desenho -> a ponderação dos valores observados em Ys é o elemento central ao procedimento
+(2) Modelo -> a predição dos valores não observados em Ys' é elemento central ao procedimento.
+           -> super-população, Bayesiano
+           
+           Etapas do Procedimento via Modelo Bayesiano:
+           1. Considerar $\theta$
+
+```{r}
+$$
+\theta
+$$
+  
+```
+     pagina 108 do livro do kinas (Introdução à Análise Bayesiana (Com R) Capa comum – 10 outubro 2020
+por Paul Kinas/Humber Agrelli Andrade (Autor)
+Na estatística bayesiana o conceito de probabilidade é mais próximo do entendimento intuitivo que a maioria dos leigos tem sobre o tema. Com isso a compreensão de procedimentos estatísticos é facilitada reduzindo a necessidade de memorizar equações e soluções algébricas. Muitas soluções da estatística convencional surgem como casos particulares da abordagem bayesiana que, por ser mais genérica, é também aplicável a cenários para os quais a estatística convencional se mostra inadequada. Não é, portanto, nenhuma surpresa, que a estatística bayesiana está despertando interesse crescente, particularmente nas ciências ambientais e da saúde. A proposta do livro é dar auto-suficiência aos leitores que, ao final do estudo diligente do texto, terão em mãos a bagagem teórica e a habilidade prática necessárias para desenvolver com autonomia as suas análises estatísticas. Nesta segunda edição o texto foi reescrito em algumas seções, visando maior clareza e facilitando ainda mais a sua compreensão. Incluiu-se tópicos novos, como análise de covariância, bem como estratégias para a análise diagnóstica e para a seleção entre modelos concorrentes. Finalmente, atualizou-se as bibliotecas e os correspondentes códigos computacionais do R.)  
+
+
+
+para pensar
+
+1. como posso saber se ometodo funciona se nao conheço Q(Y)? (no caso, conhecemos Q(Y)=409)
+2. posso melhorar o estimador usando a viariável acessoria X?
+3. calibração: um principio frequentista de replicação do seguinte procedimento:
+
+extrair amostra > calcular estimativa > avaliar o desempenho > repetir muitas vezes > quantificar "sucessos" ao final
+          

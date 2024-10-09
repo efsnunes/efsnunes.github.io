@@ -1,0 +1,32 @@
+---
+title: "Aplicação de Técnicas de Otimização dentro da Logística Humanitária: Um estudo de caso"
+author: "Edison Fernando da Silva Nunes"
+date: "2024-09-07"
+output: 
+  pdf_document:
+    keep_tex: true
+    latex_engine: xelatex
+header-includes:
+  - \usepackage{setspace}
+  - \usepackage{ragged2e}
+  - \usepackage{graphicx}
+  - \usepackage{float}
+  - \usepackage{adjustbox}
+  - \justifying
+  - \setlength{\parindent}{1em}
+  - \setstretch{1.5}
+  - \renewcommand{\normalsize}{\fontsize{12}{14}\selectfont}
+  - |
+    \usepackage{fancyhdr}
+    \pagestyle{fancy}
+    \fancyhf{}
+    \fancyhead[C]{}
+    \fancyhead[L]{}
+    \fancyhead[R]{}
+---
+\begin{figure}[H]
+\centering
+\begin{tabular}{ccc}
+\adjustbox{valign=c}{\includegraphics[width=0.25\textwidth]{path/to/logo_furg.png}} & \hspace{4cm} & \adjustbox{valign=c}{\includegraphics[width=0.25\textwidth]{path/to/logo_ambientometria.png}} \\
+\end{tabular}
+\end{figure}
