@@ -5,13 +5,12 @@ date: "2024-10-09"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
+```{r all_plots, include=FALSE}
 # Definindo o mirror do CRAN
 options(repos = c(CRAN = "https://cloud.r-project.org/"))
 library(httr)
 library(jsonlite)
 library(plotly)
-
 ```
 
 ```{r}
@@ -19,25 +18,13 @@ library(plotly)
 url_dolar <- "https://economia.awesomeapi.com.br/json/last/USD-BRL"
 response_dolar <- GET(url_dolar)
 dolar_data <- fromJSON(content(response_dolar, "text"))
-
-# Verifique se os dados foram retornados corretamente
 if (!is.null(dolar_data$USDBRL)) {
   dolar_value <- dolar_data$USDBRL$bid
-  
-  # Criando gráfico para a cotação do Dólar
   data_dolar <- data.frame(dias = 1:7, valor_dolar = c(5.20, 5.25, 5.30, 5.35, 5.50, 5.45, 5.55))
   fig_dolar <- plot_ly(data_dolar, x = ~dias, y = ~valor_dolar, type = 'scatter', mode = 'lines+markers') %>%
-    layout(title = "Cotação do Dólar nos Últimos 7 Dias",
-           xaxis = list(title = "Dias"),
-           yaxis = list(title = "Valor (R$)"))
-  fig_dolar
-} else {
-  cat("Não foi possível obter os dados do Dólar.\n")
+    layout(title = "Cotação do Dólar nos Últimos 7 Dias", xaxis = list(title = "Dias"), yaxis = list(title = "Valor (R$)"))
 }
 
-```
-
-```{r}
 # API para previsão do tempo em Rio Grande
 weather_url <- "https://api.open-meteo.com/v1/forecast?latitude=-32.03&longitude=-52.09&hourly=temperature_2m"
 weather_response <- GET(weather_url)
@@ -46,20 +33,10 @@ weather_data <- fromJSON(content(weather_response, "text"))
 if (!is.null(weather_data$hourly$temperature_2m)) {
   hourly_temps <- weather_data$hourly$temperature_2m[1:24]
   hours <- seq(1, 24)
-
-  # Criando gráfico de temperatura
   temp_fig <- plot_ly(x = ~hours, y = ~hourly_temps, type = 'scatter', mode = 'lines+markers') %>%
-    layout(title = "Previsão de Temperatura nas Próximas 24 Horas",
-           xaxis = list(title = "Horas"),
-           yaxis = list(title = "Temperatura (°C)"))
-  temp_fig
-} else {
-  cat("Não foi possível obter os dados de temperatura.\n")
+    layout(title = "Previsão de Temperatura nas Próximas 24 Horas", xaxis = list(title = "Horas"), yaxis = list(title = "Temperatura (°C)"))
 }
 
-```
-
-```{r}
 # API para cotação do ouro
 url_ouro <- "https://economia.awesomeapi.com.br/json/last/XAU-BRL"
 response_ouro <- GET(url_ouro)
@@ -67,17 +44,14 @@ ouro_data <- fromJSON(content(response_ouro, "text"))
 
 if (!is.null(ouro_data$XAUBRL)) {
   ouro_value <- ouro_data$XAUBRL$bid
-  
-  # Criando gráfico para a cotação do Ouro
   data_ouro <- data.frame(dias = 1:7, valor_ouro = c(275.25, 276.50, 278.00, 279.50, 280.75, 282.10, 283.50))
   fig_ouro <- plot_ly(data_ouro, x = ~dias, y = ~valor_ouro, type = 'bar') %>%
-    layout(title = "Cotação do Ouro nos Últimos 7 Dias",
-           xaxis = list(title = "Dias"),
-           yaxis = list(title = "Valor (R$)"))
-  fig_ouro
-} else {
-  cat("Não foi possível obter os dados da cotação do ouro.\n")
+    layout(title = "Cotação do Ouro nos Últimos 7 Dias", xaxis = list(title = "Dias"), yaxis = list(title = "Valor (R$)"))
 }
+
+# Exibindo os gráficos
+fig_dolar
+temp_fig
 
 ```
 
