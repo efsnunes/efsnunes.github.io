@@ -1,0 +1,77 @@
+# 1. Carregar os pacotes necessários
+if(!require(tidyverse)) install.packages("tidyverse")
+library(tidyverse)
+
+# 2. Definir o caminho do arquivo CSV exportado
+file_path <- "C:/Users/conta/Desktop/estatistica_ambiental/Orientadora_Ana/exportados1.csv"  # Substitua com o caminho correto
+
+# 3. Carregar o arquivo CSV no R
+dados_zotero <- read.csv(file_path, stringsAsFactors = FALSE)
+
+# 4. Verificar as primeiras linhas para entender a estrutura
+head(dados_zotero)
+
+# 5. Exemplo de como contar os autores mais frequentes
+# Supondo que a coluna de autores seja "Author"
+autores_frequentes <- dados_zotero %>%
+  separate_rows(Author, sep = ";") %>%  # Separa os autores se houver mais de um por artigo
+  count(Author, sort = TRUE) %>%
+  top_n(6, n)  # Seleciona os 6 autores com mais publicações
+
+# 6. Criar um gráfico de barras com os 6 autores mais frequentes
+ggplot(autores_frequentes, aes(x = reorder(Author, n), y = n)) +
+  geom_bar(stat = "identity", fill = "skyblue") +
+  coord_flip() +  # Gira o gráfico para que os rótulos fiquem horizontais
+  labs(title = "Top 6 Autores com Mais Publicações", x = "Autores", y = "Número de Publicações") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))  # Ajusta os rótulos no eixo X
+
+
+
+# 4. Identificar os autores e contar o número de publicações por autor
+# Supondo que a coluna de autores seja chamada "Autores"
+autores_contagem <- dados_zotero %>%
+  separate_rows(Autores, sep = ";") %>%  # Se os autores estiverem separados por ";"
+  count(Autores, sort = TRUE)
+
+
+# 6. Contar a ocorrência das palavras-chave "p-mediana", "roteamento de veículos", "distribuição de suprimentos" e "logística humanitária"
+# Supondo que as palavras-chave estejam na coluna "Resumo" ou "Palavras-chave"
+palavras_chave <- c("p-mediana", "roteamento de veículos", "distribuição de suprimentos", "logística humanitária")
+
+# Criar uma função para contar a ocorrência de palavras-chave
+contar_palavras <- function(texto, palavras_chave) {
+  sapply(palavras_chave, function(palavra) sum(str_detect(texto, regex(palavra, ignore_case = TRUE))))
+}
+
+# Aplicar a função à coluna relevante (ex: "Resumo" ou "Palavras-chave")
+contagem_palavras <- dados_zotero %>%
+  rowwise() %>%
+  mutate(ocorrencias = list(contar_palavras(Resumo, palavras_chave))) %>%
+  unnest_wider(ocorrencias, names_sep = "_")
+
+# Resumo das palavras-chave
+contagem_palavras_resumo <- colSums(contagem_palavras[,grep("ocorrencias_", names(contagem_palavras))])
+print(contagem_palavras_resumo)
+
+# Gráfico de ocorrências das palavras-chave
+contagem_palavras_df <- data.frame(Palavra = palavras_chave, Frequencia = contagem_palavras_resumo)
+ggplot(contagem_palavras_df, aes(x = reorder(Palavra, Frequencia), y = Frequencia)) +
+  geom_bar(stat = "identity", fill = "lightgreen") +
+  labs(title = "Ocorrência das Palavras-Chave", x = "Palavra-Chave", y = "Frequência") +
+  coord_flip()
+
+# 7. Analisar as revistas e a quantidade de publicações
+# Supondo que a coluna de revistas seja chamada "Revista"
+revistas_contagem <- dados_zotero %>%
+  count(Revista, sort = TRUE)
+
+# Visualizar as 10 revistas com mais publicações
+top10_revistas <- revistas_contagem %>% top_n(10, n)
+print(top10_revistas)
+
+# Gráfico das 10 revistas com mais publicações
+ggplot(top10_revistas, aes(x = reorder(Revista, n), y = n)) +
+  geom_bar(stat = "identity", fill = "purple") +
+  coord_flip() +
+  labs(title = "Top 10 Revistas com Mais Publicações", x = "Revista", y = "Número de Publicações")
+str(dados_zotero)

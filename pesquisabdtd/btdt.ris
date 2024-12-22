@@ -1,0 +1,705 @@
+TY  - masterThesis
+AU  - Costa, Otávio Augusto Fernandes
+PY  - 2015
+TI  - Coordenação em logística humanitária: análise por dinâmica de sistemas.
+LA  - por
+AB  - Desastres são eventos complexos que exigem esforços de múltiplos atores para assistirem suas vítimas em tempo hábil a minimizar as perdas de vidas e os custos sociais e materiais da região afetada. Esta dependência de ação entre diferentes atores cria entre eles uma relação de interdependência no que tange o sucesso da operação de resposta. Este trabalho tem como objetivo analisar o problema da coordenação das atividades logísticas em uma operação humanitária utilizando Dinâmica de Sistemas como ferramenta de simulação e análise para verificar como os incentivos e impedimentos à coordenação interagem dinamicamente no ambiente humanitário e como sua estrutura de causa e efeito resulta em comportamentos com impactos e intensidades diferentes daqueles desejados pelos atores envolvidos. Assim, o objetivo específico deste trabalho é desenvolver um modelo de simulação que auxilie na compreensão do problema além de utilizá-lo para sugerir ferramentas que favoreçam o direcionamento do comportamento do sistema às metas de efetividade da ajuda humanitária exigidas pelos múltiplos atores envolvidos nesta. O desenvolvimento do trabalho segue uma estrutura multidisciplinar, buscando o necessário rigor do entendimento do problema tanto na análise da literatura quanto na formulação do modelo e sua utilização.
+DI  - 
+UR  - http://www.teses.usp.br/teses/disponiveis/3/3148/tde-21072016-161544/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Beppler, Cleonice Maria
+PY  - 2021
+TI  - Uma proposta de modelagem dos processos de logística de assistência humanitária em fase de resposta em âmbito municipal
+LA  - por
+AB  - Dissertação (mestrado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Engenharia de Transportes e Gestão Territorial, Florianópolis, 2021.
+DI  - 
+UR  - 371916; https://repositorio.ufsc.br/handle/123456789/227241
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Nunes, Rodolfo Modrigais Strauss
+PY  - 2022
+TI  - Resiliência em cadeias de suprimentos humanitárias
+LA  - por
+AB  - Diante de um cenário global com crescentes eventos de desastres naturais e extremos climáticos, a presente tese investiga quais são os aspectos mais relevantes na formação de resiliência de cadeias de suprimentos humanitárias (RCSH) com foco em serviços locais, visando desenvolver um framework que explique o fenômeno. Para isto, a tese foi estruturada no formato de quatro artigos. O primeiro artigo (Capítulo 2 da tese), consiste em uma revisão de literatura baseada em técnicas de mapeamento bibliométrico, visando identificar a estrutura intelectual de operações humanitárias, incluindo cadeias de suprimentos e logística humanitária. Como principal resultado, apresenta-se visualmente a estrutura intelectual deste campo de estudo, por meio do software VOSviewer, incluindo as pesquisas principais e os temas emergentes, sendo possível confirmar a oportunidade de melhor desenvolvimento do tema de resiliência em cadeias de suprimentos humanitárias. No segundo artigo (Capítulo 3), buscou-se explorar padrões da estrutura, processos e fluxos das cadeias de suprimentos humanitárias de serviços, pois se verificou que, embora haja alguns modelos de análise de cadeias de suprimentos de serviços no contexto comercial, ainda faltavam estudos com foco em cadeias de suprimentos de serviços no contexto humanitário de enfrentamento a desastres naturais. Como metodologia, optou-se por uma pesquisa exploratória de métodos mistos, por meio de um conjunto de entrevistas, observação, análise documental e análise de redes sociais computadorizada. Os resultados permitiram a proposição de um framework analítico específico para melhor entender as cadeias de suprimentos de serviços no contexto humanitário de enfrentamento a desastres naturais e a influência de sua estrutura para a resiliência. O terceiro artigo (Capítulo 4), consiste de uma pesquisa qualitativa para identificar as principais práticas das cadeias de suprimentos humanitárias que lidam com desastres naturais, para entender como elas contribuem para a formação da resiliência. Para isto, foi desenvolvido um estudo de casos múltiplos em cadeias de cinco órgãos locais de defesa civil no Brasil, que atuam em um contexto humanitário para preservação de vidas diante das ameaças de desastres naturais. Os resultados indicam que a implementação de práticas replicáveis pode contribuir para a geração de resiliência nas cadeias de suprimentos humanitárias, melhorando o seu desempenho. Com base na lente teórica de visão baseada em práticas, foi possível mapear um conjunto transferível de 29 práticas e 13 capacidades que construiriam a resiliência de cadeias de suprimentos humanitárias de serviços em contexto de desastres naturais. Por fim, o quarto artigo (Capítulo 5), investiga as relações entre resiliência em cadeias de suprimentos humanitárias, contingências ambientais e climáticas e resiliência comunitária, em contexto de desastres naturais, por meio de uma pesquisa de métodos mistos com estudo de casos múltiplos e técnicas de big data para análise de dados não estruturados. À luz da teoria da contingência, os resultados indicam que mudanças nas variáveis de contingência podem levar a um aumento do risco de desastres, exigindo ajustes ou adaptações no nível de resiliência de cadeias de suprimentos humanitárias e de comunidades. Para conclusão geral da tese, apresenta-se um framework integrativo que unifica os resultados identificados em cada artigo, e, portanto, explica os principais aspectos para o desenvolvimento de resiliência em cadeias de suprimentos humanitárias de serviços locais, no contexto de desastres naturais.
+DI  - 
+UR  - https://hdl.handle.net/10438/32645
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - BRUNO DA COSTA FLACH
+PY  - 2010
+TI  - MODELOS DE PROGRAMAÇÃO ESTOCÁSTICA COM INCERTEZAS ENDÓGENAS: UMA APLICAÇÃO EM LOGÍSTICA HUMANITÁRIA
+LA  - eng
+AB  - Neste trabalho estudamos uma classe de problemas de otimização estocástica com incertezas endógenas que é formulado como um problema de programação não-linear inteira (MINLP). Esta classe de problemas difere dos problemas de otimização estocástica geralmente estudados na literatura pelo fato de que que a distribuição de probabilidade dos parâmetros aleatórios depende das decisões tomadas. Apesar de discutido dentro do contexto do problema de logística humanitária, a metodologia proposta e os resutados obtidos são válidos para uma classe geral de problemas que agrega uma variedade de aplicações. Em particular, propõe-se (i) uma técnica de convexificação de polinômios de variáveis binárias, (ii) um algoritmo de geração de cortes e (iii) a incorporação dos conceitos de importance sampling dentro do contexto de otimização estocástica de modo a permitir a solução de grandes instâncias do problema. Os resultados computacionais apresentados demonstram as vantagens da metodologia proposta ao permitir a solução de instâncias significativamente maiores que aquelas atualmente apresentadas em trabalhos relacionados.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=37562@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=37562@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - BIANCA GOMES SOARES GONCALVES DE MENDONCA
+PY  - 2017
+TI  - EXPERIÊNCIA LOGÍSTICA DA MARINHA DO BRASIL EM AÇÕES HUMANITÁRIAS: TERREMOTOS NO HAITI E NO CHILE EM 2010
+LA  - por
+AB  - A assistência humanitária em casos de desastres vem desempenhando papel significativo nos estudos da logística atualmente. Neste cenário, onde a participação de militares brasileiros prestando este tipo de assistência tem sido cada vez mais marcante, cabe às instituições que compõem as Forças Armadas brasileiras revisar, documentar e analisar continuamente os processos e métodos quando atuando em assistência humanitária. Este trabalho tem como objetivo apresentar os obstáculos que a Marinha do Brasil encontrou e como foi sua atuação no campo logístico quando participou de ações humanitárias nos terremotos ocorridos no Haiti e no Chile, ambos no ano de 2010. A contribuição desta pesquisa é principalmente servir de fonte documental retratando como foi o apoio prestado pelos militares na época que os eventos ocorreram e a sistemática de abastecimento atualmente empregada pela Força, visando melhorar as decisões a serem tomadas na Marinha do Brasil, quando esta se deparar com casos semelhantes aos que aqui foram tratados. A metodologia de pesquisa utilizada foi de abordagem qualitativa, com objetivo exploratório e descritivo, por meio de pesquisa bibliográfica em conceitos presentes no ramo da logística e em doutrinas legais que regem a logística militar. O estudo de caso pautou-se em apresentar dois eventos e analisar a atuação da Marinha em cada um deles. A revisão e análise dos casos aqui tratados resulta no apoio a novos estudos que visem o aperfeiçoamento de processos e o melhor gerenciamento de cadeias logísticas que sejam capazes de aliviar o sofrimento humano por meio de operações humanitárias.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=31459@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=31459@2
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Lima, Fabiana Santos
+PY  - 2014
+TI  - Logística humanitária: modelagem de processos para a fase de aquisição na resposta a desastres naturais
+LA  - por
+AB  - Tese (doutorado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Engenharia de Produção, Florianópolis, 2014
+DI  - 
+UR  - 330256; https://repositorio.ufsc.br/xmlui/handle/123456789/129673
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Varella, Leonardo
+PY  - 2019
+TI  - Modelagem e simulação dos processos da gestão de doações para ajuda humanitária em localidades com baixa resiliência
+LA  - por
+AB  - Tese (doutorado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Engenharia de Produção, Florianópolis, 2019.
+DI  - 
+UR  - 364586; https://repositorio.ufsc.br/handle/123456789/215066
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Ordeno, Thiago de Souza Borges
+PY  - 2021
+TI  - Modelo de localização para banco de alimentos temporário em situações de desastres
+LA  - por
+AB  - Orientador: Profª. Drª. Márcia Marcondes Altimari Samed
+DI  - 
+UR  - ORDENO, Thiago de Souza Borges. Modelo de localização para banco de alimentos temporário em situações de desastres. 2021. 109 f. Dissertação (mestrado em Engenharia de Produção) - Universidade Estadual de Maringá, 2021, Maringá, PR.; http://repositorio.uem.br:8080/jspui/handle/1/7447
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - García Pérez, Andrés Felipe
+PY  - 2018
+TI  - Pré-posicionamento e aquisição de suprimentos na cadeia humanitária brasileira
+LA  - por
+AB  - In the Brazilian humanitarian chain, product flows from the private sector to victims of disasters are only allowed on the hypothesis that a bidding process with the public sphere was carried out. The proposal of this work is a mixed-integer linear programming approach, for the supply of aid in disaster areas via acquisition and / or pre-positioning, with the purpose of integrating location of deposits decisions and evaluating the trade-off between the aids bought before and after the disaster, from the agreements between suppliers and the Brazilian Civil Defense. Location of deposits is treated under a localization approach of maximum coverage with the time of attendance to the victims being a limiting factor. Beyond location of deposits, is also considered its size to be opened. There are considered restrictions of geographical and product fairness, for a fair distribution of a budget available, common in the governmental scope. Results shows the need to maintain strategic stocks in certain Brazilians states, guaranteeing time satisfaction in emergencies products according to the stablished parameters.
+DI  - 
+UR  - https://repositorio.ufscar.br/handle/ufscar/10406
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Santos, Samara Teixeira dos
+PY  - 2021
+TI  - Análise de fatores críticos para a assistência a comunidades indígenas na Amazônia
+LA  - por
+AB  - Dissertação (mestrado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Engenharia de Transportes e Gestão Territorial, Florianópolis, 2021.
+DI  - 
+UR  - 373930; https://repositorio.ufsc.br/handle/123456789/231077
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Pinheiro, Maria Clara Rodrigues
+PY  - 2021
+TI  - Modelo de otimização multi-período para localização de armazéns aplicado a operações humanitárias.
+LA  - por
+AB  - Este trabalho teve como objetivo avaliar a coordenação entre agências humanitárias e a aplicabilidade da modelagem com múltiplos períodos na solução de problemas de localização de armazéns utilizados em suas operações. Dessa forma, foi desenvolvido um modelo de programação linear inteira mista aplicado a operação humanitária de resposta à Ofensiva de Mosul, Iraque, nos anos de 2016 e 2017. A fim de avaliar as hipóteses a respeito dos benefícios da cooperação, houve a proposição de um novo modelo de configuração da rede logística, que possibilita a mudança na dinâmica de interação entre as agências e elos da cadeia de suprimentos. Dessa forma, foram verificados ganhos financeiros relativos à centralização das operações e ao compartilhamento de recursos, bem como demonstrou-se o melhor emprego dos recursos e maior eficiência através da utilização de modelos com múltiplos períodos. Além disso, a distância de cobertura em contextos desta natureza é um fator crítico e tem um papel importante no projeto da rede, estabelecendo um trade-off entre a centralização, a qual permite ganhos de escala, e o nível de serviço desejado na operação. O modelo de localização com múltiplos períodos se ajusta melhor a problemas com alta variabilidade nas demandas, entretanto é necessário que se empregue um método robusto de previsão de demanda no planejamento para que este modelo se adéque às incertezas inerentes destes sistemas.
+DI  - 
+UR  - https://www.teses.usp.br/teses/disponiveis/3/3136/tde-08102021-111236/
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Souza, Juliano da Silva de
+PY  - 2021
+TI  - Modelo de otimização multiperíodo para o planejamento integrado da alocação de pessoas em abrigos e distribuição de suprimentos emergenciais
+LA  - por
+AB  - Tese (doutorado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Engenharia de Produção, Florianópolis, 2021.
+DI  - 
+UR  - 373066; https://repositorio.ufsc.br/handle/123456789/229134
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Giannotti, Mariana Abrantes
+PY  - 2010
+TI  - Desenvolvimento de ontologias para sistemas de apoio à logística humanitária baseados em serviços de informações geográficas: uma aplicação para bancos de alimentos.
+LA  - por
+AB  - Com o advento da Internet, novas tecnologias de Geoprocessamento têm sido criadas para tratar, trocar, disponibilizar e acessar informações e dados espaciais como as Infraestruturas de Dados Espaciais, os Geobrowsers e os Serviços de Informações Geográficas. O número de aplicações que lida com atributos espaciais não somente cresceu como também se diversificou, no entanto problemas de interoperabilidade semântica ainda limitam a evolução nessa área. Ontologias formalizam o conhecimento necessário para organizar e permitir o uso de dados de diferentes fontes, pois são modelos de referência robustos devido à sua expressividade e capacidade de serem compartilhados pela internet. Nesta tese, ontologias foram desenvolvidas para aumentar a interoperabilidade semântica em sistemas de apoio à logística humanitária que utilizam serviços de informações geográficas. A aplicação de logística humanitária estudada foi a operação de bancos de alimentos. O conhecimento relativo aos processos logísticos, problemas logísticos de bancos de alimentos e serviços de informações geográficas úteis para os métodos de solução desses problemas foram formalizados em uma rede de ontologias. O número de serviços de informações geográficas disponíveis ainda é pequeno, mas a composição de serviços de informações geográficas em cadeias, formando novos serviços, abre uma perspectiva para que operações espaciais, não fiquem mais restritas às soluções proprietárias e possam ser melhor exploradas. As ontologias propostas neste trabalho podem ser usadas como base para o desenvolvimento de sistemas em que serviços de informações geográficas podem ser acoplados, na medida em que forem sendo disponibilizados.
+DI  - 
+UR  - http://www.teses.usp.br/teses/disponiveis/3/3138/tde-10012011-131533/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Bonilla Londoño, Héctor Fabio
+PY  - 2018
+TI  - Modelo de otimização para a rede humanitária de suprimentos no Brasil
+LA  - por
+AB  - This dissertation addresses the problem of designing a humanitarian supply network. With this purpose, a mixed integer linear programming model is proposed, which aims at maximizing the covering of demand in the affected municipalities. The proposed model considers facilities having two purposes (which operate as deposits and aid centers), and is used to decide on capacity planning upon the basis of the Social Vulnerability Index (SoVI) that prioritizes the care of more vulnerable areas. For the sake of testing the model, a real case based on the Brazilian disaster response planning was considered. Thus, data was gathered from the Integrated System Disaster Information (S2iD); in particular, the 11 types of natural disasters with the highest prevalence during the period 2007-2016 were used for the study. The goal was to estimate the demand for relief aid required to cover population needs in the affected municipalities. Computational experiments were implemented and executed to evaluate the mathematical model. The results suggest that the model proposed may be used as a decision support tool that allows for evaluating: (i) the configuration of the humanitarian supply network, regarding to the deposits and aid centers, as well as their characteristics in terms of capacity and long-term operation, (ii) the dynamics of transportation of relief aid throughout the country to meet the requirements (iii) sensitivity analysis of the budget to the care of victims and the role of SoVI in the level of emergency service; and (iv) the advantages and disadvantages of combining pre-positioning and acquisition of relief aid to take the care of victims.
+DI  - 
+UR  - https://repositorio.ufscar.br/handle/ufscar/11078
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Feltrin, Talita Fernanda
+PY  - 2014
+TI  - Procedimentos para gestão de ocorrência de inundações em cidades de pequeno e médio portes com o uso de SIG e logística humanitária. Estudo de caso: cidade de Jahu, SP
+LA  - por
+AB  - The scenarios of natural disasters are a reality today, and tend to become increasingly frequent in view of climate change that generate abnormal conditions intensively, since the increase of people living without adequate infrastructure susceptible to the ocurrence of disaster areas, even increasing number of vehicles on the streets, which may cause and/or exacerbate the intensity of disasters. In Brazil, municipalities suffer from landslides, strong winds, drought and floods mainly. Through emergency situations, the logistics network is fundamental to manage the supplies should be stored in strategic locations and care teams should be positioned near the sites affected by the disaster and may meet in a timely manner, especially sites that were affected with greater intensity. In view of this, it is necessary, through the use of Geographic Information System (GIS) map areas of risk, define and quantify the strategic points that will support the management of the Humanitarian Logistics, in order to ensure lower response time, minimize risk, and optimal performance in cases of emergency contingencies. Based on these aspects, this research aimed to develop a method of disaster management, by analyzing the areas of floods risk, through a Geographic Information System, seeking to identify, from this mapping, the locations that serve as supply warehouses and central of assistance for care teams. GIS, as well as LSS (Logistics Support System), tool that was used in this research, assisted in the preparation of the flow procedures for the logistics management of flooding for small and medium cities. Through simulations, could observe that for the case of a mapping realized using models and mathematical methods and due to lack of data registered along the basin studies, that was used the Method Muskingum-Cunge that best applied to types of data collected. Whit this, the study focused only on the river macrodrainage Jahu. To determine the strategic locations were considered urban facilities such as schools, kindergartens, hospitals, and others to act as local shelters and warehouses for humanitarian assistance. With the use of LSS could be analyzed that the tool allows organizing, quantify and qualify supplies received and distributed, to avoid the lack of essential surpimentos unnecessary and excessive supplies. Finally, from the use of LSS and GIS tools as well as the development of procedures for the management of humanitarian logistics is possible prepare the contingency plan for the occurrence of flooding to attend the Federal Law 12,608, with the main objective to reduce the time of decision making by Civil Defense and service teams.
+DI  - 
+UR  - https://repositorio.ufscar.br/handle/ufscar/4385
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - SILVA, Anderson Nunes da
+PY  - 2021
+TI  - Desenvolvimento de modelo conceitual para apoio ao estabelecimento de parcerias humanitárias-empresariais baseado em indicadores de desempenho
+LA  - por
+AB  - A Logística Humanitária (LH) compreende os processos e sistemas comprometidos com a ajuda às comunidades vulneráveis, afetadas por desastres naturais ou emergências complexas. As Organizações Humanitárias (OH) são os principais atores desse processo e dependem de doações para sua operacionalização. Com os doadores corporativos cada vez mais exigentes, tornou-se essencial que as organizações de ajuda humanitária demonstrem a eficiência de suas operações. Nesse sentido, este estudo teve como objetivo desenvolver um modelo conceitual para auxiliar no estabelecimento e manutenção de parcerias humanitárias-empresarias, baseado na cooperação, diálogo, troca de informações e, sobretudo, buscando a identificação e elaboração de indicadores-chave de desempenho que considerem tanto aspectos humanitários quanto empresariais. Para tanto, realizou-se uma revisão sistemática da literatura sobre medição de desempenho na logística humanitária, visando identificar pesquisas relevantes acerca do tema que viabilizasse o desenvolvimento deste trabalho. O modelo foi desenvolvido com base em multimetodologia considerando três processos principais: (a) identificação dos motivadores e facilitadores da parceria; (b) elaboração dos Processos; (c) monitoramento dos resultados. O modelo foi aplicado a gestores de organizações humanitárias e empresariais da cidade de Garanhuns (PE). Os resultados mostraram a construção de um sistema de medição de desempenho baseado nas perspectivas do Balanced Scorecard (BSC), com indicadores-chave de desempenho, considerados pelos próprios gestores, relevantes para a avaliação do sucesso da parceria estudada. Conclui-se, portanto, que apesar de todas as dificuldades encontradas para avaliar o desempenho da cadeia de suprimentos humanitária, o modelo proposto pode ser uma ferramenta interessante para auxiliar o estabelecimento de parcerias, entre organizações do setor de ajuda humanitária e do setor empresarial, bem como avaliar o sucesso das mesmas.
+DI  - 
+UR  - https://repositorio.ufpe.br/handle/123456789/44019
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Bertazzo, Tabata Rejane
+PY  - 2014
+TI  - Mecanismos de coordenação em gestão de operações humanitárias: proposição de um modelo conceitual de simulador e de jogo logístico humanitário.
+LA  - por
+AB  - Entidades humanitárias, organizações privadas e governos atuam constantemente no atendimento a vítimas de desastres que aumentam continuamente e atingem milhares de pessoas todos os anos. O objetivo da presente pesquisa é analisar os mecanismos de coordenação e as formas de colaboração na cadeia de suprimentos humanitária. Para tanto, foi realizado o levantamento e análise do referencial teórico para se permitir a caracterização dos cenários de desastres; a identificação e compreensão dos desafios de gerenciamento da cadeia de suprimentos humanitária; a identificação dos indicadores de desempenho inerentes à gestão desta cadeia específica; os mecanismos de colaboração existentes e utilizados; e a importância de simuladores organizacionais para análise da tomada de decisão e dos jogos de empresa para vivências. A partir da análise do referencial teórico, foi desenvolvido um esquema conceitual simplificado dos mecanismos de coordenação descentralizado e centralizado, incluindo a análise dos stakeholders envolvidos (agentes humanitários locais, agentes humanitários coordenadores, beneficiários e prestadores de serviço de armazenagem, transporte e aquisição), das decisões tomadas por cada um, das etapas logísticas e dos indicadores importantes para garantir o atendimento dos beneficiários. A partir do desenvolvimento do esquema conceitual simplificado dos mecanismos de coordenação, foi desenvolvido um modelo conceitual de simulador logístico humanitário, tendo como objetivo permitir a análise das operações logísticas em cenários de desastres e para servir como base para desenvolvimento futuro de um simulador matemático para análise da tomada de decisão. Por fim, foi desenvolvida uma proposta de jogo logístico humanitário para permitir a vivência da tomada de decisão em cenários de desastres. Para validação do esquema conceitual simplificado, do modelo conceitual de simulador e da proposta de jogo humanitário, estes foram aplicados a dois estudos de caso relacionados ao combate à fome na África (UNICEF Plumpy\'Nuts) e no Brasil (Bancos de Alimentos).
+DI  - 
+UR  - http://www.teses.usp.br/teses/disponiveis/3/3148/tde-26082015-163842/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Paulucci, Martha Regina Bortolato Cardoso
+PY  - 2013
+TI  - O fluxo informacional para as ações de resposta a desastres naturais em áreas urbanas com base na logística humanitária
+LA  - por
+AB  - This research presents the topic of Natural Disasters and how it has been treated in Brazil and around the world, especially regarding the preparation stage for this confrontation and response, where there are possibilities for logistics support to better serve society affected for such an event. There is much to logistics is being developed in various sectors, from military to business in which they are applied his concepts and techniques to ensure the best balance between the costs of industrial operations, commercial and transportation and customer satisfaction. Currently, several studies have been developed to suit the limited resources to care for victims of disasters being named Humanitarian Logistics. With regard to disaster response operations, many researchers point out that one of the biggest difficulties for logistics activities is the identification of the necessary information, such as demand and its features, which makes the response time inadequate to meet the needs of affected population. This research proposes a starting point for the solution of this issue through the preparation, organization and provision of appropriate information. We performed a literature review about the topic of Natural Disasters and their particularities imply that their phases of pre-impact, impact and post impact, as well as the typical approach front of them related to the various actors responsible. Were exposed to the key concepts and techniques of logistics, humanitarian logistics and information processing. Various data were collected in the literature in order to get a clearer understanding of logistics activities and information that would be useful to decrease the response time, some of the cases studied. It reached a preliminary classification of the main information needs that impact on demand as well as in preparing to meet the same that led to the adaptation of an information flow that enables the provision of information at the initiation stage of the response to policy decision. The integration and provision of appropriate information to administrators Disaster directs better preparation of necessary logistics to respond to natural disasters by reducing the time for the initial collection of information, making the triggering of the response faster, thus improving the quality of care victims.
+DI  - 
+UR  - https://repositorio.ufscar.br/handle/ufscar/1101
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Nappi, Manuela Marques Lalane
+PY  - 2016
+TI  - Modelo multicritério de decisão com foco na logística humanitária a partir de medidas de desempenho para abrigos temporários
+LA  - por
+AB  - Tese (doutorado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Arquitetura e Urbanismo, Florianópolis, 2016.
+DI  - 
+UR  - 345813; https://repositorio.ufsc.br/xmlui/handle/123456789/176671
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Nogueira, Christiane Wenck
+PY  - 2012
+TI  - O enfoque da logística humanitária na localização de uma central de inteligência e suporte para situações emergenciais e no desenvolvimento de uma rede dinâmica
+LA  - por
+AB  - Tese (doutorado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Engenharia de Produção, Florianópolis, 2010.
+DI  - 
+UR  - 279925; http://repositorio.ufsc.br/xmlui/handle/123456789/93995
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Santos, Filipe Aécio Alves de Andrade
+PY  - 2021
+TI  - Otimização visual interativa com múltiplos critérios: sistema de apoio à decisão para treinamento em logística humanitária.
+LA  - por
+AB  - A localização de armazéns é um dos desafios para a realização de uma operação de resposta eficiente e eficaz ao desastre. O gerenciamento de desastres começou a ser um importante tema de pesquisa nos últimos anos. Mas essas pesquisas e seus resultados na maioria das vezes não são utilizados nas operações humanitárias. Modelos matemáticos desenvolvidos por pessoas distantes da operação e a falta de conhecimento em modelos matemáticos são apontados como algumas das causas deste problema. A realização de treinamentos e a utilização de ferramentas visuais para interação com modelos podem ajudar na compreensão de modelos matemáticos e, consequentemente,aumentar seu uso em operações reais. Este trabalho desenvolveu um sistema de otimização visual interativa com múltiplos critérios para treinamento em logística humanitária com o objetivo de melhorar a compreensão de conceitos complexos por agentes logísticos atuantes em operações humanitárias. O problema em estudo e o modelo matemático foram desenvolvidos em conjunto com especialistas em operações humanitárias para que fossem consistentes com a realidade. O sistema desenvolvido possui ferramentas visuais intuitivas a fim de tornar acessíveis os modelos e análises complexas do problema. O produto final fruto desta pesquisa possui código aberto e está disponível para uso, modificação e aprimoramento pela comunidade interessada.
+DI  - 
+UR  - https://www.teses.usp.br/teses/disponiveis/3/3148/tde-12042021-145621/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Silva, Alcione Pereira
+PY  - 2020
+TI  - Indicadores de resultados e desempenho em cadeias de suprimentos humanitárias: uma sistematização para bancos de alimentos
+LA  - por
+AB  - Considerado direito fundamental, o acesso à alimentação consta na Declaração Universal dos Direitos Humanos proclamada na Assembleia Geral das Nações Unidas de 1948. Com o ritmo de crescimento da população mundial, em 2050 seremos 7,5 bilhões de pessoas habitando o planeta, o que nos leva à uma discussão urgente sobre as medidas que possam garantir o acesso de alimentos à população. Ao mesmo tempo vivemos um grande paradoxo, pois desperdiçamos quase um terço dos alimentos produzidos em um mundo onde 820 milhões de pessoas sofrem de subnutrição crônica. Deste modo, garantir a segurança alimentar não deve concentrar-se somente no crescimento da oferta, mas também no acesso aos alimentos. A recuperação e a redistribuição de alimentos oriundos do desperdício é uma prática adotada em diversos países como forma de promoção deste acesso e, no Brasil, ela também é operacionalizada pelos bancos de alimentos. Promover visibilidade ao trabalho dos bancos perante a sociedade civil, de forma a estimular sua valorização e expansão foi o contexto utilizado para este trabalho aplicado. Para tanto, por meio de análise de conteúdo documental, realizou-se a identificação e a sistematização de um conjunto de indicadores de resultados e desempenho para sistemas de redistribuição de alimentos via bancos e, em seguida, a verificação da sua aplicabilidade com o cruzamento dos dados obtidos de quatro estudos de caso. Ao todo, foram identificados 32 indicadores de resultados e 8 indicadores de desempenho, sendo que os mais citados e utilizados nos casos práticos refletem os resultados do objetivo primário dos bancos: captar a maior quantidade de alimentos, do maior número de doadores possível, atendendo ao maior número de pessoas e instituições socioassistenciais. Além disso, a grande maioria dos indicadores de resultados e desempenho encontra-se na dimensão social, evidenciando seu forte componente social e, de certa forma, mostrando como os componentes econômicos e ambientais ficam à margem. Apenas 34% dos indicadores são utilizados por todos os bancos dos estudos de caso, mostrando a oportunidade de utilização de indicadores de maneira mais uniforme pela rede de bancos de alimentos do país. O trabalho de sistematização desses índices permitiu a organização dos dados em categorias, variáveis e dimensões, de forma a tornar possível a sua disposição final em um formato de framework. Assim, este trabalho aplicado fornece um conjunto de indicadores de resultados e desempenho para bancos de alimentos, dispostos de uma forma única, visual e prática, deixando o convite para a sua utilização imediata.
+DI  - 
+UR  - https://hdl.handle.net/10438/29336
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - LUIZA RIBEIRO ALVES CUNHA
+PY  - 2022
+TI  - MODELANDO A DINÂMICA DE OPERAÇÕES HUMANITÁRIAS
+LA  - eng
+AB  - Pesquisas no campo de Operações Humanitárias (Humanitarian Operations - HO) vem atraindo a atenção de acadêmicos e profissionais ao abranger o estudo de diversas ferramentas analíticas visando a melhora da resposta aos beneficiários. Diferentes estudos sugerem que a inserção de práticas e teorias tradicionais de logística e gestão de operações (Operation management – OM) - incluindo simulação, otimização, probabilidade e estatística - no contexto de desastres beneficiaria a cadeia de suprimentos humanitária. Uma vez que desastres são eventos complexos, graves e dinâmicos, com recursos humanos e materiais limitados, muitos stakeholders envolvidos e alto nível de incerteza de informação, a capacidade de gerir operações se faz necessária. Uma das técnicas mais comumente reconhecidas em OM é a simulação, sendo o método de Dinâmica de Sistemas (System Dynamics – SD) capaz de modelar representações simplificadas de realidades e obter informações valiosas sobre situações de complexidade dinâmica. O método fornece um conjunto de ferramentas, como mapeamento causal e modelagem de simulação, e permite avaliar os resultados de curto e longo prazo de decisões. Nesse contexto, a presente tese visa estudar a complexidade de HO através de SD. Para isso a tese conta com uma revisão sistemática da literatura (Systematic Literature Review – SLR) a fim de identificar o estado da arte, entregando uma taxonomia, um framework e uma agenda de pesquisa. Em seguida, duas operações são apresentadas, demonstrando a modelagem através de SD em contextos humanitários distintos e de alta relevância. A primeira operação estudada consiste na coleta e distribuição de doações para a população na base da pirâmide (Bottom of the Pyramid – BoP) do Rio de Janeiro, em meio a pandemia de COVID19. Realizamos uma survey e obtivemos 2155 respostas dos beneficiários. Os dados também foram obtidos diretamente com as organizações envolvidas na operação. Como resultado, demonstramos que aumentar o acesso a produtos de limpeza nas comunidades por meio de doações pode reduzir significativamente a transmissão do vírus SARS-CoV-2. Ademais, mostramos que as doações de alimentos podem aumentar a capacidade da população vulnerável de arcar com as necessidades, aliviando o estresse causado pela pandemia nesta parcela da população. Ademais, demostramos que quando todas as doações são na forma de vouchers/ dinheiro, a acessibilidade aumenta em 20 por cento em comparação com todas as doações físicas. Resultados que podem servir de base para formuladores de políticas ajudarem as comunidades vulneráveis, especialmente durante crises nas quais os recursos são escassos e devem ser explorados de forma eficiente. O segundo estudo consiste na operação do governo federal Brasileiro para receber, abrigar e interiorizar Venezuelanos no Brasil. Como o fluxo de Venezuelanos para o Brasil tem crescido e as consequências da pandemia se apresentam como uma preocupação com a capacidade da operação, a Operação Acolhida é modelada a fim de entender os gargalos de sua escalabilidade. Como resultado, demonstramos que: (i) o processo de interiorização é um gargalo, pois além da logística, é necessária a inserção socioeconômica dos Venezuelanos (por meio de vagas de emprego, por exemplo); (ii) a capacidade dos abrigos é um gargalo da operação, pois define uma fila de venezuelanos precisando de ajuda esperando para serem abrigados.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=60662@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=60662@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Moura, Juliano Bertolotti
+PY  - 2021
+TI  - Modelo de referência para cidades resilientes
+LA  - por
+AB  - The objective of the research developed in this dissertation is to present a reference model for resilient cities, through short, medium and long term actions. To this end, this research was based on a medium-sized city in the state of Paraná, the city of Maringá. The proposed methodology started with a diagnostic stage, carried out using a Maturity Model, adapted from the literature specifically for this purpose. According to the identified maturity stage, a Reference Model for Resilient Cities was developed in order to promote interaction between government agencies and the population. The resulting Reference Model consists of an unprecedented set of actions to achieve resilience in an increasing way, with the first actions aimed at establishing a people and knowledge base so that future actions are developed efficiently. The guidelines presented in the Reference Model contribute in the scientific field to the management of risks and disasters and, in the social field to the consolidation of sustainable cities.
+DI  - 
+UR  - MOURA, Juliano Bertolotti. Modelo de referência para cidades resilientes. 2021. 122 f. Dissertação (mestrado em Políticas Públicas)--Universidade Estadual de Maringá, Centro de Tecnologia, Departamento de Engenharia da Produção, Programa de Pós-Graduação em Engenharia da Produção, 2021, Maringá, PR.; http://repositorio.uem.br:8080/jspui/handle/1/7452
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Moura, Juliano Bertolotti
+PY  - 2021
+TI  - Modelo de referência para cidades resilientes
+LA  - por
+AB  - Orientador: Prof.ª Dr.ª Márcia Marcondes Altimari Samed
+DI  - 
+UR  - MOURA, Juliano Bertolotti. Modelo de referência para cidades resilientes. 2021. 122 f. Dissertação (mestrado em Engenharia da Produção)--Universidade Estadual de Maringá, 2021, Maringá, PR.; http://repositorio.uem.br:8080/jspui/handle/1/7454
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Pareja Yale, Camila Laura
+PY  - 2022
+TI  - Previsão da demanda de suprimentos de socorro com aplicação na localização de depósitos da Defesa Civil do estado de São Paulo.
+LA  - por
+AB  - No Estado de São Paulo desastres naturais de baixa e media magnitude acontecem frequentemente no verão em consequência das chuvas. A Coordenadoria Estadual de Proteção e Defesa Civil do Estado de Sao Paulo (CEPDEC-SP) é responsável pelo abastecimento de ajuda humanitária aos 645 municípios. Portanto, estimativas de demanda por suprimentos de socorro são de vital impedância para auxiliar na resposta ágil e eficiente após a ocorrência de sinistros. A previsão de suprimentos de emergência é uma tarefa complexa pela natureza inerente aos desastres; informações limitadas, quantidade excessiva de zeros na variável de resposta e fatores preditores não lineares são os principais desafios no desenvolvimento do modelo de previsão. Nessa perspectiva, os Generalized Linear Models (GLM) foram explorados para a modelagem da previsão da demanda de materiais de socorro. Os preditores do modelo incluem indicadores de vulnerabilidade, aspectos demográficos e anomalias climáticas relacionadas ao fenômeno El Niño. Dada a existência de vulnerabilidades diferenciadas nos municípios, é proposta a estrutura de modelo multinível Generalized Linear Mixed Models (GLMM) que leva em consideração esses agrupamentos hierárquicos evidenciados no conjunto de dados. Assim, o Zero-Inflated Negative Binomial Multilevel (ZINBM) foi selecionado como o modelo final para estimar a demanda de suprimentos de socorro. Ao reduzir a incerteza na demanda, soluções adequadas para o problema de localização de depósitos da CEPDEC-SP podem ser atingidas, com esse propósito foi desenvolvido um modelo de otimização que busca minimizar os custos totais e maximizar o nível de serviço, assim como um Sistema de Apoio á Decisão (SAD) que possibilita à equipe da CEPDEC-SP avaliar diversas alternativas de localização para optar pela solução mais conveniente.
+DI  - 
+UR  - https://www.teses.usp.br/teses/disponiveis/3/3136/tde-22052023-102221/
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Bertazzo, Tábata Rejane
+PY  - 2020
+TI  - Tipologia para centrais de operações e emergências em gerenciamento de desastres no Brasil.
+LA  - por
+AB  - O ciclo de gestão de desastres exige que as fases de preparação e resposta sejam planejadas e coordenadas de forma a garantir eficiência no atendimento humanitário. As centrais de operações e emergências são um dos instrumentos implementados que contribuem para a coordenação das ações de preparação e resposta, desde que consigam organizar a um rol de ações necessárias. Diversas são as centrais existentes no Brasil, esta tese teve o objetivo de desenvolver uma tipologia de centrais de operações e emergências (COE) apresentando as características e ações que são e devem ser realizadas por cada tipo. O resultado da tipologia apresentou cinco principais tipos de centrais: Central de Operações Públicas e Defesa Civil, Central de Operações de Defesa Civil, Central de Operações de Monitoramento, Central de Operações Temporária e Central de Operações de Empresa Geradora de Riscos. Foram apresentadas as diferenças entre os tipos de centrais comparando-as quanto a diferença entre as instituições com estabelecimentos permanentes e temporários, organizações privadas e públicas e as diferenças entre as instituições públicas que atuam com prestação de serviços públicos, somente defesa civil e somente monitoramento. Como etapas de pesquisa, foram analisadas a literatura sobre centrais de operações e emergências, a legislação brasileira sobre gestão de desastres (delimitado a legislação federal, estado de São Paulo e município de São Paulo) e realizadas visitas técnicas e entrevistas a dezessete instituições brasileiras localizadas nos estados de São Paulo, Rio de Janeiro, Minas Gerais e Santa Catarina. As contribuições desta tese para a literatura estão na determinação precisa de uma tipologia e os elementos caracterizadores de cada tipo. A contribuição para a legislação está no levantamento de obrigações e o desenvolvimento de relação de ações que precisam ser realizados na gestão da preparação e resposta aos desastres e o desenvolvimento de funções que podem ser realizadas pelas centrais. Para a prática, esta tese pode servir de referência para as centrais ora existentes, para que possam melhorar o atendimento humanitário prestado pela instituição, e para orientar a criação de novas centrais.
+DI  - 
+UR  - https://www.teses.usp.br/teses/disponiveis/3/3136/tde-15032021-163915/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Ribeiro, Thomas Pinto
+PY  - 2021
+TI  - Migração Venezuelana em Roraima: uma análise de dinâmica de sistemas para o programa federal de interiorização.
+LA  - por
+AB  - As migrações internacionais tem aumentado sua importância na última década. Isso não se deve apenas ao número crescente de refugiados e migrantes forçados a deixar seus lares em busca de melhores condições de vida, mas também pela complexidade das soluções necessárias para garantir suas necessidades básicas, como saneamento, alimentação, alojamento e segurança. Neste contexto, a logística humanitária desempenha um papel crucial na provisão de bens e serviços essenciais aos mais vulneráveis, desde a recepção e abrigamento, até sua integração no país de destino. Desde 2017, a Venezuela vem passando por um cenário de instabilidade política e social, ocasionada pela escassez de produtos e hiperinflação. Como consequência, mais de 4,7 milhões de venezuelanos deixaram seu país em direção a outros países, dentre eles, o Brasil. Em um intervalo de quatro anos, a população migrante venezuelana no Brasil alcançou a cifra de 260 mil pessoas, alguns deles permaneceram no Estado de Roraima, enquanto que outros foram para outros países ou viajaram para outras cidades por meio do programa de interiorização da Operação Acolhida. Este trabalho tem como finalidade aplicar a metodologia de Dinâmica de Sistemas (DS) no contexto desta Operação, visando evidenciar se alternativa de construção de Hubs de interiorização seria uma forma de agilizar o programa federal de interiorização. Como resultado, foi comprovado que o maior gargalo para o programa é a quantidade de vagas disponibilizadas ao redor do país, de modo que o aumento da quantidade de hubs e, consequentemente, da frequência de voos, capacidades de aeronaves e de processamento não são tão eficazes em cenários nos quais a quantidade de vagas de interiorização são limitadas. No entanto, mudanças nas políticas de disponibilidade de vagas ou abertura de Hubs poderiam gerar resultados mais significativos em termos de quantidade de pessoas interiorizadas ao final do período analisado. Finalmente, o modelo não somente avaliar as possíveis políticas de hubs, mas propõe um mecanismo que tenta mensurar a pressão gerada pelo aumento de desassistidos e convertê-la na construção de abrigos temporários. Esta ferramenta, apesar de utilizar variáveis estimadas e complexas, inova no auxílio de gestores na tomada de decisão relativas a políticas de abrigamento e interiorização de migrantes e refugiados.
+DI  - 
+UR  - https://www.teses.usp.br/teses/disponiveis/3/3148/tde-07032022-090306/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - RAISSA ZURLI BITTENCOURT BRAVO
+PY  - 2016
+TI  - O USO DE VANTS EM AJUDA HUMANITÁRIA: UMA METODOLOGIA BASEADA EM POMDP PARA ENCONTRAR VÍTIMAS
+LA  - eng
+AB  - O uso de Veículos Aéreos Não Tripulados (VANTs) na ajuda humanitária tem sido proposto por pesquisadores para localizar vítimas em áreas afetadas por desastres. A urgência desse tipo de operação é encontrar pessoas afetadas o mais rápido possível, o que significa que determinar a roteirização ótima para os VANTs é muito importante para salvar vidas. Como os VANTs tem que percorrer toda a área afetada para encontrar vítimas, a operação de roteirização se torna equivalente a um problema de cobertura. Neste trabalho, uma metodologia para resolver o problema de cobertura é proposta, baseada na heurística do Processo de Decisão de Markov Parcialmente Observável (POMDP), onde as observações feitas pelos VANTs são consideradas. Essa heurística escolhe as ações baseando-se nas informações disponíveis, essas informações são as ações e observações anteriores. A formulação da roteirização do VANT é baseada na ideia de dar prioridades mais altas às áreas mais propensas a terem vítimas. Para aplicar esta técnica em casos reais, foi criada uma metodologia que consiste em quatro etapas. Primeiramente, o problema é modelado em relação à área afetada, tipo de drone que será utilizado, resolução da câmera, altura média do voo, ponto de partida ou decolagem, além do tamanho e prioridade dos estados. Em seguida, a fim de testar a eficiência do algoritmo através de simulações, grupos de vítimas são distribuídos pela área a ser sobrevoada. Então, o algoritmo é iniciado e o drone, a cada iteração, muda de estado de acordo com a heurística POMDP, até percorrer toda a área afetada. Por fim, a eficiência do algoritmo é testada através de quatro estatísticas: distância percorrida, tempo de operação, percentual de cobertura e tempo para encontrar grupos de vítimas. Essa metodologia foi aplicada em dois exemplos ilustrativos: um tornado em Xanxerê, no Brasil, que foi um desastre de início súbito em Abril de 2015, e em um campo de refugiados no Sudão do Sul, um desastre de início lento que começou em 2013. Depois de fazer simulações, foi demonstrado que a solução cobre toda a área afetada por desastres em um período de tempo razoável. A distância percorrida pelo VANT e a duração da operação, que dependem do número de estados, não tiveram um desvio padrão significativo entre as simulações, o que significa que, ainda que existam vários caminhos possíveis devido ao empate das prioridades, o algoritmo tem resultados homogêneos. O tempo para encontrar grupos de vítimas, e portanto o sucesso da operação de resgate, depende da definição das prioridades dos estados, estabelecidas por um especialista. Caso as prioridades sejam mal definidas, o VANT começará a sobrevoar áreas sem vítimas, o que levará ao fracasso da operação de resgate, uma vez que o algoritmo não estará salvando vidas o mais rápido possível. Ainda foi feita uma comparação do algoritmo proposto com o método guloso. A princípio, esse método não cobriu 100 por cento da área afetada, o que tornou a comparação injusta. Para contornar esse problema, o algoritmo guloso foi forçado a percorrer 100 por cento da área afetada e os resultados mostram que o POMDP tem resultados melhores em relação ao tempo para salvar vítimas. Já em relação a distância percorrida e tempo de operação, os resultados são iguais ou melhores para o POMDP. Isso ocorre porque o algoritmo guloso tem o viés de otimizar distância percorrida e, logo, otimiza o tempo de operação. Já o POMDP tem como objetivo, nesta dissertação, salvar vidas e faz isso de forma dinâmica, atualizando sua distribuição de probabilidades a cada observação feita. O ineditismo desta metodologia é ressaltado no capítulo 3, onde mais de 139 trabalhos foram lidos e classificados com o intuito de mostrar quais são as aplicações que drones em logística humanitária, como o POMDP é usado em drones e como a técnica de simulação é utilizada em logística humanitária. Apenas um artigo propõe o uso de POMDP em operações de resgate com drones mas não aplica a técnica a casos reais. Pesquisas futuras podem aplicar a metodologia em desastres em áreas maiores, o que tornará necessário o uso de mais de um drone, pois a autonomia passará a ser uma restrição em termos de distância percorrida e tempo de operação. Outra sugestão é a aplicação da metodologia proposta em casos reais já que os pequenos VANTs são programáveis. Nesse caso, o experimento deve ocorrer em terrenos privados ou em áreas militares, para atender aos requisitos legais.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=30364@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=30364@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Silva, Beatriz de Melo
+PY  - 2023
+TI  - Abrigos da Operação Acolhida em Roraima: a gestão humanitária e a dicotomia permanência-provisoriedade
+LA  - por
+AB  - The present work has as a research question to understand how the conception of shelters in Roraima as temporary spaces of shelter for Venezuelan migrants reflects on the management practices of individuals by humanitarian agents and on the architecture of spaces. In this sense, it seeks to understand the mode of administration of the shelters of the Operation Acolhida, as an unprecedented response of the Brazilian Government to the increase in the flow of Venezuelans, and the apparent dichotomy between permanence and provisionality present in the shelters and in the initiatives of humanitarian, military institutions, and civil society. Methodologically, semi-structured interviews will be carried out with employees who work directly with refugees in the daily life of the shelters, applying the norms established by humanitarian agencies, as well as with Venezuelan refugees who went through the last stage of the Operation, the interiorization. In addition, document analysis, taking into account current legislation in Brazil and the regulations of humanitarian agencies involved in managing spaces, and bibliographic analysis, will be used to reinforce the presented argument. The research becomes relevant as it seeks to understand the strategies adopted by Operation Acolhida in the management of Venezuelan refugees in their most lasting process: the shelters, in addition to the application of humanitarian regulations, and their insertion in the midst of the contemporary migratory context. Thus, it will be possible to make approaches and distances from the shelters of the Operation Acolhida to the refugee camps at an international level, problematize the dichotomy between permanence and provisionality in spaces, and identify them, not only as emergency spaces, but as social institutions, with pre-established strategies and demands arising from humanitarian management combined with logistical issues and securitization
+DI  - 
+UR  - https://repositorio.ufscar.br/handle/ufscar/18141
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Cavalcanti, Luísa Brandão
+PY  - 2015
+TI  - Coordenação da entrega de ajuda a vítimas de desastre: uma abordagem multicritério com pensamento focado em valor.
+LA  - por
+AB  - Este trabalho trata da logística envolvida em operações de resposta a desastres, com foco na entrega final de suprimentos destinados a ajudar vítimas. Seu propósito é investigar os objetivos pertinentes ao planejamento do transporte da carga e encontrar uma metodologia para definir estratégia que sirva à tomada de decisão em campo. Para tanto, primeiramente identifica-se os objetivos adotados em modelos de Pesquisa Operacional para a tarefa em questão, através da análise de conteúdo das publicações pertinentes. Então, a abordagem do Pensamento Focado em Valores é utilizada para estruturar o problema. Finalmente, o método Simple Multi-Attribute Rating Technique Exploiting Ranks (SMARTER) é empregado na construção de um modelo de Análise da Decisão Multicritério (ADM), com consulta a um profissional experiente da área humanitária e aproveitando a análise da literatura previamente realizada. Neste processo, são elaboradas e avaliadas seis alternativas para a tomada de decisão condizentes com os valores da comunidade humanitária. Os resultados obtidos mostram que existe incompatibilidade entre os critérios de desempenho identificados nas publicações existentes e os objetivos perseguidos pelo Tomador da Decisão (TD) real. De acordo com o modelo construído, o atendimento de prioridades e a manutenção da sustentabilidade da operação são os objetivos que devem ser levados em conta para planejar a entrega de carga em pós-desastre, sendo que o custo e a equidade da distribuição não devem ser considerados. Conclui-se que o método adotado é útil à definição destes critérios e também ao desenvolvimento de estratégias que resultem em distribuições de ajuda melhores, aos olhos do próprio TD. Desta forma, ressalta-se que este trabalho contribui à área da Logística Humanitária com a investigação dos objetivos, assim como ao campo da ADM pela formalização dos processos de elaboração de alternativas, além da adição de mais uma aplicação possível ao repertório do método SMARTER.
+DI  - 
+UR  - http://www.teses.usp.br/teses/disponiveis/3/3148/tde-12052016-142803/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Arteaga Moreno, Alfredo Daniel
+PY  - 2015
+TI  - Localização de centros de auxílio e distribuição de suprimentos em operações de respostas a desastres
+LA  - por
+AB  - The recent natural disasters around the world have shown the difficulties of the various organi- zations in effectively manage post-disaster operations. These difficulties reflect the complexity of the activities involved in those situations. Among the many decisions that must be made quickly in disaster situations, the location of relief centers and the distribution of supplies are essential to the survival of the affected community. On the other hand, operation as fleet sizing are also relevant since it is a scarce resource the available vehicles to perform the distribution of commodities. Although many studies in the literature have developed mathematical models to assist such decisions, few authors have integrated these decisions to get solutions that are more efficient. In the present work this integration is studied, they are developed mixed integer stochastic programming models to support location decisions, distribution and fleet sizing in a multi-period, multi-product and multi-modal context, and considering some uncertainties that are common in disasters, such as number of victims, availability of supplies, proportion of available inventory and arc availability. Also, it is considers the transportation time and social costs in the objective function. Decomposition heuristics were developed to solve large instances of the problem. Models and heuristics were analyzed based on the megadisaster in the Mountain Region of Rio de Janeiro in Brazil in 2011. The results indicate that the developed mathematical models provide efficient solutions from a practical point of view and that the implemented heuristics are efficient to solve practical instances of the models
+DI  - 
+UR  - https://repositorio.ufscar.br/handle/ufscar/10607
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Carbonari, Luana Toralles
+PY  - 2021
+TI  - Modelo multicritério de decisão para o projeto de acampamentos temporários planejados voltados a cenários de desastre
+LA  - por
+AB  - Tese (doutorado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Arquitetura e Urbanismo, Florianópolis, 2021.
+DI  - 
+UR  - 371087; https://repositorio.ufsc.br/handle/123456789/220514
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Brito Junior, Irineu de
+PY  - 2015
+TI  - Localização de depósitos de suprimentos de alívio para resposta a desastres através de programação linear estocástica e análise de decisão com múltiplos critérios.
+LA  - por
+AB  - Com o aumento do número de desastres e consequente incremento no número de pessoas vitimadas, a preparação para esses eventos é uma necessidade das sociedades modernas. Neste sentido, o planejamento das operações logísticas para atendimento as situações de emergências é uma atividade recente e pouco explorada na produção acadêmica. O objetivo deste trabalho é estabelecer uma metodologia para definir locais para o pré-posicionamento de materiais utilizados no socorro a populações afetadas por desastres através de um modelo de otimização estocástica de dois estágios e análise de decisão multicritério e que considerem parâmetros quantitativos e qualitativos. Com base nos custos de transporte e do não atendimento a demanda, e utilizando informações como mapeamentos de riscos; custos de transporte; histórico de ocorrências de desastres; cobertura geográfica; compras de materiais; capacidades de depósitos e de transporte, um modelo estocástico de programação linear minimiza os custos operacionais para abastecimento às vítimas. Uma análise detalhada sobre como atribuir penalidades para demanda não atendida também é apresentada. Devido à incerteza quanto a severidade de um desastre e a influência da mídia nas fases pós-desastres estes parâmetros são representados na forma de cenários. O resultado do modelo estocástico mostra a quantidade de locais e quais localidades minimizam o custo operacional. Após a obtenção desse resultado, uma nova etapa é utilizada para decisão de escolha do local, com a aplicação de modelo de decisão multicritério que considere, além dos valores obtidos pela modelagem, critérios subjetivos característicos a operações humanitárias. Os resultados finais mostram que modelos estocásticos promovem resultados mais confiáveis que os determinísticos, especialmente, em situações nas quais materiais disponíveis não podem atender toda a demanda e que a consideração de critérios qualitativos e quantitativos proporciona uma decisão mais robusta em operações humanitárias.
+DI  - 
+UR  - http://www.teses.usp.br/teses/disponiveis/3/3136/tde-31032016-092607/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Sarazignac, Emilie Peyroche d´Arnaud de
+PY  - 2016
+TI  - What makes a humanitarian supply chain resilient? The relevance of the capabilities for resilience within humanitarian supply chain and their identification within the typhoon Yolanda
+LA  - eng
+AB  - Centenas de milhões de pessoas são afetadas por desastres a cada ano. Para alguns países da Ásia, os desastres naturais se tornaram algo comum para os quais eles precisam estar preparados. A cadeia de fornecedores humanitária é um conceito logístico recente, que se refere a todo o processo de ajuda que acontece uma vez que ocorre um desastre, desde os doadores até os beneficiários finais. Por causa de tensões econômicas recentes, e por causa de uma maior cobertura da mídia sobre os desastres naturais mortais tal como o Typhoon Yolanda em 2013-2014; organizações humanitárias precisam mostrar transparência em suas ações e precisam provar a capacidade de resistência da cadeia de abastecimento para melhorar ainda mais os programas de doação. Resiliência tem sido estudada no contexto da cadeia de fornecedores de uma empresa comercial. No entanto olhar para essa noção dentro do sector humanitário que tem características diferentes, é um novo conceito raramente explorado antes. O objetivo desta tese será contribuir com novos insights e contributos, a fim de enriquecer ainda mais pesquisas sobre a capacidade de resiliência das cadeias de fornecedores humanitários. Vamos analisar as provas desses recursos para a resiliência através de uma pesquisa qualitativa sobre o caso Typhoon Haiyan (Yolanda), que já foi o tufão mais mortal das Filipinas.
+DI  - 
+UR  - http://hdl.handle.net/10438/16412
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Ribeiro, Marcos Leôncio Sousa
+PY  - 2020
+TI  - Governança democrática em rede : estudo sobre acolhida imigratória de venezuelanos no Brasil
+LA  - por
+AB  - Dissertação (mestrado)—Universidade de Brasília, Faculdade de Economia, Administração, Contabilidade e Gestão de Políticas Públicas, Programa de Pós-Graduação em Administração, Mestrado Profissional em Administração Pública, 2020.
+DI  - 
+UR  - RIBEIRO, Marcos Leôncio Sousa. Governança democrática em rede: estudo sobre acolhida imigratória de venezuelanos no Brasil. 2020. 178 f., il. Dissertação (Mestrado Profissional em Administração)— Universidade de Brasília, Brasília, 2020.; https://repositorio.unb.br/handle/10482/39857
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - MAYARA SOARES DA SILVA
+PY  - 2020
+TI  - A LOGÍSTICA DA FORÇA AÉREA BRASILEIRA EM RESPOSTA A DESASTRES: O CASO DA OPERAÇÃO ACOLHIDA
+LA  - por
+AB  - Devido à grave crise política e econômica enfrentada pela Venezuela, há uma entrada massiva de venezuelanos no Brasil. Em resposta a esse grande fluxo migratório que o país enfrenta, o governo brasileiro mobilizou a Operação Acolhida, visando ordenar a fronteira, controlar o fluxo migratório e interiorizar os migrantes e refugiados venezuelanos. Dentro desse contexto, essa dissertação tem como objetivo analisar a atuação da Força Aérea Brasileira (FAB) nessa Operação, com vista a aprimorar o processo logístico e o desempenho da FAB em operações futuras de mesma natureza. Ademais, pretende-se reduzir a lacuna de pesquisa sobre o impacto desse fluxo migratório no Brasil e sobre o trabalho das Forças Armadas em missões humanitárias. Para tanto, é realizada uma análise operacional através da comparação dos processos mapeados pela FAB com um modelo de referência de processos de resposta a desastres da literatura acadêmica. Em seguida, é realizada uma análise estratégica de forças, fraquezas, oportunidades e ameaças da FAB nessa resposta. Como resultado, no que tange a análise operacional, essa dissertação mostra que em desastres diferentes a resposta da FAB pode apresentar processos distintos, visto que não há uma doutrina específica relativa à resposta a desastres. Além disso, é sugerida a inclusão de novos processos ao modelo já existente na literatura. Já na análise estratégica, é ratificada a importância de algumas características dos militares encontradas na literatura. E por fim, são propostas estratégias objetivando melhorar o desempenho futuro da FAB em outras missões humanitárias.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=51002@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=51002@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Souza, Eduardo Alves de
+PY  - 2024
+TI  - Operação acolhida: a resposta do estado brasileiro ao fluxo migratório venezuelano no estado de Roraima
+LA  - por
+AB  - Objetivo - O objetivo da pesquisa é compreender como tem se desenvolvido a resposta do Estado brasileiro ao fluxo migratório venezuelano no estado de Roraima, já que se tornou um grande desafio acolher os venezuelanos que fugiram da crise humanitária da Venezuela em situação de extrema vulnerabilidade e migraram em intenso fluxo ao estado de Roraima, extremo norte do Brasil, onde foi instaurada uma crise migratória venezuelana. Metodologia - O desenho de pesquisa foi de estudo de caso da Operação Acolhida, adotando-se o método qualitativo, de natureza exploratória e descritiva, para a análise detalhada de informações e dados, oriundos de coleta bibliográfica e documental, fundamentada em recorte de revisão bibliográfica de literatura especializada em migração e refúgio internacional, sobretudo da migração venezuelana para o Brasil, tais como artigos, teses, dissertações e revistas científicas. O estudo foi composto também de pesquisa de campo nas cidades de Boa Vista e Pacaraima, em centros de triagem do Eixo Ordenamento de Fronteiras e em abrigos do Eixo Acolhimento, assim como com atores do Eixo Interiorização do local de onde são diretamente articuladas as partidas de Boa Vista para todo o território nacional, com o método de observação in loco de fatos e fenômenos, para se criar um entendimento da maneira exata de como eles ocorrem, e de entrevistas não estruturadas que se baseavam em apresentações com caráter expositivo das ações desenvolvidas, que variavam, em certos momentos, com perguntas abertas para abordagens mais gerais sobre as ações e, em outros momentos, com perguntas fechadas para a elucidação de questões mais específicas que surgiam ao longo das entrevistas. Resultados - Para alcançar o objetivo de pesquisa, inicialmente, foram apresentados aspectos conceituais e históricos das migrações e abordados aspectos histórico-jurídicos do desenvolvimento da Política Migratória Brasileira, que viriam a se tornar a base de fundamentação das ações do Estado brasileiro em resposta a essa crise. Em seguida, o foco do estudo foi na crise humanitária da Venezuela e em seu impacto no território brasileiro: a crise migratória venezuelana no estado de Roraima. Finalmente, a pesquisa apresentou em detalhes a resposta do Estado brasileiro a essa crise migratória: uma forçatarefa logística e humanitária, sob a forma de cooperação civil-militar, em um ambiente interagências, denominada Operação Acolhida, que foi implementada para gerir a crise humanitária-migratória venezuelana em Roraima. Contribuições práticas - O pesquisador pode presenciar em campo o funcionamento da Operação Acolhida e percebeu que se trata de uma política pública bastante complexa. Existem vários dispositivos implantados na operação que geram muita sinergia entre os diversos atores executores da política pública. Vislumbramos que não se trata apenas de uma operação de logística, mas também de uma operação de comunicação e interação, coordenada dentro de uma megaestrutura. O fato é que, como está em atividade desde 2018, a operação foi se desenvolvendo na linha do tempo em uma espécie de aprendizado e evolução consigo mesma. Isso ocorreu com um aperfeiçoamento constante através de uma espécie de retroalimentação de dados, informações e experiências. Erros e gargalos passados foram sendo eliminados, assim como os acertos e as vitórias foram sendo disseminadas na cadeia da operação. Destarte, pode-se dizer que essa Força-Tarefa em forma de Cooperação Civil-Militar servirá de base para o enfrentamento de outras crises migratórias que possam vir a surgir no futuro.
+DI  - 
+UR  - https://hdl.handle.net/10438/35530
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Silva, Mauro Guilherme Gazola Barros da [UNIFESP]
+PY  - 2023
+TI  - Estudo de fatores não-controlados em missões de lançamento de carga pelas aeronaves C-105
+LA  - por
+AB  - Proporcionar sustentação logística às tropas terrestres, em teatros de guerra, ou prestar apoio às populações acometidas por situações que requeiram ajuda humanitária, por meio de lançamentos de carga com as aeronaves “C-105 Amazonas”, constituem importantes capacidades operacionais da Força Aérea Brasileira (FAB). Nesse contexto, conhecimentos sobre Fatores Não-Controlados influentes em processos de lançamento de carga ganham destaque como indutores da efetividade dessas missões. Este trabalho tem como objetivo construir modelos estatísticos capazes de auxiliar a avaliação de técnicas de lançamento de carga para apoio à decisão operacional dos responsáveis pelo planejamento de missões. Para isso, foram incorporados a um modelo de simulação de lançamento balístico de caráter determístico Fatores Não-Controlados importantes, representados como funções densidade de probabilidade. Em seguida, Experimentos Fatoriais de processos de lançamento foram delineados e procedimentos de amostragem aleatória conduzidos em simulações, obtendo-se dados para ajustar os seguintes modelos de avaliação: Regressão Logística para estimar a probabilidade de impacto da carga em uma área desejada no solo e Regressão Múltipla para gerar superfícies de resposta. Como resultados, foi possível elevar a altura de lançamento, sob determinadas condições experimentais, mantendo o padrão de efetividade previsto em manual de doutrina e procedimentos de lançamento aéreo da FAB (erro máximo de 200 m), e verificar como os valores de alguns parâmetros de voo (Fatores Controlados) podem ser estabelecidos para aumentar a precisão dos lançamentos. Os modelos de Regressão Múltipla, ajustados a partir de dados simulados, foram utilizados para gerar previsões que, comparadas com resultados de lançamentos reais, mostraram-se eficientes, com erros abaixo de 200 m. Isto indica um importante ganho operacional, dado que, na prática, são admitidas incertezas dessa ordem de grandeza para considerar um lançamento bem sucedido. Por fim, impactos sociais e indicadores de ajuda humanitária foram apresentados, demonstrando de que forma os modelos de avaliação ajustados têm potencial para alavancar a capacidade operacional da FAB nesses contextos.
+DI  - 
+UR  - https://repositorio.unifesp.br/11600/67222
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Buzogany, Raquel Froese
+PY  - 2017
+TI  - Modelagem da convergência de materiais em desastres por meio de dinâmica de sistemas.
+LA  - por
+AB  - O número de desastres vem aumentando a cada ano e a quantidade de pessoas afetadas por estes é cada vez maior. A convergência de materiais, que é o afluxo de grande quantidade de material ao local do desastre, é observada em muitos eventos e tem grande impacto sobre operações humanitárias; em especial, nos processos de logística humanitária, como transporte, processamento e distribuição de itens necessários no auxílio às vítimas. Devido a diversos efeitos negativos da convergência - por exemplo, o emprego de recursos humanos em tarefas não essenciais e a maior demora para distribuição de material prioritário -, é necessário estudar os fatores que a influenciam e, também, como suas consequências afetam o sistema em que se insere. Desta forma, utilizou-se o método de dinâmica de sistemas para desenvolver um modelo que permita, pela análise de diversos cenários, alcançar uma melhor compreensão sobre o fenômeno. O modelo, além de permitir testar políticas abordadas na literatura, também proporciona uma simulação para o preparo em desastres reais e, no âmbito acadêmico, é o primeiro modelo de convergência de materiais a integrar tanto variáveis quantitativas quanto qualitativas e propiciar uma análise de forma dinâmica no tempo. A partir do cenário base, o caso das inundações em São Luiz do Paraitinga em 2010, foram simulados 13 cenários com o objetivo de identificar quais políticas aumentariam a quantidade de material prioritário distribuído para suprir as necessidades das vítimas. No cenário base foram encontrados gargalos no transporte e na distribuição de materiais e a análise de sensibilidade ficou restrita a uma política, limitando a generalização do trabalho. Na implementação de políticas uma a uma, observa-se que a não admissão de material não prioritário atinge os melhores resultados, seguida pela política de realocação de recursos humanos para processamento de material prioritário. Já no caso de políticas mistas, o controle de admissão com uma maior disponibilidade de recursos é o cenário que mais se sobressai no auxílio às vítimas.
+DI  - 
+UR  - http://www.teses.usp.br/teses/disponiveis/3/3148/tde-13042017-111909/
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - RENATA WEBER
+PY  - 2011
+TI  - METHODOLOGY FOR MEASURE AND DISASTER RESPONSE ACTIONS IN HUMANITARIAN LOGISTICS
+LA  - por
+AB  - O aumento da ocorrência de desastres naturais no Brasil e a carência de ferramentas de gerenciamentos logísticos eficazes têm demonstrado a necessidade de estruturação e a importância no aprofundamento dos estudos na Logística Humanitária, área ainda recente e com muito a aprimorar. Este trabalho objetiva maximizar o atendimento de ajuda humanitária, minimizando os desperdícios de tempo e recursos na movimentação, entrega e demais atividades de planejamento e resposta ao desastre. Para atingir esse objetivo, foi elaborada uma metodologia de mensuração de desastres a partir da avaliação do cenário afetado na fase inicial de resposta ao desastre e, assim, estabelecida ações padronizadas para permitir a diminuição do improviso e uma maior eficiência na utilização de recursos e proposição de atividades. Neste sentido, esta dissertação procura relacionar as similaridades entre a logística empresarial e a logística humanitária, abordando os aspectos relevantes da primeira que podem ser utilizados para desenvolvimento de ferramentas da segunda. Por fim, exemplifica-se o método proposto através de sua aplicação no município de Bom Jardim, local afetado pelas enxurradas bruscas e inundações em janeiro de 2011 na região serrana do estado do Rio de Janeiro. A metodologia proposta sugere, para os afetados, ações de resposta delineadas através da análise de indicadores que refletem o cenário local e suas necessidades prioritárias. Desta forma, foram percebidas as vantagens reais na utilização da metodologia como ferramenta de gerenciamento de processos para mensuração, proposição de ações de resposta e atendimento de ajuda humanitária.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=24579@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=24579@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - ARTHUR ABREU DA SILVA LAMENZA
+PY  - 2015
+TI  - METHODOLOGY FOR PURCHASING STRATEGIES DEFINITION IN HUMANITARIAN LOGISTICS: CEDEC-SP CASE STUDY
+LA  - por
+AB  - Essa dissertação teve como objetivo propor uma metodologia para a definição de estratégias de compra de itens de ajuda humanitária baseada no modelo de gestão de portfólio de Kraljic (1983) e com apoio do método multicritério de decisão AHP (Analytic Hierarchy Process) simplificado, incluindo duas fases: a definição de uma matriz de compras humanitária e de estratégias de compra no caso da CEDEC-SP. Para definir a matriz de compras humanitária, foram propostos critérios para definir Importância da Compra e Complexidade do Mercado Fornecedor no caso humanitário, com base na Revisão Bibliográfica, sendo, em seguida, validados junto a um conjunto de especialistas de logística humanitária através de um questionário elaborado e enviado para os mesmos. Com os resultados obtidos, a matriz de compras humanitária foi definida de acordo com as dimensões Importância da Compra, conforme critérios relacionados ao grau de criticidade do item para a prestação de ajuda humanitária e ao impacto financeiro, e Complexidade do Mercado Fornecedor, conforme critérios relacionados ao risco de suprimento de itens de ajuda humanitária, utilizando as mesmas categorias e estratégias recomendadas pelo modelo de Kraljic (1983). Para definir as estratégias de compra no caso da CEDEC-SP, foi aplicada a matriz proposta, ponderando os critérios relacionados a Importância da Compra e Complexidade do Mercado Fornecedor no caso humanitário através do AHP simplificado, e, em seguida, posicionando uma amostra de itens de ajuda humanitária comprados pela CEDEC-SP na matriz, através do método de pontuação ponderada. Com isso, foram propostas algumas recomendações para adaptar as estratégias indicadas pela matriz à realidade atual da CEDEC-SP, considerando as limitações de licitação impostas à mesma pela lei n. 8666/1993.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=25656@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=25656@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - EDUARDO HENRIQUE DE SOUSA SALVINO
+PY  - 2012
+TI  - DONATION SYSTEM BY INTERNET FOR HUMANITARIAN RELIEF
+LA  - por
+AB  - Diversas atividades humanas e constantes mudanças climáticas têm contribuído para o acontecimento de desastres em várias regiões do globo terrestre, intensificando a vulnerabilidade natural e socioeconômica nessas regiões. Estudiosos, agências governamentais e instituições não governamentais têm concentrado esforços para criar novos procedimentos de atenuação dos desastres e a favor de assistência humanitária. A necessidade de prestar assistência humanitária eficazmente às vítimas de desastre no menor tempo possível fez surgir uma nova área do conhecimento, a logística humanitária. Aliando conhecimentos de logística e de gestão da cadeia de suprimentos empresarial, a logística humanitária vem aplicar teoria e práticas correspondentes em prol das pessoas afetadas pelos eventos de desastre. Esta dissertação de mestrado tem como objetivo contribuir para a melhora do procedimento de arrecadação de doações, evitando o desvio e agilizando o processo de compra e entrega de materiais à população necessitada. Para isso, foi criado um sistema computacional que, através de uma página na internet, recebe doações e as redireciona para uma conta bancária a ser determinada, tendo como interface uma loja virtual que mostrará primeiramente a necessidade de suprimentos na região do desastre (alimentos, medicamentos, vestuário, entre outros) e depois o valor monetário total dos itens e quantidades escolhidas pelo doador, que poderá ser pago pelos principais meios disponíveis (cartão de credito, débito, transferência, boleto). Em particular, o sistema proposto leva em conta o deslocamento dos materiais, os depósitos de materiais existentes e o preço dos materiais nos fornecedores para obter o menor custo.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=29187@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=29187@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - SIMONE DAHER VIEIRA
+PY  - 2013
+TI  - HUMANITARIAN LOGISTICS TO SOFTEN THE CONSEQUENCES OF FLOODS IN SANTO ANTÔNIO DE PÁDUA
+LA  - por
+AB  - As alterações climáticas estão cada vez mais frequentes nos dias atuais e alguns fenômenos da natureza vêm acontecendo com mais intensidade. Todo ano os desastres naturais ocorrem e afetam milhões de pessoas em todo mundo, e o Brasil não fica imune aos seus efeitos. Um desastre natural pode acontecer a qualquer momento, causa danos profundos a uma sociedade. Atuar para minimizar os efeitos dos desastres naturais seria uma das sugestões num estudo de caso sobre as inundações que ocorrem no verão em Santo Antônio de Pádua, cidade ao Noroeste do Estado do Rio de Janeiro. A logística é fundamental para o processo de resposta aos afetados. Este trabalho busca mostrar a importância da logística no apoio aos atingidos pelos desastres naturais, seja atuando com a logística humanitária para levar alívio às vítimas, ou com a logística empresarial, atuando na operação para apoiar na prevenção de desastres naturais e na estruturação de uma sociedade mais permeável. Para tal, uma pesquisa foi realizada junto à população da cidade para tentar entender as necessidades de uma sociedade sofrida com as inundações constantes. Serão examinados alguns cenários e propostas de soluções para apoiar na atuação da logística de maneira a minimizar as inundações no município. Por fim, apresentam-se dois cenários: um em que a logística humanitária atua na reconstrução de uma cidade destruída por um desastre natural e outro em que a logística empresarial atua na preparação de uma infraestrutura para prevenção de uma sociedade que poderá receber as chuvas de verão sem maiores transtornos.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=26567@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=26567@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - DAVILA MARIA GOMES MENDES
+PY  - 2019
+TI  - ACCEPTABILITY EVALUATION OF A SUPPORT SYSTEM FOR HUMANITARIAN LOGISTICS
+LA  - por
+AB  - Este trabalho visa avaliar um sistema de doações via internet para operações humanitárias e assistência, o SmartDonation, cujo principal objetivo é gerenciar os recursos necessários para suprir as necessidades dos beneficiários. Através da interface de uma loja virtual, permite a efetuação de doações para diversas campanhas, através de doações monetárias. Desta forma, o sistema propõe uma melhor gestão nas operações de assistência humanitária através da compra em maior escala, trazendo maior economia nos processos operacionais. O objetivo do estudo é analisar a aceitabilidade do sistema, além de compará-lo com ferramentas já existentes no campo de gestões humanitárias. Para isto, utilizou-se como métodos de pesquisa a revisão sistemática da literatura (RSL), a fim de identificar as principais ferramentas utilizadas em gerenciamento de doações e comparar suas funcionalidades; o estudo de caso, a fim de investigar a aceitabilidade por parte das instituições; e a pesquisa survey, para investigar a aceitabilidade do sistema por parte de potenciais doadores. Como resultado da RSL foram identificadas 17 ferramentas utilizadas na otimização de doações. Das 19 funcionalidades avaliadas, o sistema atende a 12. Na análise do estudo de caso foi constatada a necessidade de resolução de problemas encontrados pelas instituições, mas que não comprometeram sua utilidade percebida. Na análise da survey identificou-se a potencialidade do sistema em mudar positivamente o comportamento de usuários avessos a doação financeira; e maior inclinação à doação em desastres de início súbito e causas naturais. Os três métodos são complementares e atestam a aceitabilidade do sistema pelos stakeholders envolvidos.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=48023@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=48023@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - NATALIA DE BRITO OLIVEIRA
+PY  - 2015
+TI  - BRAZILIAN AIR FORCE LOGISTICS IN RESPONSE OPERATIONS TO NATURAL DISASTERS
+LA  - por
+AB  - A crescente participação das Forças Armadas (FA) em cooperação com a Defesa Civil em situações de desastres naturais tem demonstrado a importância do aprofundamento e aprimoramento dos estudos da logística humanitária no campo militar. Sabendo que a excelência nos processos pode gerar economia dos recursos a serem mobilizados para alcançar as necessidades da população afetada, bem como a minimização do tempo de resposta, este estudo objetiva apresentar e analisar as atividades de resposta a desastres naturais desempenhadas pela Força Aérea Brasileira (FAB), sob a ótica da modelagem de processos. Para isso, realiza-se um estudo de caso pautado no mapeamento das atividades realizadas pela Aeronáutica com base nas legislações em vigor e com base na operação real de apoio às vítimas do desastre da região serrana fluminense em 2011, considerada uma das maiores tragédias climáticas ocorridas no Brasil. Simultaneamente, é conduzida uma comparação de adequação ao padrão em relação à literatura acadêmica. Os resultados deste trabalho apontam para processos realizados pela FAB que podem ser considerados na elaboração de uma doutrina específica relativa ao tema e ainda os processos não previstos nas legislações vigentes, os quais podem ser objeto de futuras pesquisas na FAB, além de sugerir a inclusão de processos não representados nos modelos de processos de resposta a desastre da literatura acadêmica. Com isso, almeja-se subsidiar futuras pesquisa no meio acadêmico sobre o tema, bem como contribuir para a elaboração de uma doutrina específica relativa a essas atividades, a fim de se obter uma maior eficácia e eficiência no apoio da FAB em missões humanitárias.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=25678@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=25678@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - VICTORIA FIGUEIREDO MACHADO
+PY  - 2021
+TI  - BRAÇO FORTE, MÃO AMIGA (STRONG ARM, FRIENDLY HAND): VENEZUELAN MIGRATION, OPERATION ACOLHIDA AND THE (RE)CONSTRUCTION OF THE BRAZILIAN IDENTITY ON THE BORDER
+LA  - por
+AB  - A partir do aumento no fluxo migratório venezuelano para o Brasil no início de 2017, a mobilidade venezuelana passou a ser veiculada na mídia e reproduzida nos discursos de autoridades governamentais brasileiras tanto como um problema e um risco a ser controlado quanto como um imperativo para o acolhimento e proteção dessa população vulnerável. Tais representações e discursos foram reforçados em março de 2018 com a criação da chamada Operação Acolhida, operação logística governamental constituída para gerenciar o fluxo das centenas de milhares de venezuelanos adentrando as fronteiras nacionais. A fim de questionar como os discursos de perigo e controle das fronteiras coexistem com uma lógica de acolhimento e defesa dos direitos humanos, a dissertação analisa as práticas discursivas que participam da construção da governança humanitária do fluxo migratório venezuelano no Brasil, especialmente através da Operação Acolhida. Partindo de uma análise de discurso pós-estruturalista, argumenta-se que a Operação Acolhida, ao articular uma lógica específica de engajamento com o outro venezuelano, funciona (re) produzindo uma representação específica do Estado e da nação brasileira. Enquanto uma prática de construção de fronteiras e identidades, a Operação Acolhida apresenta-se, assim, como propõe David Campbell (1992), como, uma prática de política externa e de construção de fronteiras. Nessa perspectiva, a representação da identidade estatal não se refere a um relato objetivo sobre como o Estado realmente é – leitura esta dominante nos estudos de Política Externa no Brasil, mas sim como uma representação de uma subjetividade instável, provisória e continuamente reformulada. Assim, a dissertação contribui para pensar como as práticas de representação do eu e do outro, do dentro e do fora, do nacional e do internacional articuladas na Operação Acolhida, especialmente por seus atores militares, não apenas (re) produzem o que é o problema dos refugiados venezuelanos no Brasil –e como ele deve ser gerenciado– quanto funcionam estabilizando, provisoriamente, uma imagem – precária e contestada - de um Brasil benevolente, acolhedor e amigo.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=52978@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=52978@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - MARIA ANGELICA GOMES DA SILVA
+PY  - 2021
+TI  - GESTÃO DE ESTOQUE DE SUPRIMENTOS DE ALÍVIO DE DESASTRES: UMA ANÁLISE BASEADA EM CUSTOS DE PRIVAÇÃO
+LA  - por
+AB  - A logística humanitária visa salvar vidas e aliviar o sofrimento em desastres. Além disso, suprimentos humanitários são itens essenciais para a sobrevivência humana (como exemplo, água e alimentos) e sua falta pode causar grande impacto. No entanto, os recursos disponíveis podem não ser suficientes para atender a demanda dos beneficiários. O custo de privação quantifica o sofrimento causado as vítimas de desastres pela falta desses itens. Assim, este trabalho objetiva analisar o efeito da inclusão dele na gestão de estoque de suprimentos de alívio a desastres. Para alcançar o objetivo proposto, a pesquisa analisa o estado da arte da modelagem deste custo por meio de uma revisão sistemática da literatura acadêmica. Um modelo de gestão de estoque considerando custos de privação é então formulado como um modelo estocástico de dois estágios. Ademais, as diversas funções de custo de privação encontradas na literatura são analisadas. Finalmente, o modelo é validado empiricamente através de dois estudos de caso. Os resultados sugerem que a escolha da função de privação pode impactar em até 99,9 por cento de diferença nos custos totais da gestão de estoques. O nível de atendimento gerado também possui uma alta amplitude quando as diferentes funções de privação encontradas na literatura são comparadas. Conclui-se que as funções geram níveis de atendimentos distintos, cabendo aos tomadores de decisão escolher qual se adequa melhor ao problema estudado. Como contribuição prática, destaca-se que o modelo de gestão de estoque considerando o custo de privação proposto pode auxiliar os tomadores de decisão e reduzir o sofrimento das pessoas atingidas por desastres. Como contribuição acadêmica, o estudo analisa e compara as principais funções de privação propostas na literatura, o que pode auxiliar a proposição de novas modelagens.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=54303@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=54303@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - RAPHAEL CORREIA LOPES
+PY  - 2016
+TI  - O EMPREGO DA MARINHA DO BRASIL EM OPERAÇÕES DE RESPOSTA A DESASTRES
+LA  - por
+AB  - Com o crescimento dos efeitos causados pelos fenômenos naturais, cada vez mais os Estados são chamados a aplicar seus recursos disponíveis para amenizar o sofrimento humano. O aumento do emprego das Forças Armadas (FA) em apoio à Defesa Civil nas operações de resposta a desastres naturais acompanha a necessidade de incremento nas pesquisas da logística humanitária no âmbito militar. Consciente de que as lições aprendidas durante a resposta podem ser diretamente aplicadas em projetos futuros e nos esforços para redução do impacto dos desastres, este estudo tem por objetivo, sob a ótica da modelagem de processos, apresentar e analisar o emprego da Marinha do Brasil (MB) em operações de resposta a desastres. Para cumprir este objetivo, é realizado o mapeamento das ações realizadas pela MB, baseado nas legislações em vigor e no caso da operação de apoio às vítimas do desastre da região serrana do Rio de Janeiro em 2011, mais especificamente na cidade de Nova Friburgo. Na comparação destas análises com a literatura acadêmica, na qual são identificados 96 (noventa e seis) processos, verifica-se que 46 (quarenta e seis) não constam em legislações e 10 (dez) destes são realizados na operação real, mesmo não constando nas publicações internas. Através de tais resultados, busca-se subsidiar pesquisas sobre o tema no meio acadêmico, além de contribuir para elaboração de uma doutrina militar específica sobre o assunto, a fim de aumentar o intercâmbio entre os todos os agentes envolvidos e alcançar uma maior eficácia no apoio da MB nas operações humanitárias.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=27849@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=27849@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - ANDRESSA CASTRO DE SOUZA LIMA
+PY  - 2016
+TI  - MITIGATION, PREPAREDNESS, RESPONSE AND RECOVERY IN BUSINESS OF MOUNTAIN REGION OF RIO DE JANEIRO IN THE DISASTER OF 2011
+LA  - por
+AB  - Em janeiro de 2011, chuvas intensas e concentradas deflagraram inundações e deslizamentos atingindo sete cidades da Região Serrana do Rio de Janeiro, sendo considerado o maior desastre na história do país. Essa tragédia serviu de lição aprendida para mudanças no gerenciamento de riscos de desastres no Brasil. Este estudo inova ao pesquisar o impacto nas empresas da região afetada. A abordagem da logística humanitária – que tem por função adequar o fluxo de pessoas e materiais em tempo oportuno na cadeia de assistência às pessoas afetadas por desastres – se faz relevante para as empresas privadas visto que pode minimizar os impactos dos desastres e aumentar a resiliência nas cadeias de suprimentos. De acordo com o ciclo de gestão de desastres – mitigação, preparação, resposta e reconstrução – este estudo tem por objetivo avaliar como as empresas da Região Serrana do Rio de Janeiro foram impactadas no desastre de 2011 e como as empresas estão se preparando para evitar que novas situações de emergência afetem a sua operação. Baseado em um modelo de questionário, aplicado com sucesso em desastres na Nova Zelândia, realiza-se uma pesquisa de levantamento em empresas da região e dois estudos de caso. Os resultados obtidos apontam para a necessidade de maior planejamento das empresas face à recorrência desse tipo de evento nas cidades afetadas.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=30099@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=30099@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - ROBERTO GOMES DE MATTOS
+PY  - 2017
+TI  - INSECTICIDE-TREATED BED NETS SUPPLY CHAIN OPTIMIZATION UNDER UNCERTAINTY FOR MALARIA PREVENTION AND CONTROL
+LA  - eng
+AB  - Em 2015 quase metade da população mundial vivia em área de risco de transmissão de malária. Neste mesmo ano, estimam-se 214 milhões de casos e 438 mil fatalidades. A principal forma de prevenção e redução da transmissão da malária é através do controle dos vetores, em particular, destaca-se o uso de mosquiteiros impregnados com inseticidas de longa duração (MILD). Neste contexto, os programas de distribuição de MILDS enfrentam desafios relacionados a obtenção de fundos e à gestão da cadeia de suprimentos como, por exemplo, incertezas associadas as atividades logísticas, as variáveis de oferta e demanda, e a volatilidade de preços. À luz destes fatos, esta dissertação propõe um modelo de otimização robusta, fundamentado em extensões dos arcabouços teóricos de Bertsimas e Sim (2004) e Fernandes et al. (2016), capaz de minimizar os custos de um programa de distribuição de mosquiteiros ou, dada uma restrição orçamentária, maximizar a distribuição para áreas prioritárias. Ademais, foi realizada uma revisão da literatura acadêmica acerca de modelos de otimização robusta aplicados no contexto da logística humanitária, onde alguns aspectos ainda pouco explorados foram ressaltados e considerados no modelo proposto. Um estudo de caso real é feito sobre um projeto feito do Fundo das Nações Unidas para crianças na Costa do Marfim. Os resultados apontam que conforme esperado, à medida que o nível de robustez considerado no modelo cresce, os custos totais também aumentam. Em contrapartida, o modelo robusto fornece soluções com maior flexibilidade na cadeia de suprimentos para a eventual necessidade de se ajustar os planos de compras e distribuição. Por fim, as soluções robustas foram avaliadas através de simulações de Monte Carlo, indicando que, conforme desejado, a probabilidade de viabilidade dos planos aumentam junto com nível de conservadorismo da solução.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=33352@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=33352@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - LUCAS DIAS CONDEIXA
+PY  - 2018
+TI  - AVALIAÇÃO DE OBJETIVOS CONFLITANTES E DA SENSIBILIDADE AO RISCO NA PREPARAÇÃO PARA UM DESASTRE ATRAVÉS DE OTIMIZAÇÃO ESTOCÁSTICA
+LA  - por
+AB  - O processo decisório na logística humanitária compreende diversos tipos de prioridades que por vezes estão relacionados com situações de vida ou morte. Neste grau de importância, os objetivos a serem perseguidos pelos tomadores de decisão na situação de um desastre e as restrições do problema devem ser estabelecidos para se alinhar com os anseios das vítimas e com as limitações existentes. Este estudo visa analisar de que maneiras as prioridades conflitantes num problema repleto de incertezas como em um desastre podem impactar o resultado do atendimento humanitário no que tange à sua eficiência, efetividade e equidade (3E). A dissertação apresenta o papel de alguns objetivos e restrições conflitantes (trade-offs) na tomada de decisão durante a fase de preparação para um desastre. Para tal, modelos de otimização estocástica são propostos utilizando-se dos conceitos de desempenho via 3E e sensibilidade ao risco, através da medida CVaR. Os resultados sugerem que a inclusão da aversão ao risco pode levar a um sistema mais efetivo em média. Outro ponto importante é que o modelo de minimização de custos incluindo o custo da falta forneceu uma resposta com melhor desempenho do que na maximização de equidade ou de cobertura de forma independente. Além disso, a restrição de orçamento (eficiência) quando mal dimensionada pode tornar um problema de maximização de cobertura (efetividade) desnecessariamente ineficiente. Conclui-se que a priorização da maximização conjunta da eficiência e da efetividade com restrição de inequidade e sensibilidade ao risco torna o modelo mais preciso quanto ao atendimento das vítimas do desastre.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=35730@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=35730@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - DANIEL RICARDO ECKHARDT DA SILVA
+PY  - 2015
+TI  - CONCEPTUAL PROPOSAL FOR A DISASTER RESPONSE MANAGEMENT SYSTEM
+LA  - por
+AB  - A logística humanitária (LH) pode ser definida como um processo de planejamento, implementação e controle da eficácia, fluxo eficiente de custos, armazenagem e movimentação de equipamentos e materiais, assim como informações, com o propósito de atender às necessidades das pessoas afetadas por desastres naturais (tsunamis, terremotos) ou gerados pelo homem (desabamentos, explosões). A importância deste tema recai sobre o número significativo de desastres registrados ao longo das últimas décadas, pelo volume financeiro transacionado e pelo fator comoção humana . Neste contexto, observa-se a necessidade de criação de um sistema centralizado que possa ser utilizado por diferentes entidades com o objetivo de evitar desperdício ou escassez de material, permitir uma visão global das necessidades de múltiplos desastres e possibilitar uma melhor comunicação em relação à situação real dos desastres. Esta dissertação, portanto, tem como objetivo principal propor um framework para um sistema de gerenciamento de resposta a desastres baseado em três evidências: revisão da literatura, utilização de software de gestão de desastres e entrevistas com especialistas. Adicionalmente, o estudo buscou hierarquizar, através de um modelo multicritério de decisão, as funcionalidades mais importantes, para que estas possam ser priorizadas em um possível desenvolvimento do sistema de gestão de desastres ou durante a fase operacional dos mesmos. Conclui-se que atualmente não existe uma ferramenta completa com todas as funcionalidades apresentadas e, portanto, o framework proposto pode ser considerado de grande utilidade caso venha a ser desenvolvido.
+DI  - 
+UR  - https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=25642@1; https://www.maxwell.vrac.puc-rio.br/colecao.php?strSecao=resultado&nrSeq=25642@2
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Lima, Maria Luiza Tremel de Faria
+PY  - 2017
+TI  - Esvaziamento emergencial de locais ocupados por pessoas com mobilidade reduzida: estudo aplicado a edificações hospitalares
+LA  - por
+AB  - Dissertação (mestrado) - Universidade Federal de Santa Catarina, Centro Tecnológico, Programa de Pós-Graduação em Arquitetura e Urbanismo, Florianópolis, 2017.
+DI  - 
+UR  - 353232; https://repositorio.ufsc.br/handle/123456789/188704
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Oliveira, Willam Albuquerque de
+PY  - 2020
+TI  - Operação Acolhida: mapeamento informacional de fluxos de acolhimento dos imigrantes venezuelanos no Brasil
+LA  - por
+AB  - Dissertação (mestrado) - Universidade Federal de Santa Catarina, Centro de Ciências da Educação, Programa de Pós-Graduação em Ciência da Informação, Florianópolis, 2020.
+DI  - 
+UR  - 369339; https://repositorio.ufsc.br/handle/123456789/216650
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Azevedo, Josias Pereira de
+PY  - 2023
+TI  - Operação acolhida: estudo de caso sobre a interiorização dos imigrantes venezuelanos
+LA  - por
+AB  - Esta dissertação investigou a interiorização dos imigrantes venezuelanos e apresentou os motivos que impuseram esse movimento migratório forçado, em função de perseguições, conflitos e violação dos direitos humanos. A atual crise migratória venezuelana tem produzido impactos no Brasil e nos países da América do Sul e no Caribe. No Brasil, o estado de Roraima, devido à posição geográfica, tem sido a principal porta de entrada dos migrantes venezuelanos. Pacaraima é o ponto de entrada dos migrantes com destino à capital Boa Vista. Devido às limitações de logística e sem condições de prover adequadamente serviços públicos, em 2016, o governo do estado de Roraima decreta estado de calamidade pública na saúde. Em 2018, o governo federal cria o Comitê Federal de Assistência Emergencial para Acolhimento a Pessoas em situação de vulnerabilidade decorrente do fluxo migratório provocado por crise humanitária. Surge a Operação Acolhida, que é um esforço interministerial para operar o fluxo migratório venezuelano. Nesse contexto, foi proposta a seguinte questão de pesquisa: como a Operação Acolhida tem trabalhado para enfrentar as múltiplas dificuldades que se apresentam aos imigrantes venezuelanos em meio ao processo de interiorização? A interiorização é uma ação do governo federal brasileiro, com a participação de entes federativos, agências da ONU, organismos internacionais, organizações da sociedade civil e entidades privadas, voltado para migrantes venezuelanos que se encontram em situação de vulnerabilidade no estado de Roraima. Desenvolve-se, ainda, o estudo das fases e estruturas da Operação Acolhida. A ForçaTarefa Humanitária executada e coordenada pela Casa Civil do governo federal tem como missão oferecer assistência emergencial aos refugiados e migrantes que entram no Brasil pela fronteira com Roraima. A pesquisa é predominantemente bibliográfica, documental e empírica, contando com a experiência do autor no processo de interiorização quando integrante do 5º contingente da Operação (integrantes de São Paulo). Com esta pesquisa, não se busca exaurir o tema, pois não existe unanimidade quando se fala no processo de interiorização de imigrantes, mas busca-se identificar os principais óbices para a interiorização dos migrantes venezuelanos, visando reduzir a pressão sobre os serviços públicos do estado de Roraima e de seus municípios, provocada pelo aumento do fluxo migratório.
+DI  - 
+UR  - https://hdl.handle.net/10438/34480
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Gabriel Lucas Silva Machado
+PY  - 2021
+TI  - Scene classification using a combination of aerial and ground images
+LA  - eng
+AB  - It is undeniable that aerial and orbital images can provide useful information for a large variety of tasks, such as disaster relief and urban planing. But, since these images only see the Earth from one point of view, some applications can benefit from complementary information provided by other perspective views of the scene, such as ground-level images. Despite a large number of public image repositories for both georeferenced photographs and aerial images (such as Google Maps and Google Street View), there is a lack of public datasets that allow the development of approaches that exploit the benefits and complementarity of aerial/ground imagery. Because of that, in this dissertation, we present two new publicly available datasets named AiRound and CV-BrCT (Cross-View Brazilian Construction Types). The first one contains triplets of images from the same geographic coordinate with different perspectives, obtained at various places around the world. Each triplet is composed of an aerial RGB image, a ground-level perspective image, and a Sentinel-2 sample. The second dataset contains pairs of aerial and street-level images extracted from the southeast of Brazil. For this dissertation, we conducted a series of experiments involving both proposed datasets with the main objectives of (i) explore the complementary information that aerial and ground images have by using multi-modal machine learning models to enhance results, (ii) compare different feature fusion approaches applied in several state-of-the-art Convolutional Neural Network architectures, and (iii) investigate alternatives to handle missing data in a multi-modal scenario. Experiments show that, when compared to networks trained using only a single view, feature fusion algorithms achieved gains up to 0.15 and 0.20 in F1-Score for the AiRound and CV-BrCT datasets, respectively. Since it is not always possible to obtain the paired aerial/ground samples of a place, we also designed a framework to handle scenarios with missing samples. Comparing the results of a single-view network classification to the use of our framework integrated with a multi-view model, we achieved gains up to 0.03 in F1-Score for both datasets. Thus, our missing data completion framework has proven to be a more effective approach than just classifying images using a single-view model.
+DI  - 
+UR  - http://hdl.handle.net/1843/38082
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Marques, Matheus Sousa
+AU  - souzamarques94@outlook.com
+PY  - 2020
+TI  - O regime internacional do refúgio e suas práticas de proteção defasadas: O caso venezuelano e a Operação Acolhida
+LA  - por
+AB  - The legal protection afforded by the international refugee regime is manifested, in contemporary times, in an outdated manner. This configuration, constrained by an international convention formulated in a specific context of the mid-20th century, permeates practices that do not protect a significant number of individuals in violent situations. This gap requires deeper analysis, which seeks to understand the behavior of the agents involved and unveil the practical, bureaucratic and political obstacles that constitute this present protection dynamic. In this way, the consecrated theoretical views of international regimes, guided by a liberal perspective, are questioned. Indeed, it is from a focus on the daily lives that form the refuge regime, governed by particular logics of that field, that this gap, between theory and practice, will be understood here. From looks of the practices perpetuated historically by the different agents and the way the field structures and is structured by the regime; it is argued that it is possible to better analyze the gap of these international protections and the exclusion mechanisms that are hidden under this discrepancy. Thus, the argument moves away from a liberal perspective, based on supposed rational choices, and proposes more comprehensive views. In this sense, this dissertation proposes an alternative epistemology, inspired by the social theory of International Political Sociology, mainly in the French Sociologist Pierre Bourdieu, for the analysis of international regimes. This argument is detailed in a case study, in which the recent Venezuelan migratory flow to Brazil and the creation of a Humanitarian Logistics Task Force, by the Brazilian authorities, called “Operação Acolhida”, are analyzed. The “efficient” practices of the agents involved in the Operation and their humanitarian reasons, which govern the logic of that specific field, are taken as necessary factors to interpret the way the regime operates and can be understood locally.
+DI  - 
+UR  - http://www.bdtd.uerj.br/handle/1/19564
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Leite, Adinésia Lima
+PY  - 2022
+TI  - Fatores associados às mortes por COVID-19: um olhar sob a ótica do capital humano
+LA  - por
+AB  - In 2020 the world was surprised by the COVID-19 Pandemic, caused by the SARS-Cov-2 virus, which triggered a global humanitarian, economic and social crisis. In this sense, this study aimed to analyze the effects of human capital, represented by the level of education, on deaths caused by COVID-19 in the municipalities of the Northeast Region, in two different periods of the pandemic: July 2020 and April 2021, respectively. To obtain the results, hierarchical logistic models were estimated with variables at individual and environmental levels. The results indicated that the probability of death is higher among males, with comorbidities, elderly, of mixed race/color and without education. In addition, people who received the antiviral vaccine or the vaccine against COVID-19 had a lower risk of death from the disease. The IDHM also showed significance in reducing the probability of deaths. However, the basic sanitation and per capita income variables were not significant. Therefore, in the case of municipalities in the Northeast, it cannot be said that these two variables had a significant impact on the chance of death from SARS-CoV-2. Keywords: COVID-19 Pandemic; Human capital; Northeast Region.
+DI  - 
+UR  - https://ri.ufs.br/jspui/handle/riufs/18747
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Caldas, Deise Christian Silva
+PY  - 2019
+TI  - Reflexões sobre a contratação dos serviços terceirizados no Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais - IFMG Campus Governador Valadares.
+LA  - por
+AB  - Este trabalho é resultado de uma pesquisa realizada com os funcionários de uma empresa terceirizada de serviços de apoio e manutenção em uma instituição pública de educação. Tem como objeto de estudo as Reflexões sobre a Contratação dos Serviços Terceirizados no Instituto Federal de Educação, Ciência e Tecnologia de Minas Gerais - IFMG Campus Governador Valadares IFMG Campus Governador Valadares. A questão norteadora dessa investigação foi a análise da coerência e/ou consistência entre as descrições dos cargos de Faxineiro e Capineiro, contidas na Classificação Brasileira de Ocupações (CBO), através de uma verificação de equivalência entre as descrições das atividades dos cargos e as reais necessidades das atividades desenvolvidas pelos postos na Instituição. Em termos metodológicos, trata-se de uma abordagem de natureza qualitativa, com a utilização de estudo bibliográfico, documental, coleta de dados através da observação direta participante e de entrevista em profundidade. Em um universo de vinte profissionais terceirizados que prestam serviços na Instituição, a pesquisa foi realizada com os funcionários dos postos de faxineiro e capineiro que totalizaram a população de oito funcionários. Esse trabalho resultou da observação direta e acompanhamento durante três meses de atividades realizadas pelos trabalhadores terceirizados, e de entrevistas após período de monitoramento, para avaliar a percepção dos terceirizados no seu ambiente de trabalho. As narrativas obtidas com as entrevistas foram interpretadas à luz das referências teóricas desenvolvidas durante a pesquisa. Os resultados finais apontam para uma discussão sobre a contratação dos serviços terceirizados continuados do ponto de vista de suas dimensões humanitárias.
+DI  - 
+UR  - https://rima.ufrrj.br/jspui/handle/20.500.14407/12701
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Silva, Meiryjane Moura da
+PY  - 2022
+TI  - Políticas públicas de assistência migratória: análise do processo de imigração venezuelana no Amazonas
+LA  - por
+AB  - As políticas públicas migratórias têm se tornado cada vez mais necessárias em nosso país, em virtude da migração em massa de imigrantes e refugiados que vem ao Brasil, a procura de condições melhores de vida. Entre esses imigrantes e refugiados encontram-se os venezuelanos. Fome, miséria, aumento da proliferação de doenças e violência faz muitos venezuelanos saírem do seu país para outros lugares em busca de condições de vida melhores e oportunidades de emprego. Em resposta ao fluxo de refugiados e imigrantes vindos da Venezuela, o governo brasileiro promoveu a Operação Acolhida, criada em 2018 com objetivo de melhorar a organização do processo migratório e ajudar os migrantes e refugiados que decidiram migrar para o país. Essa operação é baseada em três eixos operacionais: o ordenamento de fronteira, em que eles são recepcionados, passam por uma espécie de triagem, são encaminhados para Polícia Federal para que sejam monitoradas suas permissões de entrada, e em seguida passam por uma checagem das vacinas. Vale salientar que, caso queiram permanecer no Brasil, ao final deste processo eles são direcionados aos órgãos competentes para iniciarem o processo de regularização migratória. O segundo eixo é o acolhimento, que foi criado como uma alternativa para o aumento de pessoas em situação de rua nas cidades próximas a fronteira. Com isso foram criados abrigos para que a população em situação de vulnerabilidade pudesse ter um local seguro para atender às necessidades imediatas. E o terceiro eixo é a interiorização, que consiste em realocar os venezuelanos que desejam morar em outras cidades brasileiras, que não fazem fronteira com a Venezuela, para que assim não centralize apenas no Estado de Roraima, que não possui infraestrutura para abrigar a todos. Assim, esse trabalho teve como objetivo geral identificar as políticas públicas que estão sendo formuladas para acomodação e ações de controle dos imigrantes e refugiados venezuelanos no território brasileiro, especialmente no Amazonas e como o Alto comissariado das Nações Unidas para refugiados (ACNUR), contribui no diálogo sobre migração entre governos nacionais e autoridades locais. Especificamente, pretendeu-se: identificar às políticas públicas migratórias promovidas pelos governos nacionais, autoridades locais e suas estratégias para ações de controle dos migrantes venezuelanos; descrever como a Agência do Alto Comissariado das Nações Unidas para Refugiados (ACNUR) contribui para a inclusão/integração social desses migrantes. Para responder aos objetivos propostos por este trabalho foi utilizada uma abordagem qualitativa, através de técnicas de entrevistas semiestruturadas, análise documental e análise de conteúdo. A importância deste trabalho se deve à possibilidade de contrastar os resultados de análise bibliográfica com os achados da pesquisa de campo, sendo foi possível perceber que o ACNUR desenvolve programas de integração local em parceria com diversas organizações para incentivar e potencializar oportunidades para pessoas refugiadas e migrantes venezuelanos na Região Norte, conjuntamente as experiências vivenciadas na esfera do acolhimento humanitário, conseguem cumprir com seu objetivo de fortalecer as capacidades regionais de formular mais políticas públicas migratórias, propiciando acesso ao sistema de acolhimento e integração, ao passo que trabalha para satisfazer as necessidades da população venezuelana e a outros povos migratórios para região. Por fim, com relação ao apoio à resposta humanitária junto aos estados e municípios, a Operação Acolhida, sociedade civil e setor privado, buscam promover um caráter inovador através do planejamento de ações mais focalizadas que respondam de modo mais direto e assertivo que garantam a proteção e soluções para refugiados e migrantes, sendo elas: o acesso à rede socioassistental local, coexistência pacífica, abrigamento da população no processo logístico para interiorização a outros estados e municípios do Brasil, capacitações profissionais, orientações para a entrada no mercado de trabalho brasileiro e atendimento de necessidades específicas com vistas a oportunizar a integração local das pessoas refugiadas e migrantes no Amazonas. Palavras-chave: Administração. Imigração. Política Pública Migratória. Venezuelanos.
+DI  - 
+UR  - https://locus.ufv.br//handle/123456789/31202
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Torres, Claudia Almeida Ribeiro
+PY  - 2020
+TI  - Impacto do monitoramento remoto por telemedicina sobre os indicadores de morbidade em pacientes asmáticos graves
+LA  - por
+AB  - A asma é uma doença crônica com alta prevalência, morbidade e mortalidade. As exacerbações por asma representam uma carga considerável para o sistema de saúde estando associada à necessidade de comparecimento em pronto-socorro, visitas não programadas e risco de hospitalizações. A telemedicina constitui um método eficaz de intervenção educacional para complementar o tratamento usual com potencial de aumentar a eficácia do controle da asma e com isso reduzir visitas não eletivas, internações e visitas a emergência por asma. Relativos ao uso da telemedicina como ferramenta para redução de hospitalização de pacientes asmáticos (Revisão da literatura): Revisar a literatura sobre o uso de telemedicina e seu impacto na hospitalização de pacientes asmáticos; avaliar o impacto do monitoramento remoto por telemedicina sobre os indicadores de morbidade por asma em pacientes asmáticos graves acompanhados em um centro de referência (PROAR – UFBA. Artigo 1- revisão sistemática de ensaios clínicos randomizados nas bases de dados PUBMED/MEDLINE e BIREME. Artigo 2- Ensaio clínico randomizado aberto, de grupos paralelos, realizado em um programa especializado para controle da asma na Bahia. Artigo 1- 07 artigos foram selecionados, 28% dos artigos demonstrou que o telemonitoramento reduziu hospitalização e visitas à emergência quando comparados ao tratamento usual para asma, melhorou a qualidade de vida dos pacientes e cuidadores, não houve óbito e internação em terapia intensiva. Artigo 2- Foram incluídos 139 participantes (GI= 78 e GC=78). Houve redução no GI de 35,3% e 22,4% em atendimento em serviço de saúde (p= 0,040) e atendimento em emergência (p=0,059) após 90 dias da intervenção. Não houve internação, atendimento em serviços de saúde, visitas ao departamento de emergência pelos participantes do GI após 180 dias. Intervenções por telemedicina pode ser uma ferramenta útil, de fácil acesso e viável proporcionando aos pacientes um maior acesso ao tratamento especializado para asma e adesão ao tratamento, bem como minimizar as taxas de morbidade por asma quando associada ao tratamento e acompanhamento presencial regular.
+DI  - 
+UR  - https://repositorio.ufba.br/handle/ri/38136
+JO  - 
+ER  - 
+
+TY  - masterThesis
+AU  - Nunes, Flavio Souza Brasil
+PY  - 2018
+TI  - Base de dados geoespaciais no apoio à gestão participativa de riscos de desastres: o caso da bacia hidrográfica do Córrego d`Antas - Nova Friburgo/RJ
+LA  - por
+AB  - No âmbito do Desenvolvimento Sustentável os desastres socioambientais constituem um dos temas eleitos na Agenda 2030. No Brasil, esse tema apresenta contorno agudos, tendo em vista que a ocorrência e magnitude desses eventos têm crescido consideravelmente nas últimas duas décadas. Nesse contexto, os desastres relacionados aos movimentos de massa, enxurradas e inundações se destacam como de maior crescimento em frequência e perdas de vidas. Nesse sentido, é possível observar que grandes esforços e investimentos voltados para a gestão de riscos de desastres, como o gerenciamento da resposta e a capacidade de recuperação dos sistemas atingidos vêm sendo realizados juntamente com esforços técnico-científicos no desenvolvimento de metodologias mais avançadas para classificar e zonear áreas de riscos a movimentos de massa. Entretanto, apesar dos avanços nessas áreas, ainda existem hiatos no sentido de incorporar o conhecimento popular nos modelos de análise e de integrar as esferas da sociedade, do poder público e das comunidades vulneráveis aos problemas à uma gestão de riscos de desastres eficiente. Nesse sentido, moradores da bacia hidrográfica do Córrego d`Antas, em Nova Friburgo, junto com instituições de ensino e/ou pesquisa, organizações não governamentais, poder público federal, estadual e municipal, além de pesquisadores e indivíduos interessados, criaram em 2014 uma rede colaborativa multi-institucional com a missão de promover a associação dos saberes de organismos públicos, privados e comunitários para a redução de riscos desses eventos, denominada de Rede para Gestão de Riscos da Bacia Hidrográfica do Córrego d`Antas (Reger-CD). Uma das ações preconizadas por essa Rede é a construção de uma Base de Dados Geoespaciais (BDG) para apoiar as atividades de enfrentamento de desastres, assim como a realização de mapeamentos participativos como estratégias de construção de uma cultura de redução de riscos e aumentar o conhecimento sobre o território da bacia. É nesse contexto que se insere o presente trabalho, que apoiou a construção dessa base de dados e a consolidação da metodologia desse mapeamento. Foram realizados esforços em levantamentos, organização e sistematização de dados e informações geográficas de diversas fontes e escalas, além de terem sido aplicadas técnicas de mapeamento participativo com o auxílio de geotecnologias. Como resultado, foi elaborada uma BDG em escalas cartográficas articuladas e com conteúdo especifico e em diversos formatos para apoiar a gestão participativa de riscos de desastres socioambientais. Foram ainda elaborados mapas e outros materiais impressos, além de conteúdo de geotecnologias para apoiar o mapeamento participativo da Reger-CD. Com isso, foi possível perceber que metodologias de mapeamento participativo, preocupadas com uma efetiva participação das comunidades e apoiadas por geotecnologias, como uma BDG adequada constituem-se em estratégias importantes para se reduzir os riscos de desastres socioambientais na escala local
+DI  - 
+UR  - https://rima.ufrrj.br/jspui/handle/20.500.14407/15703
+JO  - 
+ER  - 
+
+TY  - doctoralThesis
+AU  - Viana, Willian Carboni
+PY  - 2022
+TI  - O território usado entre manifestações culturais e firmas transnacionais: O caso da territorialidade da monocultura do arroz na região dos Eixos Rodoferroviários - Maranhão (Brasil)
+LA  - por
+AB  - A presente pesquisa se propôs analisar a territorialidade e reterritorialidade da monocultura do arroz na região dos Eixos Rodoferroviários (centro-norte maranhense), com vistas à demonstrar a importância dos estudos da territorialidade dos fenômenos sociais, ao abordar os aspectos essenciais para se explicar a reterritorialização e a recomposição social. Para se chegar a compreensão das realidades pesquisadas, buscouse uma aproximação com a abordagem qualitativa, tendo como procedimento metodológico o estudo de caso. Deste modo, na área em tela, verificou-se que as metamorfoses territoriais foram intermediadas pelo Estado, principalmente através da adoção de modelos de desenvolvimento para as diferentes agriculturas, com políticas públicas direcionadas, incluindo-se as de crédito, infraestrutura e logística, a favorecer grupos empresariais e, assim, configurar uma agricultura patronal opositora a familiar/campesina. No escopo da investigação se retrata a importância da rizicultura na apropriação/modificação espacial, contemplando diferentes tempos e escalas, mas, sobretudo, enfocando o período de 1970 a 2018, quando se observa a expansão e retração na produção desse cereal, seguindo a lógica capitalista. Até os anos 1980, a região investigada chegou a ser uma das maiores produtoras de arroz do Brasil, mas retraiu nas décadas seguintes e atualmente tem cerca de 90% de sua produção controlada e comercializada por uma empresa transnacional. A modernização dos meios de produção na agricultura provocou impactos nos espaços agrários, com reflexos nos usos do território, e foi, portanto, pautado no afastamento dos modos tradicionais de produção, em favor do moderno e mecanizado, que se processou o desenvolvimento da rizicultura nos Eixos Rodoferroviários, criando e/ou agravando problemas das mais diversas ordens (fundiários, laborais, urbanos, sociais, etc.). A acumulação capitalista e a vigência dos mecanismos institucionais mantém a conformidade da sociedade no status quo, compondo ‘‘geografias’’ que permanecem nas áreas periféricas, onde se fazem necessárias intervenções, nomeadamente, por meio de programas de regulação.
+DI  - 
+UR  - VIANA, W. C. O território usado entre manifestações culturais e firmas transnacionais: o caso da territorialidade da monocultura do arroz na região dos Eixos Rodoferroviário – Maranhão (Brasil). Porto. 2021. Tese (Doutorado em Geografia) - Faculdade de Letras da Universidade do Porto. Porto, 2021.; https://hdl.handle.net/10216/141069; https://deposita.ibict.br/handle/deposita/377
+JO  - 
+ER  - 
+

@@ -50,7 +50,6 @@ Ao aplicar essas técnicas, você terá uma revisão bibliográfica bem fundamen
 
 Para realizar a revisão bibliográfica do seu artigo de dissertação sobre **Aplicação de Técnicas de Otimização dentro da Logística Humanitária**, com foco em **roteamento de veículos e análise da rota mínima com p-medianas**, siga uma abordagem estruturada, priorizando fontes confiáveis e de alta relevância científica.
 
-
 **Resultados da Pesquisa:**
 
 | Tipo      | Otimização da Logística Humanitária | Problema de roteamento de veículos | Problema p-mediana em logística | Análise de rota mínima | Técnicas de otimização em logística |
@@ -124,4 +123,3 @@ Para realizar a revisão bibliográfica do seu artigo de dissertação sobre **A
 |             |                       |                                    |                    |             |                         |
 
 : Springer
-

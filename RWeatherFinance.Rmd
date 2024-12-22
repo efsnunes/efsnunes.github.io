@@ -1,0 +1,94 @@
+---
+title: "RWeatherFinance"
+author: "Edison Fernando"
+date: "2024-10-10"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+install.packages("quarto")
+```
+
+## Notícias Confiáveis
+
+- [G1](https://g1.globo.com/)
+- [BBC News](https://www.bbc.com/)
+- [Folha de São Paulo](https://www.folha.uol.com.br)
+- [O Globo](https://oglobo.globo.com/)
+
+
+```{r}
+# Gerar gráfico de exemplo para cotação do dólar
+library(plotly)
+data_dolar <- data.frame(dias = 1:7, valor_dolar = c(5.20, 5.25, 5.30, 5.35, 5.50, 5.45, 5.55))
+fig_dolar <- plot_ly(data_dolar, x = ~dias, y = ~valor_dolar, type = 'scatter', mode = 'lines+markers')
+fig_dolar <- fig_dolar %>% layout(title = "Cotação do Dólar nos Últimos 7 Dias",
+                                  xaxis = list(title = "Dias"),
+                                  yaxis = list(title = "Valor (R$)"))
+fig_dolar
+
+```
+
+
+```{r}
+install.packages("cranlogs")
+library(cranlogs)
+
+# Ver pacotes mais baixados
+top_downloads <- cran_top_downloads()
+print(top_downloads)
+
+```
+
+```{r}
+# Gerar gráfico de exemplo para cotação do dólar
+library(plotly)
+data_dolar <- data.frame(dias = 1:7, valor_dolar = c(5.20, 5.25, 5.30, 5.35, 5.50, 5.45, 5.55))
+fig_dolar <- plot_ly(data_dolar, x = ~dias, y = ~valor_dolar, type = 'scatter', mode = 'lines+markers')
+fig_dolar <- fig_dolar %>% layout(title = "Cotação do Dólar nos Últimos 7 Dias",
+                                  xaxis = list(title = "Dias"),
+                                  yaxis = list(title = "Valor (R$)"))
+fig_dolar
+
+```
+
+
+```{r}
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/seuusuario/seurepositorio.git
+git push -u origin main
+
+```
+
+```{r}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
+}
+
+a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+```
+
+```{r}
+├── index.qmd
+├── tempo.qmd
+├── financeiro.qmd
+├── noticias.qmd
+├── atualizacoes.qmd
+├── _quarto.yml
+└── styles.css
+
+```
+
