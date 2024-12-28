@@ -1,5 +1,7 @@
 ---
-title: "Apresentação Roteamento dos Abrigos"
+title: "Aplicação de Técnicas de Otimização dentro da  
+Logística Humanitária: Um estudo de caso
+"
 author: "Edison Fernando da Silva Nunes"
 format: revealjs
 editor: visual
@@ -8,33 +10,34 @@ transition: convex
 css: styles.css
 slide-number: true
 ---
-## **[Sumário](#sumário)**
 
-**[Introdução](#Introdução)**
+## [**Sumário**](#sumário) {#sumário}
 
-**[Logística Humanitária](#LogísticaHumanitária)**
+[**Introdução**](#Introdução)
 
-**[Justificativa](#Justificativa)**
+[**Logística Humanitária**](#LogísticaHumanitária)
 
-**[Objetivos](#Objetivos)**
+[**Justificativa**](#Justificativa)
 
-**[Metodologia](#Metodologia)**
+[**Objetivos**](#Objetivos)
 
-**[Problemas de Localização de P-Medianas](#ProblemasdeLocalizaçãodeP-Medianas)**
+[**Metodologia**](#Metodologia)
 
-**[Problemas de Roteamento de Veículos](#ProblemasdeRoteamentodeVeículos)**
+[**Problemas de Localização de P-Medianas**](#ProblemasdeLocalizaçãodeP-Medianas)
 
-**[Formulação Matemática para PRV](#FormulaçãoMatemáticaparaPRV)**
+[**Problemas de Roteamento de Veículos**](#ProblemasdeRoteamentodeVeículos)
 
-**[Conclusão](#Conclusão)**
+[**Formulação Matemática para PRV**](#FormulaçãoMatemáticaparaPRV)
 
-**[Recomendação](#Recomendações)**
+[**Conclusão**](#Conclusão)
 
-**[Pág Incial](index.html)**
+[**Recomendação**](#Recomendações)
+
+[**Pág Incial**](index.html)
 
 ## 1. Introdução {#Introdução}
 
-### Aplicação de Técnicas de Otimização de Fluxo de Redes para Minimizar Custos Associados a Desastres e Inundações.
+ A logística humanitária refere-se à organização e coordenação das atividades logísticas envolvidas em operações de ajuda humanitária e lida com os desafios como a entrega rápida de suprimentos essenciais em áreas remotas ou afetadas por desastres.
 
 #### Foco na criação de um centro de distribuição para atender abrigos em situações de emergência.
 
@@ -43,12 +46,17 @@ slide-number: true
 :::
 
 <p style="text-align: center;">
+
 Imagem representativa de inundações no sul do Brasil.
+
 </p>
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
+
 ------------------------------------------------------------------------
 
 ## 1.1 Logística Humanitária {#LogísticaHumanitária}
@@ -62,11 +70,15 @@ Organização e coordenação das atividades logísticas em operações de ajuda
 :::
 
 <p style="text-align: center;">
+
 Esquema básico de logística humanitária.
+
 </p>
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ## 1.2 Impacto das Inundações no Sul do Brasil
@@ -80,11 +92,15 @@ Fortes chuvas afetaram centenas de municípios e milhões de pessoas, destacando
 :::
 
 <p style="text-align: center;">
+
 Dados sobre os municípios afetados, número de pessoas impactadas, feridos e óbitos.
+
 </p>
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ------------------------------------------------------------------------
@@ -102,10 +118,13 @@ Aumentar a eficiência na distribuição de recursos e minimizar custos em opera
 <p style="text-align: center;">
 
 Necessidade de estratégias eficazes de logística humanitária.
+
 </p>
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ------------------------------------------------------------------------
@@ -114,47 +133,56 @@ Necessidade de estratégias eficazes de logística humanitária.
 
 ### 3.1 Objetivo Geral:
 
-Aplicar técnicas de otimização de fluxo de redes para minimizar os custos de resposta a desastres.
+Aplicar técnicas de otimização para minimizar o tempo de atendimento às vítimas de desastres de inundações.
+
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ------------------------------------------------------------------------
 
-## 3. Objetivos
+## 3. Objetivos {#objetivos}
 
 ### 3.2 Objetivos Específicos:
 
-        
 1.Analisar padrões de inundações.
 
-2.Desenvolver um modelo de otimização de fluxo de redes. 
+2.Desenvolver um modelo de otimização de fluxo de redes.
 
-3.Avaliar a eficácia do modelo. 
+3.Avaliar a eficácia do modelo.
 
 4.Propor recomendações para estratégias de logística humanitária.
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
-</footer>
 
+<a href="#sumário">Sumário</a>
+
+</footer>
 
 ## 4. Metodologia {#Metodologia}
 
 #### 4.1. Coleta de Dados
 
 Dados meteorológicos, relatórios de desastres e informações sobre infraestrutura serão coletados para análise.
+
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
-## 4. Metodologia
+## 4. Metodologia {#metodologia}
 
 #### 4.2 Desenvolvimento do Modelo:
 
 Modelo de otimização de fluxo de redes com variáveis-chave.
+
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ## 4. Metodologia
@@ -162,8 +190,11 @@ Modelo de otimização de fluxo de redes com variáveis-chave.
 #### 4.3. Simulação e Análise
 
 O modelo será simulado usando dados reais das inundações de 2024 no Rio Grande do Sul, focando na eficiência de distribuição e na redução de custos operacionais. Testes de sensibilidade serão realizados para avaliar diferentes cenários.
+
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ## 5. Problemas de Localização de P-Medianas {#ProblemasdeLocalizaçãodeP-Medianas}
@@ -175,11 +206,15 @@ Minimização da distância média e identificação de locais ideais para centr
 :::
 
 <p style="text-align: center;">
+
 Esquema de p-medianas aplicadas a um mapa de uma região afetada.
+
 </p>
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ## 6. Problemas de Roteamento de Veículos (PRV) {#ProblemasdeRoteamentodeVeículos}
@@ -191,15 +226,21 @@ Determinação de rotas otimizadas para serviços de emergência, com foco na mi
 :::
 
 <p style="text-align: center;">
+
 Exemplo de rotas otimizadas para veículos de socorro .
+
 </p>
 
 <p style="text-align: center;">
+
 Importância do PRV na logística humanitária.
+
 </p>
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ------------------------------------------------------------------------
@@ -217,8 +258,11 @@ $\sum_{k}^{}y{ik}=1\quad \text{para} \quad i=2,...,n \sum_{k}^{}y{ik}=m  \quad \
 $\sum_{i}^{}q{i}y_{ik}\leqslant Q_{k} \quad \text{para} \quad k=1,...,m$
 
 $\sum_{j}^{}x{ijk}\leqslant \sum{x{jik}}=y_{ik} \quad \text{para} \quad i=1,...,n \quad k=1,...,m$ $y_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i=1,...,n\quad k=1,...,m$ $x_{ik}\in \left\{0,1 \right\} \quad \text{para} \quad i,j=1,...,n \quad k=1,...,m$
+
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ------------------------------------------------------------------------
@@ -232,15 +276,21 @@ Aplicar técnicas de roteamento e modelos de p-medianas pode melhorar a logísti
 :::
 
 <p style="text-align: center;">
+
 Infográfico de impacto positivo na comunidade.
+
 </p>
 
 <p style="text-align: center;">
+
 Implicações para políticas públicas e estratégias de gestão de desastres.
+
 </p>
 
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
+
+<a href="#sumário">Sumário</a>
+
 </footer>
 
 ------------------------------------------------------------------------
@@ -249,12 +299,14 @@ Implicações para políticas públicas e estratégias de gestão de desastres.
 
 Implementação prática das técnicas estudadas, formação de parcerias com agências de resposta a emergências e desenvolvimento contínuo de modelos otimizados.
 
-<div style="text-align: center;">
-
+::: {style="text-align: center;"}
 <img src="https://github.com/efsnunes/efsnunes.github.io/raw/main/capacita%C3%A7%C3%A3oLH.png" alt="Descrição da Imagem" style="width: 50%;"/>
+
 <footer class="footer">
-  <a href="#sumário">Sumário</a>
 
-  [Pág Incial](index.html)
+<a href="#sumário">Sumário</a>
+
+[Pág Incial](index.html)
+
 </footer>
-
+:::
