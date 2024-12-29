@@ -175,9 +175,9 @@ Dados meteorológicos, relatórios de desastres e informações sobre infraestru
 
 ## 4. Metodologia {#metodologia}
 
-#### 4.2 Desenvolvimento do Modelo:
+#### 4.2 O Modelo para o Roteamento de Veículos:
 
-Modelo de otimização de fluxo de redes com variáveis-chave.
+Consiste em determinar rotas para realizar algum tipo de serviço, de maneira que o custo seja mínimo.
 
 <footer class="footer">
 
