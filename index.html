@@ -351,7 +351,7 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 .main-container {
 max-width: 950px !important;
 margin: auto;
-padding: 20px;
+padding: 15px;
 }
 .card-top {
 background: rgba(255, 255, 255, 0.93);
@@ -364,8 +364,8 @@ border-top: 5px solid #2c3e50;
 .card-highlight-bomperfume {
 background: rgba(255, 255, 255, 0.96);
 border-radius: 12px;
-padding: 25px;
-margin-bottom: 30px;
+padding: 22px;
+margin-bottom: 25px;
 box-shadow: 0 10px 20px rgba(0,0,0,0.18);
 border-top: 6px solid #e1306c;
 }
@@ -376,7 +376,6 @@ padding: 20px;
 margin-bottom: 20px;
 box-shadow: 0 6px 12px rgba(0,0,0,0.12);
 border-top: 4px solid #34495e;
-height: 100%;
 }
 .btn-ifn {
 background-color: #2c3e50;
@@ -396,13 +395,16 @@ background-color: #1a252f;
 background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 color: #ffffff !important;
 text-decoration: none !important;
-padding: 12px 22px;
+padding: 12px 20px;
 border-radius: 6px;
 display: inline-block;
 font-weight: bold;
-font-size: 1em;
+font-size: 0.95em;
 margin-top: 10px;
 box-shadow: 0 4px 10px rgba(225, 48, 108, 0.3);
+text-align: center;
+word-break: break-word;
+max-width: 100%;
 }
 .btn-instagram:hover {
 opacity: 0.92;
@@ -415,6 +417,17 @@ background: rgba(255, 255, 255, 0.85);
 padding: 12px;
 border-radius: 8px;
 font-weight: 500;
+}
+
+@media (max-width: 768px) {
+.bomperfume-container {
+text-align: center;
+}
+.btn-instagram {
+display: block;
+width: 100%;
+margin-top: 15px;
+}
 }
 </style>
 <div class="card-top">
@@ -429,12 +442,12 @@ e utilidades familiares.
 </div>
 <!-- DESTAQUE BOM PERFUME NA PÁGINA INICIAL -->
 <div class="card-highlight-bomperfume">
-<div class="row" style="display: flex; align-items: center;">
+<div class="row bomperfume-container">
 <div class="col-md-8">
 <h3 style="color: #8a3ab9; margin-top: 0; font-weight: bold;">
 ✨ Bom Perfume — Beleza, Cosméticos &amp; Perfumaria
 </h3>
-<p style="font-size: 1.05em; margin-bottom: 10px;">
+<p style="font-size: 1em; margin-bottom: 10px;">
 Lançamentos de cosméticos, perfumes, maquiagens e cuidados especiais com
 a pele (skincare) para todas as idades.
 </p>
@@ -454,7 +467,7 @@ Conhecer <span class="citation">@bomperfumeoficial</span></a></p>
 <div class="col-md-4">
 <div class="card-item">
 <h3>
-🌤️ Previsão do Tempo
+🌤️️ Previsão do Tempo
 </h3>
 <p>
 Acompanhe boletins, vento e indicadores meteorológicos para Rio Grande e
