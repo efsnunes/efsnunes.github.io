@@ -11,7 +11,7 @@
 
 
 
-<title>Informativo Família Nunes</title>
+<title>Previsão do Tempo — IFN</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -337,7 +337,7 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Informativo Família Nunes</h1>
+<h1 class="title toc-ignore">Previsão do Tempo — IFN</h1>
 
 </div>
 
@@ -349,84 +349,61 @@ background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAgEASABIAAD/4gxYSUNDX1BST
 background-size: cover;
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .main-container {
 max-width: 950px !important;
 margin: auto;
 padding: 20px;
 }
 
-h1.title {
-color: #1a252f;
-background: rgba(255, 255, 255, 0.85);
-padding: 15px 20px;
-border-radius: 8px;
-display: inline-block;
-}
-.intro-text {
-background: rgba(255, 255, 255, 0.85);
-padding: 15px 20px;
-border-radius: 8px;
-margin-top: 10px;
-margin-bottom: 25px;
-color: #2c3e50;
-font-size: 1.05em;
-}
-
-.card-ifn {
-background: rgba(255, 255, 255, 0.92);
+.card-weather {
+background: rgba(255, 255, 255, 0.93);
 border-radius: 10px;
-padding: 22px;
-margin-bottom: 20px;
+padding: 25px;
+margin-bottom: 25px;
 box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 border-top: 5px solid #2c3e50;
-height: 100%;
-}
-.card-ifn h3 {
-margin-top: 0;
-color: #2c3e50;
-font-size: 1.3em;
-font-weight: 600;
-}
-.card-ifn p {
-color: #444444;
-font-size: 0.95em;
-line-height: 1.5;
-margin-bottom: 18px;
 }
 
 .btn-ifn {
 background-color: #2c3e50;
 color: #ffffff !important;
 text-decoration: none !important;
-padding: 10px 16px;
+padding: 10px 18px;
 border-radius: 5px;
 display: inline-block;
 font-weight: 600;
 font-size: 0.9em;
-margin-right: 5px;
+margin-right: 8px;
 margin-top: 5px;
 }
 .btn-ifn:hover {
 background-color: #1a252f;
 }
-.btn-ifn-sec {
-background-color: #7f8c8d;
+.btn-windy {
+background-color: #0288d1;
 color: #ffffff !important;
 text-decoration: none !important;
-padding: 10px 16px;
+padding: 10px 18px;
 border-radius: 5px;
 display: inline-block;
 font-weight: 600;
 font-size: 0.9em;
 margin-top: 5px;
 }
-.btn-ifn-sec:hover {
-background-color: #6c757d;
+.btn-windy:hover {
+background-color: #01579b;
+}
+.windy-frame {
+width: 100%;
+height: 450px;
+border: none;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+margin-top: 15px;
 }
 .footer-ifn {
 text-align: center;
-margin-top: 30px;
+margin-top: 20px;
 color: #2c3e50;
 background: rgba(255, 255, 255, 0.85);
 padding: 10px;
@@ -434,54 +411,31 @@ border-radius: 8px;
 font-weight: 500;
 }
 </style>
-<div class="intro-text">
-<p><strong>Welcome ao Portal IFN</strong><br> Bem-vindo(a) ao
-<strong>Informativo Família Nunes</strong>! Este é o nosso canal diário
-para consulta rápida de meteorologia, seleção musical e fontes de
-notícias.</p>
+<div class="card-weather">
+<h2>
+🌤️ Central de Meteorologia
+</h2>
+<p>
+Acompanhe em tempo real a previsão de ventos, chuva, ondas e radar
+meteorológico para Rio Grande, Cassino e região.
+</p>
+<p><a href="index.html" class="btn-ifn">⬅ Voltar ao Portal IFN</a>
+<a href="https://www.windy.com/-32.033/-52.100?wind,-32.033,-52.100,10" target="_blank" class="btn-windy">🌐
+Abrir no Site do Windy</a></p>
 </div>
-<hr />
-<div class="row">
-<div class="col-md-4">
-<div class="card-ifn">
+<div class="card-weather">
 <h3>
-🌤️️ Previsão do Tempo
+🗺️ Mapa Interativo de Ventos e Tempo (Windy)
 </h3>
 <p>
-Acompanhe boletins e indicadores meteorológicos para a nossa região.
+<small>Passe o cursor ou toque no mapa para verificar a intensidade do
+vento, temperatura e rajadas na nossa área.</small>
 </p>
-<p><a href="previsaodotempo.html" class="btn-ifn">Previsão do Tempo</a>
-<a href="Prev_Tem_Mer_Fin.html" class="btn-ifn-sec">Tempo &amp;
-Mercado</a></p>
+<p><iframe role="img" class="windy-frame" src="data:text/html,%3C%21DOCTYPE%20html%3E%3Chtml%20lang%3D%22en%22%20id%3D%22device%2Dmobile%22%3E%3Chead%3E%3Ctitle%3EWindy%3A%20Wind%20map%20%26amp%3B%20weather%20forecast%3C%2Ftitle%3E%3Cmeta%20http%2Dequiv%3D%22Content%2DType%22%20content%3D%22text%2Fhtml%3B%20charset%3Dutf%2D8%22%3E%3Cmeta%20name%3D%22viewport%22%20content%3D%22width%3Ddevice%2Dwidth%2Cinitial%2Dscale%3D1%2Cminimum%2Dscale%3D1%2Cmaximum%2Dscale%3D1%2Cuser%2Dscalable%3Dno%2Cviewport%2Dfit%3Dcover%22%3E%3Clink%20href%3D%22v%2F41%2E1%2E0%2Eemb%2Eb79a%2Fembed2%2Ecss%22%20rel%3D%22stylesheet%22%20type%3D%22text%2Fcss%22%3E%3Cscript%3Ewindow%2EW%3D%7Bversion%3A%2241%2E1%2E0%22%2CencodedVersion%3A%22gdadac%24embb79a%22%2Cassets%3A%2241%2E1%2E0%2Eemb%2Eb79a%22%2Ctarget%3A%22embed2%22%2Cbuild%3A%222026%2D06%2D24%2C%2010%3A27%22%2CstartTs%3ADate%2Enow%28%29%2CdetectedDevice%3A%22mobile%22%7D%3Btry%7B%21function%28%29%7Bvar%20e%3Dwindow%2Escreen%2Ewidth%2Ct%3Dwindow%2Escreen%2Eheight%2Ci%3DMath%2Emin%28e%2Ct%29%2Ce%3DMath%2Emax%28e%2Ct%29%2Ct%3D%2FiPhone%7CiPod%7CiPad%7Cios%7Candroid%2Fi%2Etest%28window%2Enavigator%2EuserAgent%29%2Co%3D%22ontouchstart%22in%20window%7C%7C0%3Cnavigator%2EmaxTouchPoints%2Ce%3D%22mobile%22%3D%3D%3Dwindow%2EW%2Etarget%3Fi%3C%3D500%3F%22mobile%22%3A%22tablet%22%3Ae%3C%3D600%7C%7Ce%3C%3D960%26%26i%3C%3D600%7C%7Ci%3C%3D500%26%26t%3F%22mobile%22%3A%28e%3C%3D1024%7C%7Ci%3C%3D1080%29%26%26t%26%26o%3F%22tablet%22%3A%22desktop%22%3Bdocument%2EdocumentElement%2Eid%3D%22device%2D%22%2Be%2Cdocument%2EdocumentElement%2EclassName%3D%22target%2Dembed2%22%2Cwindow%2EW%2EdetectedDevice%3De%7D%28%29%7Dcatch%28e%29%7B%7D%3C%2Fscript%3E%3Cscript%3Econst%20queryString%3D%7B%7D%2CsearchQuery%3Dwindow%2Elocation%2Esearch%2Ereplace%28%2F%5E%5C%3F%2F%2C%22%22%29%3Bif%28searchQuery%29%7Bconst%20a%3DsearchQuery%2Esplit%28%22%26%22%29%3Bfor%28let%20e%3D0%3Be%3Ca%2Elength%3Be%2B%2B%29%7Bconst%20c%3Da%5Be%5D%2Esplit%28%22%3D%22%29%3Btry%7BqueryString%5BdecodeURIComponent%28c%5B0%5D%29%5D%3DdecodeURIComponent%28c%5B1%5D%7C%7C%22%22%29%7Dcatch%28e%29%7B%7D%7D%7Dwindow%2EW%2EdetectedDevice%3D%22alert%22%3D%3D%3DqueryString%2Etype%3F%22mobile%22%3A%22desktop%22%2Cwindow%2EW%2Eembed%3D%7BqueryString%3AqueryString%7D%3C%2Fscript%3E%3Cmeta%20name%3D%27minifest%2Decmwf%2Dhres%27%20content%3D%27%7B%22dst%22%3A%5B%5B3%2C3%2C90%5D%2C%5B3%2C93%2C144%5D%2C%5B6%2C150%2C360%5D%5D%2C%22info%22%3A%222026093012%22%2C%22ref%22%3A%222026%2D09%2D30T12%3A00%3A00Z%22%2C%22update%22%3A%222026%2D09%2D30T20%3A49%3A29Z%22%2C%22v%22%3A%222%2E4%22%2C%22end%22%3A%222026%2D10%2D01T02%3A51%3A08%2E000Z%22%2C%22urls%22%3A%7B%22citytile%22%3A%22https%3A%2F%2Fnode%2Ewindy%2Ecom%2Fcitytile%2Fv1%2E0%2Fecmwf%2Dhres%22%2C%22pointForecast%22%3A%22https%3A%2F%2Fnode%2Ewindy%2Ecom%2Fforecast%2Fpoint%2Fecmwf%2Dhres%2Fv2%2E9%22%2C%22imageServer%22%3A%22https%3A%2F%2Fims%2Ewindy%2Ecom%2Fim%2Fv3%2E0%2Fforecast%2Fecmwf%2Dhres%22%7D%7D%27%3E%3Cmeta%20name%3D%27minifest%2Decmwf%2Dhres%2Dpremium%27%20content%3D%27%7B%22dst%22%3A%5B%5B1%2C1%2C90%5D%2C%5B3%2C93%2C144%5D%2C%5B6%2C150%2C360%5D%5D%2C%22info%22%3A%222026093012%22%2C%22ref%22%3A%222026%2D09%2D30T12%3A00%3A00Z%22%2C%22update%22%3A%222026%2D09%2D30T20%3A49%3A29Z%22%2C%22v%22%3A%222%2E4%22%2C%22end%22%3A%222026%2D10%2D01T02%3A51%3A08%2E000Z%22%2C%22urls%22%3A%7B%22citytile%22%3A%22https%3A%2F%2Fnode%2Ewindy%2Ecom%2Fcitytile%2Fv1%2E0%2Fecmwf%2Dhres%22%2C%22pointForecast%22%3A%22https%3A%2F%2Fnode%2Ewindy%2Ecom%2Fforecast%2Fpoint%2Fecmwf%2Dhres%2Fv2%2E9%22%2C%22imageServer%22%3A%22https%3A%2F%2Fims%2Ewindy%2Ecom%2Fim%2Fv3%2E0%2Fforecast%2Fecmwf%2Dhres%22%7D%7D%27%3E%3Cmeta%20name%3D%22model%22%20content%3D%22ecmwf%22%3E%3Cmeta%20name%3D%22geoip%22%20content%3D%22179%2E189%2E150%2E16%2C%2D32%2E0766%2C%2D52%2E3542%2CBR%2CRio%20Grande%22%3E%3Cmeta%20name%3D%22token%22%20content%3D%22eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9%2EeyJleHAiOjE3OTA5ODg0NTgsImlhdCI6MTc5MDgxNTY1OCwiaW5mIjp7ImlwIjoiMTc5LjE4OS4xNTAuMTYifX0%2ExjqHM7aqyHNcrAX%5FiaEzcyYXGp0FVzvePXxLcBHLq0Q%22%3E%3Cscript%20src%3D%22js%2Fleaflet140%5Fpatched%5FtileLayer%2Ev17%2Ejs%22%3E%3C%2Fscript%3E%3Cscript%3EArray%2Eprototype%2Eincludes%26%26Object%2Eassign%26%26window%2EPromise%7C%7Cdocument%2Ewrite%28%27%3Cscript%20src%3D%22js%2Fpolyfills%2Ev13%2Ejs%22%3E%3C%5C%2Fscript%3E%27%29%3C%2Fscript%3E%3Cscript%20src%3D%22v%2F41%2E1%2E0%2Eemb%2Eb79a%2Fembed2%2Ejs%22%20async%3E%3C%2Fscript%3E%3Clink%20rel%3D%22dns%2Dprefetch%22%20href%3D%22https%3A%2F%2Fnode%2Ewindy%2Ecom%22%3E%3Clink%20rel%3D%22dns%2Dprefetch%22%20href%3D%22https%3A%2F%2Faccount%2Ewindy%2Ecom%22%3E%3Clink%20rel%3D%22dns%2Dprefetch%22%20href%3D%22https%3A%2F%2Ftiles%2Ewindy%2Ecom%22%3E%3Clink%20rel%3D%22dns%2Dprefetch%22%20href%3D%22https%3A%2F%2Fims%2Ewindy%2Ecom%22%3E%3Clink%20rel%3D%22dns%2Dprefetch%22%20href%3D%22https%3A%2F%2Fims%2Ds%2Ewindy%2Ecom%22%3E%3Clink%20rel%3D%22dns%2Dprefetch%22%20href%3D%22https%3A%2F%2Fimg%2Ewindy%2Ecom%22%3E%3C%2Fhead%3E%3Cbody%20class%3D%22target%2Dembed%22%3E%3Csection%20id%3D%22map%2Dcontainer%22%20style%3D%22position%3A%20absolute%3B%20bottom%3A%200%3B%20left%3A%200%3B%20right%3A%200%3B%20top%3A%200%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%22%3E%3Cdiv%20id%3D%22leaflet%2Dmap%22%20style%3D%22position%3A%20absolute%3B%20top%3A%200%3B%20bottom%3A%200%3B%20left%3A%200%3B%20right%3A%200%3B%20width%3A%20100%25%3B%20height%3A%20100%25%3B%20background%2Dcolor%3A%20grey%3B%22%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22picker%2Ddot%22%3E%3Csvg%20viewBox%3D%220%200%20100%20100%22%3E%3Cpath%20d%3D%22M%2025%2C50%20L%200%2C50%20M%2075%2C50%20L%20100%2C50%22%20stroke%2Dwidth%3D%228%22%2F%3E%3Cpath%20d%3D%22M%2050%2C25%20L%2050%2C0%20M%2050%2C75%20L%2050%2C100%22%20stroke%2Dwidth%3D%228%22%2F%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%224%22%2F%3E%3C%2Fsvg%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Ca%20id%3D%22contrib%22%20class%3D%22mobilehide%22%20href%3D%22http%3A%2F%2Fwww%2Eopenstreetmap%2Eorg%2Fcopyright%22%20target%3D%22%5Fblank%22%3E%26copy%3B%20OpenStreetMap%20contributors%3C%2Fa%3E%3Csection%20id%3D%22bottom%2Dwrapper%22%3E%3Cnav%20id%3D%22plugins%2Dbottom%22%3E%3C%2Fnav%3E%3Cdiv%20id%3D%22plugins%2Dbellow%2Dbottom%22%3E%3C%2Fdiv%3E%3Cdiv%20class%3D%22metric%2Dlegend%22%20id%3D%22legend%2Dmobile%22%3E%3C%2Fdiv%3E%3C%2Fsection%3E%3Cnav%20id%3D%22plugins%2Dbottom%2Ddesktop%22%20class%3D%22shy%20left%2Dborder%20right%2Dborder%22%3E%3C%2Fnav%3E%3Cspan%20data%2Dplugin%3D%22detail%2Drhpane%22%3E%3C%2Fspan%3E%3Cdiv%20id%3D%22logo%2Dwrapper%22%20class%3D%22top%2Dborder%20left%2Dborder%20right%2Dborder%22%3E%3Ca%20id%3D%22logo%22%20target%3D%22%5Fblank%22%20class%3D%22clickable%20notap%20animated%2Dwindy%2Dlogo%22%20data%2Ddo%3D%22bcast%2Cback2home%22%3E%3Cdiv%20class%3D%22w%2Dsprite%22%3E%3C%2Fdiv%3E%3Cimg%20class%3D%22text%22%20alt%3D%22Windy%2Ecom%22%20src%3D%22%2Fimg%2Flogo201802%2Flogo%2Dtext%2Dwindycom%2Dwhite%2Esvg%22%3E%3C%2Fa%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22mobile%2Dovr%2Dselect%22%20data%2Dicon%3D%22%26%23x7c%3B%22%20class%3D%22top%2Dborder%20clickable%22%20data%2Ddo%3D%22rqstOpen%2Cmenu%22%3E%3Cspan%20id%3D%22ovr%2Dselect%2Dname%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22embed%2Dzoom%22%3E%3Cdiv%20data%2Ddo%3D%22bcast%2CzoomIn%22%20class%3D%22clickable%20iconfont%20zoom%2Dctrl%20zoom%2Dplus%22%20title%3D%22Zoom%20in%22%3E%26%23x2b%3B%3C%2Fdiv%3E%3Cdiv%20data%2Ddo%3D%22bcast%2CzoomOut%22%20class%3D%22clickable%20iconfont%20zoom%2Dctrl%20zoom%2Dminus%22%20title%3D%22Zoom%20out%22%3E%26%23x2d%3B%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22plugins%22%20class%3D%22shy%22%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22search%22%20class%3D%22shy%20left%2Dborder%20top%2Dborder%22%3E%3Cdiv%20id%3D%22search%2Dweather%2Dbg%22%3E%3Cdiv%20id%3D%22search%2Dtop%2Dwrapper%22%3E%3Cdiv%20id%3D%22menu%2Dburger2%22%20class%3D%22mobiletablethide%20tooltip%2Ddown%22%20data%2Dtooltipsrc%3D%22MENU%22%20data%2Ddo%3D%22rqstOpen%2Ctools%22%3E%3Cdiv%20class%3D%22iconfont%20clickable%2Dsize%22%3E%26%23x64%3B%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cinput%20type%3D%22text%22%20id%3D%22q%22%20data%2Dplaceholder%3D%22SEARCH%22%20autocomplete%3D%22off%22%20spellcheck%3D%22false%22%20autocorrect%3D%22off%22%20autocapitalize%3D%22off%22%3E%3Cdiv%20id%3D%22share%22%20class%3D%22mobiletablethide%20tooltip%2Ddown%20iconfont%22%20data%2Dtooltipsrc%3D%22SHARE%22%20data%2Ddo%3D%22rqstOpen%2Cshare%22%3E%26%23x46%3B%3C%2Fdiv%3E%3Cdiv%20id%3D%22fav%22%20class%3D%22fav%2Dlines%20shy%22%3E%3Cdiv%20class%3D%22fav%2Dline%20fav%2Doff%20iconfont%20clickable%2Dsize%20tooltip%2Ddown%22%20data%2Ddo%3D%22rqstOpen%2Cfav%2Dalert%2Dmenu%22%20data%2Dtooltipsrc%3D%22D%5FFAVORITES%22%3E%26%23x6d%3B%3C%2Fdiv%3E%3Cdiv%20class%3D%22fav%2Dline%20fav%2Don%20iconfont%20clickable%2Dsize%20tooltip%2Ddown%22%20data%2Ddo%3D%22rqstOpen%2Cfav%2Dalert%2Dmenu%22%20data%2Dtooltipsrc%3D%22D%5FFAVORITES2%22%3E%26%23x6b%3B%3C%2Fdiv%3E%3Cspan%20data%2Dplugin%3D%22fav%2Dalert%2Dmenu%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22search%2Dmy%2Dloc%22%20class%3D%22noselect%20shy%20iconfont%22%3E%26%23x6a%3B%3C%2Fdiv%3E%3Cdiv%20id%3D%22cancel%2Dsearch%22%20class%3D%22iconfont%22%3E%26%23xe013%3B%3C%2Fdiv%3E%3C%2Fdiv%3E%3Cspan%20data%2Dplugin%3D%22hp%2Dweather%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22warnings%22%20class%3D%22weather%2Dbox%20animation%20flex%2Dcontainer%22%20style%3D%22display%3A%20none%22%3E%3C%2Fdiv%3E%3Cdiv%20id%3D%22articles%22%20class%3D%22weather%2Dbox%20animation%22%20style%3D%22display%3A%20none%22%3E%3C%2Fdiv%3E%3Cspan%20data%2Dplugin%3D%22search%22%3E%3C%2Fspan%3E%3C%2Fdiv%3E%3C%2Fbody%3E%3C%2Fhtml%3E"></iframe></p>
 </div>
-</div>
-<div class="col-md-4">
-<div class="card-ifn">
-<h3>
-🎵 Espaço Música
-</h3>
-<p>
-Seleção de músicas, sugestões de áudios e playlists para o dia a dia.
-</p>
-<p><a href="pagina3.html" class="btn-ifn">Acessar Música</a></p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card-ifn">
-<h3>
-📰 Notícias
-</h3>
-<p>
-Acesso rápido aos principais portais regionais e fontes de informação.
-</p>
-<p><a href="noticias.html" class="btn-ifn">Fontes de Notícias</a></p>
-</div>
-</div>
-</div>
-<hr />
 <div class="footer-ifn">
-<p><strong>Informativo Família Nunes (IFN)</strong> — Canal informativo
-familiar.</p>
+<p><strong>Informativo Família Nunes (IFN)</strong> — Monitoramento
+Meteorológico Local.</p>
 </div>
 
 
