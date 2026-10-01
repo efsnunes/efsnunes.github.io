@@ -62,23 +62,13 @@ body {
   background-color: #01579b;
 }
 
-.windy-responsive {
-  position: relative;
+.map-container {
   width: 100%;
-  height: 0;
-  padding-bottom: 60%;
+  height: 500px;
   border-radius: 8px;
   overflow: hidden;
   margin-top: 15px;
-}
-
-.windy-responsive iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+  border: none;
 }
 
 .footer-ifn {
@@ -97,16 +87,14 @@ body {
 <p>Acompanhe em tempo real a previsão de ventos, chuva e radar meteorológico para Rio Grande, Cassino e região.</p>
 
 <a href="index.html" class="btn-ifn">⬅ Voltar ao Portal IFN</a>
-<a href="https://www.windy.com/-32.033/-52.100?wind,-32.033,-52.100,10" target="_blank" class="btn-windy">🌐 Abrir no Site do Windy</a>
+<a href="https://www.windy.com/-32.033/-52.100?wind,-32.033,-52.100,10" target="_blank" class="btn-windy">🌐 Abrir Completo no Site do Windy</a>
 </div>
 
 <div class="card-weather">
-<h3>🗺️ Mapa Interativo do Tempo (Rio Grande & Cassino)</h3>
-<p>Passe o cursor ou toque no mapa para verificar ventos, chuva e rajadas na região.</p>
+<h3>🗺️️ Mapa Interativo de Ventos e Tempo em Tempo Real</h3>
+<p>Interaja com o mapa abaixo para monitorar ventos, rajadas e temperatura em Rio Grande e Cassino.</p>
 
-<div class="windy-responsive">
-<iframe src="https://embed.windy.com/embed2.html?lat=-32.033&lon=-52.100&detailLat=-32.033&detailLon=-52.100&width=650&height=450&zoom=9&level=surface&overlay=wind&product=ecmwf&menu=&message=&marker=&calendar=now&pressure=&type=map&location=coordinates&detail=&metricWind=km%2Fh&metricTemp=%C2%B0C&radarRange=-1" frameborder="0"></iframe>
-</div>
+<iframe class="map-container" src="https://www.ventusky.com/?p=-32.03;-52.10;8&l=wind-10m" frameborder="0"></iframe>
 </div>
 
 <div class="footer-ifn">
