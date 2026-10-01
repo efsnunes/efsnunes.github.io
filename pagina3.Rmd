@@ -62,6 +62,22 @@ body {
   background-color: #1a252f;
 }
 
+.btn-youtube {
+  background-color: #cc181e;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 10px 18px;
+  border-radius: 5px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-top: 5px;
+}
+
+.btn-youtube:hover {
+  background-color: #990000;
+}
+
 .footer-ifn {
   text-align: center;
   margin-top: 20px;
@@ -74,8 +90,8 @@ body {
 </style>
 
 <div class="card-music-top">
-<h2>Espaço Música & Playlists</h2>
-<p>Seleção especial de áudios, estilos musicais e playlists para concentrar, relaxar e ouvir no dia a dia.</p>
+<h2>🎵 Espaço Música & Playlists</h2>
+<p>Seleção especial de vídeos, áudios e playlists no YouTube para concentrar, relaxar e ouvir no dia a dia.</p>
 <a href="index.html" class="btn-ifn">⬅ Voltar ao Portal IFN</a>
 </div>
 
@@ -84,27 +100,27 @@ body {
 <div class="col-md-4">
 <div class="card-music-item">
 <img src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&fit=crop&w=600&q=80" alt="Londres">
-<h3>Músicas em Londres</h3>
-<p>Seleções clássicas do rock e pop britânico, sons urbanos e climas de viagens.</p>
-<a href="https://open.spotify.com" target="_blank" class="btn-ifn">Ouvir Playlist</a>
+<h3>🇬🇧 Músicas em Londres</h3>
+<p>Seleção de áudios e playlists com o clima urbano e cultural de Londres.</p>
+<a href="https://www.youtube.com/results?search_query=london+chillout+music+playlist" target="_blank" class="btn-youtube">▶ Ouvir no YouTube</a>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card-music-item">
 <img src="https://images.unsplash.com/photo-1510915361894-db8b60106cb1?auto=format&fit=crop&w=600&q=80" alt="Violão">
-<h3>Músicas de Violão</h3>
-<p>Acústicos relaxantes, arranjos de violão, MPB e instrumental leve para o ambiente.</p>
-<a href="https://open.spotify.com" target="_blank" class="btn-ifn">Ouvir Playlist</a>
+<h3>🎸 Luke Silva — Violão</h3>
+<p>Playlist especial de violão fingerstyle e música instrumental acústica por Luke Silva.</p>
+<a href="https://www.youtube.com/watch?v=tOZ0Tlyl_3s" target="_blank" class="btn-youtube">▶ Assistir no YouTube</a>
 </div>
 </div>
 
 <div class="col-md-4">
 <div class="card-music-item">
 <img src="https://images.unsplash.com/photo-1518609878373-06d740f60d8b?auto=format&fit=crop&w=600&q=80" alt="Foco">
-<h3>Músicas para Foco</h3>
-<p>Sons instrumentais, instrumental lo-fi e áudios para aumentar a concentração.</p>
-<a href="https://open.spotify.com" target="_blank" class="btn-ifn">Ouvir Playlist</a>
+<h3>🧠 Músicas para Foco</h3>
+<p>Sons instrumentais, lo-fi e áudios binaurais para aumentar a concentração e estudo.</p>
+<a href="https://www.youtube.com/results?search_query=focus+music+study+lofi" target="_blank" class="btn-youtube">▶ Ouvir no YouTube</a>
 </div>
 </div>
 
