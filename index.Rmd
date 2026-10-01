@@ -1,5 +1,5 @@
 ---
-title: "Informativo Família Nunes"
+title: "IFN"
 output:
   html_document:
     theme: flatly
@@ -8,92 +8,149 @@ output:
 ---
 
 <style>
+/* Fundo suave de praia */
 body {
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Container expandido para preencher melhor a tela do PC (1140px) */
 .main-container {
-  max-width: 950px !important;
-  margin: auto;
-  padding: 15px;
+  max-width: 1140px !important;
+  margin: 10px auto !important;
+  padding: 10px !important;
 }
 
-.card-top {
-  background: rgba(255, 255, 255, 0.93);
+/* 1ª Caixa (IFN) - Maior e mais proeminente */
+.card-top-compact {
+  background: rgba(255, 255, 255, 0.94);
   border-radius: 10px;
-  padding: 22px;
-  margin-bottom: 25px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  padding: 14px 22px;
+  margin-bottom: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
   border-top: 5px solid #2c3e50;
 }
 
+.card-top-compact h2 {
+  margin: 0 0 4px 0;
+  font-size: 1.45em;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.card-top-compact p {
+  margin: 0;
+  font-size: 0.95em;
+  color: #333333;
+}
+
+/* Caixa em Destaque — Bom Perfume */
 .card-highlight-bomperfume {
   background: rgba(255, 255, 255, 0.96);
-  border-radius: 12px;
-  padding: 22px;
-  margin-bottom: 25px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.18);
-  border-top: 6px solid #e1306c;
-}
-
-.card-item {
-  background: rgba(255, 255, 255, 0.93);
   border-radius: 10px;
-  padding: 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.12);
-  border-top: 4px solid #34495e;
+  padding: 16px 22px;
+  margin-bottom: 14px;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  border-top: 5px solid #e1306c;
 }
 
-.btn-ifn {
-  background-color: #2c3e50;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  padding: 10px 18px;
-  border-radius: 5px;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 0.9em;
-  margin-top: 8px;
+.card-highlight-bomperfume h3 {
+  margin: 0 0 6px 0;
+  font-size: 1.25em;
+  font-weight: bold;
+  color: #8a3ab9;
 }
 
-.btn-ifn:hover {
-  background-color: #1a252f;
+.card-highlight-bomperfume p {
+  margin: 0;
+  font-size: 0.92em;
+  color: #333333;
 }
 
 .btn-instagram {
   background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   color: #ffffff !important;
   text-decoration: none !important;
-  padding: 12px 20px;
+  padding: 10px 18px;
   border-radius: 6px;
   display: inline-block;
   font-weight: bold;
-  font-size: 0.95em;
-  margin-top: 10px;
-  box-shadow: 0 4px 10px rgba(225, 48, 108, 0.3);
+  font-size: 0.9em;
+  box-shadow: 0 3px 8px rgba(225, 48, 108, 0.3);
   text-align: center;
-  word-break: break-word;
-  max-width: 100%;
 }
 
 .btn-instagram:hover {
   opacity: 0.92;
 }
 
+/* Cards das Seções Principais - Preenchendo melhor a tela */
+.card-item {
+  background: rgba(255, 255, 255, 0.94);
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 10px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-top: 5px solid #34495e;
+  height: 100%;
+}
+
+.card-item h3 {
+  margin-top: 0;
+  margin-bottom: 8px;
+  color: #2c3e50;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.card-item p {
+  color: #444444;
+  font-size: 0.9em;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+/* Módulo de Temperatura Rápida Automático */
+.weather-quick-badge {
+  background: #f0f4f8;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.85em;
+  font-weight: 600;
+  color: #1a252f;
+  border-left: 4px solid #0288d1;
+}
+
+.btn-ifn {
+  background-color: #2c3e50;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 8px 16px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.88em;
+}
+
+.btn-ifn:hover {
+  background-color: #1a252f;
+}
+
 .footer-ifn {
   text-align: center;
-  margin-top: 25px;
+  margin-top: 10px;
   color: #2c3e50;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 12px;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.88);
+  padding: 6px;
+  border-radius: 6px;
+  font-size: 0.85em;
   font-weight: 500;
 }
 
-/* Ajustes específicos para celular */
 @media (max-width: 768px) {
   .bomperfume-container {
     text-align: center;
@@ -101,25 +158,25 @@ body {
   .btn-instagram {
     display: block;
     width: 100%;
-    margin-top: 15px;
+    margin-top: 8px;
   }
 }
 </style>
 
-<div class="card-top">
-<h2>Informativo Família Nunes</h2>
-<p><strong>Welcome ao Portal IFN!</strong> Este é o nosso canal diário para consulta rápida de meteorologia, seleção musical, fontes de conhecimento e utilidades familiares.</p>
+<!-- 1ª CAIXA (IFN) -->
+<div class="card-top-compact">
+<h2>Portal IFN</h2>
+<p>Welcome ao <strong>IFN</strong>! Consulta rápida diária de meteorologia, música, conhecimento e utilidades familiares.</p>
 </div>
 
-<!-- DESTAQUE BOM PERFUME NA PÁGINA INICIAL -->
+<!-- DESTAQUE BOM PERFUME -->
 <div class="card-highlight-bomperfume">
-<div class="row bomperfume-container">
+<div class="row bomperfume-container" style="display: flex; align-items: center; flex-wrap: wrap;">
 <div class="col-md-8">
-<h3 style="color: #8a3ab9; margin-top: 0; font-weight: bold;">✨ Bom Perfume — Beleza, Cosméticos & Perfumaria</h3>
-<p style="font-size: 1em; margin-bottom: 10px;">Lançamentos de cosméticos, perfumes, maquiagens e cuidados especiais com a pele (skincare) para todas as idades.</p>
-<p style="margin-bottom: 0;"><strong>Acompanhe os tutoriais, novidades e ofertas exclusivas no Instagram oficial!</strong></p>
+<h3>✨ Bom Perfume — Beleza, Cosméticos & Perfumaria</h3>
+<p>Lançamentos de cosméticos, perfumes, maquiagens e skincare para todas as idades.</p>
 </div>
-<div class="col-md-4 text-center" style="margin-top: 10px;">
+<div class="col-md-4 text-center">
 <a href="https://www.instagram.com/bomperfumeoficial?stkn=MTExNGxqdzd4MXR2aw%3D%3D&utm_source=qr" target="_blank" class="btn-instagram">📸 Conhecer @bomperfumeoficial</a>
 </div>
 </div>
@@ -130,8 +187,39 @@ body {
 
 <div class="col-md-4">
 <div class="card-item">
-<h3>🌤️️ Previsão do Tempo</h3>
-<p>Acompanhe boletins, vento e indicadores meteorológicos para Rio Grande e Cassino.</p>
+<h3>🌤️ Previsão do Tempo</h3>
+<p>Boletins, vento e indicadores meteorológicos da região.</p>
+
+<!-- MÓDULO RÁPIDO COM TEMPERATURA REAL VIA JAVASCRIPT -->
+<div class="weather-quick-badge">
+<span id="temp-rg">🌊 Rio Grande: Carregando...</span>
+<span id="temp-pel">🏛️ Pelotas: Carregando...</span>
+</div>
+
+<script>
+  // Busca temperatura em tempo real de Rio Grande
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=-32.033&longitude=-52.100&current_weather=true')
+    .then(response => response.json())
+    .then(data => {
+      const temp = Math.round(data.current_weather.temperature);
+      document.getElementById('temp-rg').innerText = `🌊 Rio Grande: ${temp}°C ⛅`;
+    })
+    .catch(() => {
+      document.getElementById('temp-rg').innerText = '🌊 Rio Grande: --°C';
+    });
+
+  // Busca temperatura em tempo real de Pelotas
+  fetch('https://api.open-meteo.com/v1/forecast?latitude=-31.765&longitude=-52.337&current_weather=true')
+    .then(response => response.json())
+    .then(data => {
+      const temp = Math.round(data.current_weather.temperature);
+      document.getElementById('temp-pel').innerText = `🏛️ Pelotas: ${temp}°C ☀️`;
+    })
+    .catch(() => {
+      document.getElementById('temp-pel').innerText = '🏛️ Pelotas: --°C';
+    });
+</script>
+
 <a href="previsaodotempo.html" class="btn-ifn">Acessar Meteorologia</a>
 </div>
 </div>
@@ -139,7 +227,7 @@ body {
 <div class="col-md-4">
 <div class="card-item">
 <h3>🎵 Espaço Música</h3>
-<p>Seleção de músicas, sugestões de áudios, violão fingerstyle e playlists para o dia a dia.</p>
+<p>Seleção musical, áudios, violão fingerstyle e playlists diárias.</p>
 <a href="pagina3.html" class="btn-ifn">Acessar Música</a>
 </div>
 </div>
@@ -147,7 +235,7 @@ body {
 <div class="col-md-4">
 <div class="card-item">
 <h3>💡 Conhecimento & Notícias</h3>
-<p>Acesso rápido a portais de inovação, tecnologia, saúde, negócios e aprendizado.</p>
+<p>Acesso rápido a portais de inovação, tecnologia, saúde e negócios.</p>
 <a href="noticias.html" class="btn-ifn">Acessar Conhecimento</a>
 </div>
 </div>
@@ -155,5 +243,5 @@ body {
 </div>
 
 <div class="footer-ifn">
-<strong>Informativo Família Nunes (IFN)</strong> — Canal informativo familiar.
+<strong>IFN</strong> — Canal Informativo Familiar.
 </div>
