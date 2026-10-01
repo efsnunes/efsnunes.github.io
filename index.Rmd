@@ -1,5 +1,5 @@
 ---
-title: "IFN"
+title: "Informativo Família Nunes"
 output:
   html_document:
     theme: flatly
@@ -22,7 +22,7 @@ body {
   padding: 10px !important;
 }
 
-/* 1ª CAIXA COM NOME POR EXTENSO E PORTAL IFN */
+/* 1ª CAIXA COM PORTAL IFN */
 .card-top-compact {
   background: rgba(255, 255, 255, 0.94);
   border-radius: 10px;
@@ -221,9 +221,8 @@ body {
 }
 </style>
 
-<!-- 1ª CAIXA COM NOME POR EXTENSO E PORTAL IFN -->
+<!-- 1ª CAIXA COM NOME PORTAL IFN -->
 <div class="card-top-compact">
-<h2>Informativo da Família Nunes</h2>
 <h3>Portal IFN</h3>
 <p>Welcome ao <strong>IFN</strong>! Consulta rápida diária de meteorologia, seleção musical, conhecimento e utilidades familiares.</p>
 </div>
