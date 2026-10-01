@@ -50,25 +50,58 @@ body {
   background-color: #0288d1;
   color: #ffffff !important;
   text-decoration: none !important;
-  padding: 10px 18px;
-  border-radius: 5px;
+  padding: 12px 20px;
+  border-radius: 6px;
   display: inline-block;
   font-weight: 600;
-  font-size: 0.9em;
-  margin-top: 5px;
+  font-size: 0.95em;
+  margin-right: 8px;
+  margin-top: 8px;
 }
 
 .btn-windy:hover {
   background-color: #01579b;
 }
 
-.map-container {
-  width: 100%;
-  height: 500px;
-  border-radius: 8px;
-  overflow: hidden;
+.btn-ventusky {
+  background-color: #2e7d32;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95em;
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.btn-ventusky:hover {
+  background-color: #1b5e20;
+}
+
+.btn-inpe {
+  background-color: #e65100;
+  color: #ffffff !important;
+  text-decoration: none !important;
+  padding: 12px 20px;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.95em;
+  margin-top: 8px;
+}
+
+.btn-inpe:hover {
+  background-color: #bf360c;
+}
+
+.quick-links-box {
+  background-color: #f8f9fa;
+  border-left: 4px solid #0288d1;
+  padding: 18px;
+  border-radius: 6px;
   margin-top: 15px;
-  border: none;
 }
 
 .footer-ifn {
@@ -84,17 +117,28 @@ body {
 
 <div class="card-weather">
 <h2>🌤️ Central de Meteorologia</h2>
-<p>Acompanhe em tempo real a previsão de ventos, chuva e radar meteorológico para Rio Grande, Cassino e região.</p>
+<p>Acompanhe os principais boletins e mapas meteorológicos para Rio Grande, Cassino e região.</p>
 
 <a href="index.html" class="btn-ifn">⬅ Voltar ao Portal IFN</a>
-<a href="https://www.windy.com/-32.033/-52.100?wind,-32.033,-52.100,10" target="_blank" class="btn-windy">🌐 Abrir Completo no Site do Windy</a>
 </div>
 
 <div class="card-weather">
-<h3>🗺️️ Mapa Interativo de Ventos e Tempo em Tempo Real</h3>
-<p>Interaja com o mapa abaixo para monitorar ventos, rajadas e temperatura em Rio Grande e Cassino.</p>
+<h3>🗺️ Mapas Meteorológicos Interativos</h3>
+<p>Clique nos botões abaixo para abrir os mapas e radares em tempo real focados diretamente na nossa região:</p>
 
-<iframe class="map-container" src="https://www.ventusky.com/?p=-32.03;-52.10;8&l=wind-10m" frameborder="0"></iframe>
+<div class="quick-links-box">
+<h4>🌪️ Ventos e Rajadas em Tempo Real</h4>
+<p>Veja a intensidade dos ventos na Praia do Cassino e Porto de Rio Grande:</p>
+<a href="https://www.windy.com/-32.033/-52.100?wind,-32.033,-52.100,10" target="_blank" class="btn-windy">🌀 Abrir Mapa de Ventos (Windy)</a>
+<a href="https://www.ventusky.com/?p=-32.03;-52.10;8&l=wind-10m" target="_blank" class="btn-ventusky">🍃 Abrir Mapa de Ventos (Ventusky)</a>
+</div>
+
+<div class="quick-links-box" style="border-left-color: #e65100; margin-top: 20px;">
+<h4>📡 Radar de Chuva e Boletim Oficial</h4>
+<p>Acompanhe a chegada de frentes frias, chuva e os alertas oficiais:</p>
+<a href="https://www.windy.com/-32.033/-52.100?radar,-32.033,-52.100,10" target="_blank" class="btn-windy">🌧️ Radar de Chuva (Windy)</a>
+<a href="https://www.cptec.inpe.br/" target="_blank" class="btn-inpe">🏛️ Previsão Oficial CPTEC / INPE</a>
+</div>
 </div>
 
 <div class="footer-ifn">
