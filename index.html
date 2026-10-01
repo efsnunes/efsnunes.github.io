@@ -11,7 +11,7 @@
 
 
 
-<title>Informativo Família Nunes</title>
+<title>IFN</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -337,7 +337,7 @@ display: none;
 
 
 
-<h1 class="title toc-ignore">Informativo Família Nunes</h1>
+<h1 class="title toc-ignore">IFN</h1>
 
 </div>
 
@@ -359,51 +359,57 @@ padding: 10px !important;
 .card-top-compact {
 background: rgba(255, 255, 255, 0.94);
 border-radius: 10px;
-padding: 14px 22px;
+padding: 12px 20px;
 margin-bottom: 12px;
 box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 border-top: 5px solid #2c3e50;
 }
 .card-top-compact h2 {
-margin: 0 0 4px 0;
-font-size: 1.45em;
+margin: 0 0 2px 0;
+font-size: 1.35em;
 font-weight: bold;
 color: #2c3e50;
 }
+.card-top-compact h3 {
+margin: 0 0 4px 0;
+font-size: 1.1em;
+font-weight: 600;
+color: #1a252f;
+}
 .card-top-compact p {
 margin: 0;
-font-size: 0.95em;
+font-size: 0.9em;
 color: #333333;
 }
 
 .card-highlight-bomperfume {
 background: rgba(255, 255, 255, 0.96);
 border-radius: 10px;
-padding: 16px 22px;
-margin-bottom: 14px;
+padding: 14px 20px;
+margin-bottom: 12px;
 box-shadow: 0 6px 14px rgba(0,0,0,0.15);
 border-top: 5px solid #e1306c;
 }
 .card-highlight-bomperfume h3 {
-margin: 0 0 6px 0;
-font-size: 1.25em;
+margin: 0 0 4px 0;
+font-size: 1.18em;
 font-weight: bold;
 color: #8a3ab9;
 }
 .card-highlight-bomperfume p {
 margin: 0;
-font-size: 0.92em;
+font-size: 0.88em;
 color: #333333;
 }
 .btn-instagram {
 background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 color: #ffffff !important;
 text-decoration: none !important;
-padding: 10px 18px;
+padding: 8px 16px;
 border-radius: 6px;
 display: inline-block;
 font-weight: bold;
-font-size: 0.9em;
+font-size: 0.88em;
 box-shadow: 0 3px 8px rgba(225, 48, 108, 0.3);
 text-align: center;
 }
@@ -414,31 +420,76 @@ opacity: 0.92;
 .card-item {
 background: rgba(255, 255, 255, 0.94);
 border-radius: 10px;
-padding: 18px;
+padding: 16px;
 margin-bottom: 10px;
 box-shadow: 0 5px 10px rgba(0,0,0,0.1);
 border-top: 5px solid #34495e;
 height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 .card-item h3 {
 margin-top: 0;
-margin-bottom: 8px;
+margin-bottom: 6px;
 color: #2c3e50;
-font-size: 1.2em;
+font-size: 1.15em;
 font-weight: bold;
 }
 .card-item p {
 color: #444444;
-font-size: 0.9em;
-line-height: 1.4;
-margin-bottom: 10px;
+font-size: 0.88em;
+line-height: 1.35;
+margin-bottom: 8px;
+}
+
+.ticker-wrap {
+width: 100%;
+overflow: hidden;
+background-color: #f1f5f9;
+padding: 4px 0;
+border-radius: 6px;
+margin-bottom: 8px;
+border-left: 3px solid #e67e22;
+}
+.ticker-text {
+display: inline-block;
+white-space: nowrap;
+padding-left: 100%;
+animation: ticker 28s linear infinite; 
+font-size: 0.82em;
+font-weight: 600;
+color: #d35400;
+}
+@keyframes ticker {
+0% { transform: translate3d(0, 0, 0); }
+100% { transform: translate3d(-100%, 0, 0); }
+}
+
+.highlight-box-music {
+background: #fdf6ec;
+border-radius: 6px;
+padding: 6px 8px;
+margin-bottom: 8px;
+font-size: 0.82em;
+color: #2c3e50;
+border: 1px solid #f39c12;
+}
+.highlight-box-news {
+background: #f0fdf4;
+border-radius: 6px;
+padding: 6px 8px;
+margin-bottom: 8px;
+font-size: 0.82em;
+color: #166534;
+border: 1px solid #22c55e;
 }
 
 .weather-quick-badge {
 background: #f0f4f8;
 border-radius: 6px;
 padding: 6px 10px;
-margin-bottom: 10px;
+margin-bottom: 8px;
 display: flex;
 justify-content: space-around;
 font-size: 0.85em;
@@ -450,23 +501,24 @@ border-left: 4px solid #0288d1;
 background-color: #2c3e50;
 color: #ffffff !important;
 text-decoration: none !important;
-padding: 8px 16px;
+padding: 8px 14px;
 border-radius: 6px;
 display: inline-block;
 font-weight: 600;
-font-size: 0.88em;
+font-size: 0.85em;
+align-self: flex-start;
 }
 .btn-ifn:hover {
 background-color: #1a252f;
 }
 .footer-ifn {
 text-align: center;
-margin-top: 10px;
+margin-top: 8px;
 color: #2c3e50;
 background: rgba(255, 255, 255, 0.88);
 padding: 6px;
 border-radius: 6px;
-font-size: 0.85em;
+font-size: 0.82em;
 font-weight: 500;
 }
 @media (max-width: 768px) {
@@ -480,14 +532,17 @@ margin-top: 8px;
 }
 }
 </style>
-<!-- 1ª CAIXA (IFN) -->
+<!-- 1ª CAIXA COM NOME POR EXTENSO E PORTAL IFN -->
 <div class="card-top-compact">
 <h2>
-Portal IFN
+Informativo da Família Nunes
 </h2>
+<h3>
+Portal IFN
+</h3>
 <p>
 Welcome ao <strong>IFN</strong>! Consulta rápida diária de meteorologia,
-música, conhecimento e utilidades familiares.
+seleção musical, conhecimento e utilidades familiares.
 </p>
 </div>
 <!-- DESTAQUE BOM PERFUME -->
@@ -512,18 +567,65 @@ Conhecer <span class="citation">@bomperfumeoficial</span></a></p>
 <div class="row">
 <div class="col-md-4">
 <div class="card-item">
+<div>
 <h3>
 🌤️ Previsão do Tempo
 </h3>
 <p>
 Boletins, vento e indicadores meteorológicos da região.
 </p>
-<!-- MÓDULO RÁPIDO COM TEMPERATURA REAL VIA JAVASCRIPT -->
 <div class="weather-quick-badge">
 <p><span id="temp-rg">🌊 Rio Grande: Carregando…</span> <span id="temp-pel">🏛️ Pelotas: Carregando…</span></p>
 </div>
+</div>
+<p><a href="previsaodotempo.html" class="btn-ifn">Acessar
+Meteorologia</a></p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card-item">
+<div>
+<h3>
+🎵 Espaço Música
+</h3>
+<div class="ticker-wrap">
+<div id="ticker-music" class="ticker-text">
+🎧 Novidade: Playlist especial de música e foco atualizada!
+</div>
+</div>
+<div class="highlight-box-music">
+<p><span id="sugestao-musica"><strong>🎸 Sugestão do Dia:</strong>
+Carregando…</span></p>
+</div>
+</div>
+<p><a href="pagina3.html" class="btn-ifn">Acessar Música</a></p>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card-item">
+<div>
+<h3>
+💡 Conhecimento &amp; Notícias
+</h3>
+<div class="ticker-wrap">
+<div id="ticker-news" class="ticker-text">
+⚡ Destaque: Inovação, Tecnologia, Saúde e Dicas para o Dia a Dia!
+</div>
+</div>
+<div class="highlight-box-news">
+<p><span id="sugestao-noticia"><strong>🌿 Dica do Dia:</strong>
+Carregando…</span></p>
+</div>
+</div>
+<p><a href="noticias.html" class="btn-ifn">Acessar Conhecimento</a></p>
+</div>
+</div>
+</div>
+<div class="footer-ifn">
+<p><strong>IFN</strong> — Canal Informativo Familiar.</p>
+</div>
 <script>
-  // Busca temperatura em tempo real de Rio Grande
+  // 1. MEDIÇÃO DA TEMPERATURA EM TEMPO REAL
   fetch('https://api.open-meteo.com/v1/forecast?latitude=-32.033&longitude=-52.100&current_weather=true')
     .then(response => response.json())
     .then(data => {
@@ -534,7 +636,6 @@ Boletins, vento e indicadores meteorológicos da região.
       document.getElementById('temp-rg').innerText = '🌊 Rio Grande: --°C';
     });
 
-  // Busca temperatura em tempo real de Pelotas
   fetch('https://api.open-meteo.com/v1/forecast?latitude=-31.765&longitude=-52.337&current_weather=true')
     .then(response => response.json())
     .then(data => {
@@ -542,39 +643,58 @@ Boletins, vento e indicadores meteorológicos da região.
       document.getElementById('temp-pel').innerText = `🏛️ Pelotas: ${temp}°C ☀️`;
     })
     .catch(() => {
-      document.getElementById('temp-pel').innerText = '🏛️ Pelotas: --°C';
+      document.getElementById('temp-pel').innerText = '🏛️️ Pelotas: --°C';
     });
+
+  // 2. SUGESTÕES AUTOMÁTICAS QUE MUDAM A CADA DIA DA SEMANA
+  const diaSemana = new Date().getDay(); // 0 = Domingo, 1 = Segunda, ..., 6 = Sábado
+
+  const sugestoesMusica = [
+    "<strong>🎸 Domingo:</strong> Violão Instrumental Relaxante & MPB Acústica",
+    "<strong>🎧 Segunda:</strong> Playlist de Foco & Produtividade no Trabalho",
+    "<strong>🎷 Terça:</strong> Jazz Suave & Som Instrumental de Fundo",
+    "<strong>🇬🇧 Quarta:</strong> Músicas de Londres & Pop Britânico Clássico",
+    "<strong>🎻 Quinta:</strong> Violão Fingerstyle — Seleção Luke Silva",
+    "<strong>🎹 Sexta:</strong> Lo-Fi Chill & Ritmos para Descontrair",
+    "<strong>☕ Sábado:</strong> Acústicos Leves para o Fim de Semana"
+  ];
+
+  const sugestoesNoticia = [
+    "<strong>🌿 Domingo:</strong> Bem-Estar Familiar, Lazer e Hábitos Saudáveis",
+    "<strong>💡 Segunda:</strong> Inovação, Gestão e Ferramentas de Produtividade",
+    "<strong>💄 Terça:</strong> Skincare, Beleza e Cuidados com a Pele",
+    "<strong>🎓 Quarta:</strong> Tecnologias na Educação e Cursos Gratuitos",
+    "<strong>📈 Quinta:</strong> Tendências de Mercado, Negócios e Tráfego Pago",
+    "<strong>🏥 Sexta:</strong> Longevidade Ativa & Fisioterapia Preventiva",
+    "<strong>📚 Sábado:</strong> Leituras Recomendadas, Cultura e Aprendizado"
+  ];
+
+  const tickersMusica = [
+    "🎧 Domingo de Descanso: Playlists de Violão e MPB para curtir a família!",
+    "🎧 Segunda Focada: Sons instrumentais para iniciar a semana com alta energia!",
+    "🎧 Terça Musical: Acompanhe seleções clássicas de Jazz e Lo-Fi!",
+    "🎧 Quarta Especial: Músicas urbanas de Londres e clássicos internacionais!",
+    "🎧 Quinta de Fingerstyle: Destaque para as interpretações de Luke Silva no Violão!",
+    "🎧 Sexta Chegou: Sons relaxantes e descontraídos para fechar a semana!",
+    "🎧 Sábado de Lazer: Trilhas sonoras perfeitas para o descanso!"
+  ];
+
+  const tickersNoticias = [
+    "⚡ Destaque do Dia: Qualidade de vida, saúde e convivência em família!",
+    "⚡ Destaque do Dia: Gestão de projetos, tecnologia e aprendizado prático!",
+    "⚡ Destaque do Dia: Cuidados especiais com a pele e tendências de beleza!",
+    "⚡ Destaque do Dia: Dicas de estudos, inteligência artificial e inovação!",
+    "⚡ Destaque do Dia: Notícias sobre marketing digital e oportunidades de negócios!",
+    "⚡ Destaque do Dia: Exercícios de mobilidade, saúde e longevidade ativa!",
+    "⚡ Destaque do Dia: Dicas de leitura, cultura e lazer para o fim de semana!"
+  ];
+
+  // Aplica os textos correspondentes ao dia do acesso
+  document.getElementById('sugestao-musica').innerHTML = sugestoesMusica[diaSemana];
+  document.getElementById('sugestao-noticia').innerHTML = sugestoesNoticia[diaSemana];
+  document.getElementById('ticker-music').innerText = tickersMusica[diaSemana];
+  document.getElementById('ticker-news').innerText = tickersNoticias[diaSemana];
 </script>
-<p><a href="previsaodotempo.html" class="btn-ifn">Acessar
-Meteorologia</a></p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card-item">
-<h3>
-🎵 Espaço Música
-</h3>
-<p>
-Seleção musical, áudios, violão fingerstyle e playlists diárias.
-</p>
-<p><a href="pagina3.html" class="btn-ifn">Acessar Música</a></p>
-</div>
-</div>
-<div class="col-md-4">
-<div class="card-item">
-<h3>
-💡 Conhecimento &amp; Notícias
-</h3>
-<p>
-Acesso rápido a portais de inovação, tecnologia, saúde e negócios.
-</p>
-<p><a href="noticias.html" class="btn-ifn">Acessar Conhecimento</a></p>
-</div>
-</div>
-</div>
-<div class="footer-ifn">
-<p><strong>IFN</strong> — Canal Informativo Familiar.</p>
-</div>
 
 
 
