@@ -8,27 +8,16 @@ output:
 ---
 
 <style>
-/* Imagem de fundo de praia/mar suave */
 body {
   background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
   background-size: cover;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Deixar o container principal levemente destacado */
 .main-container {
   max-width: 950px !important;
   margin: auto;
   padding: 20px;
-}
-
-/* Título e cabeçalho com fundo semi-transparente para leitura ideal */
-h1.title {
-  color: #1a252f;
-  background: rgba(255, 255, 255, 0.85);
-  padding: 15px 20px;
-  border-radius: 8px;
-  display: inline-block;
 }
 
 .intro-text {
@@ -41,7 +30,6 @@ h1.title {
   font-size: 1.05em;
 }
 
-/* Cards estilizados com transparência elegante */
 .card-ifn {
   background: rgba(255, 255, 255, 0.92);
   border-radius: 10px;
@@ -66,7 +54,6 @@ h1.title {
   margin-bottom: 18px;
 }
 
-/* Botões estilizados */
 .btn-ifn {
   background-color: #2c3e50;
   color: #ffffff !important;
@@ -82,22 +69,6 @@ h1.title {
 
 .btn-ifn:hover {
   background-color: #1a252f;
-}
-
-.btn-ifn-sec {
-  background-color: #7f8c8d;
-  color: #ffffff !important;
-  text-decoration: none !important;
-  padding: 10px 16px;
-  border-radius: 5px;
-  display: inline-block;
-  font-weight: 600;
-  font-size: 0.9em;
-  margin-top: 5px;
-}
-
-.btn-ifn-sec:hover {
-  background-color: #6c757d;
 }
 
 .footer-ifn {
@@ -122,10 +93,9 @@ h1.title {
 
 <div class="col-md-4">
 <div class="card-ifn">
-<h3>🌤️️ Previsão do Tempo</h3>
+<h3>🌤️ Previsão do Tempo</h3>
 <p>Acompanhe boletins e indicadores meteorológicos para a nossa região.</p>
 <a href="previsaodotempo.html" class="btn-ifn">Previsão do Tempo</a>
-<a href="Prev_Tem_Mer_Fin.html" class="btn-ifn-sec">Tempo & Mercado</a>
 </div>
 </div>
 
